@@ -1,0 +1,19 @@
+Copyright (C) 2000 - 2006  Bruce Badger (bbadger@openskills.com)
+
+This version of the Smalltalk PostgreSQL is significantly revised to use the Sport portability library and to be able to run in GemStone (note: not the EXDI and Store).
+
+The library contains the just a few changes since 1.3 053
+
+* Making the translator for timestampz the same as for timestamp. I note that this doesn't actually work. It will mess up the milliseconds by doing an upToEnd to get them, getting the time zone information as well, and then unsurprisingly fail to parse that properly as a single number. This code isn't actually necessary for the changes we were making, because in the end it was easier to get it in UTC as a non-timezone stamped time. So you could ignore this or fix it up properly, at your discretion.
+
+* Removing safelyExecuteBlock:, as you describe.
+
+* Adding #currentTimestampSQLString. You want the most recent one, which is also the one that looks like
+ ^'SELECT CURRENT_TIMESTAMP AT TIME ZONE ''UTC'' '
+
+Bugs:
+
+* A problem in the Cincom EXDI library as highlighted and demonstrated by Jay O'Connor.  c.f. PostgreSQLEXDITest>>test17.
+
+
+

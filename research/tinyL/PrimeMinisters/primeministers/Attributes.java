@@ -1,0 +1,234 @@
+package primeministers;
+
+import java.util.ArrayList;
+/**
+ * 属性群：総理大臣の情報テーブルを入出力する際の属性情報を記憶。
+ */
+public class Attributes extends Object
+{
+	/**
+	 * 属性リストのキー群を記憶するフィールド。
+	 */
+	private ArrayList<String> keys;
+	
+	/**
+	 * 属性リストの名前群を記憶するフィールド。
+	 */
+	private ArrayList<String> names;
+	
+	/**
+	 * 入力用("input")または出力用("output")で属性リストを作成するコンストラクタ。
+	 */
+	public Attributes(String aString)
+	{
+		this.keys = new ArrayList<String>();
+		this.names = new ArrayList<String>();
+		if(aString.compareTo("input") == 0 )
+		{
+			String[] aCollection = {"No","orders","names","kana","periods","schools","parties","places","images","thumbnails"};
+			for(String each : aCollection)
+			{
+				this.keys.add(each);
+				this.names.add(new String());
+			}
+		}
+		if(aString.compareTo("output") == 0 )
+		{
+			String[] aCollection = {"No","orders","names","kana","periods","days","schools","parties","places","images"};
+			for(String each : aCollection)
+			{
+				this.keys.add(each);
+				this.names.add(new String());
+			}
+		}
+		return;
+	}
+	
+	/**
+	 * 指定されたインデックスに対応する名前を応答する。名前が無いときはキーを応答する。
+	 */
+	protected String at(int index)
+	{
+		String aString = this.nameAt(index);
+		if(aString.compareTo("") == 0)
+		{
+			return this.keyAt(index);
+		}
+		return aString;
+	}
+	
+	/**
+	 * 指定されたキー文字列のインデックスを応答する。
+	 */
+	private int indexOf(String aString)
+	{
+		int aKey = this.keys.indexOf(aString);
+		return aKey;
+	}
+	
+	/**
+	 *  在位日数のインデックスを応答する。
+	 */
+	public int indexOfDays()
+	{
+		int aDays = this.indexOf("days");
+		return aDays;
+	}
+	
+	/**
+	 * 画像のインデックスを応答する。
+	 */
+    public int indexOfImage()
+	{
+		int aImage = this.indexOf("images");
+		return aImage;
+	}
+	
+	/**
+	 * ふりがなのインデックスを応答する。
+	 */
+	public int indexOfKana()
+	{
+		int aKana = this.indexOf("kana");
+		return aKana;
+	}
+	
+	/**
+	 * 氏名のインデックスを応答する。
+	 */
+	public int indexOfName()
+	{
+		int aName = this.indexOf("names");
+		return aName;
+	}
+	
+	/**
+	 * 番号のインデックスを応答する。
+	 */
+	public int indexOfNo()
+	{
+		int aNo = this.indexOf("No");
+		return aNo;
+	}
+	
+	/**
+	 * 代のインデックスを応答する。
+	 */
+	public int indexOfOrder()
+	{
+		int aOrder = this.indexOf("orders");
+		return aOrder;
+	}
+	
+	/**
+	 * 政党のインデックスを応答する。
+	 */
+	public int indexOfParty()
+	{
+		int aParty = this.indexOf("parties");
+		return aParty;
+	}
+	
+	/**
+	 * 在位期間のインデックスを応答する
+	 */
+	public int indexOfPeriod()
+	{
+		int aPeriod = this.indexOf("periods");
+		return aPeriod;
+	}
+	
+	/**
+	 * 出身地のインデックスを応答する。
+	 */
+	public int indexOfPlace()
+	{
+		int aPlace = this.indexOf("places");
+		return aPlace;
+	}
+	
+	/**
+	 * 出身校のインデックスを応答する。
+	 */
+	public int indexOfSchool()
+	{
+		int aSchool = this.indexOf("schools");
+		return aSchool;
+	}
+	
+	/**
+	 * サムネイルのインデックスを応答する。
+	 */
+	public int indexOfThumbnail()
+	{
+		int aThumbnail = this.indexOf("thumbnails");
+		return aThumbnail;
+	}
+	
+	/**
+	 *  指定されたインデックスに対応するキーを応答する。
+	 */
+	protected String keyAt(int index)
+	{
+		String aKeyAt = this.keys().get(index);
+		return aKeyAt;
+	}
+	
+	/**
+	 * キー群を応答する。
+	 */
+	ArrayList<String> keys()
+	{
+		return this.keys;
+	}
+	
+	/**
+	 * 指定されたインデックスに対応する名前を応答する。
+	 */
+	protected String nameAt(int index)
+	{
+		return this.names().get(index);
+	}
+	/**
+	 * 名前群を応答する。
+	 */
+	ArrayList<String> names()
+	{
+		return this.names;
+	}
+	
+	/**
+	 * 名前群を設定する。
+	 */
+	public void names(ArrayList<String> aCollection)
+	{
+		this.names = aCollection;
+		return;
+	}
+	
+	/**
+	 * 属性リストの長さを応答する。
+	 */
+	public int size()
+	{
+		int aSize = this.keys.size();
+		return aSize;
+	}
+	
+	/**
+	 * 自分自身を文字列にして、それを応答する。
+	 */
+	public String toString()
+	{
+		StringBuffer aBuffer = new StringBuffer();
+		for(String aString: keys)
+		{
+			aBuffer.append(aString);
+			aBuffer.append(",");
+		}
+		aBuffer.deleteCharAt(aBuffer.length() - 1);
+		
+		return aBuffer.toString();
+
+	}
+}

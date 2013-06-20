@@ -1,0 +1,21 @@
+########################################################################
+# File: makefile.sun5
+# 
+# DLL and C Connect Vector Arithmetic Example Makefile for Solaris
+#
+#	Copyright (C) 1999-2006 Cincom Systems, Inc.
+#	Santa Clara, California.  All Rights Reserved.
+########################################################################
+
+# use -g rather than -g -O for full debugging
+COPTION= -mt -g -O -Xa -xlibmieee -D_REENTRANT
+#COPTION= -mt -g -Xa -xlibmieee -D_REENTRANT
+
+# Uncomment SAFETY to build the fast version of the dll.
+#SAFETY= -DOEUNSAFE -DUNSAFE
+
+CFLAGS= $(COPTION) $(SAFETY)
+
+vector.so: vector.c
+	$(CC) -c $(CFLAGS) -K pic vector.c
+	ld -o vector.so -G vector.o

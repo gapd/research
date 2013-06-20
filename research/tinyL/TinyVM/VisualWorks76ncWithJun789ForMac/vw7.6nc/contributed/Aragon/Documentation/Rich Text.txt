@@ -1,0 +1,35 @@
+
+This enhancement primarily consits of a new method to class String that 
+parses a string for HTML-like markup tags and returns an apropriate
+instance of class Text.
+
+The text in between the following tags is formatted in the quoted style:
+
+    <b> ... </b>	bold
+    <i> ... </i>	italic
+    <s> ... </s>	small
+    <L> ... </l>	large
+    <u> ... </u>	underline
+    <x> ... </x>	strikeout
+    <c:xxx> ... </c>	color
+
+In case of the color tag (<c:xxx>) one of the pre-defined color constants
+as defined by class ColorValue has to be chosen for 'xxx'. Have a look at 
+method category 'constants' in ColorValue class for the the pre-defined
+color names.
+
+An example:
+
+Dialog warn:
+'Try this:
+<b>This is bold</b>
+<i>This is italic</i>
+<s>This is small</s>
+<L>This is large</L>
+<u>This is underlined</u>
+<x>This is stroked-out</x>
+<c:red>This is in red</c>
+<c:green>This is in green</c>
+<c:blue>This is in blue</c>
+<c:cyan>This is in cyan</c>'
+asRichText

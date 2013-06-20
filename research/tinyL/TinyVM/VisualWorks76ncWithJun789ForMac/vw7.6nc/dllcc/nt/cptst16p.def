@@ -1,0 +1,13 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File: cptst16p.def
+;
+; Description: 16-bit Pascal DLL and C Connect test suite definition file.
+;
+;	Copyright (C) 1999-2006 Cincom Systems, Inc.
+;	Santa Clara, California.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+LIBRARY		CPTST16P
+HEAPSIZE	1024
+EXPORTS
+

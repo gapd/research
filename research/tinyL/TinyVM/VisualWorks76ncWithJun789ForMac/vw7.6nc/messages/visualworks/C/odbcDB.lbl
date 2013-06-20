@@ -1,0 +1,1 @@
+encoding: #UTF_8catalog: #odbcDBerrSetStatementOptions = 'unable to set the statement option'errUnboundVariable = 'unbound variable'

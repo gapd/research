@@ -1,0 +1,3242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="Building a Graphical User Interface" type="text/css" title="Building a Graphical User Interface" charset="UTF-8"?>
+<XML>
+<Heading1>
+<A ID="pgfId-1071594"></A>
+<A ID="Building a Graphical User Interface"></A>
+Building a Graphical User Interface</Heading1>
+<Heading2>
+<A ID="pgfId-1071596"></A>
+<A ID="Viewing Resources"></A>
+Resources</Heading2>
+<Heading3>
+<A ID="pgfId-1071597"></A>
+Open a Resource Finder</Heading3>
+<Body1>
+<A ID="pgfId-1035862"></A>
+Open a new Resource Finder by selecting <UI-Label>
+Browse-&gt;Resources</UI-Label>
+ in the VisualWorks Launcher window.</Body1>
+<Body1>
+<A ID="pgfId-1036126"></A>
+The Resource Finder is packaged with the <A href="03-tools.xml#id(User Interface Painter)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">User Interface Painter</A>. If the Resource Finder icon does not appear in the Launcher window, you must load the parcel <Platform>
+UIPainter.pcl</Platform>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1036136"></A>
+Browse a resource</Heading3>
+<Body1>
+<A ID="pgfId-1075872"></A>
+To open a browser on the selected class in a Resource Finder, use the <UI-Label>
+Browse</UI-Label>
+ button. Double-clicking on a class name in the class (left-hand) view brings up a Hierarchy Browser or Class Browser (depending on your Settings preferences) on that class. Double-clicking on a resource opens it with the <A href="03-tools.xml#id(User Interface Painter)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">User Interface Painter</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1075876"></A>
+Filter the display of resource classes</Heading3>
+<Body1>
+<A ID="pgfId-1035829"></A>
+To filter the list to show only the subset of classes added by the user, select <UI-Entry>
+View</UI-Entry>
+<UI-Label>
+-&gt;</UI-Label>
+<UI-Entry>
+User Classes</UI-Entry>
+. System classes (i.e., non-user classes) and recently used classes may be displayed by selecting <UI-Label>
+View-&gt;System Classes</UI-Label>
+ and <UI-Label>
+View-&gt;Recently Visited Classes</UI-Label>
+ respectively.</Body1>
+<Body1>
+<A ID="pgfId-1029284"></A>
+The list of resources (right-hand view) can be sorted and displayed either by name or by type: select <UI-Label>
+View-&gt;Sort By Name</UI-Label>
+ and <UI-Label>
+View-&gt;Sort By Type</UI-Label>
+ to toggle between these options.</Body1>
+<Heading3>
+<A ID="pgfId-1029293"></A>
+Start an application</Heading3>
+<Body1>
+<A ID="pgfId-1029294"></A>
+Use the <UI-Label>
+Start</UI-Label>
+ button to run applications that provide an instance method for <Code>
+open</Code>
+, or that adhere to the conventions for subclasses of <Code>
+ApplicationModel</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1029297"></A>
+Editing resources</Heading3>
+<Body1>
+<A ID="pgfId-1029298"></A>
+The <UI-Label>
+Add</UI-Label>
+ and <UI-Label>
+Remove</UI-Label>
+ buttons can be used to add new model classes to the system and remove existing ones (if no selection is made in the right-hand view of the finder) or to add a canvas to an existing class. The <UI-Label>
+Edit</UI-Label>
+ button or a double click on a resource name in the right-hand view opens an appropriate editor on the specification selected.</Body1>
+<Body1>
+<A ID="pgfId-1029299"></A>
+When you add or remove an application class by some means other than the Resource Finder or the canvas&#39;s <UI-Label>
+install</UI-Label>
+ command, use <UI-Label>
+View-&gt;Update</UI-Label>
+ to register the change in all Finders.</Body1>
+<Heading3>
+<A ID="pgfId-1034908"></A>
+Create an application model</Heading3>
+<Body1>
+<A ID="pgfId-1034912"></A>
+Use the <UI-Label>
+Class-&gt;Add...</UI-Label>
+ command to create a new application model. A dialog prompts for the name of the new model class and its superclass (<Code>
+ApplicationModel</Code>
+ and <Code>
+SimpleDialog</Code>
+ are provided as defaults). If the new class created understands the message <Code>
+windowSpec</Code>
+ then the <A href="03-tools.xml#id(User Interface Painter)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">User Interface Painter</A> is opened using that method.</Body1>
+<Body1>
+<A ID="pgfId-1071554"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1071558"></A>
+<A href="07-frameworks.xml#id(Application Models)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Application Models</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1071572"></A>
+<A href="07-frameworks.xml#id(Composing Windows)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Composing Windows</A></Bullet1>
+<Body1>
+<A ID="pgfId-1036084"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1040336"></A>
+<A ID="Composing Windows"></A>
+Composing Windows</Heading2>
+<Heading3>
+<A ID="pgfId-1040752"></A>
+Create a new canvas</Heading3>
+<Body1>
+<A ID="pgfId-1040753"></A>
+Use a <A href="03-tools.xml#id(Canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Canvas</A> to &#34;paint&#34; the design for a window.</Body1>
+<Body1>
+<A ID="pgfId-1041938"></A>
+To open a new Canvas, click on the Canvas button in Launcher window toolbar, or select <UI-Label>
+Tools-&gt;New Canvas</UI-Label>
+. Paint the blank canvas by placing and arranging widgets on it.</Body1>
+<Body1>
+<A ID="pgfId-1041525"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1041529"></A>
+<A href="03-tools.xml#id(Palette)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Palette</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1041543"></A>
+<A href="09-widgets.xml#id(Place a widget on a canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Place a widget on a canvas</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1041544"></A>
+<A href="07-frameworks.xml#id(Modify an existing canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Modify an existing canvas</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040774"></A>
+<A ID="Modify an existing canvas"></A>
+Modify an existing canvas</Heading3>
+<Body1>
+<A ID="pgfId-1040775"></A>
+To modify an existing window specification, locate it using the Resource Finder (select <UI-Label>
+Browse -&gt; Resources</UI-Label>
+ in the Launcher window).</Body1>
+<StepStart>
+<A ID="pgfId-1041939"></A>
+In the Resource Finder, select the class name containing the canvas, select the appropriate specification in the <UI-Label>
+Resources</UI-Label>
+ view (<Code>
+windowSpec</Code>
+ is the default), and click <UI-Label>
+Edit</UI-Label>
+ button.</StepStart>
+<StepCont>
+<A ID="pgfId-1041940"></A>
+To save any changes you make to a canvas, you must <UI-Entry>
+Install</UI-Entry>
+ it.</StepCont>
+<Body1>
+<A ID="pgfId-1041562"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1041566"></A>
+<A href="07-frameworks.xml#id(Install a canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Install a canvas</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040890"></A>
+Specify a user interface look</Heading3>
+<Body1>
+<A ID="pgfId-1040891"></A>
+By default, the canvas will auto-select its look on the target platform. To change the current look of the canvas, select one of the options on the <UI-Label>
+Look</UI-Label>
+ menu. Note that the global settings for VisualWorks will override this setting when you <UI-Label>
+open</UI-Label>
+ the application.</Body1>
+<Body1>
+<A ID="pgfId-1041579"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1041583"></A>
+<A href="04-develop.xml#id(Environment Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Environment Settings</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1041593"></A>
+<A href="07-frameworks.xml#id(Test a new application window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Test a new application window</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040790"></A>
+<A ID="Install a canvas"></A>
+Install a canvas</Heading3>
+<Body1>
+<A ID="pgfId-1040791"></A>
+Use the <UI-Label>
+Install...</UI-Label>
+ button in the <A href="03-tools.xml#id(GUI Painter Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">GUI Painter Tool</A> to create an interface specification for the canvas.</Body1>
+<StepStart>
+<A ID="pgfId-1040792"></A>
+Specify the name of the application model class in the <UI-Label>
+INSTALL on Class</UI-Label>
+ dialog; specify either a new or existing class for the application model. </StepStart>
+<StepCont>
+<A ID="pgfId-1040793"></A>
+Specify the selector to contain the interface specification for the canvas (the default selector is <Code>
+#windowSpec</Code>
+.)</StepCont>
+<StepCont>
+<A ID="pgfId-1040794"></A>
+Select <UI-Label>
+OK</UI-Label>
+ to build and install the interface specification. If you enter a new class name, you will be prompted for the name of the superclass in a subsequent dialog (<Code>
+ApplicationModel</Code>
+ and <Code>
+SimpleDialog</Code>
+ are provided as defaults). </StepCont>
+<Body1>
+<A ID="pgfId-1041604"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1041608"></A>
+<A href="07-frameworks.xml#id(Create an application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create an application model</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1041090"></A>
+Set window properties</Heading3>
+<Body1>
+<A ID="pgfId-1041091"></A>
+Use the property pages on the <A href="03-tools.xml#id(GUI Painter Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">GUI Painter Tool</A> to edit the properties of the current canvas.</Body1>
+<Body1>
+<A ID="pgfId-1042189"></A>
+Select on the background to deselect all widgets, to set the properties of the window itself.</Body1>
+<Body1>
+<A ID="pgfId-1041621"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1041625"></A>
+<A href="07-frameworks.xml#id(Sizing Windows)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Sizing Windows</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040910"></A>
+<A ID="Test a new application window"></A>
+Test a new application window</Heading3>
+<Body1>
+<A ID="pgfId-1040911"></A>
+To launch the application under construction in a Canvas, click on the <UI-Label>
+Open</UI-Label>
+ button in the GUI Painter Tool. This command is unavailable until you have created an application model for the canvas by installing the canvas.</Body1>
+<Body1>
+<A ID="pgfId-1041655"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1041652"></A>
+<A href="07-frameworks.xml#id(Create an application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create an application model</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1041663"></A>
+<A href="07-frameworks.xml#id(Install a canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Install a canvas</A></Bullet1>
+<Heading2>
+<A ID="pgfId-1040907"></A>
+Creating Windows Programmatically</Heading2>
+<Heading3>
+<A ID="pgfId-1040809"></A>
+Opening a main window </Heading3>
+<Body1>
+<A ID="pgfId-1040342"></A>
+When the spec name is <Code>
+#windowSpec</Code>
+, you can just send <Code>
+open</Code>
+ to the application class: </Body1>
+<CodeSample>
+<A ID="pgfId-1040343"></A>
+Editor1Example open</CodeSample>
+<Body1>
+<A ID="pgfId-1040344"></A>
+To open any other spec, use <Code>
+openWithSpec:</Code>
+ and provide the specification name:</Body1>
+<CodeSample>
+<A ID="pgfId-1040345"></A>
+Editor1Example openWithSpec: #windowSpec</CodeSample>
+<Heading3>
+<A ID="pgfId-1040346"></A>
+Open a secondary window</Heading3>
+<Body1>
+<A ID="pgfId-1040347"></A>
+When the same application model serves one or more secondary windows in addition to the main window, you can open a secondary canvas with this variant. A &#34;secondary&#34; window usually requires that the application has reached the proper state, that its instance variables have been initialized. This usually requires opening the main window before any secondary window. </Body1>
+<Body1>
+<A ID="pgfId-1040348"></A>
+This example creates a new UIBuilder the first time it is invoked, and stores that builder in an instance variable. When your application needs to access widgets on the secondary canvas later, storing this second builder assures you will have a means of accessing the widgets.</Body1>
+<Body1>
+<A ID="pgfId-1040350"></A>
+In a method in the application model, create a new <Code>
+UIBuilder</Code>
+.</Body1>
+<StepStart>
+<A ID="pgfId-1040352"></A>
+Tell the builder which object will supply its menus, aspects, and other resources by sending it a <Code>
+source:</Code>
+ message. The argument is typically the application model itself. (Alternatively, you can send a series of <Code>
+aspectAt:put:</Code>
+ messages to install the resources directly.)</StepStart>
+<StepCont>
+<A ID="pgfId-1040354"></A>
+Create the spec object and add the spec to the builder.</StepCont>
+<StepCont>
+<A ID="pgfId-1040356"></A>
+Open the window.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040357"></A>
+openFinder
+		&quot;Open the Search window. If already open, raise to top.&quot;
+
+		| bldr |
+		(self finderBuilder notNil and: [self finderBuilder window isOpen])
+			ifTrue: [self finderBuilder window raise]
+			ifFalse: [
+				self finderBuilder: (bldr := UIBuilder new).
+				bldr source: self.
+				bldr add: (self class 
+					interfaceSpecFor: #finderSpec).
+				bldr window 
+					application: self;
+					beSlave.
+				self adjustSearchScope.
+				self searchStatus value: 0.
+				(bldr componentAt: #searchStatus) widget
+					setMarkerLength: 5.
+
+				bldr openAt: (self 
+					originFor: bldr window 
+					nextTo: #findButton)].
+
+		(self builder componentAt: #listView) takeKeyboardFocus.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040381"></A>
+Get a window from a builder</Heading3>
+<Body1>
+<A ID="pgfId-1040382"></A>
+When you ask an application model to open an interface specification, the application model creates an interface builder, which in turn creates the specified window and its contents. Your application can manipulate the window by obtaining the window from the builder and then sending it messages.</Body1>
+<StepStart>
+<A ID="pgfId-1040384"></A>
+Get the application builder, which is returned when the application is opened.</StepStart>
+<StepCont>
+<A ID="pgfId-1040385"></A>
+Get the window from the builder.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040386"></A>
+| bldr win |
+bldr := Editor2Example open.
+win := bldr <CodeEmp>
+window</CodeEmp>
+.
+win label: 'Editor'.</CodeSample>
+<Body1>
+<A ID="pgfId-1042058"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Editor2.pcl" show="embed" actuate="auto">
+Editor2Example</CodeExample>
+</Body1>
+<Heading2>
+<A ID="pgfId-1041968"></A>
+Window Scrollbars</Heading2>
+<Heading3>
+<A ID="pgfId-1041969"></A>
+Add scrollbars to a window with the Canvas Tool</Heading3>
+<StepStart>
+<A ID="pgfId-1040836"></A>
+In the window&#39;s canvas, make sure no widget is selected.</StepStart>
+<StepCont>
+<A ID="pgfId-1040837"></A>
+Open a Properties Tool using the <UI-Label>
+Properties</UI-Label>
+ button, or <UI-Label>
+properties</UI-Label>
+ on the &lt;Operate&gt; menu in the canvas.</StepCont>
+<StepCont>
+<A ID="pgfId-1041161"></A>
+In the new Properties tool, choose the <UI-Label>
+Details</UI-Label>
+ page, and enable the desired scrollbars.</StepCont>
+<StepCont>
+<A ID="pgfId-1040838"></A>
+<UI-Label>
+Apply</UI-Label>
+ the properties, close the Properties Tool, and <UI-Label>
+Install</UI-Label>
+ the canvas.</StepCont>
+<Heading3>
+<A ID="pgfId-1040839"></A>
+Add/remove scrollbars programmatically</Heading3>
+<Body1>
+<A ID="pgfId-1040840"></A>
+You can add and remove scrollbars programmatically, but only if the window had the scroll bars initially, as created in the canvas. To hide scroll bars initially, hide them before opening the window.</Body1>
+<StepStart>
+<A ID="pgfId-1040842"></A>
+After opening the window, remove the scroll bars that are meant to be displayed later.</StepStart>
+<StepCont>
+<A ID="pgfId-1040844"></A>
+Ask the window&#39;s component to add scroll bars.</StepCont>
+<CodeSample>
+<A ID="pgfId-1042089"></A>
+| win |
+win := ApplicationWindow new.
+win component: (BorderDecorator 
+		on: Object comment asComposedText).
+win open.
+
+win component
+		<CodeEmp>
+noVerticalScrollBar</CodeEmp>
+;
+		<CodeEmp>
+noHorizontalScrollBar</CodeEmp>
+.
+win display.
+
+Cursor wait showWhile: [(Delay forSeconds: 5) wait].
+
+win component
+		<CodeEmp>
+useVerticalScrollBar</CodeEmp>
+;
+		<CodeEmp>
+useHorizontalScrollBar</CodeEmp>
+.</CodeSample>
+<Heading2>
+<A ID="pgfId-1042090"></A>
+Window Menu Bar</Heading2>
+<Heading3>
+<A ID="pgfId-1042091"></A>
+Add a menu bar to a window with the Canvas Tool</Heading3>
+<Body1>
+<A ID="pgfId-1040880"></A>
+Adding a menu bar has two parts: turning on a menu bar property for the window and creating the menu.</Body1>
+<StepStart>
+<A ID="pgfId-1040881"></A>
+In the canvas for the window, make sure no widget is selected by clicking on the background of the canvas.</StepStart>
+<StepCont>
+<A ID="pgfId-1041194"></A>
+ Select the <UI-Label>
+Basic</UI-Label>
+ page in the GUI Painter Tool, and turn on the <UI-Label>
+Enable</UI-Label>
+ switch for  the <UI-Label>
+Menu Bar</UI-Label>
+ property.</StepCont>
+<StepCont>
+<A ID="pgfId-1041201"></A>
+In the <UI-Label>
+Menu</UI-Label>
+ field, enter the name of the menu-creation method defined for the menu using the <A href="03-tools.xml#id(Menu Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Menu Editor</A>.</StepCont>
+<StepCont>
+<A ID="pgfId-1041205"></A>
+<UI-Label>
+Apply</UI-Label>
+ the properties, close the Properties Tool, and <UI-Label>
+Install</UI-Label>
+ the canvas.</StepCont>
+<StepCont>
+<A ID="pgfId-1041214"></A>
+Use the Menu Editor either before or after enabling the canvas.</StepCont>
+<Body1>
+<A ID="pgfId-1040886"></A>
+Each first-level entry in the menu appears in the menu bar, but <I>
+only</I>
+ when it has a submenu. </Body1>
+<Heading2>
+<A ID="pgfId-1040940"></A>
+Window Appearance</Heading2>
+<Heading3>
+<A ID="pgfId-1041489"></A>
+Set a window&#39;s label</Heading3>
+<Body1>
+<A ID="pgfId-1041490"></A>
+You can modify a window&#39;s label using the canvas or, for dynamic control, by sending a message to the window.</Body1>
+<StepStart>
+<A ID="pgfId-1041491"></A>
+In the canvas for the window, make sure no widget is selected.</StepStart>
+<StepCont>
+<A ID="pgfId-1041492"></A>
+In the GUI Painter Tool, fill in the window&#39;s <UI-Label>
+Label</UI-Label>
+ property with the desired label.</StepCont>
+<StepCont>
+<A ID="pgfId-1041493"></A>
+<UI-Label>
+Apply</UI-Label>
+ the properties and <UI-Label>
+Install</UI-Label>
+ the canvas.</StepCont>
+<Heading3>
+<A ID="pgfId-1041981"></A>
+Set a window&#39;s icon</Heading3>
+<Body1>
+<A ID="pgfId-1041982"></A>
+Under window managers that support iconified windows, you can assign an icon to replace the standard VisualWorks icon.</Body1>
+<StepStart>
+<A ID="pgfId-1041983"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1041984"></A>
+Send an <Code>
+icon:</Code>
+ message to the window, with an icon as argument.</StepCont>
+<CodeSample>
+<A ID="pgfId-1041985"></A>
+| helpIcon win |
+helpIcon := Icon 
+	figure: ToolbarIconLibrary thought20x20 image 
+	shape: ToolbarIconLibrary thought20x20mask image.
+helpIcon cleanFigure.
+win := (Editor2Example open) window.
+win <CodeEmp>
+icon:</CodeEmp>
+ helpIcon.</CodeSample>
+<Heading3>
+<A ID="pgfId-1042000"></A>
+Set the color of a canvas</Heading3>
+<Body1>
+<A ID="pgfId-1042001"></A>
+<B>
+Note:</B>
+ For the OSF Motif look, widgets inherit the background color of the window until you make them opaque and apply a different color to their backgrounds.</Body1>
+<StepStart>
+<A ID="pgfId-1042002"></A>
+In the canvas for the window, make sure no widget is selected.</StepStart>
+<StepCont>
+<A ID="pgfId-1042006"></A>
+Open the Color page in the GUI Painter Tool.</StepCont>
+<StepCont>
+<A ID="pgfId-1042007"></A>
+Windows have four color zones: <UI-Label>
+Foreground</UI-Label>
+, <UI-Label>
+Background</UI-Label>
+, <UI-Label>
+Selection foreground</UI-Label>
+, and <UI-Label>
+Selection background</UI-Label>
+. By default, these are set to <UI-Label>
+none</UI-Label>
+, which means that the window inherits its colors (the window from the window manager). To change a color, select the desired color from the color chart and click on the zone you wish to define. To revert to <UI-Label>
+none</UI-Label>
+, click on the zone a second time. Use the slider controls to fine-adjust the color. Use the vertical slider to work with a color-cube model. Use the horizontal sliders to work with a hue-saturation-value model.</StepCont>
+<StepCont>
+<A ID="pgfId-1042008"></A>
+To display the policy for the most recently active canvas or currently selected widget, toggle the <UI-Label>
+Read</UI-Label>
+ button. The policy is displayed in the color zones at the bottom of the tool.</StepCont>
+<StepCont>
+<A ID="pgfId-1042009"></A>
+<UI-Label>
+Apply</UI-Label>
+ the color properties, and <UI-Label>
+Install</UI-Label>
+ the canvas.</StepCont>
+<Body1>
+<A ID="pgfId-1042010"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1042014"></A>
+<A href="09-widgets.xml#id(Set a widget’s colors)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set a widget&#39;s colors</A></Bullet1>
+<Heading2>
+<A ID="pgfId-1041486"></A>
+<A ID="Sizing Windows"></A>
+Sizing Windows</Heading2>
+<Heading3>
+<A ID="pgfId-1040392"></A>
+Set initial window size</Heading3>
+<StepStart>
+<A ID="pgfId-1040393"></A>
+While editing the canvas, use the window manager to adjust the canvas to the preferred size.</StepStart>
+<StepCont>
+<A ID="pgfId-1040394"></A>
+Make sure no widget is selected in the canvas. This selects the canvas itself.</StepCont>
+<StepCont>
+<A ID="pgfId-1040396"></A>
+Select the <UI-Label>
+Layout-&gt;Window-&gt;Preferred Size</UI-Label>
+ in the Canvas Tool menu bar to set the initial size of the window.</StepCont>
+<StepCont>
+<A ID="pgfId-1040397"></A>
+<UI-Label>
+Install</UI-Label>
+ the canvas.</StepCont>
+<Heading3>
+<A ID="pgfId-1040408"></A>
+Constrain the window size</Heading3>
+<Body1>
+<A ID="pgfId-1040409"></A>
+When the interface becomes unusable below a certain minimum size, or when larger than a certain maximum size, you can impose limits on the size. </Body1>
+<StepStart>
+<A ID="pgfId-1040410"></A>
+While editing the canvas, use the window manager to resize the canvas to its intended minimum size.</StepStart>
+<StepCont>
+<A ID="pgfId-1040411"></A>
+Make sure no widget is selected in the canvas.</StepCont>
+<StepCont>
+<A ID="pgfId-1040412"></A>
+To set the minimum size, select the <UI-Label>
+Layout-&gt;Window-&gt;Min Size</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1040413"></A>
+To set the maximum size, select the <UI-Label>
+Layout-&gt;Window-&gt;Max Size</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1040414"></A>
+<UI-Label>
+Install</UI-Label>
+ the canvas.</StepCont>
+<Heading3>
+<A ID="pgfId-1041421"></A>
+Make a window&#39;s size fixed</Heading3>
+<Body1>
+<A ID="pgfId-1041422"></A>
+Some windows work best at a constant size. To make the size fixed:</Body1>
+<StepStart>
+<A ID="pgfId-1040427"></A>
+While editing the canvas, use the window manager to resize the canvas to its intended minimum size.</StepStart>
+<StepCont>
+<A ID="pgfId-1040428"></A>
+Make sure no widget is selected in the canvas.</StepCont>
+<StepCont>
+<A ID="pgfId-1040429"></A>
+To make this size fixed, select the <UI-Label>
+Layout-&gt;Window-&gt;Fixed Size</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1040430"></A>
+<UI-Label>
+Install</UI-Label>
+ the canvas.</StepCont>
+<Heading3>
+<A ID="pgfId-1040438"></A>
+Clear all window size constraints</Heading3>
+<StepStart>
+<A ID="pgfId-1040439"></A>
+In the window&#39;s canvas, make sure no widget is selected.</StepStart>
+<StepCont>
+<A ID="pgfId-1040440"></A>
+Select the <UI-Label>
+Layout-&gt;Window-&gt;Clear All</UI-Label>
+ command in the canvas&#39;s menu.</StepCont>
+<StepCont>
+<A ID="pgfId-1041254"></A>
+<UI-Label>
+Install</UI-Label>
+ the canvas.</StepCont>
+<Heading3>
+<A ID="pgfId-1040441"></A>
+Get a window&#39;s dimensions</Heading3>
+<StepStart>
+<A ID="pgfId-1040442"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1040443"></A>
+Send messages to the window asking for any desired dimension, using the messages shown in the example:</StepCont>
+<CodeSample>
+<A ID="pgfId-1040444"></A>
+| win min max box width height |
+win := (Editor2Example open) window.
+
+min := win minimumSize.
+max := win maximumSize.
+box := win displayBox.
+width := box width.
+height := box height.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040452"></A>
+Set a window&#39;s opening position</Heading3>
+<StepStart>
+<A ID="pgfId-1040453"></A>
+Build the window interface without opening it, by sending an <Code>
+allButOpenInterface:</Code>
+ message to an instance of the application. </StepStart>
+<StepCont>
+<A ID="pgfId-1040454"></A>
+Get the window from the interface builder.</StepCont>
+<StepCont>
+<A ID="pgfId-1040455"></A>
+Send an <Code>
+openIn:</Code>
+ message to the window with a rectangle specifying its origin and extent.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040456"></A>
+| bldr win |
+bldr := Editor2Example new 
+		allButOpenInterface: #windowSpec.
+win := bldr window.
+win <CodeEmp>
+openIn:</CodeEmp>
+ (50@50 extent: win minimumSize).</CodeSample>
+<Heading2>
+<A ID="pgfId-1040981"></A>
+Controlling a Window Programmatically</Heading2>
+<Heading3>
+<A ID="pgfId-1041428"></A>
+Set initial window size</Heading3>
+<StepStart>
+<A ID="pgfId-1041430"></A>
+Build an interface up to the point of opening the window.</StepStart>
+<StepCont>
+<A ID="pgfId-1041431"></A>
+Get the window from the interface builder.</StepCont>
+<StepCont>
+<A ID="pgfId-1041432"></A>
+Ask the window to open with a specified size (extent).</StepCont>
+<CodeSample>
+<A ID="pgfId-1041433"></A>
+| bldr win |
+bldr := Editor2Example new allButOpenInterface: #windowSpec.
+win := bldr window.
+win <CodeEmp>
+openWithExtent:</CodeEmp>
+ 500@220.</CodeSample>
+<Body1>
+<A ID="pgfId-1041753"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Editor2.pcl" show="embed" actuate="auto">
+Editor2Example</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1041437"></A>
+Constrain window size</Heading3>
+<StepStart>
+<A ID="pgfId-1041438"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1041439"></A>
+To set the minimum size, send a <Code>
+minimumSize:</Code>
+ message with an extent to the window.</StepCont>
+<StepCont>
+<A ID="pgfId-1041440"></A>
+To set the minimum size, send a <Code>
+minimumSize:</Code>
+ message with an extent to the window.</StepCont>
+<CodeSample>
+<A ID="pgfId-1041441"></A>
+| bldr win |
+bldr := Editor2Example new allButOpenInterface: #windowSpec.
+win := bldr window.
+win minimumSize: 100@100;
+		maximumSize: 500@300;
+		open.</CodeSample>
+<Heading3>
+<A ID="pgfId-1041447"></A>
+Change window size</Heading3>
+<StepStart>
+<A ID="pgfId-1041448"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1041449"></A>
+Send a <Code>
+displayBox:</Code>
+ message to the window with a rectangle specifying its size and location.</StepCont>
+<CodeSample>
+<A ID="pgfId-1041450"></A>
+| bldr win |
+bldr := Editor2Example open.
+win := bldr window.
+win displayBox: (100@100 extent: 400@220).</CodeSample>
+<Heading3>
+<A ID="pgfId-1040979"></A>
+Move an open window</Heading3>
+<StepStart>
+<A ID="pgfId-1040462"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1040463"></A>
+Send a <Code>
+moveTo:</Code>
+ message to the window to reset its origin to a specified point, using screen coordinates.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040464"></A>
+| win |
+win := (Editor2Example open) window.
+(Delay forSeconds: 1) wait.
+win <CodeEmp>
+moveTo:</CodeEmp>
+ 300@50.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040473"></A>
+Set a window&#39;s label programmatically</Heading3>
+<StepStart>
+<A ID="pgfId-1040474"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1040475"></A>
+Send a <Code>
+label:</Code>
+ message to the window, with the new label as argument.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040476"></A>
+| win |
+win := (Editor2Example open) window.
+win <CodeEmp>
+label:</CodeEmp>
+ 'Editor'.</CodeSample>
+<Heading3>
+<A ID="pgfId-1041503"></A>
+Set a window&#39;s color</Heading3>
+<Body1>
+<A ID="pgfId-1041504"></A>
+You can change window background color programmatically for run-time control. Foreground and selected foreground and background colors are set by widgets.</Body1>
+<StepStart>
+<A ID="pgfId-1041506"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1041507"></A>
+Send a <Code>
+background:</Code>
+ message to the window, with the color as argument.</StepCont>
+<CodeSample>
+<A ID="pgfId-1041508"></A>
+| win color |
+win := (Editor2Example open) window.
+
+ColorValue constantNames do: [ :colorName |
+		(Delay forMilliseconds: 200) wait.
+		color := ColorValue perform: colorName.
+		win <CodeEmp>
+background:</CodeEmp>
+ color.
+		win display]</CodeSample>
+<Body1>
+<A ID="pgfId-1041792"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Editor2.pcl" show="embed" actuate="auto">
+Editor2Example</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040479"></A>
+Refresh a window&#39;s display</Heading3>
+<Body1>
+<A ID="pgfId-1040480"></A>
+Under normal conditions, a window redisplays its contents whenever those contents change or whenever an overlapping window is moved. Sometimes you need to redisplay a window programmatically, as when you want to display an intermediate state of the window before a drawing operation has been completed.</Body1>
+<StepStart>
+<A ID="pgfId-1040482"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1040483"></A>
+Send a <Code>
+display</Code>
+ message to the window.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040484"></A>
+| win |
+win := (Editor2Example open) window.
+5 timesRepeat: [
+		(Delay forMilliseconds: 400) wait.
+		win <CodeEmp>
+display</CodeEmp>
+].</CodeSample>
+<Body1>
+<A ID="pgfId-1042052"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Editor2.pcl" show="embed" actuate="auto">
+Editor2Example</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040544"></A>
+Get the active window</Heading3>
+<Body1>
+<A ID="pgfId-1040545"></A>
+The <Code>
+ScheduledControllers</Code>
+ object keeps track of all controllers, including the active controller. You can ask the active controller for its associated window. </Body1>
+<Body1>
+<A ID="pgfId-1040546"></A>
+The active window is the top component of the active controller&#39;s view.</Body1>
+<CodeSample>
+<A ID="pgfId-1040547"></A>
+| win |
+win := ScheduledControllers 
+		activeController view topComponent.
+win moveTo: 20@20.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040551"></A>
+Get the window at a location</Heading3>
+<Body1>
+<A ID="pgfId-1040552"></A>
+When your application performs an operation on a window that is pointed to by the user (using the mouse), you can access the window.</Body1>
+<Body1>
+<A ID="pgfId-1040553"></A>
+Get the window at a point by sending a <Code>
+windowAt:</Code>
+ message to the default <Code>
+Screen</Code>
+ with the point as argument.)</Body1>
+<CodeSample>
+<A ID="pgfId-1040554"></A>
+| sensor pt window |
+sensor := ScheduledControllers activeController sensor.
+Cursor bull showWhile: [sensor waitButton].
+pt := sensor globalCursorPoint.
+
+window := <CodeEmp>
+Screen default windowAt: pt</CodeEmp>
+.
+
+window component flash.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040562"></A>
+Close a window</Heading3>
+<Body1>
+<A ID="pgfId-1040563"></A>
+When an application model is running one or more windows, you can close it (or all of them at once, if there is more than one) by sending <Code>
+closeRequest</Code>
+ to the application. </Body1>
+<CodeSample>
+<A ID="pgfId-1040564"></A>
+| editor |
+editor := Editor2Example new.
+editor openInterface: #windowSpec.
+(Delay forSeconds: 1) wait.
+editor <CodeEmp>
+closeRequest</CodeEmp>
+.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040569"></A>
+Clean up before closing a window</Heading3>
+<Body1>
+<A ID="pgfId-1040570"></A>
+When an application window has been asked to close, it first sends a <Code>
+changeRequest</Code>
+ message to its application model. If the model answers <Code>
+false</Code>
+, the window won&#39;t close; if it answers <Code>
+true</Code>
+, the window proceeds to close itself. This gives the model a chance to take any cleanup actions before the window closes. </Body1>
+<Body1>
+<A ID="pgfId-1040571"></A>
+To specify cleanup actions, implement a <Code>
+changeRequest</Code>
+ method in your application model which answers <Code>
+true</Code>
+ when the window can close and <Code>
+false</Code>
+ otherwise.</Body1>
+<CodeSample>
+<A ID="pgfId-1040572"></A>
+changeRequest
+		^super changeRequest
+			ifFalse: [false]
+			ifTrue: [(self modified or: [self magnifiedBitView controller updateRequest not])
+				ifTrue:
+					[Dialog confirm: 'The image has been altered, but not installed.
+Do you wish to discard the changes?']
+				ifFalse: [true]]</CodeSample>
+<Heading3>
+<A ID="pgfId-1040580"></A>
+Expand/collapse a window</Heading3>
+<Body1>
+<A ID="pgfId-1040581"></A>
+Window managers typically provide a means of collapsing (iconifying) a window and expanding it back to its normal state. You can also control that behavior programmatically. </Body1>
+<StepStart>
+<A ID="pgfId-1040582"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1040583"></A>
+To minimize the window, send it a <Code>
+collapse</Code>
+ message .</StepCont>
+<StepCont>
+<A ID="pgfId-1040584"></A>
+To restore the window, send it an <Code>
+expand</Code>
+ message.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040585"></A>
+| win |
+		win := (Editor2Example open) window.
+		win display.
+		(Delay forSeconds: 1) wait.
+		win <CodeEmp>
+collapse</CodeEmp>
+.
+		(Delay forSeconds: 1) wait.
+		win <CodeEmp>
+expand</CodeEmp>
+.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040592"></A>
+Hide/show a window</Heading3>
+<Body1>
+<A ID="pgfId-1040593"></A>
+Because a window requires extensive resources, it can be slow to open. When your application needs to open and close a window repeatedly, it may be better to hide, or <Code>
+unmap</Code>
+ it, and then simply <Code>
+map</Code>
+ it again to redisplay it.</Body1>
+<StepStart>
+<A ID="pgfId-1040594"></A>
+Get the window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1040595"></A>
+To hide the window, send it an <Code>
+unmap</Code>
+ message.</StepCont>
+<StepCont>
+<A ID="pgfId-1040596"></A>
+To show the window again, send it a <Code>
+map</Code>
+ message.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040597"></A>
+| win |
+win := (Editor2Example open) window.
+win display.
+(Delay forSeconds: 1) wait.
+win <CodeEmp>
+unmap</CodeEmp>
+.
+(Delay forSeconds: 1) wait.
+win <CodeEmp>
+map</CodeEmp>
+.</CodeSample>
+<Heading2>
+<A ID="pgfId-1040604"></A>
+Set Relations between Windows</Heading2>
+<Heading3>
+<A ID="pgfId-1041085"></A>
+Make a window a slave</Heading3>
+<Body1>
+<A ID="pgfId-1040605"></A>
+In a multiwindow application, it is often useful to close all secondary windows when the main window closes. In this situation, the main window is called the <Glossary>
+master window</Glossary>
+ and the secondary windows are called <Glossary>
+slave windows</Glossary>
+.</Body1>
+<StepStart>
+<A ID="pgfId-1040606"></A>
+Get the master window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1040607"></A>
+Send the master window an <Code>
+application:</Code>
+ message with an application as argument (usually itself), to tell the window which application model to inform of its events.</StepCont>
+<StepCont>
+<A ID="pgfId-1040608"></A>
+Send the master window a <Code>
+beMaster</Code>
+ to make it master.</StepCont>
+<StepCont>
+<A ID="pgfId-1040609"></A>
+Get each slave window from its builder.</StepCont>
+<StepCont>
+<A ID="pgfId-1040610"></A>
+Send each slave window an <Code>
+application:</Code>
+ message with an application as argument, to tell the window which application model will relay events from the master window.</StepCont>
+<StepCont>
+<A ID="pgfId-1040611"></A>
+Send each slave window a <Code>
+beSlave</Code>
+ message to make it a slave.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040612"></A>
+| app masterWin slaveWin |
+app := Editor1Example new.
+masterWin := (app openInterface) window.
+masterWin 
+		label: 'Master';
+		application: app;
+		<CodeEmp>
+beMaster</CodeEmp>
+.
+
+slaveWin := (Editor2Example open) window.
+slaveWin 
+		label: 'Slave';
+		application: app;
+		<CodeEmp>
+beSlave</CodeEmp>
+.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040625"></A>
+Make windows equal partners</Heading3>
+<Body1>
+<A ID="pgfId-1040626"></A>
+Equal partner windows all close when any one of them closes.</Body1>
+<StepStart>
+<A ID="pgfId-1040627"></A>
+Get each window from its builder.</StepStart>
+<StepCont>
+<A ID="pgfId-1040628"></A>
+Send an <Code>
+application:</Code>
+ message, with an application as argument, to each window telling it which application will relay messages.</StepCont>
+<StepCont>
+<A ID="pgfId-1040629"></A>
+Send a <Code>
+bePartner</Code>
+ message to each window.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040630"></A>
+| app win1 win2|
+app:= Editor1Example new.
+
+win1 := (app openInterface) window.
+win1 
+		label: 'Partner 1';
+		application: app;
+		<CodeEmp>
+bePartner</CodeEmp>
+.
+
+win2 := (Editor2Example open) window.
+win2 
+		label: 'Partner 2';
+		application: app;
+		<CodeEmp>
+bePartner</CodeEmp>
+.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040644"></A>
+Specify events to sent by windows</Heading3>
+<Body1>
+<A ID="pgfId-1040645"></A>
+By default, master and partner windows broadcast <Code>
+#close</Code>
+, <Code>
+#collapse</Code>
+, and <Code>
+#expand</Code>
+ events. You can remove any of those events and/or add <Code>
+#bounds</Code>
+, <Code>
+#enter</Code>
+, <Code>
+#exit</Code>
+, <Code>
+#hibernate</Code>
+, <Code>
+#reopen</Code>
+, and <Code>
+#release</Code>
+ events.</Body1>
+<Body1>
+<A ID="pgfId-1040646"></A>
+Send a <Code>
+sendWindowEvents:</Code>
+ message to a master or partner window, with an array of event symbols to send.</Body1>
+<CodeSample>
+<A ID="pgfId-1040647"></A>
+| app masterWin slaveWin |
+app := Editor1Example new.
+
+masterWin := (app openInterface) window.
+masterWin 
+		label: 'Master';
+		application: app;
+		beMaster;
+		<CodeEmp>
+sendWindowEvents:</CodeEmp>
+ #( #close #collapse 
+			#expand #hibernate #reopen).
+
+slaveWin := (Editor2Example open) window.
+slaveWin 
+		label: 'Slave';
+		application: app;
+		beSlave.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040663"></A>
+Specify events to be received by windows</Heading3>
+<Body1>
+<A ID="pgfId-1040664"></A>
+By default, slave and partner windows respond to <Code>
+#close</Code>
+, <Code>
+#collapse</Code>
+, and <Code>
+#expand</Code>
+ events. You can remove any of those events and/or add <Code>
+#bounds</Code>
+, <Code>
+#enter</Code>
+, <Code>
+#exit</Code>
+, <Code>
+#hibernate</Code>
+, <Code>
+#reopen</Code>
+, and <Code>
+#release</Code>
+ events.</Body1>
+<Body1>
+<A ID="pgfId-1040665"></A>
+Send a <Code>
+receiveWindowEvents:</Code>
+ message to a slave or partner window, with an array of event symbols to receive.</Body1>
+<CodeSample>
+<A ID="pgfId-1040666"></A>
+| app masterWin slaveWin |
+app := Editor1Example new.
+
+masterWin := (app openInterface) window.
+masterWin 
+		label: 'Master';
+		application: app;
+		beMaster.
+
+slaveWin := (Editor2Example open) window.
+slaveWin 
+		label: 'Slave';
+		application: app;
+		beSlave;
+		<CodeEmp>
+receiveWindowEvents:</CodeEmp>
+ #( #close).</CodeSample>
+<Body1>
+<A ID="pgfId-1040057"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1040894"></A>
+Create Custom View Classes</Heading2>
+<Heading3>
+<A ID="pgfId-1040896"></A>
+Create a view class</Heading3>
+<Body1>
+<A ID="pgfId-1040897"></A>
+A view displays text or graphics representing all or part of a data model. Each of the existing widgets uses a view to display a data model. When an existing widget does not serve your purpose, you can create a custom view. </Body1>
+<StepStart>
+<A ID="pgfId-1040899"></A>
+In a System Browser, display the class-definition template by selecting a class category and making sure no class is selected.</StepStart>
+<StepCont>
+<A ID="pgfId-1040900"></A>
+In the template, specify the name of the view&#39;s superclass (in the example, <Code>
+UI.View</Code>
+).</StepCont>
+<StepCont>
+<A ID="pgfId-1040901"></A>
+Replace <Code>
+&#34;NameOfClass&#34;</Code>
+ with the new class&#39;s name (<Code>
+SketchView</Code>
+).</StepCont>
+<StepCont>
+<A ID="pgfId-1040902"></A>
+Supply variable names, if any, and then <UI-Entry>
+accept</UI-Entry>
+ the definition.</StepCont>
+<CodeSample>
+<A ID="pgfId-1041219"></A>
+Smalltalk.UI defineClass: #SketchView
+ superclass: #{UI.View}
+ indexedType: #none
+ private: false
+ instanceVariableNames: ''
+ classInstanceVariableNames: ''
+ imports: ''
+ category: 'Examples-Help'</CodeSample>
+<Body1>
+<A ID="pgfId-1041103"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+SketchView</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040908"></A>
+Connect a view to a domain model</Heading3>
+<Body1>
+<A ID="pgfId-1040909"></A>
+As a subclass of <Code>
+DependentPart</Code>
+, every view inherits an instance variable for storing its model. Sending a <Code>
+model:</Code>
+ message to the view, typically when the view is created, stores the model in this instance variable, where it can be accessed easily.</Body1>
+<Body1>
+<A ID="pgfId-1040910"></A>
+A side effect of the <Code>
+model:</Code>
+ message is that the view is registered as a dependent of the model. This link sets the stage for the view to update its display when the model changes.</Body1>
+<StepStart>
+<A ID="pgfId-1040913"></A>
+Tell the view which object to use as its domain model. This is done in an initialization method or, as in the example, the application model (<Code>
+CustomViewExample</Code>
+) can notify the view whenever the domain model changes.</StepStart>
+<CodeSample>
+<A ID="pgfId-1040914"></A>
+changedSketch
+		self sketchView model: self sketches selection.</CodeSample>
+<StepCont>
+<A ID="pgfId-1040917"></A>
+If the view needs to take action when its model is changed, such as redisplaying itself, override the inherited model: method (as in <Code>
+SketchView</Code>
+).</StepCont>
+<CodeSample>
+<A ID="pgfId-1040918"></A>
+model: aModel
+		super model: aModel.
+		self invalidate.
+
+		&quot;Tell the controller where to send menu messages.&quot;
+		self controller performer: aModel.</CodeSample>
+<Body1>
+<A ID="pgfId-1041118"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+CustomViewExample</CodeExample>
+, <CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+SketchView</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040924"></A>
+Define a view&#39;s contents</Heading3>
+<Body1>
+<A ID="pgfId-1040925"></A>
+A view&#39;s purpose is to display text or graphics. It does so in a method named <Code>
+displayOn:</Code>
+, which is sent to the view whenever circumstances require that it update its display.</Body1>
+<Body1>
+<A ID="pgfId-1040926"></A>
+It displays the text and/or graphics on a <Code>
+GraphicsContext</Code>
+, which is an object that windows and other display surfaces use for rendering objects.</Body1>
+<StepStart>
+<A ID="pgfId-1041070"></A>
+In a displaying protocol, add a <Code>
+displayOn:</Code>
+ method to the view. The argument is a <Code>
+GraphicsContext</Code>
+.</StepStart>
+<StepCont>
+<A ID="pgfId-1041072"></A>
+In the <Code>
+displayOn:</Code>
+ method, get the required data from the model (in the example, a set of line segments, each represented as a collection of points).</StepCont>
+<StepCont>
+<A ID="pgfId-1040933"></A>
+In the <Code>
+displayOn:</Code>
+ method, display the appropriate text or graphics, based on the data from step 2 (in the example, each collection of points is displayed as a <Code>
+Polyline</Code>
+).</StepCont>
+<CodeSample>
+<A ID="pgfId-1040934"></A>
+displayOn: aGraphicsContext
+		self model isNil ifTrue: [^self].
+
+		self model strokes do: [ :stroke |
+			aGraphicsContext displayPolyline: stroke].</CodeSample>
+<Body1>
+<A ID="pgfId-1041135"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+SketchView</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040939"></A>
+Update a view when its model changes</Heading3>
+<Body1>
+<A ID="pgfId-1040940"></A>
+When the domain model changes its state, it is responsible for notifying all of its dependents. It does so by sending a variant of the <Code>
+changed:with:</Code>
+ message to itself. The first argument is a <Code>
+Symbol</Code>
+ indicating what was changed, and the second argument is the new value.</Body1>
+<Body1>
+<A ID="pgfId-1040941"></A>
+The <Code>
+changed:with:</Code>
+ message is inherited, and it sends an <Code>
+update:with:</Code>
+ message to each dependent, passing along the same two arguments.</Body1>
+<StepStart>
+<A ID="pgfId-1040944"></A>
+In any method in the domain model that changes the model in a way that affects the view, send a variant of the <Code>
+changed:with:</Code>
+ message to the model. (In the example, <Code>
+Sketch</Code>
+ sends three such messages, one when it adds a point and the others when it erases some or all of its contents.)</StepStart>
+<CodeSample>
+<A ID="pgfId-1040945"></A>
+add: aPoint
+		&quot;Add aPoint to the current stroke.&quot;
+
+		self strokes last add: aPoint.
+		self changed: #stroke with: self currentLineSegment.
+
+eraseLine
+		&quot;Erase the last stroke that was drawn.&quot;
+
+		self strokes isEmpty 
+			ifFalse: [
+				self strokes removeLast.
+				self changed: #erase with: nil].
+
+eraseAll
+		&quot;Erase my contents.&quot;
+
+		self strokes removeAll: self strokes copy.
+		self changed: #erase with: nil.</CodeSample>
+<StepCont>
+<A ID="pgfId-1040965"></A>
+In the view, implement a variant of the <Code>
+update:with:</Code>
+ method to take the appropriate action in response to a change in the model. (In the example, the same <Code>
+update:with:</Code>
+ method responds to either of the <Code>
+changed:with:</Code>
+ messages sent by the model.)</StepCont>
+<CodeSample>
+<A ID="pgfId-1040966"></A>
+update: anAspect with: anObject
+		&quot;When a point is added to the model...&quot;
+		anAspect == #stroke
+			ifTrue: [anObject asStroker displayOn: self graphicsContext].
+
+		&quot;When the model erases its contents...&quot;
+		anAspect == #erase
+			ifTrue: [self invalidate].</CodeSample>
+<Body1>
+<A ID="pgfId-1041146"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+Sketch</CodeExample>
+, <CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+SketchView</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040974"></A>
+Connect a view to a controller</Heading3>
+<Body1>
+<A ID="pgfId-1040975"></A>
+An active view, one that responds to mouse or keyboard input, uses a controller to process mouse and keyboard input. A view is closely allied with its controller, so an inherited mechanism installs the desired controller when the view is created. You can control which type of controller is installed.</Body1>
+<Body1>
+<A ID="pgfId-1040977"></A>
+Create a <Code>
+defaultControllerClass</Code>
+ method for the view. This method returns the name of the desired controller class.</Body1>
+<CodeSample>
+<A ID="pgfId-1040978"></A>
+defaultControllerClass
+		^SketchController</CodeSample>
+<Body1>
+<A ID="pgfId-1041179"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+SketchView</CodeExample>
+, <CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+SketchController</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040980"></A>
+Make a view passive</Heading3>
+<Body1>
+<A ID="pgfId-1040981"></A>
+Return <Code>
+NoController</Code>
+ from the <Code>
+defaultControllerClass</Code>
+ method:</Body1>
+<CodeSample>
+<A ID="pgfId-1040982"></A>
+defaultControllerClass
+		^NoController</CodeSample>
+<Heading3>
+<A ID="pgfId-1040984"></A>
+Redisplay an entire view</Heading3>
+<Body1>
+<A ID="pgfId-1040985"></A>
+Send <Code>
+invalidate</Code>
+ to a view to cause the entire view to be treated as a damage rectangle, and so be repainted.</Body1>
+<Body1>
+<A ID="pgfId-1040987"></A>
+Send <Code>
+invalidate</Code>
+ to the view. This is typically done in a view method that changes the model (as in the example).</Body1>
+<CodeSample>
+<A ID="pgfId-1040988"></A>
+model: aModel
+		super model: aModel.
+		self invalidate.
+
+		&quot;Tell the controller where to send menu messages.&quot;
+		self controller performer: aModel.</CodeSample>
+<Body1>
+<A ID="pgfId-1041189"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+SketchView</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040994"></A>
+Redisplay part of a view</Heading3>
+<Body1>
+<A ID="pgfId-1040995"></A>
+Send <Code>
+invalidateRectangle:</Code>
+ to the view. The argument is a rectangle that represents all or part of the view&#39;s bounding box. The bounding box can be accessed by sending <Code>
+bounds</Code>
+ to the view.</Body1>
+<Heading3>
+<A ID="pgfId-1040996"></A>
+Redisplay a view immediately</Heading3>
+<Body1>
+<A ID="pgfId-1040997"></A>
+Send <Code>
+invalidateRectangle:repairNow:</Code>
+ to the view. The first argument is a rectangle that represents all or part of a view&#39;s bounding box. The second argument is <Code>
+true</Code>
+ when immediate redisplay is desired, and <Code>
+false</Code>
+ for the default behavior.</Body1>
+<Heading3>
+<A ID="pgfId-1040998"></A>
+Add a view to an interface</Heading3>
+<Body1>
+<A ID="pgfId-1040999"></A>
+A view-holder widget is provided on the Palette for integrating a custom view into a canvas. This view holder enables you to treat your custom view like a standard widget in that you can paint its layout and apply borders and scroll bars. However, your application is responsible for connecting the view to a domain model.</Body1>
+<StepStart>
+<A ID="pgfId-1041001"></A>
+Use a Palette to place a view-holder widget on the canvas.</StepStart>
+<StepCont>
+<A ID="pgfId-1041003"></A>
+In the view holder&#39;s <Code>
+View</Code>
+ property, enter the name of the application-model method that supplies an instance of the desired view (<Code>
+sketchView</Code>
+).</StepCont>
+<StepCont>
+<A ID="pgfId-1041005"></A>
+If the application model will need to access the custom view while the application is running, use a System Browser to create an instance variable (<Code>
+sketchView</Code>
+) in which to store the custom view.</StepCont>
+<StepCont>
+<A ID="pgfId-1041007"></A>
+Create the application-model method that you named in step 2 (<Code>
+sketchView</Code>
+). This method typically answers the contents of the instance variable that you created in step 3.</StepCont>
+<CodeSample>
+<A ID="pgfId-1041008"></A>
+<Code>
+sketchView
+		^sketchView</Code>
+</CodeSample>
+<StepCont>
+<A ID="pgfId-1041011"></A>
+In an <Code>
+initialize</Code>
+ method in the application model, create an instance of the custom view. If appropriate, connect the custom view to a data model. (In the example, there is no model to be connected until the user adds the first <Code>
+Sketch</Code>
+ object.)</StepCont>
+<CodeSample>
+<A ID="pgfId-1041012"></A>
+initialize
+		sketches := SelectionInList with: OrderedCollection new.
+		sketches selectionIndexHolder onChangeSend: #changedSketch to: self.
+
+		sketchView := SketchView new.</CodeSample>
+<Body1>
+<A ID="pgfId-1041201"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+CustomViewExample</CodeExample>
+, <CodeExample xml:link="simple" href="CustomView.pcl" show="embed" actuate="auto">
+SketchView</CodeExample>
+</Body1>
+<Body1>
+<A ID="pgfId-1029452"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1033774"></A>
+<A ID="Menus"></A>
+Menus</Heading2>
+<Heading3>
+<A ID="pgfId-1033775"></A>
+Open a menu resource</Heading3>
+<Body1>
+<A ID="pgfId-1033776"></A>
+To edit menu resource methods in the <A href="03-tools.xml#id(Menu Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Menu Editor</A>, use the <UI-Label>
+Menu-&gt;Load...</UI-Label>
+ command.</Body1>
+<StepStart>
+<A ID="pgfId-1033800"></A>
+In the <UI-Label>
+LOAD from Class</UI-Label>
+ dialog, specify the name of an application model.</StepStart>
+<StepCont>
+<A ID="pgfId-1033804"></A>
+Either click <UI-Label>
+OK</UI-Label>
+ or use the &lt;Select&gt; button to click in the <UI-Label>
+Selector:</UI-Label>
+ view. A list of selectors will appear that you can choose from.</StepCont>
+<StepCont>
+<A ID="pgfId-1033805"></A>
+Choose a particular menu and click <UI-Label>
+OK</UI-Label>
+. The menu will be loaded into the Menu Editor.</StepCont>
+<Body1>
+<A ID="pgfId-1033806"></A>
+To edit menu resource methods starting in the <A href="03-tools.xml#id(Resource Finder)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Resource Finder</A>, browse to a specific method and use the <UI-Label>
+Edit</UI-Label>
+ command.</Body1>
+<Heading3>
+<A ID="pgfId-1033914"></A>
+<A ID="Open a menu widget"></A>
+Open a menu widget</Heading3>
+<Body1>
+<A ID="pgfId-1033915"></A>
+To edit a menu that has been applied to a widget, use the <UI-Label>
+Menu-&gt;Read</UI-Label>
+ command.</Body1>
+<Heading3>
+<A ID="pgfId-1033907"></A>
+Create a new menu</Heading3>
+<Body1>
+<A ID="pgfId-1033912"></A>
+To clear the current menu and create a new one, use the <UI-Label>
+Menu-&gt;New</UI-Label>
+ command.</Body1>
+<Body1>
+<A ID="pgfId-1036270"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1036274"></A>
+<A href="07-frameworks.xml#id(Create a new menu item)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a new menu item</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1033969"></A>
+Install a menu</Heading3>
+<Body1>
+<A ID="pgfId-1033970"></A>
+Use the <UI-Label>
+Menu-&gt;Install...</UI-Label>
+ command to create a specification for the menu.</Body1>
+<StepStart>
+<A ID="pgfId-1033971"></A>
+Specify the name of the application model class in the <UI-Label>
+INSTALL on Class</UI-Label>
+ dialog; you may specify either a new or existing class for the application model. </StepStart>
+<StepCont>
+<A ID="pgfId-1033972"></A>
+Specify the selector to contain the interface specification for the menu; you may specify either a new or existing selector.</StepCont>
+<StepCont>
+<A ID="pgfId-1033973"></A>
+Select <UI-Label>
+OK</UI-Label>
+ to build and install the menu specification. If you enter a new class name, you will be prompted for the name of the superclass in a subsequent dialog (<Code>
+ApplicationModel</Code>
+ and <Code>
+SimpleDialog</Code>
+ are provided as defaults).</StepCont>
+<Heading3>
+<A ID="pgfId-1033967"></A>
+Apply a menu to a widget</Heading3>
+<Body1>
+<A ID="pgfId-1034002"></A>
+Use <UI-Label>
+Menu-&gt;Apply...</UI-Label>
+ to install the menu directly into the (single) selection on the currently active canvas. The selected widget must have a menu property. If there is no current selection in the active canvas, the menu bar for the canvas is treated as being selected.</Body1>
+<Body1>
+<A ID="pgfId-1036291"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1036295"></A>
+<A href="07-frameworks.xml#id(Open a menu widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Open a menu widget</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1034034"></A>
+Install a menu bar on a canvas</Heading3>
+<Body1>
+<A ID="pgfId-1034045"></A>
+Use <UI-Label>
+Menu-&gt;Apply...</UI-Label>
+ to install the menu as a menu bar on the currently active canvas. To enable the <UI-Label>
+Menu-&gt;Apply...</UI-Label>
+ command:</Body1>
+<StepStart>
+<A ID="pgfId-1034058"></A>
+The menu being applied must be fully hierarchical. Use <UI-Label>
+Edit-&gt;New Item</UI-Label>
+ and <UI-Label>
+Edit-&gt;New Submenu Item</UI-Label>
+ to build the menu hierarchy.</StepStart>
+<StepCont>
+<A ID="pgfId-1034070"></A>
+Set the <UI-Label>
+Menu Bar</UI-Label>
+ property for the canvas (click on the <UI-Label>
+Properties</UI-Label>
+ button in the Canvas Tool, enable <UI-Entry>
+Menu Bar</UI-Entry>
+ on the <UI-Label>
+Basics</UI-Label>
+ page, and then select <UI-Label>
+Apply &amp; Close</UI-Label>
+.)</StepCont>
+<StepCont>
+<A ID="pgfId-1034074"></A>
+Select <UI-Label>
+Menu-&gt;Apply...</UI-Label>
+ in the Menu Editor. A dialog will prompt to confirm and/or supply the class and selector for the menu bar resource method.</StepCont>
+<Heading3>
+<A ID="pgfId-1030776"></A>
+<A ID="Create a new menu item"></A>
+Create a new menu item</Heading3>
+<Body1>
+<A ID="pgfId-1034495"></A>
+Use <UI-Label>
+Edit-&gt;New Item</UI-Label>
+ to create a new item at the top level of the menu. To create a new item at a sub-level, select the desired level before clicking <UI-Label>
+Edit-&gt;New Item</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1034521"></A>
+In the right-hand view of the Menu Editor, select the <UI-Label>
+Basic</UI-Label>
+ properties page. Use the <UI-Label>
+Label</UI-Label>
+ property to specify the text of the menu item, and the <UI-Label>
+Value</UI-Label>
+ property to specify the method that performs the menu item&#39;s action.</Body1>
+<Body1>
+<A ID="pgfId-1036308"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1036312"></A>
+<A href="07-frameworks.xml#id(Set a menu action)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set a menu action</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1034195"></A>
+Create a hierarchical menu item</Heading3>
+<Body1>
+<A ID="pgfId-1034207"></A>
+Use <UI-Label>
+Edit-&gt;New Submenu Item</UI-Label>
+ to create a new sub-menu item. The new item will be created in a level below the currently selected element (if any).</Body1>
+<Body1>
+<A ID="pgfId-1036325"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1036329"></A>
+<A href="07-frameworks.xml#id(Set a menu action)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set a menu action</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1034196"></A>
+Remove a menu item</Heading3>
+<Body1>
+<A ID="pgfId-1034206"></A>
+Use <UI-Label>
+Edit-&gt;Delete</UI-Label>
+ to remove the currently selected menu item.</Body1>
+<Heading3>
+<A ID="pgfId-1034485"></A>
+<A ID="Set a menu action"></A>
+Set a menu action</Heading3>
+<Body1>
+<A ID="pgfId-1034519"></A>
+In the right-hand view of the Menu Editor, select the <UI-Label>
+Basic</UI-Label>
+ properties page. Use the <UI-Label>
+Value</UI-Label>
+ property to specify the name of the method in the application model that performs the menu item&#39;s action.</Body1>
+<Body1>
+<A ID="pgfId-1034526"></A>
+<B>
+NOTE:</B>
+ The Menu Editor does not support the use of BlockClosures as menu actions; to use these, you must modify the action methods manually.</Body1>
+<Heading3>
+<A ID="pgfId-1034197"></A>
+Change the hierarchy of a menu</Heading3>
+<Body1>
+<A ID="pgfId-1034205"></A>
+To move the currently selected item (and all of its submenus) in the menu hierarchy, use <UI-Entry>
+Move</UI-Entry>
+<UI-Label>
+-&gt;</UI-Label>
+<UI-Entry>
+Up</UI-Entry>
+ to shift it one level up and <UI-Label>
+Move-&gt;Down</UI-Label>
+ to shift it one level down.</Body1>
+<Body1>
+<A ID="pgfId-1034304"></A>
+To make the currently selected menu item a submenu of the item above it, use <UI-Label>
+Move-&gt;Right</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1034305"></A>
+To move the selected menu item one level out in the menu hierarchy, use <UI-Label>
+Move-&gt;Left</UI-Label>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1034201"></A>
+Create a keyboard shortcut</Heading3>
+<Body1>
+<A ID="pgfId-1034204"></A>
+Edit the menu properties to add a keyboard shortcut:</Body1>
+<StepStart>
+<A ID="pgfId-1034326"></A>
+Select the menu item in the left-hand view. In the right-hand view, click on <UI-Label>
+Details</UI-Label>
+ with the &lt;Select&gt; button.</StepStart>
+<StepCont>
+<A ID="pgfId-1034332"></A>
+Specify the <UI-Label>
+Shortcut character</UI-Label>
+ on the <UI-Label>
+Details</UI-Label>
+ page.</StepCont>
+<Body1>
+<A ID="pgfId-1034337"></A>
+To invoke the keyboard shortcut, press and hold the &lt;Alt&gt; key while pressing the shortcut character.</Body1>
+<Body1>
+<A ID="pgfId-1034431"></A>
+Alternately, use the &#34;<UI-Label>
+&amp;</UI-Label>
+&#34; character in the <UI-Label>
+Label</UI-Label>
+ field on the <UI-Label>
+Basic</UI-Label>
+ properties page. The character in the menu label that is preceded by an &#34;<UI-Label>
+&amp;</UI-Label>
+&#34; character will function as a mnemonic key; e.g., entering <UI-Entry>
+&amp;cut</UI-Entry>
+ in the label field will set &#34;<UI-Label>
+c</UI-Label>
+&#34; as the shortcut key for that item.</Body1>
+<Heading3>
+<A ID="pgfId-1034202"></A>
+Create a graphical menu item</Heading3>
+<Body1>
+<A ID="pgfId-1034353"></A>
+To add a graphical image to a menu item, edit the menu properties:</Body1>
+<StepStart>
+<A ID="pgfId-1034354"></A>
+Select the menu item in the left-hand view. In the right-hand view, click on <UI-Label>
+Details</UI-Label>
+ with the &lt;Select&gt; button.</StepStart>
+<StepCont>
+<A ID="pgfId-1034355"></A>
+Specify the name of the class and resource method in the <UI-Label>
+Label image</UI-Label>
+ files on the <UI-Label>
+Details</UI-Label>
+ page. The label image resource may be created and installed using the Image Editor.</StepCont>
+<Heading3>
+<A ID="pgfId-1034209"></A>
+Set a toggle switch for a menu item</Heading3>
+<Body1>
+<A ID="pgfId-1034373"></A>
+Edit the properties for a menu item to enable and disable it programmatically:</Body1>
+<StepStart>
+<A ID="pgfId-1034374"></A>
+Select the menu item in the left-hand view. In the right-hand view, click on <UI-Label>
+Defaults</UI-Label>
+ with the &lt;Select&gt; button.</StepStart>
+<StepCont>
+<A ID="pgfId-1034375"></A>
+Set the <UI-Label>
+On/Off indicator</UI-Label>
+ property to control whether a check box appears next to the name of the menu item. Set the <UI-Label>
+Initially enabled</UI-Label>
+ property to control the initial state of the menu item. Use <UI-Label>
+Initially hidden</UI-Label>
+ to visually remove the menu item.</StepCont>
+<Heading3>
+<A ID="pgfId-1034211"></A>
+Set a menu item to be accessible to code</Heading3>
+<Body1>
+<A ID="pgfId-1034453"></A>
+Edit the properties for a menu item to make it programmatically accessible:</Body1>
+<StepStart>
+<A ID="pgfId-1034454"></A>
+Select the menu item in the left-hand view. In the right-hand view, click on <UI-Label>
+Basic</UI-Label>
+ with the &lt;Select&gt; button.</StepStart>
+<StepCont>
+<A ID="pgfId-1034212"></A>
+Specify a Smalltalk symbol in the <UI-Label>
+ID</UI-Label>
+ property. Use this symbol to refer to the menu item.</StepCont>
+<Heading3>
+<A ID="pgfId-1034558"></A>
+Check the appearance of the menu</Heading3>
+<Body1>
+<A ID="pgfId-1034591"></A>
+Use the <UI-Label>
+View</UI-Label>
+ and <UI-Label>
+Test</UI-Label>
+ commands to preview the menu.</Body1>
+<Body1>
+<A ID="pgfId-1034607"></A>
+Use <UI-Label>
+View-&gt;Sample Menu Bar</UI-Label>
+ to check the appearance of a menu bar.</Body1>
+<Body1>
+<A ID="pgfId-1034618"></A>
+Use <UI-Label>
+Test</UI-Label>
+ to check the appearance of a pull-down or pop-up menu.</Body1>
+<Body1>
+<A ID="pgfId-1036199"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1036554"></A>
+Toolbars</Heading2>
+<Heading3>
+<A ID="pgfId-1036562"></A>
+Add a tool bar</Heading3>
+<Body1>
+<A ID="pgfId-1036566"></A>
+To use a tool bar, add the following parts to your <Glossary>
+<A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A></Glossary>
+:</Body1>
+<StepStart>
+<A ID="pgfId-1036568"></A>
+Create <Glossary>
+<A href="10-glossary.xml#id(resource method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">resource method</A></Glossary>
+s containing the button images (See: <A href="07-frameworks.xml#id(Create a tool bar button graphic)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a tool bar button graphic</A>).</StepStart>
+<StepCont>
+<A ID="pgfId-1036570"></A>
+Create a tool bar menu that identifies the button images with specific actions (See: <A href="07-frameworks.xml#id(Create a tool bar menu)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a tool bar menu</A>).</StepCont>
+<StepCont>
+<A ID="pgfId-1036572"></A>
+Create an <Glossary>
+<A href="10-glossary.xml#id(application class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application class</A></Glossary>
+ method that reimplements <Code>
+interfaceSpecFor:</Code>
+ (See: <A href="07-frameworks.xml#id(Install the tool bar specification)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Install the tool bar specification</A>).</StepCont>
+<StepCont>
+<A ID="pgfId-1036574"></A>
+Enable the tool bar to be shown in the window from the canvas Property Tool (See: <A href="07-frameworks.xml#id(Show the tool bar in a window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Show the tool bar in a window</A>).</StepCont>
+<Heading3>
+<A ID="pgfId-1036581"></A>
+<A ID="Create a tool bar button graphic"></A>
+Create a tool bar button graphic</Heading3>
+<Body1>
+<A ID="pgfId-1036583"></A>
+Use the <A href="03-tools.xml#id(Image Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Image Editor</A> to create tool bar button graphics and save them as resource methods.</Body1>
+<Body1>
+<A ID="pgfId-1036585"></A>
+NOTE: the tool bar height will be the height of the largest image for any of the tool bar buttons. It is not necessary to add a decorative border to the image since the tool bar button object will provide its own.</Body1>
+<Body1>
+<A ID="pgfId-1036926"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1036927"></A>
+<A href="07-frameworks.xml#id(Menus)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Menus</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1037334"></A>
+<A href="07-frameworks.xml#id(Create a bitmap image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a bitmap image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1037259"></A>
+<A href="07-frameworks.xml#id(Create a tool bar image without a background)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a tool bar image without a background</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1037264"></A>
+<A href="07-frameworks.xml#id(Create a tool bar image to show enablement)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a tool bar image to show enablement</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1036928"></A>
+<A ID="Create a tool bar image without a background"></A>
+Create a tool bar image without a background</Heading3>
+<Body1>
+<A ID="pgfId-1036590"></A>
+To make the background of the button image invisible, either choose the image background to be the same color as the button or create an <Code>
+OpaqueImage</Code>
+ that masks the background from the image. An <Code>
+OpaqueImage</Code>
+ contains the image and a mask that uses two colors, black and white, to indicate opaque and transparent regions respectfully. Use the <A href="03-tools.xml#id(Image Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Image Editor</A> to create a mask for your button image.</Body1>
+<Body1>
+<A ID="pgfId-1036957"></A>
+Create new <Glossary>
+<A href="10-glossary.xml#id(resource method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">resource method</A></Glossary>
+s for the button image, the mask, and the composite <Code>
+OpaqueImage</Code>
+.</Body1>
+<StepStart>
+<A ID="pgfId-1036594"></A>
+Open an Image Editor by selecting <UI-Label>
+Tools-&gt;Image Editor</UI-Label>
+ from the Launcher.</StepStart>
+<StepCont>
+<A ID="pgfId-1036596"></A>
+From the Image Editor select <UI-Label>
+Image-&gt;Load</UI-Label>
+. Enter <Code>
+ToolCommandExample</Code>
+ and select <Code>
+openIconImage</Code>
+ from the selector list.</StepCont>
+<StepCont>
+<A ID="pgfId-1036598"></A>
+Select the color <UI-Label>
+white</UI-Label>
+ from the Image Editor palette.</StepCont>
+<StepCont>
+<A ID="pgfId-1036600"></A>
+Select <UI-Label>
+Draw-&gt;Replace Color</UI-Label>
+ from the Image Editor menu bar then click on the background of the image. This changes the image background to all white.</StepCont>
+<StepCont>
+<A ID="pgfId-1036602"></A>
+Select <UI-Label>
+Draw-&gt;Color to B&amp;W</UI-Label>
+. This changes all off white colors black. Touch up the image as necessary, changing white pixels on the interior of image if you want these areas to not appear transparent.</StepCont>
+<StepCont>
+<A ID="pgfId-1036604"></A>
+Select <UI-Label>
+Image-&gt;Store B&amp;W Mask</UI-Label>
+ from the menu bar.</StepCont>
+<StepCont>
+<A ID="pgfId-1036606"></A>
+Install the resulting mask to your application as a class resource method. Name it <Code>
+openIconMask</Code>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1036608"></A>
+Create a new application class method that answers an <Code>
+OpaqueImage</Code>
+ using the <Code>
+figure:shape:</Code>
+ message and provide as arguments the image and mask for the icon.</StepCont>
+<CodeSample>
+<A ID="pgfId-1036610"></A>
+openIcon
+	^OpaqueImage
+		figure: self openIconImage
+		shape: self openIconMask.</CodeSample>
+<Body1>
+<A ID="pgfId-1037379"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="ToolCommand.pcl" show="embed" actuate="auto">
+ToolCommandExample</CodeExample>
+</Body1>
+<Body1>
+<A ID="pgfId-1037270"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1037342"></A>
+<A href="07-frameworks.xml#id(Create a bitmap image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a bitmap image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1037275"></A>
+<A href="07-frameworks.xml#id(Create a tool bar button graphic)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a tool bar button graphic</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1036616"></A>
+<A ID="Create a tool bar image to show enablement"></A>
+Create a tool bar image to show enablement</Heading3>
+<Body1>
+<A ID="pgfId-1036618"></A>
+To create tool bar buttons which can be toggled between an enabled and disabled state, use instances of <Code>
+OpaqueImageWithEnablement</Code>
+ instead of the <Code>
+Image</Code>
+ or <Code>
+OpaqueImage</Code>
+. An <Code>
+OpaqueImageWithEnablement</Code>
+ includes a separate mask to show the disabled image. In most cases you should use the first mask for the second disablement mask. </Body1>
+<CodeSample>
+<A ID="pgfId-1036622"></A>
+ openIcon
+	^OpaqueImageWithEnablement
+		figure: self openIconImage
+		shape: self openIconMask.
+		inactiveMask: self openIconMask.</CodeSample>
+<Body1>
+<A ID="pgfId-1037375"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="ToolCommand.pcl" show="embed" actuate="auto">
+ToolCommandExample</CodeExample>
+</Body1>
+<Body1>
+<A ID="pgfId-1037281"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1037349"></A>
+<A href="07-frameworks.xml#id(Create a bitmap image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a bitmap image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1037286"></A>
+<A href="07-frameworks.xml#id(Create a tool bar button graphic)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a tool bar button graphic</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1037291"></A>
+<A href="07-frameworks.xml#id(Create a tool bar image without a background)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a tool bar image without a background</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1037412"></A>
+<A ID="Create a tool bar menu"></A>
+Create a tool bar menu</Heading3>
+<Body1>
+<A ID="pgfId-1037413"></A>
+Use the Menu Editor to create the tool bar menu. A tool bar button is associated with each menu item you create. </Body1>
+<Body1>
+<A ID="pgfId-1037030"></A>
+Set the following properties for each menu item:</Body1>
+<StepStart>
+<A ID="pgfId-1036828"></A>
+Select the <UI-Label>
+Basic</UI-Label>
+ page of the properties editor.</StepStart>
+<StepCont>
+<A ID="pgfId-1037039"></A>
+Enter a label in the <UI-Label>
+Label</UI-Label>
+ field.</StepCont>
+<StepCont>
+<A ID="pgfId-1036829"></A>
+In the <UI-Label>
+Value</UI-Label>
+ field, enter the method name to perform the action when the item is selected.</StepCont>
+<StepCont>
+<A ID="pgfId-1036637"></A>
+If the tool bar button is to be programmatically enabled or hidden, enter the unique symbol to identify this item in the <UI-Label>
+ID</UI-Label>
+ field.</StepCont>
+<StepCont>
+<A ID="pgfId-1036639"></A>
+On the <UI-Label>
+Details</UI-Label>
+ page, enter an image accessor method name in the <UI-Label>
+Selector</UI-Label>
+ field. If the accessor is not in your application class or its superclass, enter the class name where this method resides in the <UI-Label>
+Class</UI-Label>
+ field.</StepCont>
+<StepCont>
+<A ID="pgfId-1036641"></A>
+Also on the <UI-Label>
+Details</UI-Label>
+ page, ensure that the item has initial enablement and visiblity set.</StepCont>
+<Body1>
+<A ID="pgfId-1036643"></A>
+Do not add no submenu items. To create a separation distance between tool bar buttons, add a line in the specification. Once the specification is completed install it to a class resource method in your application. </Body1>
+<Body1>
+<A ID="pgfId-1036647"></A>
+For an example of how to create a tool bar programmatically, look at the method toolBar in the online example <Code>
+ToolCommandExample</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1037371"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="ToolCommand.pcl" show="embed" actuate="auto">
+ToolCommandExample</CodeExample>
+</Body1>
+<Body1>
+<A ID="pgfId-1037353"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1037357"></A>
+<A href="07-frameworks.xml#id(Menus)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Menus</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1036650"></A>
+<A ID="Install the tool bar specification"></A>
+Install the tool bar specification</Heading3>
+<Body1>
+<A ID="pgfId-1036652"></A>
+To install the tool bar you will need to reimplement <Code>
+interfaceSpecFor:</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1036656"></A>
+On the class side of your application, include the following method:</Body1>
+<CodeSample>
+<A ID="pgfId-1036658"></A>
+interfaceSpecFor: aSymbol
+	| spec |
+	spec := super interfaceSpecFor: aSymbol.
+	aSymbol == #windowSpec
+		ifTrue: [spec window toolBar: #toolBar].
+	^spec</CodeSample>
+<Body1>
+<A ID="pgfId-1037367"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="ToolCommand.pcl" show="embed" actuate="auto">
+ToolCommandExample</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1036668"></A>
+<A ID="Show the tool bar in a window"></A>
+Show the tool bar in a window</Heading3>
+<Body1>
+<A ID="pgfId-1036670"></A>
+To show a tool bar the menu bar options must be enabled.</Body1>
+<StepStart>
+<A ID="pgfId-1037150"></A>
+Open the Canvas Tool on your application and open the Properties Tool on the window.</StepStart>
+<StepCont>
+<A ID="pgfId-1037155"></A>
+On the <UI-Label>
+Basics</UI-Label>
+ page, check the box labeled <UI-Label>
+Enable</UI-Label>
+ within the <UI-Label>
+Menu Bar</UI-Label>
+ box. The <UI-Label>
+Menu</UI-Label>
+ field may be left blank if you are not including a menu bar in the window.</StepCont>
+<Heading3>
+<A ID="pgfId-1036673"></A>
+Enable or disable individual buttons programmatically</Heading3>
+<Body1>
+<A ID="pgfId-1036675"></A>
+Send the message <Code>
+componentAt:</Code>
+ to access the tool bar object from the application builder; supply the <Code>
+ID</Code>
+ symbol for the tool bar as the argument. Use <Code>
+componentAt:</Code>
+ to access any button from the tool bar object, again using the <Code>
+ID</Code>
+ symbol of the button object. To change the state of these button objects, use the messages <Code>
+enable</Code>
+ or <Code>
+disable</Code>
+.</Body1>
+<CodeSample>
+<A ID="pgfId-1036679"></A>
+configureMenu
+	&quot;Disable or enable the menu items depending on whether
+	a file is selected.&quot;
+
+	| menu submenu toolBar |
+	menu := self builder menuAt: #fileMenu.
+	submenu := (menu menuItemLabeled: 'File') submenu.
+	<CodeEmp>
+toolBar := self builder componentAt: #toolBar.
+</CodeEmp>
+
+	self files selection isNil
+		ifTrue: [
+			(submenu menuItemLabeled: 'Open') disable.
+			(submenu menuItemLabeled: 'Delete') disable.
+			<CodeEmp>
+(toolBar componentAt:#openIcon) disable.
+</CodeEmp>
+			<CodeEmp>
+(toolBar componentAt:#deleteIcon) disable]
+</CodeEmp>
+		ifFalse: [
+			(submenu menuItemLabeled: 'Open') enable.
+			(submenu menuItemLabeled: 'Delete') enable.
+			<CodeEmp>
+(toolBar componentAt:#openIcon) enable.
+</CodeEmp>
+			<CodeEmp>
+(toolBar componentAt:#deleteIcon) enable]</CodeEmp>
+</CodeSample>
+<Body1>
+<A ID="pgfId-1036790"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="ToolCommand.pcl" show="embed" actuate="auto">
+ToolCommandExample</CodeExample>
+</Body1>
+<Body1>
+<A ID="pgfId-1036199"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1040361"></A>
+<A ID="Bitmap Images"></A>
+Bitmap Images</Heading2>
+<Heading3>
+<A ID="pgfId-1040363"></A>
+<A ID="Create a bitmap image"></A>
+Create a bitmap image</Heading3>
+<Body1>
+<A ID="pgfId-1040364"></A>
+The <A href="03-tools.xml#id(Image Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Image Editor</A> allows you to draw a bitmap image and store it in a compilable resource method. The Image Editor is best suited for producing small images, such as for cursor shapes or icons.</Body1>
+<Body1>
+<A ID="pgfId-1041037"></A>
+To use the Image Editor, you must have the <Code>
+UIPainter</Code>
+ parcel loaded.</Body1>
+<StepStart>
+<A ID="pgfId-1040366"></A>
+Open an Image Editor, for example, by choosing <UI-Label>
+Tools-&gt;Image Editor</UI-Label>
+ from the Launcher window.</StepStart>
+<StepCont>
+<A ID="pgfId-1040367"></A>
+Paint the desired image in the scrollable pixel grid. To do this, click on a color and then click on each pixel to be painted that color.</StepCont>
+<StepCont>
+<A ID="pgfId-1040368"></A>
+Use the Image Editor's <UI-Label>
+Install</UI-Label>
+ button to a create method that returns the image, typically a class method in a <Code>
+resource</Code>
+ protocol of an application model class.</StepCont>
+<Heading3>
+<A ID="pgfId-1040369"></A>
+<A ID="Capture an image from the screen"></A>
+Capture an image from the screen</Heading3>
+<StepStart>
+<A ID="pgfId-1040370"></A>
+In an <A href="03-tools.xml#id(Image Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Image Editor</A>, choose the <UI-Label>
+Image-&gt;Capture</UI-Label>
+ command. The cursor changes to a cross-hair.</StepStart>
+<StepCont>
+<A ID="pgfId-1040371"></A>
+Press the &lt;Select&gt; mouse button at the upper-left corner of the desired rectangle, drag to the lower-right corner, and then release the mouse button. </StepCont>
+<StepCont>
+<A ID="pgfId-1040372"></A>
+If desired, edit the captured image by changing the color of individual pixels.</StepCont>
+<StepCont>
+<A ID="pgfId-1040373"></A>
+Use the Image Editor's <UI-Label>
+Install</UI-Label>
+ button to create a method that returns the image, typically a class method in a <Code>
+resource</Code>
+ protocol of an application model class.</StepCont>
+<Heading3>
+<A ID="pgfId-1040856"></A>
+Edit an image resource</Heading3>
+<Body1>
+<A ID="pgfId-1040857"></A>
+To edit image and icon resource methods in the <A href="03-tools.xml#id(Image Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Image Editor</A>, browse to a specific method and use the <UI-Label>
+Edit</UI-Label>
+ command in the <A href="03-tools.xml#id(Resource Finder)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Resource Finder</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1040452"></A>
+Create an image from a &#34;.bmp&#34; file</Heading3>
+<Body1>
+<A ID="pgfId-1041562"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1041568"></A>
+<A href="02-class-library.xml#id(Load an image from a file)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Load an image from a file</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1041561"></A>
+Display a masked image on a label or button</Heading3>
+<Body1>
+<A ID="pgfId-1040453"></A>
+A graphic label may be displayed in place of text for an action button, radio button, check box, or label.</Body1>
+<StepStart>
+<A ID="pgfId-1040454"></A>
+Select the action button, radio button, check box, or label in the canvas and open the Properties Tool.</StepStart>
+<StepCont>
+<A ID="pgfId-1040455"></A>
+Turn on the widget&#39;s <UI-Label>
+Label is Image</UI-Label>
+ property.</StepCont>
+<StepCont>
+<A ID="pgfId-1040456"></A>
+In the <UI-Label>
+Message</UI-Label>
+ property field, enter the name of the method that returns a graphic image (usually a <Glossary>
+resource method</Glossary>
+).</StepCont>
+<StepCont>
+<A ID="pgfId-1040457"></A>
+<UI-Label>
+Apply</UI-Label>
+ the properties and <UI-Label>
+Install</UI-Label>
+ the canvas.</StepCont>
+<Heading3>
+<A ID="pgfId-1040866"></A>
+Drawing with the Image Editor</Heading3>
+<Body1>
+<A ID="pgfId-1040867"></A>
+To draw by hand, use the &lt;Select&gt; button in the gridded portion of the <A href="03-tools.xml#id(Image Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Image Editor</A>. The currently selected color will be used to draw on the image. To select different colors, use the palette in the lower-right corner of the view.</Body1>
+<Body1>
+<A ID="pgfId-1040868"></A>
+Use <UI-Label>
+Edit-&gt;Cut</UI-Label>
+, <UI-Label>
+Copy</UI-Label>
+, <UI-Label>
+Paste</UI-Label>
+, <UI-Label>
+Accept</UI-Label>
+ and <UI-Label>
+Cancel</UI-Label>
+ to manipulate regions of the image; none of these commands make permanent changes until the image is installed.</Body1>
+<Body1>
+<A ID="pgfId-1040869"></A>
+To color larger regions of the image, use the <UI-Label>
+Draw-&gt;Fill Rectangle</UI-Label>
+ command. Click the &lt;Select&gt; button once on the grid to set an origin point, and a second time to set an extent. The specified rectangle will be filled with the currently selected color.</Body1>
+<Heading3>
+<A ID="pgfId-1040873"></A>
+Change colors using the Image Editor</Heading3>
+<Body1>
+<A ID="pgfId-1040874"></A>
+To change all occurrences of a single color, use the <UI-Label>
+Draw-&gt;Replace Color</UI-Label>
+ command. Select a new color from the Image Editor&#39;s palette, and the use the &lt;Select&gt; button to pick a color in the image. The new color will replace the color that you select in the image.</Body1>
+<Body1>
+<A ID="pgfId-1040875"></A>
+To convert a color image to black &amp; white, or to produce a mask, use the <UI-Label>
+Draw-&gt;Color to B&amp;W</UI-Label>
+ command.</Body1>
+<Body1>
+<A ID="pgfId-1040988"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1041070"></A>
+<A href="07-frameworks.xml#id(Produce a mask)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Produce a mask with the Image Editor</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040990"></A>
+<A ID="Produce a mask"></A>
+Produce a mask with the Image Editor</Heading3>
+<Body1>
+<A ID="pgfId-1040991"></A>
+To convert a color image into a mask, use the <UI-Label>
+Draw-&gt;Color to B&amp;W</UI-Label>
+ command in the <A href="03-tools.xml#id(Image Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Image Editor</A>. Any non-white colors will be converted to black.</Body1>
+<Body1>
+<A ID="pgfId-1040892"></A>
+To convert a color image into a mask only when installing it in an application model, enable <UI-Label>
+Image-&gt;Store B&amp;W Mask</UI-Label>
+, and then use the <UI-Label>
+Image-&gt;Install...</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1040893"></A>
+Enabling <UI-Label>
+Image-&gt;Store B&amp;W Mask</UI-Label>
+ will change the Image Editor palette to display only black and white buttons; use these buttons to select the mask and transparency colors.</Body1>
+<Heading3>
+<A ID="pgfId-1040903"></A>
+Install an image as a resource</Heading3>
+<Body1>
+<A ID="pgfId-1040904"></A>
+Use the <UI-Label>
+Image-&gt;Install...</UI-Label>
+ command in the <A href="03-tools.xml#id(Image Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Image Editor</A> to create an interface specification for the image.</Body1>
+<StepStart>
+<A ID="pgfId-1040905"></A>
+Specify the name of the application model class in the <UI-Label>
+INSTALL on Class</UI-Label>
+ dialog. Either a new or an existing class may be entered for the application model. </StepStart>
+<StepCont>
+<A ID="pgfId-1040906"></A>
+Specify the selector to contain the interface specification for the image (e.g., <Code>
+#paletteIcon</Code>
+.)</StepCont>
+<StepCont>
+<A ID="pgfId-1040907"></A>
+Select <UI-Label>
+OK</UI-Label>
+ to build and install the interface specification. If you enter a new class name, you will be prompted for the name of the superclass in a subsequent dialog (<Code>
+ApplicationModel</Code>
+ and <Code>
+SimpleDialog</Code>
+ are provided as defaults). </StepCont>
+<Body1>
+<A ID="pgfId-1040057"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1036061"></A>
+<A ID="Application Models"></A>
+Application Models</Heading2>
+<Heading3>
+<A ID="pgfId-1036062"></A>
+Browse an application model</Heading3>
+<Body1>
+<A ID="pgfId-1036063"></A>
+To browse the application model for the current canvas, make sure no widget is selected and click on the <UI-Label>
+Browse...</UI-Label>
+ button in the Canvas Tool (or select <UI-Label>
+browse</UI-Label>
+ on the canvas &lt;Operate&gt; menu.) A hierarchy browser will open on the application model class.</Body1>
+<Heading3>
+<A ID="pgfId-1036065"></A>
+<A ID="Create an application model"></A>
+Create an application model</Heading3>
+<Body1>
+<A ID="pgfId-1036066"></A>
+Create a new application model for your canvas using the <UI-Label>
+Install...</UI-Label>
+ button (or <UI-Label>
+install...</UI-Label>
+ on the &lt;Operate&gt; menu.)</Body1>
+<StepStart>
+<A ID="pgfId-1036067"></A>
+Specify the name of the application model class in the <UI-Label>
+INSTALL on Class</UI-Label>
+ dialog; specify either a new or existing class for the application model.</StepStart>
+<StepCont>
+<A ID="pgfId-1036068"></A>
+Specify the selector to contain the interface specification for the canvas (the default selector is <Code>
+#windowSpec</Code>
+.)</StepCont>
+<StepCont>
+<A ID="pgfId-1036069"></A>
+Select <UI-Label>
+OK</UI-Label>
+ to build and install the interface specification. If you enter a new class name, you will be prompted for the name of the superclass in a subsequent dialog (<Code>
+ApplicationModel</Code>
+ and <Code>
+SimpleDialog</Code>
+ are provided as defaults).</StepCont>
+<Body1>
+<A ID="pgfId-1036070"></A>
+Once you have finished the layout of the new user-interface, you will typically edit the behavior of the application model using the System Browser.</Body1>
+<Heading3>
+<A ID="pgfId-1036072"></A>
+<A ID="Browse an accessor method"></A>
+Browse an accessor method</Heading3>
+<Body1>
+<A ID="pgfId-1036073"></A>
+To browse the methods that access the <Glossary>
+value model</Glossary>
+ for a widget (an aspect of the application model), select the desired widget and click on the <UI-Label>
+Browse...</UI-Label>
+ button in the Canvas Tool (or select <UI-Label>
+browse</UI-Label>
+ on the canvas &lt;Operate&gt; menu.) A method list browser opens with each method in the application model that refers to the relevant instance variable.</Body1>
+<Body1>
+<A ID="pgfId-1036112"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1036116"></A>
+<A href="07-frameworks.xml#id(Create a value model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a value model</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1036080"></A>
+<A ID="Create a value model"></A>
+Create a value model</Heading3>
+<Body1>
+<A ID="pgfId-1036081"></A>
+To define a <Glossary>
+value model</Glossary>
+ for a particular widget:</Body1>
+<StepStart>
+<A ID="pgfId-1036164"></A>
+Install the canvas in an application model.</StepStart>
+<StepCont>
+<A ID="pgfId-1036167"></A>
+Open a Properties Tool and define the widget&#39;s <UI-Label>
+Aspect</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1036176"></A>
+Click the <UI-Label>
+Define</UI-Label>
+ button in the Canvas Tool to open a Define Dialog. Confirm the aspects and actions that you want to create in the application model.</StepCont>
+<StepCont>
+<A ID="pgfId-1036179"></A>
+Toggle the check mark next to each item on the list that you do not want to re-define (the <UI-Label>
+Define</UI-Label>
+ command will overwrite each accessor method indicated with a check mark.)</StepCont>
+<StepCont>
+<A ID="pgfId-1036180"></A>
+To add minimal initialization code for each aspect, select the <UI-Label>
+Add Initialization</UI-Label>
+ check box.</StepCont>
+<Body1>
+<A ID="pgfId-1036134"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1036138"></A>
+<A href="07-frameworks.xml#id(Defining user interface support)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Defining user interface support</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1036232"></A>
+<A href="07-frameworks.xml#id(Browse an accessor method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Browse an accessor method</A></Bullet1>
+<Heading2>
+<A ID="pgfId-1030033"></A>
+<A ID="Defining User Interface Adaptors"></A>
+Defining User Interface Adaptors</Heading2>
+<Heading3>
+<A ID="pgfId-1036046"></A>
+<A ID="Defining user interface support"></A>
+Defining user interface support</Heading3>
+<Body1>
+<A ID="pgfId-1030034"></A>
+Use the Define Dialog to user interface support methods in an application model. After using the Canvas and Properties tools to compose and configure an interface, use the Define Dialog to create <Glossary>
+information holders</Glossary>
+ (instance variables), <Glossary>
+actions</Glossary>
+ (access methods), and <Glossary>
+initialization methods</Glossary>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1032125"></A>
+Open a Define Dialog</Heading3>
+<Body1>
+<A ID="pgfId-1034870"></A>
+To open the define dialog, select a widget on the canvas and select <UI-Label>
+Define...</UI-Label>
+ from the &lt;Operate&gt; menu or on the Canvas Tool&#39;s menu bar.</Body1>
+<Body1>
+<A ID="pgfId-1036207"></A>
+To control the scope of the define dialog, you can select either a single widget, a group of widgets, or none (which is equivalent to selecting all.)</Body1>
+<Heading3>
+<A ID="pgfId-1034837"></A>
+Create actions and information holders</Heading3>
+<Body1>
+<A ID="pgfId-1034885"></A>
+The Define Dialog lists all the actions (access methods) and information holders (instance variables) referenced in the selected interface components.</Body1>
+<Body1>
+<A ID="pgfId-1036208"></A>
+To create actions and information holders for every element on the list, click on <UI-Label>
+OK</UI-Label>
+. To skip any item on the list, deselect it by clicking to remove the check mark next to the item (using the &lt;Select&gt; button.)</Body1>
+<Heading3>
+<A ID="pgfId-1034886"></A>
+Create initialization code</Heading3>
+<Body1>
+<A ID="pgfId-1034887"></A>
+To create a new initialization method in the application model, enable the <UI-Label>
+Add Initialization</UI-Label>
+ switch in the Define Dialog. When this switch is selected (the default), the define dialog will create a method named <Code>
+initialize</Code>
+ that assigns default values to the various information holders (instance variables) in the Application Model.</Body1>
+<Body1>
+<A ID="pgfId-1032131"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1040624"></A>
+<A ID="Adapting Domain Models to Widgets"></A>
+Adapting Domain Models to Widgets</Heading2>
+<Heading3>
+<A ID="pgfId-1040625"></A>
+Set up a simple value model (ValueHolder)</Heading3>
+<Body1>
+<A ID="pgfId-1040629"></A>
+Send an <Code>
+asValue</Code>
+ message to the data object that is to be contained (in the example, the number 0 is asked to return a value holder containing itself).</Body1>
+<CodeSample>
+<A ID="pgfId-1040630"></A>
+initializeID
+		accountID := 0 asValue.
+		accountID onChangeSend: #changedID to: self.</CodeSample>
+<Body1>
+<A ID="pgfId-1040926"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt1.pcl" show="embed" actuate="auto">
+Adaptor1Example</CodeExample>
+</Body1>
+<Body1>
+<A ID="pgfId-1040934"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040938"></A>
+<A href="07-frameworks.xml#id(Create a value holder on an empty string)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a value holder on an empty string</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1040633"></A>
+<A ID="Create a value holder on an empty string"></A>
+Create a value holder on an empty string</Heading3>
+<Body1>
+<A ID="pgfId-1040634"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt1.pcl" show="embed" actuate="auto">
+Adaptor1Example</CodeExample>
+</Body1>
+<Body1>
+<A ID="pgfId-1040635"></A>
+Send a <Code>
+newString</Code>
+ message to the <Code>
+ValueHolder</Code>
+ class. This is equivalent to the expression <Code>
+String new asValue</Code>
+, and the choice of which to use is a matter of personal preference.</Body1>
+<CodeSample>
+<A ID="pgfId-1040636"></A>
+initializeName
+		name := ValueHolder newString.
+			name onChangeSend: #changedName to: self.</CodeSample>
+<Body1>
+<A ID="pgfId-1041222"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt1.pcl" show="embed" actuate="auto">
+Adaptor1Example</CodeExample>
+</Body1>
+<Body1>
+<A ID="pgfId-1040951"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040955"></A>
+<A href="07-frameworks.xml#id(Create a boolean value holder)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a boolean value holder</A> </Bullet1>
+<Bullet1>
+<A ID="pgfId-1040964"></A>
+<A href="07-frameworks.xml#id(Create a decimal value holder)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a decimal value holder</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1040639"></A>
+<A ID="Create a boolean value holder"></A>
+Create a boolean value holder</Heading3>
+<Body1>
+<A ID="pgfId-1040640"></A>
+Send a <Code>
+newBoolean</Code>
+ message to the <Code>
+ValueHolder</Code>
+ class. This is equivalent to the expression <Code>
+false asValue</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1040641"></A>
+<A ID="Create a decimal value holder"></A>
+Create a decimal value holder</Heading3>
+<Body1>
+<A ID="pgfId-1040642"></A>
+Send a <Code>
+newFraction</Code>
+ message to the <Code>
+ValueHolder</Code>
+ class. This is equivalent to the expression <Code>
+0.0 asValue</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1040643"></A>
+Adapt part of a domain model (AspectAdaptor)</Heading3>
+<Body1>
+<A ID="pgfId-1040644"></A>
+Data widgets are commonly used for presenting data that is held by some object in the domain model. In such cases, the appropriate value model is an <Code>
+AspectAdaptor</Code>
+, which is a reference to remote data.</Body1>
+<Body1>
+<A ID="pgfId-1040645"></A>
+An aspect adaptor has a subject, which is the relevant domain model, and an aspect, which is the name of the instance variable that holds the relevant data. </Body1>
+<Body1>
+<A ID="pgfId-1040853"></A>
+This example below shows how to set up an aspect adaptor with a subject channel, a value holder from which the aspect adaptor will obtain its subject.</Body1>
+<StepStart>
+<A ID="pgfId-1040855"></A>
+In an <Code>
+initialize</Code>
+ method in the application model, initialize an instance variable (<Code>
+selectedCustomer</Code>
+) with a value holder that holds the domain model (a <Code>
+Customer1Example</Code>
+). </StepStart>
+<StepCont>
+<A ID="pgfId-1040651"></A>
+In an aspect method (<Code>
+accountID</Code>
+), send a <Code>
+subjectChannel:</Code>
+ message to the <Code>
+AspectAdaptor</Code>
+ class. The argument is the value holder you created in step 1.</StepCont>
+<StepCont>
+<A ID="pgfId-1040653"></A>
+Tell the aspect adaptor which aspect of the domain model to monitor by sending a <Code>
+forAspect:</Code>
+ message to the adaptor. The argument is a <Code>
+Symbol</Code>
+, typically the name of the desired instance variable (<Code>
+accountID</Code>
+) in the domain model.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040654"></A>
+initialize
+		customers := SelectionInList new.
+		customers selectionIndexHolder
+			onChangeSend: #changedCustomer to self.
+
+		selectedCustomer := Customer1Example new asValue
+accountID
+		| adaptor |
+		adaptor := AspectAdaptor subjectChannel: self selectedCustomer.
+		adaptor forAspect: #accountID.
+
+		adaptor onChangeSend: #redisplayList to: self.
+		^adaptor</CodeSample>
+<Body1>
+<A ID="pgfId-1040973"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt2.pcl" show="embed" actuate="auto">
+Adaptor2Example</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040667"></A>
+Address an adapter subject</Heading3>
+<Body1>
+<A ID="pgfId-1040668"></A>
+Send a <Code>
+subject:</Code>
+ message to the <Code>
+AspectAdaptor</Code>
+ class (instead of a <Code>
+subjectChannel:</Code>
+ message). The argument is a domain model (instead of a value holder containing the domain model).</Body1>
+<Heading3>
+<A ID="pgfId-1040669"></A>
+Use non-standard accessors</Heading3>
+<Body1>
+<A ID="pgfId-1040670"></A>
+Use these steps when a domain model provides accessor methods whose names are different from the instance variable they access-- for example, when the aspect is an instance variable called <Code>
+income</Code>
+, and its accessors are <Code>
+getIncome</Code>
+ and <Code>
+putIncome:</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1040672"></A>
+After creating the adaptor, send an <Code>
+accessWith:assignWith:</Code>
+ message to it. The first argument is the name of the domain model&#39;s method that accesses the desired value. The second argument is the name of the method that assigns a new value. (In the example, the message names are <Code>
+address</Code>
+ and <Code>
+address:</Code>
+, and they access an instance variable named <Code>
+address</Code>
+, so the same effect can be achieved via <Code>
+forAspect: #address</Code>
+).</Body1>
+<CodeSample>
+<A ID="pgfId-1040673"></A>
+address
+		| adaptor |
+		adaptor := AspectAdaptor subjectChannel: self 
+selectedCustomer.
+		^adaptor 
+			accessWith: #address
+			assignWith: #address:</CodeSample>
+<Body1>
+<A ID="pgfId-1041017"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt2.pcl" show="embed" actuate="auto">
+Adaptor2Example</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040680"></A>
+Monitor programmatic changes</Heading3>
+<StepStart>
+<A ID="pgfId-1040683"></A>
+Send a <Code>
+subjectSendsUpdates:</Code>
+ message to the adaptor with the argument <Code>
+true</Code>
+. This causes the adaptor to register itself as a dependent of the subject (in the example, a <Code>
+Customer1Example</Code>
+).</StepStart>
+<StepCont>
+<A ID="pgfId-1040685"></A>
+In the domain model class (<Code>
+Customer1Example</Code>
+), edit every method that alters the data value directly (that is, without going through the adaptor), so that it sends a <Code>
+changed:</Code>
+ message to <Code>
+self</Code>
+. The argument is the aspect that has been changed (<Code>
+#phoneNumber</Code>
+). This causes the dependent adaptor to be notified when the domain model makes the relevant change.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040686"></A>
+phoneNumber
+		| adaptor |
+		adaptor := AspectAdaptor subjectChannel: self selectedCustomer.
+		adaptor forAspect: #phoneNumber.
+
+		adaptor subjectSendsUpdates: true.
+
+		^adaptor
+
+formatUSPhoneNumber
+		| rawPhone rawSize areaCode prefix suffix separator |
+		rawPhone := self phoneNumber select: [ :ch | ch isDigit].
+		rawSize := rawPhone size.
+		areaCode := ''.
+		prefix := ''.
+		suffix := ''.
+		separator := '-'.
+
+		rawSize &gt; 0 ifTrue: [areaCode := 
+			rawPhone copyFrom: 1 to: (3 min: rawSize)].
+		rawSize &gt; 3 ifTrue: [prefix := 
+			separator,
+			(rawPhone copyFrom: (4 min: rawSize) to: (6 min: rawSize))].
+		rawSize &gt; 6 ifTrue: [suffix := 
+			separator,
+			(rawPhone copyFrom: (7 min: rawSize) to: (rawSize min: 10))].
+
+		self phoneNumber: areaCode, prefix, suffix.
+		self changed: #phoneNumber.</CodeSample>
+<Body1>
+<A ID="pgfId-1041064"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt2.pcl" show="embed" actuate="auto">
+Adaptor2Example</CodeExample>
+ and <CodeExample xml:link="simple" href="Cust1.pcl" show="embed" actuate="auto">
+Customer1Example</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040715"></A>
+Synchronize updates (buffering)</Heading3>
+<Body1>
+<A ID="pgfId-1040716"></A>
+Frequently, it is useful to delay updating a particular widget&#39;s value until other widgets in the same series are ready to be updated. Using a <Code>
+BufferedValueHolder</Code>
+ enables you to arrange a trigger channel that is monitored by all of the widgets in the series. </Body1>
+<Body1>
+<A ID="pgfId-1040717"></A>
+The trigger channel is a value holder that contains <Code>
+true</Code>
+ or <Code>
+false</Code>
+. When <Code>
+true</Code>
+, all of the dependent adaptors update the model. Putting <Code>
+false</Code>
+ in the trigger channel discards the buffered values, canceling the update.</Body1>
+<StepStart>
+<A ID="pgfId-1040719"></A>
+In the application model, create an instance variable (in the example, <Code>
+updateTrigger</Code>
+) to contain the true/false value that triggers updates. </StepStart>
+<StepCont>
+<A ID="pgfId-1040721"></A>
+Create an accessing method for the variable.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040722"></A>
+updateTrigger
+		^updateTrigger</CodeSample>
+<StepCont>
+<A ID="pgfId-1040725"></A>
+Initialize the variable to a value holder containing <Code>
+false</Code>
+.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040726"></A>
+initialize
+		customers := SelectionInList new.
+		customers selectionIndexHolder onChangeSend: #changedCustomer to: self.
+
+		selectedCustomer := Customer1Example new asValue.
+
+		updateTrigger := false asValue.</CodeSample>
+<StepCont>
+<A ID="pgfId-1040734"></A>
+For each widget in the series, place the widget&#39;s value model in a <Code>
+BufferedValueHolder</Code>
+ by sending a <Code>
+subject:triggerChannel:</Code>
+ message to the <Code>
+BufferedValueHolder</Code>
+ class. The first argument is the widget&#39;s value model (in the example, an <Code>
+AspectAdaptor</Code>
+). The second argument is the trigger channel (<Code>
+updateTrigger</Code>
+). </StepCont>
+<CodeSample>
+<A ID="pgfId-1040735"></A>
+accountID
+		| adaptor bufferedAdaptor |
+		adaptor := AspectAdaptor subjectChannel: self selectedCustomer.
+		adaptor forAspect: #accountID.
+
+		bufferedAdaptor := BufferedValueHolder
+			subject: adaptor
+			triggerChannel: self updateTrigger.
+
+		^bufferedAdaptor</CodeSample>
+<StepCont>
+<A ID="pgfId-1040745"></A>
+Provide a button, a menu command, or other device with which the user can indicate that the series of values have all been edited as much as necessary (in the example, completion is indicated using an <Code>
+OK</Code>
+ button that triggers an <Code>
+accept</Code>
+ action).</StepCont>
+<StepCont>
+<A ID="pgfId-1040747"></A>
+In the action method (<Code>
+accept</Code>
+), send a <Code>
+value:</Code>
+ message to the trigger channel (<Code>
+updateTrigger</Code>
+). The argument is <Code>
+true</Code>
+.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040748"></A>
+accept
+		self updateTrigger value: true.
+
+		self redisplayList.</CodeSample>
+<Body1>
+<A ID="pgfId-1041070"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt3.pcl" show="embed" actuate="auto">
+Adaptor3Example</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040752"></A>
+Discard the buffered values</Heading3>
+<Body1>
+<A ID="pgfId-1040754"></A>
+Send a <Code>
+value:</Code>
+ message to the trigger channel (<Code>
+updateChannel</Code>
+). The argument is <Code>
+false</Code>
+. This is typically done after confirming that the user wants to abandon the edited data.</Body1>
+<CodeSample>
+<A ID="pgfId-1040755"></A>
+changedCustomer
+		| chosenCustomer selector |
+		chosenCustomer := self customers selection.
+
+		chosenCustomer isNil
+			ifTrue: [
+				self selectedCustomer value: Customer1Example new.
+				selector := #disable]
+			ifFalse: [
+				self selectedCustomer value: chosenCustomer.
+				selector := #enable].
+
+		&quot;Discard changes that were not OK'd.&quot;
+		self updateTrigger value: false.
+
+		&quot;Enable/disable selection-sensitive widgets.&quot;
+		#( #accountID #name #address #phoneNumber #ok)
+			do: [ :componentName 
+|				(self builder componentAt: componentName)
+					perform: selector].</CodeSample>
+<Body1>
+<A ID="pgfId-1041076"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt3.pcl" show="embed" actuate="auto">
+Adaptor3Example</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040775"></A>
+Adapt a collection (SelectionInList)</Heading3>
+<Body1>
+<A ID="pgfId-1040776"></A>
+A list or notebook widget is designed to work with a <Code>
+SelectionInList</Code>
+, which contains a value holder for holding the collection to be displayed. When the domain model supplies a simple collection, you can set up a <Code>
+SelectionInList</Code>
+ to adapt to it, as shown in the basic step.</Body1>
+<Body1>
+<A ID="pgfId-1040778"></A>
+In the example below, the application model is <Code>
+Adaptor4Example</Code>
+, and the domain model is a <Code>
+Customer2Example</Code>
+, which holds an <Code>
+OrderedCollection</Code>
+ of customers.</Body1>
+<Body1>
+<A ID="pgfId-1040779"></A>
+Put the domain model&#39;s collection in a <Code>
+SelectionInList</Code>
+ by sending an <Code>
+adapt:aspect:list:selection:</Code>
+ message to the <Code>
+SelectionInList</Code>
+ class. The <Code>
+adapt:</Code>
+ argument is the domain model (in the example, <Code>
+collectionModel</Code>
+). The <Code>
+aspect:</Code>
+ argument is typically the name of the domain model&#39;s collection variable. The <Code>
+list:</Code>
+ argument is the name of the domain model&#39;s method that returns the collection. The <Code>
+selection:</Code>
+ argument is the name of the domain model&#39;s method that sets the selection in the collection.</Body1>
+<CodeSample>
+<A ID="pgfId-1041102"></A>
+initialize
+		collectionModel := Customer2Example new.
+		customers := SelectionInList
+			adapt: collectionModel
+			aspect: #customers
+			list: #customers
+			selection: #selectedCustomer:.
+
+		customers selectionIndexHolder 
+			onChangeSend: #changedCustomer to: self.
+
+		selectedCustomer := Customer1Example new asValue.</CodeSample>
+<Body1>
+<A ID="pgfId-1041103"></A>
+<B>
+Online examples:</B>
+ <Code>
+Adaptor4Example</Code>
+ and <Code>
+Customer2Example</Code>
+</Body1>
+<Heading3>
+<A ID="pgfId-1041104"></A>
+Adapt a collection element</Heading3>
+<Body1>
+<A ID="pgfId-1040793"></A>
+Sometimes a widget is used to display a single element in a collection. </Body1>
+<Body1>
+<A ID="pgfId-1040794"></A>
+An <Code>
+IndexedAdaptor</Code>
+ has a subject (the collection) or subject channel (when the collection is in a value holder) and an index number (the position of the desired element in the collection). </Body1>
+<StepStart>
+<A ID="pgfId-1040797"></A>
+Send a <Code>
+subjectChannel:</Code>
+ message to the <Code>
+IndexedAdaptor</Code>
+ class, with the value holder containing the collection as the argument. If the collection is not contained in a value holder, send a <Code>
+subject:</Code>
+ message instead, with the collection as the argument.</StepStart>
+<StepCont>
+<A ID="pgfId-1040799"></A>
+Send a <Code>
+forIndex:</Code>
+ message to the adaptor. The argument is the position of the desired element in the collection.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040800"></A>
+xAxis
+		| adaptor |
+		adaptor := IndexedAdaptor subjectChannel: self vector.
+		^1adaptor forIndex: 1</CodeSample>
+<Body1>
+<A ID="pgfId-1041169"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt5.pcl" show="embed" actuate="auto">
+Adaptor5Example</CodeExample>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040804"></A>
+Create a custom adaptor (PluggableAdaptor)</Heading3>
+<Body1>
+<A ID="pgfId-1040805"></A>
+Occasionally it is convenient to use a custom adaptor that performs a block of actions each time its value is accessed or changed. A <Code>
+PluggableAdaptor</Code>
+ provides this flexibility. </Body1>
+<Body1>
+<A ID="pgfId-1040806"></A>
+A <Code>
+PluggableAdaptor</Code>
+ takes three blocks, which enable it to perform custom actions at three junctures in the flow of communications between the widget and the domain model:</Body1>
+<Bullet1>
+<A ID="pgfId-1040869"></A>
+The <Code>
+getBlock:</Code>
+ controls what happens when a value is fetched from the model by the widget.</Bullet1>
+<Bullet1>
+<A ID="pgfId-1040870"></A>
+The <Code>
+putBlock:</Code>
+ controls what happens when a value is sent to the model by the widget. </Bullet1>
+<Bullet1>
+<A ID="pgfId-1040809"></A>
+The <Code>
+updateBlock:</Code>
+ controls when the widget updates itself based on an update message sent by the model.</Bullet1>
+<StepStart>
+<A ID="pgfId-1040812"></A>
+Create the custom adaptor by sending an <Code>
+on:</Code>
+ message to the <Code>
+PluggableAdaptor</Code>
+ class. The argument is the domain model.</StepStart>
+<StepCont>
+<A ID="pgfId-1040814"></A>
+Send a <Code>
+getBlock:putBlock:updateBlock:</Code>
+ message to the adaptor. The first block takes one argument: the domain model. The second block takes two arguments: the model and the value to be assigned. The third block takes three arguments: the model, the aspect of the model that was changed, and a parameter that corresponds to the argument of a <Code>
+changed:with:</Code>
+ message, when applicable.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040815"></A>
+initialize
+		accountID := 1.
+		paddedID := PluggableAdaptor on: self.
+		paddedID
+			getBlock: [ :model | 
+				| paddedString |
+				paddedString := model accountID printString.
+				6 - paddedString size 
+					timesRepeat: [paddedString := '0', paddedString].
+				paddedString]
+			putBlock: [ :model :value |
+				model accountID: value asNumber]
+			updateBlock: [ :model :aspect :parameter | false]</CodeSample>
+<Body1>
+<A ID="pgfId-1041179"></A>
+<B>
+Online example: </B>
+<CodeExample xml:link="simple" href="Adapt6.pcl" show="embed" actuate="auto">
+Adaptor6Example</CodeExample>
+</Body1>
+<Body1>
+<A ID="pgfId-1029452"></A>
+</Body1>
+</XML>

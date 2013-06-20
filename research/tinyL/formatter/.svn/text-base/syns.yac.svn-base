@@ -1,0 +1,57 @@
+%{
+#include "defs.h"
+#define YYSTYPE char *
+char s[1024];
+%}
+%token	ID INTEGER REAL SEMICOLON
+	EQUAL ADD SUBTRACT MULTIPLY DIVIDE LPAR RPAR UNKNOWN;
+%%
+Program
+	: Statements
+	{ }
+Statements
+	: Statement
+	{ printf("%s\n", $1); }
+	| Statements Statement
+	{ printf("%s\n", $2); }
+Statement
+	: Assign SEMICOLON
+	{ strcpy(s, $1); strcat(s, ";"); $$ = strdup(s); }
+Assign
+	: Variable EQUAL Expression
+	{ strcpy(s, $1); strcat(s, " = "); strcat(s, $3); $$ = strdup(s); }
+Expression
+	: Expression ADD Term
+	{ strcpy(s, $1); strcat(s, " + "); strcat(s, $3); $$ = strdup(s); }
+	| Expression SUBTRACT Term
+	{ strcpy(s, $1); strcat(s, " - "); strcat(s, $3); $$ = strdup(s); }
+	| Term
+	{ $$ = $1; }
+Term
+	: Term MULTIPLY Factor
+	{ strcpy(s, $1); strcat(s, " * "); strcat(s, $3); $$ = strdup(s); }
+	| Term DIVIDE Factor
+	{ strcpy(s, $1); strcat(s, " / "); strcat(s, $3); $$ = strdup(s); }
+	| Factor
+	{ $$ = $1; }
+Factor
+	: Variable
+	{ $$ = $1; }
+	| Constant
+	{ $$ = $1; }
+	| LPAR Expression RPAR
+	{ strcpy(s, "("); strcat(s, $2); strcat(s, ")"); $$ = strdup(s); }
+Variable
+	: ID
+	{ $$ = strdup(yytext); }
+Constant
+	: INTEGER
+	{ $$ = strdup(yytext); }
+	| REAL
+	{ $$ = strdup(yytext); }
+%%
+#include "lex.yy.c"
+void yyerror(char *s) {
+	fprintf(stderr, "\n%s at %d: nearby \"%s\"\n\n", s, linecounter, yytext);
+	exit(EXIT_FAILURE);
+}

@@ -1,0 +1,27 @@
+%{
+#include "defs.h"
+%}
+%option nounput
+%%
+					{ return(INT); }
+					{ return(FLOAT); }
+					{ return(PRINT); }
+					{ return(ID); }
+					{ return(INTEGER); }
+					{ return(REAL); }
+					{ return(SEMICOLON); }
+					{ return(COMMA); }
+					{ return(EQUAL); }
+					{ return(ADD); }
+					{ return(SUBTRACT); }
+					{ return(MULTIPLY); }
+					{ return(DIVIDE); }
+					{ return(LPAR); }
+					{ return(RPAR); }
+"\r"|"\n"|" "|"\t"			{ }
+"/*".*"*/"				{ }
+.					{ return(UNKNOWN); }
+%%
+int yywrap(void) {
+	return(1);
+}

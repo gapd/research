@@ -1,0 +1,6 @@
+/*** Assign Statements ***/
+
+abc = 3 + 4 * 5;
+def = 3.1415926;
+ghi = (def + def) * abc;
+

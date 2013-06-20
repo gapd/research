@@ -1,0 +1,3 @@
+# setenv <variable name> <variable value>
+
+setenv VISUALWORKS './vw7.8nc'

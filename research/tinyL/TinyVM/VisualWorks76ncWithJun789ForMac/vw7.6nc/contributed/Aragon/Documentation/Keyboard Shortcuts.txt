@@ -1,0 +1,41 @@
+
+Package 'New Look Policies' includes some enhancements to class
+ParagraphEditor and TextEditor that provide common text editing
+shortcuts. These shortcuts are installed in method
+ParagraphEditor class>>setup: (VisualWorks 2.5) or in
+the NSFeelPolicy class (VisualWorks 3.0).
+
+In particular the new shortcuts are:
+
+     -  Shift+arrow keys / enhances text selection.
+     -  Pressing Tab / Shift-Tab when at least a whole line of text
+        was selected indents the selected text by 1/-1 tab.
+
+     -  [Delete] 					Cut
+     -  [Insert] 					Paste
+     -  [Alt-Backspace] 			Undo
+
+     -  Ctrl-X / Ctrl-Del			Cut
+     -  Ctrl-C / Ctrl-Insert		Copy
+     -  Ctrl-V / Shift-Ctrl-Del		Paste
+
+     -  Ctrl-D / F5					doIt
+     -  Ctrl-P / F6					printIt
+     -  Ctrl-I / F7					inspectIt
+
+     -  Ctrl-S / F12				accept
+     -  Esc-Esc / F11				cancel
+
+     -  Esc-t						inserts 'ifTrue:'
+     -  Esc-f						inserts 'ifFalse:'
+
+     -  Ctrl-B						User Interrupt
+
+     -  Ctrl-F				Find (opening dialog)
+     -  Ctrl-R				Replace (opening dialog)
+     -  Ctrl-A				Again (Replace)
+     -  F3					Repeat Find with current selection
+
+
+PLEASE NOTE: interruptKeyValue is changed to Ctrl-B in
+ParagraphEditor class>>setup:.

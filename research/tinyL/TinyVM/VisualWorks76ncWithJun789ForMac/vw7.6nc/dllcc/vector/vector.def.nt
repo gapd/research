@@ -1,0 +1,27 @@
+;
+; vector.def
+;
+; Export definitions for vector.dll on Windows NT/95
+;
+
+LIBRARY     VECTOR
+HEAPSIZE    1024
+EXPORTS
+
+UPLoadInitialize ; for oeFail/UPFail
+oeLoadInitialize ; for oeAPI
+
+vectorMultiplyByScalar
+vectorDivideByScalar
+
+vectorAdd
+vectorMinus
+
+vectorNegate
+vectorRound
+vectorMagnitude
+vectorNormal
+vectorDotProduct
+
+vectorCrossProduct
+vectorCrossProductNormal

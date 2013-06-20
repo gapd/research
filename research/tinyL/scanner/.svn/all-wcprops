@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repositories/PL/!svn/ver/66/scanner
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repositories/PL/!svn/ver/57/scanner/main.c
+END
+rexp.lex
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repositories/PL/!svn/ver/66/scanner/rexp.lex
+END
+src.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repositories/PL/!svn/ver/57/scanner/src.txt
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repositories/PL/!svn/ver/57/scanner/defs.h
+END
+jfk.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repositories/PL/!svn/ver/57/scanner/jfk.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repositories/PL/!svn/ver/57/scanner/Makefile
+END

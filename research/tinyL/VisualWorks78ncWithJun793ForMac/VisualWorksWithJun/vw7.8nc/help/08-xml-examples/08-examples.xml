@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="Examples Catalogue" charset="UTF-8"?>
+<xml>
+<Heading1>Examples Catalogue</Heading1>
+
+
+<Heading2>Examples -- Contents</Heading2>
+<Bullet1><A href="08-examples.xml#id(AdaptorExamples)">Adaptor1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(AdaptorExamples)">Adaptor2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(AdaptorExamples)">Adaptor3Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(AdaptorExamples)">Adaptor4Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(AdaptorExamples)">Adaptor5Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(AdaptorExamples)">Adaptor6Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(ButtonExample)">ButtonExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(ClickWidgetExamples)">ClickWidgetExamples</A> (ClickLogoTest and ClickMapApp)</Bullet1>
+<Bullet1><A href="08-examples.xml#id(WidgetColorExample)">ColorExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(DragDropExample)">ColorDDExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(ComboBoxExample)">ComboBoxExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(ComboBoxExample)">ComboConversionExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(CursorExample)">CursorExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(AdaptorExamples)">Customer1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(AdaptorExamples)">Customer2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(CustomViewExample)">CustomViewExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(DatasetExamples)">Dataset1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(DatasetExamples)">Dataset2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(DatasetExamples)">Dataset3Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(DatasetExamples)">Dataset4Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(ObjectLensExamples)">DB1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(DependencyExample)">DependencyExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(DialogExample)">DialogExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(TextEditorExamples)">Editor1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(TextEditorExamples)">Editor2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(ComboBoxExample)">EmployeeExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(EntryFieldExamples)">FieldConnectionExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(EntryFieldExamples)">FieldFilterExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(EntryFieldExamples)">FieldMenuExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(EntryFieldExamples)">FieldSelectionExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(EntryFieldExamples)">FieldTypeExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(EntryFieldExamples)">FieldValidation1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(EntryFieldExamples)">FieldValidation2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(GraphicsExample)">FloatingBalloon</A></Bullet1><Bullet1><A href="08-examples.xml#id(TextFontExamples)">Font1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(TextFontExamples)">Font2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(WidgetHideExample)">HideExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(LinesCirclesOvalsExamples)">LineExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(ListExamples)">List1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(ListExamples)">List2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(LoanCalculatorExample)">LoanCalculatorExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(LabelExamples)">LogoExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(MenuAndToolbarExamples)">MenuCommandExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(MenuAndToolbarExamples)">MenuModifyExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(MenuAndToolbarExamples)">MenuEditorExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(MenuAndToolbarExamples)">MenuSwapExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(MenuAndToolbarExamples)">MenuValueExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(WidgetMoveExample)">MoveExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(NotebookExamples)">Notebook1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(NotebookExamples)">Notebook2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(NotebookExamples)">Notebook3Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(NotebookExamples)">Notebook4Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(NotebookExamples)">Notebook5Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(OpaqueLabelExample)">OpaqueLabelExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(PreferredCustomerExample)">PreferredCustomerExample</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(WidgetSizeExamples)">Size1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(WidgetSizeExamples)">Size2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(WidgetSizeExamples)">Size3Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(SliderExamples)">Slider1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(SliderExamples)">Slider2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(SubcanvasExamples)">Subcanvas1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(SubcanvasExamples)">Subcanvas2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(SubcanvasExamples)">Subcanvas3Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(TableExamples)">Table1Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(TableExamples)">Table2Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(TableExamples)">Table3Example</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(MenuAndToolbarExamples)">ToolbarDemo</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(AnimationExample)">Walker</A></Bullet1>
+<Bullet1><A href="08-examples.xml#id(WalkThruExample)">WalkThrough</A></Bullet1>
+
+
+<Heading2><A ID="TextFontExamples">Text and Fonts</A></Heading2>
+
+<Body1>Font1Example illustrates applying a TextAttribute to text.  It displays a menu of styles defined in TextAttributes.  When the menu item is selected, the style is applied to a label text.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Font1.pcl" >Font1Example</CodeExample></Body1>
+
+<Body1>Font2Example collects all fonts installed in the system and displays them in a list for selection and appliation to a label.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Font2.pcl" >Font2Example</CodeExample></Body1>
+
+
+<Heading2><A ID="GraphicsAndColorExamples">Graphics and Color</A></Heading2>
+<Body1>The examples in this section illustrate using graphics and colors in general. For examples of developing a Graphical User Interface, including using graphics and colors in that context, see <A href="08-examples.xml#id(GUIExamples)">GUI Examples</A></Body1>
+
+
+<Heading3><A ID="CursorExample">Cursor Example</A></Heading3>
+<Body1>Copy this code to a workspace and evaluate.  Make sure you have loaded the example code first, which can be done by clicking the CursorExample link below.</Body1>
+<Body1><CodeSample>| cursor colorImage maskImage|
+colorImage := CursorExample townCrierForCursor.
+maskImage := CursorExample shadow.
+
+cursor := Cursor
+	image: colorImage
+	mask: maskImage
+	hotSpot: 8@8
+	name: 'townCrier'.
+cursor showWhile: [(Delay forSeconds: 3) wait ].</CodeSample></Body1>
+			
+<Body1>Browse <CodeExample href="Cursor.pcl" >CursorExample</CodeExample></Body1>
+<Body1>Also see the help topics under <UILabel>System Class Library -> Images, Cursors, and Icons</UILabel>.</Body1>
+
+
+<Heading3><A ID='GraphicsExample'>Graphics Example</A></Heading3>
+<Body1>FloatingBalloon contains code illustrating several graphical effects, including displaying a masked bitmap image over a background graphic, and moving the image against the background.  The latter part is a simple form of animation (see <A href="08-examples.xml#id(AnimationExample)">Animation Example</A> for more complex animation).</Body1>
+
+<Body1>Once you have loaded the parcel, which you can do by clicking the link below, evaluate the following code in a workspace and evaluate it with DoIt.</Body1>
+
+<Body1><CodeSample>| gc image i j |
+ExamplesBrowser initialize.
+gc := (ExamplesBrowser prepareScratchWindowOfSize: 298@219)
+graphicsContext.
+gc medium background: (FloatingBalloon sky asPattern).
+gc medium display.
+image := FloatingBalloon new image.
+i := j := 0.
+[image follow: [ i := j := i + 1.
+(Delay forMilliseconds: 30) wait. i@j .]
+while: [ i+32 &lt; 298 and: [ j+32 &lt; 219] ]
+on: gc.] fork</CodeSample></Body1>
+
+<Body1>This code is explained, with additional examples, in the Application Developer's Guide.</Body1>
+
+<Body1><B>Online example: </B><CodeExample href='Graphics-Example.pcl' >FloatingBalloon</CodeExample></Body1>
+
+
+
+<Heading3><A ID="OpaqueLabelExample">Opaque Label Example</A></Heading3>
+<Body1>OpaqueImage provides a more efficient way of displaying an image and mask than always having to specify both.</Body1>
+<Body1>In this example, an OpaqueImage is created in the #opaqueLogo class method.  If this image were to be reused frequently, it could be assigned to an instance variable.</Body1>  
+<Body1>The GUI launched below simply shows the unmasked logo image as a label on the canvas, and the masked image, as an OpaqueImage, used as the label on an Action Button.</Body1>
+<Body1><B>Online example: </B><CodeExample href="OpqLabel.pcl" >OpaqueLabelExample</CodeExample></Body1>
+
+<Heading3><A ID='AnimationExample'>Animation Example</A></Heading3>
+<Body1>Walker provides an example of how to do double-buffering animation in VisualWorks.</Body1>
+
+<Body1>Once you have loaded the parcel, which you can do by clicking the link below, evaluate the following code in a workspace and evaluate it with DoIt.</Body1>
+
+<Body1><CodeSample>Walker runWalker</CodeSample></Body1>
+
+<Body1><B>Online example: </B><CodeExample href='Animation-Example.pcl' >Walker</CodeExample></Body1>
+
+
+
+<Heading2><A ID="GUIExamples">GUI Examples</A></Heading2>
+<Body1>These examples demonstrate techniques for GUI development and Widget configuration.
+</Body1>
+
+
+<Heading3><A ID="WidgetExamples">Widgets</A></Heading3>
+<Body1>The examples in this section show simple applications of widgets to a canvas.</Body1>
+
+
+<Heading4><A ID="ButtonExample">Button</A></Heading4>
+<Body1>ButtonExample provides a simple example of setting up an Action Button, a group of Radion Buttons, and a group Checkbox Buttons.</Body1>
+<Body1>Note that, because only one of the Radio Buttons should be selected at one time, they have the same <UILabel>Aspect</UILabel> method, #outputMode, but have different <UILabel>Select</UILabel> values.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Button.pcl" >ButtonExample</CodeExample></Body1>
+
+
+<Heading4><A ID="ClickWidgetExamples">Click Widget</A></Heading4>
+<Body1>There are two examples of using the Click Widget.</Body1>
+<Body1>ClickLogoTest is a very simple example, contained entirely in the ClickLogoTest class.  Besides the #windowSpec, the logo is provided by the #logo resource method (a bit of VisualWorks history), and the hot spot map is provided by the #logoMap resource.  Examine the map by opening it in the HotRegion editor.</Body1>
+<Body1><B>Online example: </B><CodeExample href="ClickWidget.pcl" >ClickLogoTest</CodeExample></Body1>
+<Body1>A more extensive example is provided by MapClickApp and its supporting classes. The application model itself is very simple.  RegionMap subclasses ClickWidget, the widget's view, providing additional behavior.  RegionModel provides the data model; Region provides data for describing different geographicsl regions.</Body1>  
+<Body1>This is a simpler example of a custom view than is provided by <A href="08-examples.xml#id(CustomViewExample)">CustomViewExample</A> in that it does not require a custom view controller.</Body1>
+<Body1>Initially, the map shows the USA region.  You can change this in ClickMapApp>>constructRegionView.  Adding a function to the GUI to change the region dynamically is left as an exercise for the reader.</Body1>
+<Body1><B>Online example: </B><CodeExample href="ClickWidget.pcl" >MapClickApp</CodeExample></Body1>
+<Body1>Browse <CodeExample href="ClickWidget.pcl" >MapClickApp</CodeExample>RegionMap</Body1>
+<Body1>Note that this example appears to have been changed some over the years, so there are no op methods left behind, and the data is no longer read from files, so please read the comments and documentation in a forgiving spirit.</Body1>
+
+
+<Heading4><A ID="ComboBoxExample">ComboBox</A></Heading4>
+<Body1>ComboBoxExample demonstrates configuring a ComboBox widget with a simple list as its domain model.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Combo.pcl" >ComboBoxExample</CodeExample></Body1>
+<Body1>Often you need a ComboBox to list objects that aren't simply Strings.  ComboConversionExample demonstrates how to represent (convert) a collection of objects (Employees) to a list, and how to convert back from a selected item to its object.  Browse the converting methods to see how this is done.</Body1>
+<Body1><B>Online example: </B><CodeExample href="ComboCon.pcl" >ComboConversionExample</CodeExample></Body1>
+<Body1>Browse <CodeExample href="Employee.pcl" >Employee</CodeExample></Body1>
+
+ 
+<Heading4><A ID="TextEditorExamples">Text Editors</A></Heading4>
+<Body1>Editor1Example illustrates displaying and formatting text in a Text Editor widget. Browse the actions methods for examples of setting text alignment.  Browse the #changedStyle method for an example of setting text style.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Editor1.pcl" >Editor1Example</CodeExample></Body1>
+<Body1>Editor2Example is simply a Text Editor widget in a window.  It is used by various examples in the documentation, as well <A href="08-examples.xml#id(SubcanvasExamples)">Subcanvas3Example</A>.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Editor2.pcl" >Editor2Example</CodeExample></Body1>
+
+<Heading4><A ID="EntryFieldExamples">Entry Field</A></Heading4>
+<Body1>These examples show a variety of techniques for using Input Field widgets.</Body1>
+
+<Body1>FieldFilterExample validates the entire input string at once.</Body1>
+<Body1><B>Online example: </B><CodeExample href="FildFilt.pcl" >FieldFilterExample</CodeExample></Body1>
+
+<Body1>FieldConnectionExample illustrates one- and two-way dependencies between fields.</Body1>
+<Body1><B>Online example: </B><CodeExample href="FldCon.pcl" >FieldConnectionExample</CodeExample></Body1>
+
+<Body1>FieldMenuExample illustrates modifying the popup menu for a widget.</Body1>
+<Body1><B>Online example: </B><CodeExample href="FldMenu.pcl" >FieldMenuExample</CodeExample></Body1>
+
+<Body1>FieldSelectionExample illustrates inserting text and placing the cursor, including possibly a selection of text.</Body1>
+<Body1><B>Online example: </B><CodeExample href="FldSel.pcl" >FieldSelectionExample</CodeExample></Body1>
+
+<Body1>FieldTypeExample illustrates formatting field input using TypeConverter.</Body1>
+<Body1><B>Online example: </B><CodeExample href="FldType.pcl" >FieldTypeExample</CodeExample></Body1>
+
+<Body1>FieldValidation1Example illustrates character-by-character input validation.</Body1>
+<Body1><B>Online example: </B><CodeExample href="FldVal1.pcl" >FieldValidation1Example</CodeExample></Body1>
+
+<Body1>FieldValidation2Example illustrates field completion based on the initial character.</Body1>
+<Body1><B>Online example: </B><CodeExample href="FldVal2.pcl" >FieldValidation2Example</CodeExample></Body1>
+
+
+<Heading4><A ID="LinesCirclesOvalsExamples">Lines, Circles, and Ovals</A></Heading4>
+<Body1>A silly little example using Region, Line, and GroupBox widgets.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Line.pcl" >LineExample</CodeExample></Body1>
+
+
+<Heading4><A ID="ListExamples">List Examples</A></Heading4>
+<Body1>List1Example illustrates populating other widgets based on a list selection.</Body1>
+<Body1><B>Online example: </B><CodeExample href="List1.pcl" >List1Example</CodeExample></Body1>
+<Body1>List2Example is a list with Add and Delete buttons.  It is used by the <A href="08-examples.xml#id(SubcanvasExamples)">Subcanvas Examples</A></Body1>
+<Body1>Browse List2Example (limitations prevent linking).</Body1>
+
+<Heading4><A ID="LabelExamples">Label Examples</A></Heading4>
+<Body1>LogoExample illustrates applying effects to a label, such as fonts, colors, and animation.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Logo.pcl" >LogoExample</CodeExample></Body1>
+
+<Heading4><A ID="NotebookExamples">Notebook Examples</A></Heading4>
+<Body1>The Notebook Examples is a succession of elaborations.</Body1>
+
+<Body1>Notebook1Example is a simple index-tabbed notebook that displays a list based on the tab selection.  Tab labels are specified in the #initialize method.  In the GUIPainter, the notbook is assigned an ID #pageHolder.  Browse the #postOpenWith: method to see how the list, which is another canvase, is placed on the notebook.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Notebk1.pcl" >Notebook1Example</CodeExample></Body1>
+
+<Body1>Notebook2Example adds minor tabs (browse #initialize).  The minor tabs filter the list, which is done in the #changedPage method.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Notebk2.pcl" >Notebook2Example</CodeExample></Body1>
+
+<Body1>Notebook3Example adds dependencies between the major and minor tabs, changing one based on the selection of the other.  Dependencies are set up using #onChangeSend: messages in the #initialize method.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Notebk3.pcl" >Notebook3Example</CodeExample></Body1>
+
+<Body1>Notebook4Example	changes the canvas displayed on the notebook page (#pageHolder) with each selection; a different application for each tab. The canvas spec is now assigned in #changedExample rather than #postOpenWith:</Body1>
+<Body1><B>Online example: </B><CodeExample href="Notebk4.pcl" >Notebook4Example</CodeExample></Body1>
+
+<Body1>Notebook5Example connects a Text Editor to Notebook1Example.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Notebk5.pcl" >Notebook5Example</CodeExample></Body1>
+
+
+<Heading4><A ID="SliderExamples">Slider Examples</A></Heading4>
+<Body1>Slider1Example illustrates how to use a Slider widget to set a value and to indicate a value set otherwise.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Slider1.pcl" >Slider1Example</CodeExample></Body1>
+
+<Body1>Slider2Example illustrates how to use a Slider widget in a 2-dimensional field.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Slider2.pcl" >Slider2Example</CodeExample></Body1>
+
+
+<Heading4><A ID="SubcanvasExamples">Subcanvas Examples</A></Heading4>
+<Body1>A Subcanvas is a container for another canvas.</Body1>
+
+<Body1>Subcanvas1Example is defined as a subclass of List2Example, and so inherits all methods from its superclass, some of which it overrides.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Subcan1.pcl" >Subcanvas1Example</CodeExample></Body1>
+
+<Body1>Subcanvas2Example illustrates reusing only the interface, with the current application providing all the behavior, and an entire application.  List2Example is imported via subcanvases twice to illustrate the differences.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Subcan2.pcl" >Subcanvas2Example</CodeExample></Body1>
+
+<Body1>Subcanvas3Example demonstrates using a subcanvas to change the application interface while running.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Subcan3.pcl" >Subcanvas3Example</CodeExample></Body1>
+
+
+<Heading4><A ID="TableExamples">Table Examples</A></Heading4>
+<Body1>The Table widget examples are a series of examples, each adding a feature to the previous. </Body1>
+
+<Body1>Table1Example simply places a Table widget on a canvas and populates it with two rows of data.  Table data is specified in the #initialize method.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Table1.pcl" >Table1Example</CodeExample></Body1>
+
+<Body1>Table2Example adds an entry field for editing the contents of a selected cell.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Table2.pcl" >Table2Example</CodeExample></Body1>
+
+<Body1>Table3Example adds row and column labels, by specifying these in the #initialize method.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Table3.pcl" >Table3Example</CodeExample></Body1>
+
+
+<Heading3><A ID="WidgetControlExamples">Controlling Widgets</A></Heading3>
+<Body1>These examples illustrate various kinds of control over widgets.</Body1>
+
+<Heading4><A ID="WidgetHideExample">Hiding a Widget</A></Heading4>
+<Body1>HideExample shows how to toggle a widget between hidden/shown, and active/inactive.</Body1>
+<Body1>The work is done in the #changedListVisibility method. The method gets the wrapper for the #colorList widget, and the desired state from the #listVisibilty instance variable, which is set by the radio buttons.  It then sets the widget to the desired state by sending the appropriate messages to the widget wrapper (#enable, #disable, #beVisible, #beInvisible).</Body1>
+<Body1><B>Online example: </B><CodeExample href="Hide.pcl" >HideExample</CodeExample></Body1>
+
+<Heading4><A ID="WidgetMoveExample">Moving a Widget</A></Heading4>
+<Body1>MoveExample illustrates how to change the position of a widget by sending it a #moveBy: or #moveTo: message with a coordinate.</Body1>
+<Body1>Browse the #moveArrowUp, #moveArrowDown, and #resetArrow methods to see how the widget's (a label with a graphic) wrapper is retrieved and then sent the move messages.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Move.pcl" >MoveExample</CodeExample></Body1>
+
+<Heading4><A ID="WidgetColorExample">Color Example</A></Heading4>
+<Body1>ColorExample illustrates how to set the colors for a widget programmatically, during application runtime.</Body1>
+<Body1>A list of affected widgets is returned by the #sampleWidgets method.  Whether the foreground/background and selected/unselected color is being set is held in the #colorLayer instance variable.  When the <UILabel>Apply</UILabel> button is clicked, the appropriate action method for the colorLayer is invoked, which walks the list of widgets and sets the color. Browse these methods (#backgroundColor:, #foregroundColor:, #selectionBackgrouncColor, #selectionForegroundColor) to see the actual color-setting work.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Color.pcl" >ColorExample</CodeExample></Body1>
+
+<Heading4><A ID="WidgetMenus">Changing Widget Menus</A></Heading4>
+<Body1>FieldMenuExample illustrates modifying the popup menu for a widget.</Body1>
+<Body1><B>Online example: </B><CodeExample href="FldMenu.pcl" >FieldMenuExample</CodeExample></Body1>
+
+
+
+<Heading4><A ID="WidgetSizeExamples">Sizing a Widget</A></Heading4>
+<Body1>These examples illustrate how to set the size and location of widgets.</Body1>
+
+<Body1>Size1Example illustrates setting the widget positioning explicitly.  Open the canvas in the UIPainter and look at the <UILabel>Position</UILabel> page of the GUI Painter Tool to see how each of the widgets is positioned.  You must select each widget individually to see its positioning values.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Size1.pcl" >Size1Example</CodeExample></Body1>
+
+<Body1>Size2Example is a comparison of sizing settings for bounded and unbounded widgets. </Body1>
+<Body1><B>Online example: </B><CodeExample href="Size2.pcl" >Size2Example</CodeExample></Body1>
+
+<Body1>Size3Example illustrates changing the size of a widget dynamically.  Browse the #expandBox and #shrinkBox methods to see how to assign a new size to a widget.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Size3.pcl" >Size3Example</CodeExample></Body1>
+
+
+<Heading3><A ID="CustomViewExample">Custom Views</A></Heading3>
+<Body1>CustomViewExample is an example of an application with a custom view, or window area, with a custom controller.  The controller, SketchController, captures mouse motion within the view's bounds for purposes of drawing.  The CustomViewExample application model includes a ViewHolder widget, which holds the custom view, SketchView, the custom view.  </Body1>
+<Body1><B>Online example: </B><CodeExample href="CustomView-Example.pcl" >CustomViewExample</CodeExample></Body1>
+<Body1>The controller is event-driven, since polling has been removed from the VW base.</Body1>
+<Body1>For an example of a custom view without a custom controller, see the <A href="08-examples.xml#id(ClickWidgetExamples)">MapClickApp</A> example.</Body1>
+
+
+<Heading3><A ID="MenuAndToolbarExamples">Menus and Toolbars</A></Heading3>
+<Body1>These examples illustrate techniques for adding and modifying.</Body1>
+
+<Body1>MenuCommandExample illustrates creating a menu of action commands.  Browse the #fileMenu class method to see how the menu items are created as Associations between a menu selection and a message selector.</Body1>
+<Body1><B>Online example: </B><CodeExample href="MenuCmd.pcl" >MenuCommandExample</CodeExample></Body1>
+
+<Body1>MenuValueExamples illustrates three kinds of menus, and how to return a value, rather than a command. The menu bar menu also uses graphic icons instead of text.  Browse the resources methods (instance side) for menu definitions.</Body1>
+<Body1><B>Online example: </B><CodeExample href="MenuVal.pcl" >MenuValueExample</CodeExample></Body1>
+
+<Body1>MenuEditorExample employs a menu created using the Menu Editor tool.  Browse and select the #colorMenu class menu, and select <UILabel>Method -> Edit Resource</UILabel>, to open the editor.</Body1>
+<Body1><B>Online example: </B><CodeExample href="MenuEdit.pcl" >MenuEditorExample</CodeExample></Body1>
+
+<Body1>MenuModifyExample illustrates adding and deleting items on a menu during runtime.  Browse the #addTitle and #deleteTitle methods to see how a menu is accessed and changed.</Body1>
+<Body1><B>Online example: </B><CodeExample href="MenuMod.pcl" >MenuModifyExample</CodeExample></Body1>
+
+<Body1>MenuSwapExample illustrates exchanging two menus based on program state, in this case whether or not an item is selected in a list.  The menu is initially specified in the #initialize method, and then exchanged in #selectionChanged.</Body1>
+<Body1><B>Online example: </B><CodeExample href="MenuSwap.pcl" >MenuSwapExample</CodeExample></Body1>
+
+<Body1>FieldMenuExample illustrates modifying the popup menu for a widget.</Body1>
+<Body1><B>Online example: </B><CodeExample href="FldMenu.pcl" >FieldMenuExample</CodeExample></Body1>
+
+<Body1>Toolbars are implemented as menus.  ToolbarDemo illustrates defining a toolbar using the Menu Editor.  In the editor, view the <UILabel>Details</UILabel> page for image resource method.</Body1>
+<Body1><B>Online example: </B><CodeExample href="ToolbarDemo.pcl" >ToolbarDemo</CodeExample></Body1>
+
+
+<Heading3><A ID="DialogExample">Dialogs</A></Heading3>
+<Body1>DialogExample demonstrates several kinds of dialog.  Most of the dialogs are defined in the actions methods, using simple, standard dialog classes.  A more complex dialog is defined by a canvas spec.</Body1>
+<Body1><CodeExample href="Dialog.pcl" >DialogExample</CodeExample></Body1>
+
+<Heading3><A ID="DragDropExample">Drag and Drop</A></Heading3>
+<Body1>ColorDDExample illustrates enabling drag-drop between widgets.</Body1>
+<Body1>The top-left List is the drag source, and has its drag methods specified on its <UILabel>Drag Source</UILabel> page in the GUI Painter Tool.  The list below and to the right is a drag target, and has its processing methods identified on its <UILabel>Drag Target</UILabel> properties page.  Action Buttons can be drag targets, but not drag sources. </Body1>
+<Body1><CodeExample href="DragDrop.pcl" >ColorDDExample</CodeExample></Body1>
+
+
+<Heading2><A ID="ConnectGUIToDomainExamples">Connecting a GUI to a Domain Model</A></Heading2>
+<Body1>The following examples show various ways of connecting the GUI with a domain model, and setting up dependencies between widgets.</Body1>
+
+<Heading3><A ID="AdaptorExamples">Using Adaptors</A></Heading3>
+<Body1>Adaptors conect an application model with its domain model.  The application model owns the GUI.  The domain model provides values for the GUI and performs requested actions. </Body1>
+<Body1>Adaptor1Example through Adaptor4Example form a sequence of increasingly powerful methods for adapting an application mode and a domain model.</Body1>
+
+<Body1>Adaptor1Example uses ValueHolders to hold a list of customers (instances of Customer1Example).  The ValueHolders for each aspect of a customer are stored in instance variables in the application model. </Body1>
+<Body1><B>Online example: </B><CodeExample href="Adapt1.pcl" >Adaptor1Example</CodeExample></Body1>
+
+<Body1>Adaptor2Example uses AspectAdaptors to access the values of the instance variables in the domain model, rather than redundantly store them in the application model as well.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Adapt2.pcl" >Adaptor2Example</CodeExample></Body1>
+
+<Body1>Adaptor3Example enhances Adaptor2Example by using BufferedValueHolders to update the domain model in batch.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Adapt3.pcl" >Adaptor3Example</CodeExample></Body1>
+
+<Body1>Adaptor4Example replaces a locally held list with a domain model holding that list, Customer2Example.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Adapt4.pcl" >Adaptor4Example</CodeExample></Body1>
+
+<Body1>Adaptor5Example illustrates adapting an indexed collection, such as an Array, to an application model.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Adapt5.pcl" >Adaptor5Example</CodeExample></Body1>
+
+<Body1>Adaptor6Example illustrates using a custom adaptor (PluggableAdaptor) to perform specified actions upon update.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Adapt6.pcl" >Adaptor6Example</CodeExample></Body1>
+
+
+<Heading3><A ID="DependencyExample">Dependencies</A></Heading3>
+<Body1>Dependencies allow a change in one widget to automatically update another.  DependencyExample shows how to register and unregister dependencies during runtime.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Depend.pcl" >DependencyExample</CodeExample></Body1>
+
+
+<Heading2><A ID="DatabaseExamples">Database</A></Heading2>
+<Body1>These examples show how to work with data sets and databases.  For examples of using table widgets, see <A href="08-examples.xml#id(TableExamples)">Table Examples</A></Body1>
+
+
+<Heading3><A ID="DatasetExamples">Dataset Widget Examples</A></Heading3>
+<Body1>These examples form a sequence of enhanced uses of the Dataset Widget.</Body1>
+
+<Body1>Dataset1Example shows a very simple configuration of a Dataset widget in an application.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Dataset1.pcl" >Dataset1Example</CodeExample></Body1>
+
+<Body1>Dataset2Example shows how to add rows, in this case by adding new Employee objects.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Dataset2.pcl" >Dataset2Example</CodeExample></Body1>
+
+<Body1>Dataset3Example further enhances the example by populating the dataset with Employee instances.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Dataset3.pcl" >Dataset3Example</CodeExample></Body1>
+
+<Body1>Finally, Dataset4Example adds graphical labels.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Dataset4.pcl" >Dataset4Example</CodeExample></Body1>
+
+
+<Heading3><A ID="ObjectLensExamples">Object Lens Examples</A></Heading3>
+<Body1>These examples illustrate using the ObjectLens to interface to a relational database.  The examples are described in detail in the Database Connect Application Developer's Guide.</Body1>
+<Body1><B>Online example: </B><CodeExample href="Lens-Example.pcl" >Database1Example</CodeExample></Body1>
+<Body1><B>Online example: </B><CodeExample href="Lens-Example.pcl" >BookMgrExample</CodeExample></Body1>
+<Body1><B>Online example: </B><CodeExample href="Lens-Example.pcl" >BookLoanMgrExample</CodeExample></Body1>
+<Body1><B>Online example: </B><CodeExample href="Lens-Example.pcl" >BorrowerMgrExample</CodeExample></Body1>
+<Body1>Browse <CodeExample href="Lens-Example.pcl" >AdminExample</CodeExample></Body1>
+<Body1>Browse <CodeExample href="Lens-Example.pcl" >BorrowerExample</CodeExample></Body1>
+<Body1>Browse <CodeExample href="Lens-Example.pcl" >BookLoanExample</CodeExample></Body1>
+<Body1>Browse <CodeExample href="Lens-Example.pcl" >BookExample</CodeExample></Body1>
+
+
+<Heading2><A ID="MiscExampleApps">Misc. Applications</A></Heading2>
+
+<Heading3><A ID="LoanCalculatorExample">Loan Calculator Example</A></Heading3>
+<Body1>The LoanCalculator Example is an illustration of connecting a domain model, Amortizer, to an application model, LoanCalculator.  The calculation work is performed by the domain model, while the application model, by way of its GUI, collects the information needed for doing the calculation. The application model creates an instance of the domain model, which then requests the data from the application model.</Body1>
+
+<Body1><B>Online example: </B><CodeExample href="LoanCalc.pcl" >LoanCalculator</CodeExample></Body1>
+<Body1>Browse <CodeExample href="LoanCalc.pcl" >Amortizer</CodeExample></Body1>
+
+<Heading3><A ID="PreferredCustomerExample">PreferredCustomerExample</A></Heading3>
+<Body1>This example simply illustrates subclassing a class.</Body1>
+<Body1>Browse <CodeExample href="PrefCust.pcl" >PreferredCustomerExample</CodeExample></Body1>
+
+<Heading3><A ID="WalkThruExample">Walk Through (RandomNumberPicker)</A></Heading3>
+<Body1>RandomNumberPicker is an example constructed in the VisualWorks Walk Through. It provides a simple GUI front end, the <CodeSample>ApplicationModel</CodeSample> subclass <CodeSample>RandomNumberPicker</CodeSample>, for the system class Random, which provides a sequence of pseudo-random numbers.</Body1>
+<Body1>The finished application, which is linked here, is in its own name space.</Body1>
+<Body1><B>Online example: </B><CodeExample href="WalkThru.pcl" >WalkThru.RandomNumberPicker</CodeExample></Body1>
+<Body1>Browse <CodeExample href="" >Random</CodeExample></Body1>
+
+
+
+</xml>

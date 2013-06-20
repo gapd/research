@@ -1,0 +1,32 @@
+########################################################################
+# File: makefile.nt
+#
+# makefile for vector dll example on Windows NT/2k/XP/95/98/ME
+#
+########################################################################
+
+# Edit SRC to point to your installation's dllcc\src directory or
+# copy oeAPI.h here.
+SRC=..\dllcc
+# Edit BRLIB to point to your installation's dllcc\nt directory or
+# copy vwntoeimport.lib here.
+BRLIB=..\dllcc
+MSDEV=d:\MSDev
+MACHINE=IX86 # or ALPHA_AXP MIPS PPC etc 
+
+# Uncomment SAFETY to build the fast version of the dll.
+#SAFETY=/DOEUNSAFE
+
+vector.dll: vector.obj vector.def $(BRLIB)\vwntoeimport.lib
+	link /DLL /IMPLIB:$(@B).lib /DEF:vector.def \
+	vector.obj $(BRLIB)\vwntoeimport.lib User32.lib $(conlibsdll) \
+	/MACHINE:$(MACHINE) /DEBUG /DEBUGTYPE:BOTH /OUT:$(@B).dll
+
+vector.obj: vector.c vector.h $(SRC)\oeAPI.h
+    cl /c /Zi $(SAFETY) /I"$(SRC)" /I"$(MSDEV)\include" vector.c
+
+clean:;
+    del vector.obj
+    del vector.exp
+    del vector.dll
+    del vector.pdb

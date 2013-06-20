@@ -1,0 +1,2440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="01-language.css" type="text/css" title="Smalltalk Language" charset="UTF-8"?>
+<XML>
+<Heading1>
+<A ID="pgfId-1040337"></A>
+<A ID="Smalltalk Language"></A>
+Smalltalk Language</Heading1>
+<Heading2>
+<A ID="pgfId-1041408"></A>
+Messages</Heading2>
+<Heading3>
+<A ID="pgfId-1040338"></A>
+Construct a message</Heading3>
+<Body1>
+<A ID="pgfId-1040339"></A>
+A <Glossary>
+<A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A></Glossary>
+ is made up of a <Glossary>
+<A href="10-glossary.xml#id(message receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message receiver</A></Glossary>
+ and a <Glossary>
+<A href="10-glossary.xml#id(message selector)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message selector</A></Glossary>
+. The receiver is the object from which a service is being requested. The message selector is the name of the receiver's method that provides the service, along with any necessary arguments.</Body1>
+<Body1>
+<A ID="pgfId-1040340"></A>
+There are three message forms:</Body1>
+<Body1>
+<A ID="pgfId-1040341"></A>
+<Glossary>
+<A href="10-glossary.xml#id(unary message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">unary message</A></Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1075019"></A>
+A message sent to a receiver with no arguments:</DefDscrp>
+<CodeSample>
+<A ID="pgfId-1040342"></A>
+1.0 <CodeEmp>
+sin</CodeEmp>
+</CodeSample>
+<Body1>
+<A ID="pgfId-1040343"></A>
+<Glossary>
+<A href="10-glossary.xml#id(keyword message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">keyword message</A></Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1075024"></A>
+A one or more argument message selector, each argument following a keyword:</DefDscrp>
+<CodeSample>
+<A ID="pgfId-1040344"></A>
+&#39;9942-Steering wheel&#39; <CodeEmp>
+copyFrom:</CodeEmp>
+ 1 <CodeEmp>
+to:</CodeEmp>
+ 4</CodeSample>
+<Body1>
+<A ID="pgfId-1040345"></A>
+<Glossary>
+<A href="10-glossary.xml#id(binary message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">binary message</A></Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1075037"></A>
+A single argument message using one or two special symbols as the message selector instead of a keyword:</DefDscrp>
+<CodeSample>
+<A ID="pgfId-1040346"></A>
+2 <CodeEmp>
++</CodeEmp>
+ 3</CodeSample>
+<Heading3>
+<A ID="pgfId-1040347"></A>
+Send a message to a class</Heading3>
+<Body1>
+<A ID="pgfId-1040348"></A>
+Since a <Glossary>
+<A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A></Glossary>
+ is an <Glossary>
+<A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A></Glossary>
+, you can name a class as the <Glossary>
+<A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A></Glossary>
+ of a message. Messages appropriate for sending to a class (<A href="10-glossary.xml#id(class message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class messages</A>) are separate from those sent to an instance. </Body1>
+<Body1>
+<A ID="pgfId-1040349"></A>
+Class messages are most often used for creating an instance of the class, as in the following example.</Body1>
+<CodeSample>
+<A ID="pgfId-1040350"></A>
+Date today</CodeSample>
+<Heading3>
+<A ID="pgfId-1040351"></A>
+Send a message to the result of another message</Heading3>
+<Body1>
+<A ID="pgfId-1040352"></A>
+Since the result of a message is an <Glossary>
+<A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A></Glossary>
+, it can be the <Glossary>
+<A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A></Glossary>
+ of another message. Parsing, as usual, is from left to right.</Body1>
+<CodeSample>
+<A ID="pgfId-1040353"></A>
+1.0 sin squared</CodeSample>
+<Body1>
+<A ID="pgfId-1040354"></A>
+which returns the square of the sine of 1.0.</Body1>
+<Body1>
+<A ID="pgfId-1040355"></A>
+For complex expressions, you may need to use parentheses to control the parsing order.</Body1>
+<Body1>
+<A ID="pgfId-1114014"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1114015"></A>
+<A href="01-language.xml#id(Control Parsing Order)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Control parsing order</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040356"></A>
+Use the result of a message as an argument</Heading3>
+<Body1>
+<A ID="pgfId-1040357"></A>
+Since the result of a message is an <Glossary>
+<A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A></Glossary>
+, you can use it directly as an argument in a message. Unary messages are parsed first.</Body1>
+<CodeSample>
+<A ID="pgfId-1040358"></A>
+52 * Random new next.</CodeSample>
+<Body1>
+<A ID="pgfId-1040359"></A>
+For complex expressions, you may need to use parentheses to control the parsing order.</Body1>
+<Body1>
+<A ID="pgfId-1114020"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1114024"></A>
+<A href="01-language.xml#id(Control Parsing Order)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Control parsing order</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040360"></A>
+<A ID="Control Parsing Order"></A>
+Control parsing order</Heading3>
+<Body1>
+<A ID="pgfId-1040361"></A>
+In a complex expression, messages are executed from left to right, starting with unary messages, then binary messages, then keyword messages. Use parenthesis to specify the parsing sequence.</Body1>
+<Body1>
+<A ID="pgfId-1114029"></A>
+Compare:</Body1>
+<CodeSample>
+<A ID="pgfId-1040362"></A>
+2 * 3 + 2
+2 * (3 + 2)</CodeSample>
+<Body1>
+<A ID="pgfId-1040364"></A>
+Expressions inside parentheses are evaluated before those outside. Parentheses can be nested.</Body1>
+<Heading3>
+<A ID="pgfId-1040365"></A>
+Send a sequence of messages</Heading3>
+<Body1>
+<A ID="pgfId-1040366"></A>
+Smalltalk style favors short, simple messages. Rather than construct a complex expression, which can be difficult to understand, write a sequence of simpler expressions, each on a separate line, terminated by a period. Use temporary variables as necessary.</Body1>
+<Body1>
+<A ID="pgfId-1040367"></A>
+For example, instead the complex expression:</Body1>
+<CodeSample>
+<A ID="pgfId-1040368"></A>
+52 * Random new next.</CodeSample>
+<Body1>
+<A ID="pgfId-1040369"></A>
+consider using a sequence of messages:</Body1>
+<CodeSample>
+<A ID="pgfId-1040370"></A>
+| generator random |
+generator := Random new.
+random := generator next.
+52 * random.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040374"></A>
+Send multiple messages to the same receiver (cascading)</Heading3>
+<Body1>
+<A ID="pgfId-1040375"></A>
+When sending a series of messages to the same <Glossary>
+<A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A></Glossary>
+, use a semicolon to separate the messages. You only name the receiver once, at the beginning of the series. End the series with a period.</Body1>
+<CodeSample>
+<A ID="pgfId-1040376"></A>
+| flavors |
+flavors := OrderedCollection new.
+
+flavors
+	add: &#39;Vanilla&#39;;
+	add: &#39;Chocolate&#39;;
+	add: &#39;Cookie Crumble&#39;;
+	add: &#39;Rocky Road&#39;;
+	add: &#39;Raspberry Swirl&#39;.
+
+^flavors</CodeSample>
+<Heading2>
+<A ID="pgfId-1040387"></A>
+Using Variables</Heading2>
+<Heading3>
+<A ID="pgfId-1040388"></A>
+Variable types</Heading3>
+<Body1>
+<A ID="pgfId-1040389"></A>
+VisualWorks has four types of variables, largely distinguished by their scope:</Body1>
+<Body1>
+<A ID="pgfId-1041969"></A>
+<Glossary>
+<A href="10-glossary.xml#id(temporary variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">temporary variable</A></Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1127356"></A>
+Accessable only within a single method or workspace <Code>
+DoIt</Code>
+.</DefDscrp>
+<Body1>
+<A ID="pgfId-1127357"></A>
+<Glossary>
+<A href="10-glossary.xml#id(instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance variable</A></Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1127358"></A>
+Referenceable by that object (instance) only. Inherited by all subclasses.</DefDscrp>
+<Body1>
+<A ID="pgfId-1040408"></A>
+<Glossary>
+<A href="10-glossary.xml#id(class instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class instance variable</A></Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1075073"></A>
+Created separately (not shared) for the defining class and each of its subclasses.</DefDscrp>
+<Body1>
+<A ID="pgfId-1064243"></A>
+<Glossary>
+<A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variable</A></Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1064254"></A>
+Variables of a more general scope, which may be declared public or private relative to a <Glossary>
+<A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A></Glossary>
+. Shared variables may be shared within a single class (class variables), all of its subclasses, and all of their instances; alternately, they may be shared by all objects within a single name space (name space variables). It is possible to <Glossary>
+import</Glossary>
+ a shared variable in other name spaces.</DefDscrp>
+<Body1>
+<A ID="pgfId-1040421"></A>
+Shared variables replace pool, global, and class variables.</Body1>
+<Heading3>
+<A ID="pgfId-1075166"></A>
+Store a value in a variable</Heading3>
+<Body1>
+<A ID="pgfId-1040422"></A>
+To assign a value (an <Glossary>
+<A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A></Glossary>
+) to a variable, use the <Code>
+:=</Code>
+ assignment operator:</Body1>
+<CodeSample>
+<A ID="pgfId-1040423"></A>
+| sine |
+sine := 1.0 sin.</CodeSample>
+<Body1>
+<A ID="pgfId-1040425"></A>
+Classes may define special assignment methods for its variables that provide special assignment features. Using the assignment operator directly will not take advantage of such features.</Body1>
+<Heading3>
+<A ID="pgfId-1040426"></A>
+Provide access to a variable&#39;s value</Heading3>
+<Body1>
+<A ID="pgfId-1040427"></A>
+While only an <Glossary>
+<A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A></Glossary>
+ can directly access its variables, it is often useful to give access to the value of an object&#39;s variables, such as instance variables holding the object&#39;s properties. This is done using <A href="10-glossary.xml#id(accessing method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">accessing methods</A>. </Body1>
+<Body1>
+<A ID="pgfId-1040428"></A>
+For example, a class <Code>
+Ball</Code>
+ may define a instance variable <Code>
+color</Code>
+ to answer the object&#39;s color, <Code>
+Ball</Code>
+ may implement the method:</Body1>
+<CodeSample>
+<A ID="pgfId-1040429"></A>
+color
+	^color.</CodeSample>
+<Body1>
+<A ID="pgfId-1040431"></A>
+To allow setting its color, <Code>
+Ball</Code>
+ may implement the method:</Body1>
+<CodeSample>
+<A ID="pgfId-1040432"></A>
+color: aColor
+	color := aColor.</CodeSample>
+<Body1>
+<A ID="pgfId-1040434"></A>
+This naming scheme is standard for accessors in Smalltalk.</Body1>
+<Heading3>
+<A ID="pgfId-1040438"></A>
+(Why would I) Use class instance variables?</Heading3>
+<Body1>
+<A ID="pgfId-1040439"></A>
+A <Glossary>
+<A href="10-glossary.xml#id(class instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class instance variable</A></Glossary>
+ is declared once, in a parent class. Each subclass then has its own copy of the variable and can assign to it independently.</Body1>
+<Body1>
+<A ID="pgfId-1040440"></A>
+Unlike a <Glossary>
+<A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variable</A></Glossary>
+, which may be used by several classes, each class has its own class instance variables, and so must initialize them individually. The advantage of the class instance variable is that all subclasses can use the same name for the variable and still be able to assign to it independently.</Body1>
+<Heading3>
+<A ID="pgfId-1114043"></A>
+(Why would I) Use pools or class variables?</Heading3>
+<Body1>
+<A ID="pgfId-1114044"></A>
+With VisualWorks 5i, <A href="10-glossary.xml#id(pool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">pools</A> and <A href="10-glossary.xml#id(class variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class variables</A> were superseded by <A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variables</A>.</Body1>
+<Body1>
+<A ID="pgfId-1114045"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1114049"></A>
+<A href="01-language.xml#id((Why would I) Use shared variables?)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">(Why would I) Use shared variables?</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1041250"></A>
+<A ID="(Why would I) Use shared variables?"></A>
+(Why would I) Use shared variables?</Heading3>
+<Body1>
+<A ID="pgfId-1113982"></A>
+Shared variables replace what were formerly <A href="10-glossary.xml#id(class variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class variables</A> and <A href="10-glossary.xml#id(pool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">pools</A>.  They have general scope within their name space, which may be a name space or a class, depending on where they're defined. Access to them from outside that scope is achieved by importing them.</Body1>
+<Heading2>
+<A ID="pgfId-1040445"></A>
+Declaring Variables</Heading2>
+<Heading3>
+<A ID="pgfId-1040446"></A>
+Declare a temporary variable</Heading3>
+<Body1>
+<A ID="pgfId-1040447"></A>
+A temporary variable must be declared at the beginning of the method or Workspace <UI-Label>
+Do It</UI-Label>
+ in which it is used. To do so, place its name between vertical bars.</Body1>
+<CodeSample>
+<A ID="pgfId-1040448"></A>
+| variable |</CodeSample>
+<Body1>
+<A ID="pgfId-1040449"></A>
+By convention, a temporary variable&#39;s name begins with a lowercase letter.</Body1>
+<CodeSample>
+<A ID="pgfId-1040450"></A>
+| numberOfDays date |
+numberOfDays := 7.
+date := Date today addDays: numberOfDays.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040453"></A>
+Automatically declare variables</Heading3>
+<Body1>
+<A ID="pgfId-1040454"></A>
+In practice, you can freely use new variable names and rely on the VisualWorks system to prompt you when it encounters each undeclared variable name. Indicate the variable&#39;s type is the displayed dialog, and the system creates the declaration for you.</Body1>
+<Heading3>
+<A ID="pgfId-1040455"></A>
+Declare an instance variable</Heading3>
+<Body1>
+<A ID="pgfId-1040456"></A>
+Instance variables are declared in the class definition. An instance variable&#39;s name should begin with a lowercase letter.</Body1>
+<StepStart>
+<A ID="pgfId-1040457"></A>
+Open a browser and select the class.</StepStart>
+<StepCont>
+<A ID="pgfId-1114143"></A>
+If necessary, select the browser&#39;s <UI-Label>
+Source</UI-Label>
+ code tool to display the class definition.</StepCont>
+<StepCont>
+<A ID="pgfId-1040459"></A>
+Add the desired instance variable name to the list of <Code>
+instanceVariableNames:</Code>
+ and then <UI-Label>
+Accept</UI-Label>
+ the new definition. </StepCont>
+<Heading3>
+<A ID="pgfId-1040460"></A>
+Declare a class instance variable</Heading3>
+<Body1>
+<A ID="pgfId-1040461"></A>
+Class instance variables are declared in the class definition. A class instance variable&#39;s name must begin with an uppercase letter.</Body1>
+<StepStart>
+<A ID="pgfId-1287691"></A>
+Open a browser and select the class.</StepStart>
+<StepCont>
+<A ID="pgfId-1287692"></A>
+If necessary, select the browser&#39;s <UI-Label>
+Source</UI-Label>
+ code tool to display the class definition.</StepCont>
+<StepCont>
+<A ID="pgfId-1287693"></A>
+Add the desired instance variable name to the list of <Code>
+classInstanceVariableNames:</Code>
+ and then <UI-Label>
+Accept</UI-Label>
+ the new definition. </StepCont>
+<Heading3>
+<A ID="pgfId-1040465"></A>
+Declare a class variable</Heading3>
+<Body1>
+<A ID="pgfId-1114056"></A>
+In VisualWorks 5i, class variables were superseded by <A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variables</A>.</Body1>
+<Body1>
+<A ID="pgfId-1114057"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1114061"></A>
+<A href="01-language.xml#id((Why would I) Use shared variables?)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">(Why would I) Use shared variables?</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1114064"></A>
+<A href="01-language.xml#id(Declare a shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Declare a shared variable</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040924"></A>
+<A ID="Declare a shared variable"></A>
+Declare a shared variable</Heading3>
+<Body1>
+<A ID="pgfId-1114072"></A>
+Shared variables are defined within the scope of either a name space or a class. To create a shared variable:</Body1>
+<StepStart>
+<A ID="pgfId-1114074"></A>
+Select a name space or class in the System Browser.</StepStart>
+<StepCont>
+<A ID="pgfId-1114076"></A>
+On the <UI-Label>
+Class</UI-Label>
+ menu, select <UI-Label>
+New-&gt;Shared Variable</UI-Label>
+. A definition template appears in the browser&#39;s code view.</StepCont>
+<StepCont>
+<A ID="pgfId-1114078"></A>
+Complete and <UI-Label>
+Accept</UI-Label>
+ the following template:</StepCont>
+<CodeSample>
+<A ID="pgfId-1114079"></A>
+Smalltalk defineSharedVariable: #NameOfBinding
+	private: false
+	constant: false
+	category: 'As yet unclassified'
+	initializer: 'Array new: 5'</CodeSample>
+<Body1>
+<A ID="pgfId-1075175"></A>
+The template specifies a message send to the name space or class in which the shared variable name is to be resolved.</Body1>
+<Body1>
+<A ID="pgfId-1114109"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1203343"></A>
+<A href="01-language.xml#id((Why would I) Use shared variables?)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">(Why would I) Use shared variables?</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1203350"></A>
+Declaring a shared variable as a constant</Heading3>
+<Body1>
+<A ID="pgfId-1203351"></A>
+A shared variable is set to be either a constant or variable value by the argument to the <Code>
+constant:</Code>
+ keyword in its definition. By default the argument is <Code>
+false</Code>
+. To make it constant, set the argument to <Code>
+true</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1203352"></A>
+The value of a shared variable can be set during runtime. If the value is constant, it can only be reset in the variable's initialization.</Body1>
+<Body1>
+<A ID="pgfId-1203353"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1203423"></A>
+<A href="01-language.xml#id(Declare a shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Declare a shared variable</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1203429"></A>
+<A href="01-language.xml#id(Initialize a shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Initialize a shared variable</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1203372"></A>
+<A ID="Initialize a shared variable"></A>
+Initialize a shared variable</Heading3>
+<Body1>
+<A ID="pgfId-1203373"></A>
+The <Code>
+initializer:</Code>
+ keyword in a shared variable's definition accepts either a Smalltalk expression written as a string, or <Code>
+nil</Code>
+. </Body1>
+<Body1>
+<A ID="pgfId-1203374"></A>
+If a Smalltalk expression string is provided, it is evaluated and the result set as the initial value of the variable. </Body1>
+<Body1>
+<A ID="pgfId-1203375"></A>
+If the initializer is specified as <Code>
+nil</Code>
+, the initial value can be set in a class initialization method, as for class variables in earlier versions.</Body1>
+<Body1>
+<A ID="pgfId-1287706"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1287710"></A>
+<A href="01-language.xml#id(Declare a shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Declare a shared variable</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1203377"></A>
+<A ID="Privacy for shared variables"></A>
+Privacy for shared variables</Heading3>
+<Body1>
+<A ID="pgfId-1203378"></A>
+The <Code>
+private:</Code>
+ keyword in a shared variable's definition specifies whether it is exported to (available for import to) other classes or name spaces. The default value is <Code>
+false</Code>
+, making the variable public. To make it private, set this value to <Code>
+true</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1203401"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1203405"></A>
+<A href="01-language.xml#id(Import a shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Import a shared variable</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1203380"></A>
+<A ID="Import a shared variable"></A>
+Import a shared variable</Heading3>
+<Body1>
+<A ID="pgfId-1203381"></A>
+Shared variables are imported into a name space or class scope by including them in the argument to the <Code>
+imports:</Code>
+ keyword of the name space or class definition. They may be imported by either a general or an specific import.</Body1>
+<Body1>
+<A ID="pgfId-1203382"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1203393"></A>
+<A href="01-language.xml#id(Importing to a name space)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Importing to a name space</A></Bullet1>
+<Heading2>
+<A ID="pgfId-1203345"></A>
+Removing Variables</Heading2>
+<Heading3>
+<A ID="pgfId-1040489"></A>
+Remove a temporary variable and its references</Heading3>
+<Body1>
+<A ID="pgfId-1040490"></A>
+Since a temporary variable can be referenced only in a single method or Workspace <UI-Label>
+Do it</UI-Label>
+, you need to scan only that method for references. For a long method, use the <UI-Label>
+Find...</UI-Label>
+ command to find each occurrence of that variable in the code. Rewrite the code as needed to remove each reference.</Body1>
+<Body1>
+<A ID="pgfId-1040491"></A>
+After you have removed all references, delete the variable declaration.</Body1>
+<Heading3>
+<A ID="pgfId-1040492"></A>
+Remove an instance variable and its references</Heading3>
+<StepStart>
+<A ID="pgfId-1040493"></A>
+In a browser, select the class in which the variable is declared.</StepStart>
+<StepCont>
+<A ID="pgfId-1040494"></A>
+On the <UI-Label>
+Class</UI-Label>
+ menu, select <UI-Label>
+Instance Variables-&gt;Remove...</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1040495"></A>
+In the resulting menu of instance variables, select the variable that you intend to remove.</StepCont>
+<Body1>
+<A ID="pgfId-1287816"></A>
+If any methods reference the variable, a Method browser will open. The variable will not be removed as long as there are methods that reference it.</Body1>
+<StepCont>
+<A ID="pgfId-1040496"></A>
+The new Method browser displays all methods that reference the variable. Edit the methods to remove the references.</StepCont>
+<StepCont>
+<A ID="pgfId-1114178"></A>
+When all references have been removed, close the Method browser.</StepCont>
+<StepCont>
+<A ID="pgfId-1287821"></A>
+On the <UI-Label>
+Class</UI-Label>
+ menu, select <UI-Label>
+Instance Variables-&gt;Remove...</UI-Label>
+.</StepCont>
+<Body1>
+<A ID="pgfId-1180102"></A>
+The instance variable should now be removed.</Body1>
+<Heading3>
+<A ID="pgfId-1180103"></A>
+Remove a class instance variable and its references</Heading3>
+<StepStart>
+<A ID="pgfId-1287830"></A>
+In a browser, select the class in which the variable is declared.</StepStart>
+<StepCont>
+<A ID="pgfId-1287831"></A>
+On the <UI-Label>
+Class</UI-Label>
+ menu, select <UI-Label>
+Class Instance Variables-&gt;Remove...</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1287832"></A>
+In the resulting menu of class instance variables, select the variable that you intend to remove.</StepCont>
+<Body1>
+<A ID="pgfId-1287833"></A>
+If any methods reference the variable, a Method browser will open. The variable will not be removed as long as there are methods that reference it.</Body1>
+<StepCont>
+<A ID="pgfId-1287834"></A>
+The new Method browser displays all methods that reference the variable. Edit the methods to remove the references.</StepCont>
+<StepCont>
+<A ID="pgfId-1287835"></A>
+When all references have been removed, close the Method browser.</StepCont>
+<StepCont>
+<A ID="pgfId-1287836"></A>
+On the <UI-Label>
+Class</UI-Label>
+ menu, select <UI-Label>
+Class Instance Variables-&gt;Remove...</UI-Label>
+.</StepCont>
+<Body1>
+<A ID="pgfId-1287837"></A>
+The class instance variable should now be removed.</Body1>
+<Heading3>
+<A ID="pgfId-1075180"></A>
+Remove a shared variable and its references</Heading3>
+<StepStart>
+<A ID="pgfId-1114194"></A>
+In a browser, select the class in which the variable is declared and select the <UI-Label>
+Shared Variables</UI-Label>
+ tab.</StepStart>
+<StepCont>
+<A ID="pgfId-1287851"></A>
+On the <UI-Label>
+Method</UI-Label>
+ menu, select <UI-Label>
+Safe Remove</UI-Label>
+.</StepCont>
+<Body1>
+<A ID="pgfId-1287853"></A>
+If any methods reference the variable, a Method browser will open. The variable will not be removed as long as there are methods that reference it.</Body1>
+<StepCont>
+<A ID="pgfId-1287854"></A>
+The new Method browser displays all methods that reference the variable. Edit the methods to remove the references.</StepCont>
+<StepCont>
+<A ID="pgfId-1287855"></A>
+When all references have been removed, close the Method browser.</StepCont>
+<StepCont>
+<A ID="pgfId-1287867"></A>
+On the <UI-Label>
+Method</UI-Label>
+ menu, select <UI-Label>
+Safe Remove</UI-Label>
+.</StepCont>
+<Body1>
+<A ID="pgfId-1287857"></A>
+The shared instance variable should now be removed.</Body1>
+<Heading3>
+<A ID="pgfId-1075178"></A>
+Remove undeclared variables </Heading3>
+<Body1>
+<A ID="pgfId-1040526"></A>
+When a variable is referenced without being declared, it is entered in a system dictionary named <Code>
+Undeclared</Code>
+. If it is later declared, the entry in <Code>
+Undeclared</Code>
+ remains and should be removed before you deploy your application. </Body1>
+<Body1>
+<A ID="pgfId-1040527"></A>
+To remove undeclared variables, open an inspector on <Code>
+Undeclared</Code>
+ (evaluate <Code>
+Undeclared</Code>
+ using the <UI-Label>
+Inspect</UI-Label>
+ command). Use the dictionary inspector to check for references to each entry and to remove each entry that has no entries.</Body1>
+<Heading2>
+<A ID="pgfId-1040529"></A>
+<A ID="Methods"></A>
+Methods</Heading2>
+<Heading3>
+<A ID="pgfId-1041308"></A>
+<A ID="Browse a method"></A>
+Browse a method</Heading3>
+<Body1>
+<A ID="pgfId-1041309"></A>
+To browse only the currently selected method (with a Method Browser), use &lt;Operate&gt; in the methods view and select<UI-Label>
+ Spawn</UI-Label>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1075210"></A>
+Create an instance method</Heading3>
+<Body1>
+<A ID="pgfId-1075220"></A>
+New methods are created by editing the method definition template that appears in the code view of any browser.</Body1>
+<StepStart>
+<A ID="pgfId-1075211"></A>
+In a System Browser, click on the <UI-Label>
+Instance</UI-Label>
+ tab.</StepStart>
+<StepCont>
+<A ID="pgfId-1075212"></A>
+Select the class.</StepCont>
+<StepCont>
+<A ID="pgfId-1075213"></A>
+Select the desired protocol or add one using <UI-Label>
+New...</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1075214"></A>
+Fill in the method template and then select <UI-Label>
+Accept</UI-Label>
+ on the &lt;Operate&gt; menu in the code tool. The new method is compiled and added to the currently selected protocol.</StepCont>
+<Heading3>
+<A ID="pgfId-1075254"></A>
+Create a private method</Heading3>
+<Body1>
+<A ID="pgfId-1075255"></A>
+Smalltalk has no private methods.  If you want to let others know that a message should only be sent by instances of a class and not by other classes, you typically would put the method in a protocol with &#34;<Code>
+private</Code>
+&#34; in the name.  This merely acts as a suggestion though.</Body1>
+<Heading3>
+<A ID="pgfId-1041576"></A>
+Create a class method</Heading3>
+<Body1>
+<A ID="pgfId-1075238"></A>
+New methods are created by editing the method definition template that appears in the code view of any browser.</Body1>
+<StepStart>
+<A ID="pgfId-1041577"></A>
+In a System Browser, click on the <UI-Label>
+Class</UI-Label>
+ tab.</StepStart>
+<StepCont>
+<A ID="pgfId-1041578"></A>
+Select the class.</StepCont>
+<StepCont>
+<A ID="pgfId-1287744"></A>
+Select the desired protocol or add one using <UI-Label>
+New...</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1075246"></A>
+Fill in the method template and then select <UI-Label>
+Accept</UI-Label>
+ on the &lt;Operate&gt; menu in the code view. The new method is compiled and added to the currently selected protocol.</StepCont>
+<Heading3>
+<A ID="pgfId-1041589"></A>
+Name a binary method</Heading3>
+<Body1>
+<A ID="pgfId-1041590"></A>
+A binary method consist of one or two of the following special characters: plus sign (<Code>
++</Code>
+), dash(<Code>
+-</Code>
+), asterisk(<Code>
+*</Code>
+), forward slash(<Code>
+/</Code>
+), back slash(<Code>
+\</Code>
+), ampersand(<Code>
+&amp;</Code>
+), vertical bar(<Code>
+|</Code>
+), greater than sign(<Code>
+&gt;</Code>
+), less than sign(<Code>
+&lt;</Code>
+), equal sign(<Code>
+=</Code>
+), tilde(<Code>
+~</Code>
+), at sign(<Code>
+@</Code>
+), percent sign(<Code>
+%</Code>
+), question mark(<Code>
+?</Code>
+), exclamation mark(<Code>
+!</Code>
+).  If it contains a dash, then it can only contain it as the first character.</Body1>
+<Heading3>
+<A ID="pgfId-1041326"></A>
+Find a method by name</Heading3>
+<Body1>
+<A ID="pgfId-1041327"></A>
+Select a class, then use &lt;Operate&gt; in the browser&#39;s protocols view and select <UI-Label>
+Find Method...</UI-Label>
+. A dialog box will prompt you with a list of all methods in the currently selected class.</Body1>
+<Heading3>
+<A ID="pgfId-1041354"></A>
+Find references to a method</Heading3>
+<Body1>
+<A ID="pgfId-1041355"></A>
+To browse all other methods that call the method you are viewing, use the <UI-Label>
+Senders</UI-Label>
+ commands on the &lt;Operate&gt; menu in the methods view.</Body1>
+<Body1>
+<A ID="pgfId-1114213"></A>
+To search for all methods that contain explicit references to the method you are browsing, choose <UI-Label>
+Senders</UI-Label>
+, ignoring the fold-out menu options. Note that all methods containing either explicit message sends <I>
+or</I>
+ symbols that match the selector you are searching for will be added to the list of senders (this helps to identify code that uses <Code>
+perform:</Code>
+).</Body1>
+<Body1>
+<A ID="pgfId-1041356"></A>
+Use the fold-out menu to browse <UI-Label>
+Senders</UI-Label>
+ of messages sent in the current method. To search for all methods sending those messages, pick one of the items lower on the list, or pick <UI-Label>
+more items...</UI-Label>
+ to see a complete list.</Body1>
+<Body1>
+<A ID="pgfId-1041357"></A>
+To search more narrowly for senders within the same branch of the class hierarchy you are browsing, use <UI-Label>
+Local senders</UI-Label>
+ instead of <UI-Label>
+Senders</UI-Label>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1041367"></A>
+Find implementors of a method</Heading3>
+<Body1>
+<A ID="pgfId-1041368"></A>
+To browse all other methods with the same name as the one you are viewing, use the <UI-Label>
+Implementors</UI-Label>
+ commands on the &lt;Operate&gt; menu in the methods view. To search for all methods with the same name as the one you are browsing, use <UI-Label>
+Implementors</UI-Label>
+, ignoring the fold-out menu options.</Body1>
+<Body1>
+<A ID="pgfId-1041369"></A>
+Use the fold-out menu to browse <UI-Label>
+Implementors</UI-Label>
+ of messages sent in the current method. To search for all other implementors of the messages sent, pick one of the items lower on the list, or pick <UI-Label>
+More implementors...</UI-Label>
+ to see a complete list.</Body1>
+<Body1>
+<A ID="pgfId-1041479"></A>
+To search more narrowly for implementors within the same branch of the class hierarchy you are browsing, use <UI-Label>
+Local implementors</UI-Label>
+ instead of <UI-Label>
+Implementors</UI-Label>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1041540"></A>
+Remove a method</Heading3>
+<StepStart>
+<A ID="pgfId-1075259"></A>
+In a System Browser, select the method.</StepStart>
+<StepCont>
+<A ID="pgfId-1075260"></A>
+Select the <UI-Label>
+Remove...</UI-Label>
+ command on the &lt;Operate&gt; menu in the methods view.</StepCont>
+<Heading3>
+<A ID="pgfId-1041601"></A>
+Locate missing source code for a method</Heading3>
+<Body1>
+<A ID="pgfId-1041389"></A>
+Source code for methods is stored in a single <Glossary>
+<A href="10-glossary.xml#id(sources file)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">sources file</A></Glossary>
+ associated with your VisualWorks image. If you see code in the browser with a comment explaining that it is decompiled code, <Emphasis>
+the system source or changes file is not correctly identified with your image</Emphasis>
+. To correctly identify the sources file, open the Settings Tool (select <UI-Label>
+System-&gt;Settings</UI-Label>
+ in the Launcher window) and edit the <UI-Label>
+Source Files</UI-Label>
+ page, making sure the &#34;<Platform>
+.sou</Platform>
+&#34; file name agrees with the image name.</Body1>
+<Body1>
+<A ID="pgfId-1088431"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1041390"></A>
+Set source and changes files</Bullet1>
+<Heading2>
+<A ID="pgfId-1040546"></A>
+Returning Values</Heading2>
+<Heading3>
+<A ID="pgfId-1040547"></A>
+Return a value from a method</Heading3>
+<Body1>
+<A ID="pgfId-1040548"></A>
+Every method returns a single object,by default the object that received the message. When another object should be returned, such as a more interesting value, you can specify that object by using a caret symbol ( <Code>
+^</Code>
+ ).</Body1>
+<CodeSample>
+<A ID="pgfId-1040549"></A>
+accountID
+	^accountID</CodeSample>
+<Heading3>
+<A ID="pgfId-1040551"></A>
+Return from a block</Heading3>
+<Body1>
+<A ID="pgfId-1040552"></A>
+When a return character is enclosed within a block, it forces a return from the entire method. That is, it does not act as a return from the block back to the containing method.</Body1>
+<Heading3>
+<A ID="pgfId-1040553"></A>
+Return the result of a message</Heading3>
+<Body1>
+<A ID="pgfId-1040554"></A>
+A return character that is followed by a message returns the result of that message. </Body1>
+<CodeSample>
+<A ID="pgfId-1040555"></A>
+displayString
+	^accountID printString, &#39;--&#39;, name</CodeSample>
+<Body1>
+<A ID="pgfId-1040558"></A>
+This approach often circumvents the need to create a temporary variable for the message result.</Body1>
+<Heading3>
+<A ID="pgfId-1040559"></A>
+Return a value on condition</Heading3>
+<Body1>
+<A ID="pgfId-1040560"></A>
+Frequently, a method performs a test and returns one value if the test result is true and a second value if the test result is false. Relying on the fact that a return character that is followed by a message returns the result of the message, you can use a single return caret to serve both forks of the branch, rather than placing a caret inside each block. </Body1>
+<CodeSample>
+<A ID="pgfId-1040561"></A>
+accountPrefix
+	&quot;Answer the first four characters of the accountID, 
+	or an empty string if the accountID is empty.&quot;
+
+	| id |
+	id := self accountID.
+
+	^id isEmpty 
+		ifTrue: [String new]
+		ifFalse: [id copyFrom: 1 to: 4].</CodeSample>
+<Heading2>
+<A ID="pgfId-1040585"></A>
+Accessing Objects</Heading2>
+<Heading3>
+<A ID="pgfId-1040586"></A>
+Access a distinguished instance</Heading3>
+<Body1>
+<A ID="pgfId-1040587"></A>
+When a class is intended to provide just one instance of itself, that instance is referred to as a <Glossary>
+<A href="10-glossary.xml#id(distinguished instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">distinguished instance</A></Glossary>
+. Typically, it is stored in a shared variable and accessed using an <Glossary>
+<A href="10-glossary.xml#id(accessing method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">accessing method</A></Glossary>
+ named <Code>
+default</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1040588"></A>
+Send a <Code>
+default</Code>
+ message or other accessing message to the class. (Use the <UI-Label>
+Inspect</UI-Label>
+ command to open an Inspector on the instance, so you can see how the instance variables differ from those of a <Code>
+new</Code>
+ instance.)</Body1>
+<CodeSample>
+<A ID="pgfId-1041155"></A>
+SourceFileManager default.</CodeSample>
+<Heading2>
+<A ID="pgfId-1041156"></A>
+Initializing Objects</Heading2>
+<Heading3>
+<A ID="pgfId-1041157"></A>
+Create an &#39;initialize&#39; method</Heading3>
+<Body1>
+<A ID="pgfId-1040593"></A>
+Write an <Code>
+initialize</Code>
+ method to set initial instance variable values for a new object instance. This is often necessary to prevent errors that result when client methods send messages to the uninitialized instance variables.</Body1>
+<Body1>
+<A ID="pgfId-1040594"></A>
+<Code>
+ApplicationModel</Code>
+ and its subclasses invoke <Code>
+initialize</Code>
+ by default. Other classes must invoke <Code>
+initialize</Code>
+ method explicitly in their instance-creation methods. </Body1>
+<StepStart>
+<A ID="pgfId-1040596"></A>
+Create an instance method named <Code>
+initialize</Code>
+ in an <Code>
+initialize-release</Code>
+ protocol. </StepStart>
+<CodeSample>
+<A ID="pgfId-1040597"></A>
+initialize
+	accountID := 0.
+	name := String new.
+	address := String new.
+	phoneNumber := String new.</CodeSample>
+<StepCont>
+<A ID="pgfId-1040603"></A>
+Create a class method named <Code>
+new</Code>
+ in an <Code>
+instance creation</Code>
+ protocol which invokes <Code>
+initialize</Code>
+.</StepCont>
+<CodeSample>
+<A ID="pgfId-1040604"></A>
+new
+	^super new initialize</CodeSample>
+<Body1>
+<A ID="pgfId-1088415"></A>
+<B>
+Online example: </B>
+<Smalltalk-Code-Example>
+Customer1Example</Smalltalk-Code-Example>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040606"></A>
+Use a parent class&#39;s initialization</Heading3>
+<Body1>
+<A ID="pgfId-1040608"></A>
+When implementing an <Code>
+initialize</Code>
+ method, be aware that a parent class may also have an <Code>
+initialize</Code>
+ method. If so, invoke the parent class&#39;s <Code>
+initialize</Code>
+ as a first step in the subclass&#39;s <Code>
+initialize</Code>
+.</Body1>
+<CodeSample>
+<A ID="pgfId-1040609"></A>
+initialize
+	super initialize.
+	yearsOfPatronage := 3.</CodeSample>
+<Body1>
+<A ID="pgfId-1088425"></A>
+<B>
+Online example: </B>
+<Smalltalk-Code-Example>
+PreferredCustomerExample</Smalltalk-Code-Example>
+</Body1>
+<Heading2>
+<A ID="pgfId-1041120"></A>
+<A ID="Protocols"></A>
+Protocols</Heading2>
+<Heading3>
+<A ID="pgfId-1041605"></A>
+<A ID="Browse a protocol"></A>
+Browse a protocol</Heading3>
+<Body1>
+<A ID="pgfId-1041606"></A>
+To browse only the currently selected protocol (with a Protocol Browser), use &lt;Operate&gt; in the protocols view and select<UI-Label>
+ Spawn</UI-Label>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1041121"></A>
+Create a protocol</Heading3>
+<Body1>
+<A ID="pgfId-1041122"></A>
+Placing related methods in a message category, also known as a <Glossary>
+<A href="10-glossary.xml#id(protocol)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">protocol</A></Glossary>
+, helps to document your code and makes it easier to find with a System Browser. Your choice of protocol name has no effect on your code&#39;s operation.</Body1>
+<StepStart>
+<A ID="pgfId-1041124"></A>
+In a System Browser, select the class.</StepStart>
+<StepCont>
+<A ID="pgfId-1041125"></A>
+Select the <UI-Label>
+New...</UI-Label>
+ command in the protocols view.</StepCont>
+<StepCont>
+<A ID="pgfId-1041126"></A>
+In the resulting dialog, supply the name of the protocol (no harm is done if it already exists). Type a blank space to cancel the operation.</StepCont>
+<Body1>
+<A ID="pgfId-1041127"></A>
+The new protocol is inserted in the list above the protocol that was previously selected. To insert it at the bottom of the list, make sure no protocol is selected when you begin step 1.</Body1>
+<Heading3>
+<A ID="pgfId-1041128"></A>
+Remove a protocol</Heading3>
+<Body1>
+<A ID="pgfId-1041129"></A>
+Removing a protocol that has methods in it removes the methods also.</Body1>
+<StepStart>
+<A ID="pgfId-1041130"></A>
+In a System Browser, select the protocol.</StepStart>
+<StepCont>
+<A ID="pgfId-1041131"></A>
+Select the <UI-Label>
+Remove...</UI-Label>
+ command in the protocols view.</StepCont>
+<StepCont>
+<A ID="pgfId-1041132"></A>
+If the protocol contains methods, you will be asked to confirm the removal.</StepCont>
+<Heading3>
+<A ID="pgfId-1041133"></A>
+Rename a protocol</Heading3>
+<StepStart>
+<A ID="pgfId-1041134"></A>
+In a System Browser, select the protocol.</StepStart>
+<StepCont>
+<A ID="pgfId-1041135"></A>
+Select the <UI-Label>
+Rename...</UI-Label>
+ command in the protocols view.</StepCont>
+<StepCont>
+<A ID="pgfId-1041136"></A>
+In the resulting dialog, supply the new name. Type a blank space to cancel the operation. </StepCont>
+<Heading3>
+<A ID="pgfId-1041137"></A>
+Move a method to a different protocol</Heading3>
+<StepStart>
+<A ID="pgfId-1041138"></A>
+In a System Browser, select the method.</StepStart>
+<StepCont>
+<A ID="pgfId-1041139"></A>
+Select the <UI-Label>
+Move-&gt;to Protocol...</UI-Label>
+ command in the methods view.</StepCont>
+<StepCont>
+<A ID="pgfId-1041140"></A>
+In the resulting dialog, supply the name of the destination protocol. If the protocol does not exist, it will be created. Type a blank space to cancel the operation.</StepCont>
+<Heading3>
+<A ID="pgfId-1041141"></A>
+Copy a method to a different class</Heading3>
+<StepStart>
+<A ID="pgfId-1041142"></A>
+In a System Browser, select the method.</StepStart>
+<StepCont>
+<A ID="pgfId-1075327"></A>
+Select the <UI-Label>
+Move-&gt;to Protocol...</UI-Label>
+ command in the methods view.</StepCont>
+<StepCont>
+<A ID="pgfId-1041144"></A>
+In the resulting dialog, enter the name of the destination class, a greater-than symbol (<UI-Entry>
+&gt;</UI-Entry>
+), and the name of the destination protocol (i.e., <Code>
+MyClass&gt;initialization</Code>
+). To copy the method to the class side rather than the instance side, insert &#34;<UI-Entry>
+class</UI-Entry>
+&#34; after the class name.</StepCont>
+<Heading2>
+<A ID="pgfId-1041631"></A>
+<A ID="Classes"></A>
+Classes</Heading2>
+<Heading3>
+<A ID="pgfId-1041797"></A>
+<A ID="Browse a class"></A>
+Browse a class</Heading3>
+<Body1>
+<A ID="pgfId-1041798"></A>
+To browse only the selected class (with a Class Browser), use &lt;Operate&gt; in the browser&#39;s classes view and select<UI-Label>
+ Spawn</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1041799"></A>
+To browse only the classes in the same branch of the class hierarchy (with a Class Hierarchy Browser), use &lt;Operate&gt; in the classes view and select<UI-Label>
+ Spawn Hierarchy</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1088445"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1088449"></A>
+<A href="04-develop.xml#id(Set options for browsing)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set options for browsing</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1041647"></A>
+View a class&#39; behavior</Heading3>
+<Body1>
+<A ID="pgfId-1041648"></A>
+Use the <UI-Label>
+Instance</UI-Label>
+ and <UI-Label>
+Class </UI-Label>
+tab controls in the System Browser to toggle between showing class and instance behavior.</Body1>
+<Heading3>
+<A ID="pgfId-1041658"></A>
+View a class hierarchy</Heading3>
+<Body1>
+<A ID="pgfId-1041659"></A>
+With one class is selected in the System Browser, select the <UI-Label>
+Hierarchy</UI-Label>
+ tab in the navigator (it may be necessary to deselect a protocol in order to see the hierarchy.)</Body1>
+<Body1>
+<A ID="pgfId-1041660"></A>
+To open a separate Hierarchy Browser, select <UI-Label>
+Class-&gt;Spawn Hierarchy</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1088460"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1088464"></A>
+<A href="04-develop.xml#id(Set options for browsing)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set options for browsing</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1041674"></A>
+View references to a class</Heading3>
+<Body1>
+<A ID="pgfId-1041675"></A>
+Select a class, then select <UI-Label>
+References</UI-Label>
+ on the <UI-Label>
+Class</UI-Label>
+ menu. A new browser will open showing a list of all methods in the system that directly reference the selected class.</Body1>
+<Heading3>
+<A ID="pgfId-1041685"></A>
+Find a class by name</Heading3>
+<Body1>
+<A ID="pgfId-1041847"></A>
+Enter the class name into the input field in the upper-right corner of the Browser. You may enter the beginning of a class name, or use the wildcard character &#34;<Platform>
+*</Platform>
+&#34; to narrow your search. Enter &lt;Return&gt; to perform the find.</Body1>
+<Heading3>
+<A ID="pgfId-1041853"></A>
+Save a class</Heading3>
+<Body1>
+<A ID="pgfId-1041854"></A>
+To save the complete definition of a class as a disk file, select the class and use <UI-Label>
+File Out As...</UI-Label>
+ on the &lt;Operate&gt; menu in the classes view. A dialog box prompts you for the name of the file. By default, the class is saved in a file called <Platform>
+NameOfClass.st</Platform>
+.</Body1>
+<Body1>
+<A ID="pgfId-1041855"></A>
+To save a single protocol or a single method, use <UI-Label>
+File Out As...</UI-Label>
+ in the protocols or methods view.</Body1>
+<Body1>
+<A ID="pgfId-1075395"></A>
+<B>
+Note:</B>
+ Parcels are now the preferred mechanism for storing classes in files.</Body1>
+<Heading2>
+<A ID="pgfId-1041848"></A>
+Creating a Class</Heading2>
+<Heading3>
+<A ID="pgfId-1040613"></A>
+<A ID="Choose a class type"></A>
+Choose a class type</Heading3>
+<Body1>
+<A ID="pgfId-1127433"></A>
+When creating a new class, you must choose from one of the three available types:</Body1>
+<Body1>
+<A ID="pgfId-1127440"></A>
+<Glossary>
+Fixed Size</Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1127452"></A>
+Instances will be fixed in size, with named instance variables only.</DefDscrp>
+<Body1>
+<A ID="pgfId-1127441"></A>
+<Glossary>
+Variable</Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1127453"></A>
+Instances are variable-sized, with indexed instance variables which contain objects.</DefDscrp>
+<Body1>
+<A ID="pgfId-1127442"></A>
+<Glossary>
+Bytes</Glossary>
+</Body1>
+<DefDscrp>
+<A ID="pgfId-1127454"></A>
+Instances are variable-sized, with indexed instance variables contain one byte each.</DefDscrp>
+<Body1>
+<A ID="pgfId-1127443"></A>
+In the class creation template, you can specify either a <Code>
+Fixed</Code>
+, <Code>
+Variable</Code>
+, or <Code>
+Byte</Code>
+ type class using the <Code>
+indexedType:</Code>
+ keyword with the argument <Code>
+#none</Code>
+, <Code>
+#objects</Code>
+, or <Code>
+#bytes</Code>
+, respectively.</Body1>
+<Body1>
+<A ID="pgfId-1127476"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1127480"></A>
+<A href="01-language.xml#id(Create a new subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a new subclass</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1127491"></A>
+<A href="01-language.xml#id(Create a collection class that holds pointers to its elements)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a collection class that holds pointers to its elements</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1127484"></A>
+<A href="01-language.xml#id(Create a collection class that holds byte-sized elements)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a collection class that holds byte-sized elements</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1127432"></A>
+<A ID="Create a new subclass"></A>
+Create a new subclass</Heading3>
+<Body1>
+<A ID="pgfId-1040614"></A>
+A class name can contain letters, numbers and underscores, but cannot begin with a number. Class names must begin with a capital letter.</Body1>
+<StepStart>
+<A ID="pgfId-1040615"></A>
+Select the name space and class category in a System Browser where you would like to place the new class.</StepStart>
+<StepCont>
+<A ID="pgfId-1114275"></A>
+On the <UI-Label>
+Class</UI-Label>
+ menu, select <UI-Label>
+New-&gt;Class</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1040617"></A>
+Edit the class-creation template, entering at least the name space (<Code>
+Examples</Code>
+) and the name of the new subclass.</StepCont>
+<CodeSample>
+<A ID="pgfId-1114246"></A>
+Smalltalk.<Code>
+Examples</Code>
+ defineClass: #Customer1Example</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114247"></A>
+	superclass: #{Core.Object}</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114248"></A>
+	indexedType: #none</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114249"></A>
+	private: false</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114250"></A>
+	instanceVariableNames: 'accountID name address phoneNumber'</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114251"></A>
+	classInstanceVariableNames: ''</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114252"></A>
+	imports: ''</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114244"></A>
+	category: 'Examples-Help'</CodeSample>
+<StepCont>
+<A ID="pgfId-1040623"></A>
+To add the class to the system, select the <UI-Label>
+Accept</UI-Label>
+ command in the code view.</StepCont>
+<Body1>
+<A ID="pgfId-1040624"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1114382"></A>
+<A href="01-language.xml#id(Choose a class type)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Choose a class type</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1127496"></A>
+<A href="01-language.xml#id(Create a collection class that holds pointers to its elements)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a collection class that holds pointers to its elements</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1114386"></A>
+<A href="01-language.xml#id(Create a collection class that holds byte-sized elements)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a collection class that holds byte-sized elements</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040628"></A>
+<A ID="Create a collection class that holds pointers to its elements"></A>
+Create a collection class that holds pointers to its elements</Heading3>
+<Body1>
+<A ID="pgfId-1040629"></A>
+Use the System Browser to create a class that holds a collection of indexable variables, each of which is a pointer to an object.</Body1>
+<StepStart>
+<A ID="pgfId-1114331"></A>
+Select the name space and class category where you would like to place the new class.</StepStart>
+<StepCont>
+<A ID="pgfId-1114332"></A>
+On the <UI-Label>
+Class</UI-Label>
+ menu, select <UI-Label>
+New-&gt;Indexed Class</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1114283"></A>
+Edit the class-creation template, entering at least the name space (<Code>
+Examples</Code>
+) and the name of the new subclass.</StepCont>
+<CodeSample>
+<A ID="pgfId-1114284"></A>
+Smalltalk.Examples defineClass: #ExampleVariableClass</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114302"></A>
+	superclass: #{Core.Object}</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114303"></A>
+	indexedType: #objects</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114304"></A>
+	private: false</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114288"></A>
+	instanceVariableNames: ''</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114289"></A>
+	classInstanceVariableNames: ''</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114290"></A>
+	imports: ''</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114291"></A>
+	category: 'Examples-Help'</CodeSample>
+<StepCont>
+<A ID="pgfId-1114292"></A>
+To add the class to the system, select the <UI-Label>
+Accept</UI-Label>
+ command in the code view.</StepCont>
+<Body1>
+<A ID="pgfId-1114391"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1127504"></A>
+<A href="01-language.xml#id(Choose a class type)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Choose a class type</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1114399"></A>
+<A href="01-language.xml#id(Create a collection class that holds byte-sized elements)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a collection class that holds byte-sized elements</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040635"></A>
+<A ID="Create a collection class that holds byte-sized elements"></A>
+Create a collection class that holds byte-sized elements</Heading3>
+<Body1>
+<A ID="pgfId-1114350"></A>
+Use the System Browser to create a class that holds a collection of indexable variables, each of which is a pointer to an object.</Body1>
+<StepStart>
+<A ID="pgfId-1114351"></A>
+Using the System Browser, select the name space and class category where you would like to place the new class.</StepStart>
+<StepCont>
+<A ID="pgfId-1114352"></A>
+On the <UI-Label>
+Class</UI-Label>
+ menu, select <UI-Label>
+New-&gt;Byte Indexed</UI-Label>
+.</StepCont>
+<StepCont>
+<A ID="pgfId-1114353"></A>
+Edit the class-creation template, entering at least the name space (<Code>
+Examples</Code>
+) and the name of the new subclass.</StepCont>
+<CodeSample>
+<A ID="pgfId-1114354"></A>
+Smalltalk.Examples defineClass: #ExampleVariableClass</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114355"></A>
+	superclass: #{Core.Object}</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114356"></A>
+	indexedType: #bytes</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114357"></A>
+	private: false</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114358"></A>
+	instanceVariableNames: ''</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114359"></A>
+	classInstanceVariableNames: ''</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114360"></A>
+	imports: ''</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114361"></A>
+	category: 'Examples-Help'</CodeSample>
+<StepCont>
+<A ID="pgfId-1114362"></A>
+To add the class to the system, select the <UI-Label>
+Accept</UI-Label>
+ command in the code view.</StepCont>
+<Body1>
+<A ID="pgfId-1114405"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1127511"></A>
+<A href="01-language.xml#id(Choose a class type)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Choose a class type</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1114409"></A>
+<A href="01-language.xml#id(Create a collection class that holds pointers to its elements)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a collection class that holds pointers to its elements</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1123093"></A>
+Create a subclass of ApplicationModel or SimpleDialog</Heading3>
+<Body1>
+<A ID="pgfId-1123094"></A>
+For the convenience of interface programmers, the <UI-Label>
+Install</UI-Label>
+ command in a Canvas provides a convenient dialog box for creating new subclasses of <Code>
+ApplicationModel</Code>
+ and <Code>
+SimpleDialog</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1123095"></A>
+Choose <Code>
+SimpleDialog</Code>
+ as the parent when instances of the new class will be used primarily to run one or more dialog windows.</Body1>
+<Body1>
+<A ID="pgfId-1123096"></A>
+Choose <Code>
+ApplicationModel</Code>
+ as the parent when instances of the new class will be used to run regular windows as well.</Body1>
+<Heading2>
+<A ID="pgfId-1123091"></A>
+<A ID="Name Spaces"></A>
+Name Spaces</Heading2>
+<Heading3>
+<A ID="pgfId-1114495"></A>
+<A ID="Create a name space"></A>
+Create a name space</Heading3>
+<Body1>
+<A ID="pgfId-1215920"></A>
+Use the System Browser to create a <Glossary>
+<A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A></Glossary>
+ (choose <UI-Label>
+Browse-&gt;System</UI-Label>
+ in the <Glossary>
+<A href="10-glossary.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A></Glossary>
+ window):</Body1>
+<StepStart>
+<A ID="pgfId-1215924"></A>
+Select the parent namespace (typically, this should be <Code>
+Smalltalk</Code>
+) in the browser&#39;s class view, and choose <UI-Label>
+Class-&gt;New-&gt;Name Space</UI-Label>
+. A namespace definition template appears.</StepStart>
+<StepCont>
+<A ID="pgfId-1114509"></A>
+Edit the template, entering at least the name space (<Code>
+Examples</Code>
+). Change the receiver name space if necessary, although normally you should only define namespaces under <Code>
+Smalltalk. </Code>
+Also set any <A href="10-glossary.xml#id(import)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">imports</A> and a category name for the name space. For example:</StepCont>
+<CodeSample>
+<A ID="pgfId-1114510"></A>
+</CodeSample>
+<CodeSample>
+<A ID="pgfId-1230964"></A>
+Smalltalk defineNameSpace: #Examples</CodeSample>
+<CodeSample>
+<A ID="pgfId-1203054"></A>
+		private: false</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114512"></A>
+		imports: '</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114514"></A>
+			private Smalltalk.*</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114571"></A>
+			'</CodeSample>
+<CodeSample>
+<A ID="pgfId-1114572"></A>
+		category: #'Examples-Unclassified'</CodeSample>
+<StepCont>
+<A ID="pgfId-1226843"></A>
+<UI-Label>
+Accept</UI-Label>
+ your changes to create the new name space.</StepCont>
+<Body1>
+<A ID="pgfId-1203185"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1203186"></A>
+<A href="01-language.xml#id(Naming name spaces)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Naming name spaces</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1203311"></A>
+<A href="01-language.xml#id(Create a private name space)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a private name space</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1203195"></A>
+<A href="01-language.xml#id(Importing to a name space)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Importing to a name space</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1203300"></A>
+<A ID="Naming name spaces"></A>
+Naming name spaces</Heading3>
+<Body1>
+<A ID="pgfId-1216047"></A>
+Create new parent name spaces under <Code>
+Smalltalk</Code>
+. In general, the <Code>
+Root</Code>
+ namespace should not be used as a parent.</Body1>
+<Body1>
+<A ID="pgfId-1226890"></A>
+For example:</Body1>
+<CodeSample>
+<A ID="pgfId-1216066"></A>
+Smalltalk defineNameSpace: #WidgetSystems</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216067"></A>
+		private: false</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216068"></A>
+		imports: '</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216069"></A>
+			private Smalltalk.*</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216070"></A>
+			'</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216071"></A>
+		category: #'WidgetSystems-Unclassified'</CodeSample>
+<Body1>
+<A ID="pgfId-1216048"></A>
+Namespace names and hierarchies should be selected to help avoid collisions. We recommend using a long form of your company name, since it is less likely to be used by someone else. Thus, in the example, <Code>
+WidgetSystems</Code>
+ is less likely to cause a clash than would <Code>
+WS</Code>
+. </Body1>
+<Body1>
+<A ID="pgfId-1296460"></A>
+Cincom provides a Wiki server on which companies can reserve top-level name space names. For details, see:</Body1>
+<CodeSample>
+<A ID="pgfId-1296469"></A>
+http://www.cincomsmalltalk.com/CincomSmalltalkWiki/VW+NameSpace+Reservations</CodeSample>
+<Body1>
+<A ID="pgfId-1296461"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1215981"></A>
+<A href="01-language.xml#id(Create a name space)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a name space</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1203077"></A>
+<A ID="Create a private name space"></A>
+Create a private name space</Heading3>
+<Body1>
+<A ID="pgfId-1203078"></A>
+Name spaces, classes, and <A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variables</A> are defined as either public or private. By default, new name spaces are <B>
+public</B>
+ and thus exported and available for import by another name space or class.</Body1>
+<Body1>
+<A ID="pgfId-1215897"></A>
+To create a private name space, use the System Browser:</Body1>
+<StepStart>
+<A ID="pgfId-1215875"></A>
+Select the parent namespace in the browser&#39;s class view, and choose <UI-Label>
+Class-&gt;New-&gt;Name Space</UI-Label>
+. A namespace definition template appears.</StepStart>
+<StepCont>
+<A ID="pgfId-1215876"></A>
+Edit the template, setting the <Code>
+private:</Code>
+ argument to <Code>
+true</Code>
+. Also enter the new name (e.g., <Code>
+Examples</Code>
+), any <A href="10-glossary.xml#id(import)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">imports</A> and a category name for the name space. For example:</StepCont>
+<CodeSample>
+<A ID="pgfId-1215881"></A>
+</CodeSample>
+<CodeSample>
+<A ID="pgfId-1230965"></A>
+Smalltalk defineNameSpace: #Examples</CodeSample>
+<CodeSample>
+<A ID="pgfId-1215882"></A>
+		private: <B>
+true</B>
+</CodeSample>
+<CodeSample>
+<A ID="pgfId-1215883"></A>
+		imports: '</CodeSample>
+<CodeSample>
+<A ID="pgfId-1215884"></A>
+			OtherNameSpace.*</CodeSample>
+<CodeSample>
+<A ID="pgfId-1215885"></A>
+			private Smalltalk.*</CodeSample>
+<CodeSample>
+<A ID="pgfId-1215886"></A>
+			'</CodeSample>
+<CodeSample>
+<A ID="pgfId-1215887"></A>
+		category: #'Examples-Unclassified'</CodeSample>
+<StepCont>
+<A ID="pgfId-1215889"></A>
+ <UI-Label>
+Accept</UI-Label>
+ your changes to create the new, private name space.</StepCont>
+<Body1>
+<A ID="pgfId-1203203"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1203211"></A>
+<A href="01-language.xml#id(Importing to a name space)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Importing to a name space</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1203084"></A>
+<A ID="Importing to a name space"></A>
+Importing to a name space</Heading3>
+<Body1>
+<A ID="pgfId-1203085"></A>
+Name space and class definitions can specify the names of <A href="10-glossary.xml#id(binding)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">bindings</A> to <A href="10-glossary.xml#id(import)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">import</A>. A binding can be imported only if it is defined as public, or imported as public into another imported name space.</Body1>
+<Body1>
+<A ID="pgfId-1216084"></A>
+To create a name space that imports other bindings, use the System Browser:</Body1>
+<StepStart>
+<A ID="pgfId-1216085"></A>
+Select the parent namespace in the browser&#39;s class view, and choose <UI-Label>
+Class-&gt;New-&gt;Name Space</UI-Label>
+. A namespace definition template appears.</StepStart>
+<StepCont>
+<A ID="pgfId-1216134"></A>
+Edit the template, entering the name (e.g., <Code>
+GraphicsExamples</Code>
+) and category name for the new name space. Specify all <A href="10-glossary.xml#id(import)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">imports</A> using a single string argument to the <Code>
+imports:</Code>
+ keyword. For example:</StepCont>
+<CodeSample>
+<A ID="pgfId-1216091"></A>
+</CodeSample>
+<CodeSample>
+<A ID="pgfId-1230966"></A>
+Smalltalk defineNameSpace: #GraphicsExamples</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216092"></A>
+		private: false</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216093"></A>
+		imports: '</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216094"></A>
+			Graphics.SymbolicPaintConstants.ButtonHilite</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216095"></A>
+			private Smalltalk.*</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216096"></A>
+			'</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216097"></A>
+		category: #'Examples-Graphics'</CodeSample>
+<StepCont>
+<A ID="pgfId-1203092"></A>
+ <UI-Label>
+Accept</UI-Label>
+ your changes to create the new name space.</StepCont>
+<Body1>
+<A ID="pgfId-1216181"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1216185"></A>
+<A href="01-language.xml#id(Choosing appropriate name space imports)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Choosing appropriate name space imports</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1216209"></A>
+<A ID="Choosing appropriate name space imports"></A>
+Choosing appropriate name space imports</Heading3>
+<Body1>
+<A ID="pgfId-1216245"></A>
+When a name space imports <A href="10-glossary.xml#id(binding)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">bindings</A>, the <A href="10-glossary.xml#id(import)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">import</A> declaration may be either <B>
+specific</B>
+ or <B>
+general</B>
+. For example, in this definition:</Body1>
+<CodeSample>
+<A ID="pgfId-1216246"></A>
+</CodeSample>
+<CodeSample>
+<A ID="pgfId-1230969"></A>
+Smalltalk defineNameSpace: #GraphicsExamples</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216247"></A>
+		private: false</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216248"></A>
+		imports: '</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216249"></A>
+			Graphics.SymbolicPaintConstants.ButtonHilite</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216250"></A>
+			private Smalltalk.*</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216251"></A>
+			'</CodeSample>
+<CodeSample>
+<A ID="pgfId-1216252"></A>
+		category: #'Examples-Graphics'</CodeSample>
+<Body1>
+<A ID="pgfId-1216211"></A>
+The first, <B>
+specific import</B>
+, specifies a single public binding name:</Body1>
+<CodeSample>
+<A ID="pgfId-1216194"></A>
+Graphics.SymbolicPaintConstants.ButtonHilite</CodeSample>
+<Body1>
+<A ID="pgfId-1216195"></A>
+The second, <B>
+general import</B>
+, specifies all public bindings in a class or name space, by appending an <Code>
+*</Code>
+ (asterisk) as the final name in a binding reference:</Body1>
+<CodeSample>
+<A ID="pgfId-1216196"></A>
+Smalltalk.*</CodeSample>
+<Body1>
+<A ID="pgfId-1216197"></A>
+As a rule, a general import should make its imports <Code>
+private</Code>
+, as in:</Body1>
+<CodeSample>
+<A ID="pgfId-1216198"></A>
+private Smalltalk.*</CodeSample>
+<Body1>
+<A ID="pgfId-1216199"></A>
+When a name space makes an import <Code>
+private</Code>
+, another name space that imports it is prevented from importing that private binding, at least via this name space.</Body1>
+<Body1>
+<A ID="pgfId-1216265"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1216269"></A>
+<A href="01-language.xml#id(Importing to a name space)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Importing to a name space</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1216280"></A>
+<A href="01-language.xml#id(Imports into Smalltalk)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Imports into Smalltalk</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1203099"></A>
+<A ID="Imports into Smalltalk"></A>
+Imports into Smalltalk</Heading3>
+<Body1>
+<A ID="pgfId-1203100"></A>
+As a provisional measure, to ensure that pre-5i code works in a version 5i (or later) image, the <Code>
+Smalltalk</Code>
+ name space <A href="10-glossary.xml#id(import)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">imports</A> all <A href="10-glossary.xml#id(binding)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">bindings</A> from all of the child name spaces defined in the base, and all of the child name spaces import all of the bindings in <Code>
+Smalltalk</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1203107"></A>
+So, in the definition of the <Code>
+Smalltalk</Code>
+ name space, you see <Code>
+Core.*</Code>
+ as an import, and in the definition of <Code>
+Core</Code>
+ you see <Code>
+Smalltalk.*</Code>
+ imported. There is also a shared variable <Code>
+Smalltalk</Code>
+ defined in the <Code>
+Smalltalk</Code>
+ name space to allow it to refer to itself.</Body1>
+<Body1>
+<A ID="pgfId-1203108"></A>
+This circularity can be confusing, and is a temporary measure. While your name spaces can import<Code>
+ private Smalltalk.*</Code>
+ to gain the access to system classes, you should be careful to import only those system name spaces that you need.</Body1>
+<Body1>
+<A ID="pgfId-1203270"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1203274"></A>
+<A href="01-language.xml#id(Referencing bindings)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Referencing bindings</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1114498"></A>
+<A ID="Remove a name space"></A>
+Remove a name space</Heading3>
+<Body1>
+<A ID="pgfId-1114577"></A>
+Removing a <Glossary>
+<A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A></Glossary>
+ that has classes in it removes the classes also.</Body1>
+<StepStart>
+<A ID="pgfId-1114578"></A>
+In a System Browser, select the name space.</StepStart>
+<StepCont>
+<A ID="pgfId-1114579"></A>
+Select the <UI-Label>
+Remove...</UI-Label>
+ command from the <UI-Label>
+Class</UI-Label>
+ menu.</StepCont>
+<StepCont>
+<A ID="pgfId-1114580"></A>
+If the name space contains classes, you will be asked to confirm the removal.</StepCont>
+<Heading3>
+<A ID="pgfId-1114440"></A>
+<A ID="Rename a name space"></A>
+Rename a name space</Heading3>
+<Body1>
+<A ID="pgfId-1114594"></A>
+When you rename a <Glossary>
+<A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A></Glossary>
+, the new name appears automatically in the definition of each class in that category.</Body1>
+<StepStart>
+<A ID="pgfId-1114595"></A>
+In a System Browser, select the name space.</StepStart>
+<StepCont>
+<A ID="pgfId-1114596"></A>
+Select the <UI-Label>
+Rename...</UI-Label>
+ command from the <UI-Label>
+Class</UI-Label>
+ menu.</StepCont>
+<StepCont>
+<A ID="pgfId-1114597"></A>
+In the resulting dialog, supply the new name. Type a blank space to cancel the operation.</StepCont>
+<Heading2>
+<A ID="pgfId-1041270"></A>
+<A ID="Class Categories"></A>
+Class Categories</Heading2>
+<Heading3>
+<A ID="pgfId-1040643"></A>
+<A ID="Browse a class category"></A>
+Browse a class category</Heading3>
+<Body1>
+<A ID="pgfId-1114457"></A>
+To browse only the classes in the selected <Glossary>
+<A href="10-glossary.xml#id(category)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">category</A></Glossary>
+, use &lt;Operate&gt; in the categories view and select<UI-Label>
+ Spawn</UI-Label>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1114458"></A>
+Create a class category</Heading3>
+<Body1>
+<A ID="pgfId-1040644"></A>
+Use a class <Glossary>
+<A href="10-glossary.xml#id(category)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">category</A></Glossary>
+ to organize your classes into groups. Many tools allow you to work on categories as well as on individual classes. The browser&#39;s navigator is set to view categories when you click on the <UI-Label>
+Category</UI-Label>
+ tab.</Body1>
+<StepStart>
+<A ID="pgfId-1040646"></A>
+In a System Browser, select the <UI-Label>
+New...</UI-Label>
+ command in the class-category view.</StepStart>
+<StepCont>
+<A ID="pgfId-1040647"></A>
+In the resulting dialog, supply the name of the category (no harm is done if it already exists).</StepCont>
+<Body1>
+<A ID="pgfId-1040648"></A>
+The new class category is inserted in the list above the category that was previously selected. To insert it at the bottom of the list, make sure no category is selected when you begin step 1.</Body1>
+<Heading3>
+<A ID="pgfId-1040649"></A>
+Remove a class category</Heading3>
+<Body1>
+<A ID="pgfId-1040650"></A>
+Removing a class <Glossary>
+<A href="10-glossary.xml#id(category)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">category</A></Glossary>
+ that has classes in it removes the classes also.</Body1>
+<StepStart>
+<A ID="pgfId-1040651"></A>
+In a System Browser, select the category.</StepStart>
+<StepCont>
+<A ID="pgfId-1040652"></A>
+Select the <UI-Label>
+Remove...</UI-Label>
+ command in the class-category view.</StepCont>
+<StepCont>
+<A ID="pgfId-1040653"></A>
+If the category contains classes, you will be asked to confirm the removal.</StepCont>
+<Heading3>
+<A ID="pgfId-1040654"></A>
+Rename a class category</Heading3>
+<Body1>
+<A ID="pgfId-1040655"></A>
+When you rename a class <Glossary>
+<A href="10-glossary.xml#id(category)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">category</A></Glossary>
+, the new name appears automatically in the definition of each class in that category.</Body1>
+<StepStart>
+<A ID="pgfId-1040656"></A>
+In a System Browser, select the category.</StepStart>
+<StepCont>
+<A ID="pgfId-1040657"></A>
+Select the <UI-Label>
+Rename...</UI-Label>
+ command in the class-category view.</StepCont>
+<StepCont>
+<A ID="pgfId-1040658"></A>
+In the resulting dialog, supply the new name. Type a blank space to cancel the operation.</StepCont>
+<Heading3>
+<A ID="pgfId-1040659"></A>
+Move a class to a different category</Heading3>
+<StepStart>
+<A ID="pgfId-1040660"></A>
+In a System Browser, select the class.</StepStart>
+<StepCont>
+<A ID="pgfId-1040661"></A>
+Select the <UI-Label>
+Move-&gt;to Category...</UI-Label>
+ command in the class view.</StepCont>
+<StepCont>
+<A ID="pgfId-1040662"></A>
+In the resulting dialog, supply the name of the destination category. If the category does not exist, it will be created.</StepCont>
+<Heading2>
+<A ID="pgfId-1041865"></A>
+Creating Instances</Heading2>
+<Heading3>
+<A ID="pgfId-1041098"></A>
+Create an instance with &#39;new&#39;</Heading3>
+<Body1>
+<A ID="pgfId-1041099"></A>
+All classes inherit a basic <Code>
+new</Code>
+ method from the <Code>
+Object</Code>
+ class. This method creates a raw instance whose instance variables each have the value <Code>
+nil</Code>
+.</Body1>
+<CodeSample>
+<A ID="pgfId-1041100"></A>
+SourceFileManager new.</CodeSample>
+<Body1>
+<A ID="pgfId-1041101"></A>
+Abstract classes, such as <Code>
+Boolean</Code>
+, typically override <Code>
+new</Code>
+ in which they announce an error such as <Code>
+&#34;This class is not intended to be instantiated.&#34;</Code>
+</Body1>
+<Body1>
+<A ID="pgfId-1041102"></A>
+Classes frequently override <Code>
+new</Code>
+ in order to initialize instance variables.</Body1>
+<Heading3>
+<A ID="pgfId-1041103"></A>
+Use a class-specific creation message</Heading3>
+<Body1>
+<A ID="pgfId-1041104"></A>
+Classes frequently define specific creation messages. These frequently take arguments that are used to initialize the instance variables of the new instance. </Body1>
+<CodeSample>
+<A ID="pgfId-1041105"></A>
+Date newDay:10 month:#June year:1995</CodeSample>
+<Body1>
+<A ID="pgfId-1041173"></A>
+Such <Glossary>
+parameterized</Glossary>
+ creation messages are often convenience methods. The same effect usually can be achieved by first creating a <Code>
+new</Code>
+ instance and then sending the parameters via <Glossary>
+accessing</Glossary>
+ messages.</Body1>
+<Heading2>
+<A ID="pgfId-1203240"></A>
+Bindings</Heading2>
+<Heading3>
+<A ID="pgfId-1203264"></A>
+What is a binding?</Heading3>
+<Body1>
+<A ID="pgfId-1203266"></A>
+Bindings are a new construct in VisualWorks 5i. They are used to implement shared objects such as classes, namespaces, and <A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variables</A>. Their value is often constant, and they can be referenced, imported, and queried (as instances of class <Code>
+BindingReference</Code>
+).</Body1>
+<Heading3>
+<A ID="pgfId-1203265"></A>
+<A ID="Referencing bindings"></A>
+Referencing bindings</Heading3>
+<Body1>
+<A ID="pgfId-1203253"></A>
+References to <A href="10-glossary.xml#id(binding)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">bindings</A> (<A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespaces</A>, <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A>, and <A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variables</A>) use a dotted notation that describes the path through the name space hierarchy to the desired binding. Binding references begin with the <Code>
+Root</Code>
+ name space, continuing through the hierarchy to the target binding. For example, the full reference to the <Code>
+ButtonHilite</Code>
+ constant is:</Body1>
+<CodeSample>
+<A ID="pgfId-1203254"></A>
+<Code>
+Root.Smalltalk.SymbolicPaintConstants.ButtonHilite</Code>
+.</CodeSample>
+<Body1>
+<A ID="pgfId-1203255"></A>
+References to bindings in a name space under <Code>
+Smalltalk</Code>
+ can omit the initial segment <Code>
+Root.Smalltalk</Code>
+, which is assumed. So, the above reference to <Code>
+ButtonHilite</Code>
+ can be shortened to:</Body1>
+<CodeSample>
+<A ID="pgfId-1203256"></A>
+<Code>
+SymbolicPaintConstants.ButtonHilite</Code>
+</CodeSample>
+<Body1>
+<A ID="pgfId-1203257"></A>
+The dotted names can be used to refer to a binding that has not been imported. </Body1>
+<Body1>
+<A ID="pgfId-1203258"></A>
+Usually you will refer to a binding that <Emphasis>
+has</Emphasis>
+ been imported. The notation <Code>
+#{MyBinding}</Code>
+ allows referring to the binding <Code>
+MyBinding</Code>
+ without specifying its name space path. So, if a name space imports the <Code>
+SymbolicPaintConstants.ButtonHilite</Code>
+, references to it can be simply:</Body1>
+<CodeSample>
+<A ID="pgfId-1203259"></A>
+#{ButtonHilite}</CodeSample>
+<Heading2>
+<A ID="pgfId-1041174"></A>
+Branching and Looping</Heading2>
+<Heading3>
+<A ID="pgfId-1041175"></A>
+Create a conditional branch</Heading3>
+<Body1>
+<A ID="pgfId-1040698"></A>
+Branching, or conditional processing, is accomplished by sending a variant of the <Code>
+ifTrue:</Code>
+ message to the result of a true/false test. The conditional statements are enclosed in a block.</Body1>
+<Body1>
+<A ID="pgfId-1040699"></A>
+The full set of variants is:</Body1>
+<CodeSample>
+<A ID="pgfId-1040700"></A>
+ifTrue:</CodeSample>
+<CodeSample>
+<A ID="pgfId-1040701"></A>
+ifFalse:</CodeSample>
+<CodeSample>
+<A ID="pgfId-1040702"></A>
+ifTrue: ifFalse:</CodeSample>
+<CodeSample>
+<A ID="pgfId-1040703"></A>
+ifFalse:ifTrue:</CodeSample>
+<Heading3>
+<A ID="pgfId-1040704"></A>
+Loop a fixed number of times (timesRepeat:)</Heading3>
+<Body1>
+<A ID="pgfId-1040705"></A>
+Send a message to the Transcript 10 times.</Body1>
+<CodeSample>
+<A ID="pgfId-1040706"></A>
+10 <CodeEmp>
+timesRepeat:</CodeEmp>
+ [Transcript show: &#39;Testing!&#39;; cr.]</CodeSample>
+<Heading3>
+<A ID="pgfId-1040707"></A>
+Loop with an index argument (to:do:)</Heading3>
+<Body1>
+<A ID="pgfId-1040708"></A>
+Repeat a block using each number in the interval from 65 to 122. This block includes a <Glossary>
+block argument</Glossary>
+ (<Code>
+:asciiNbr</Code>
+), which is specified by an identifier preceded by a colon and separated from the block&#39;s expressions by a vertical bar. In each loop, a successive number in the interval is passed into the block and used where the block argument appears.</Body1>
+<CodeSample>
+<A ID="pgfId-1040709"></A>
+65 <CodeEmp>
+to:</CodeEmp>
+ 122 <CodeEmp>
+do:</CodeEmp>
+ [ :asciiNbr |
+	Transcript show: asciiNbr asCharacter printString]</CodeSample>
+<Heading3>
+<A ID="pgfId-1040711"></A>
+Loop with an index and steps (to:by:do:)</Heading3>
+<Body1>
+<A ID="pgfId-1040712"></A>
+Repeat a block using each number in the interval from 10 to 65, counting by 5.</Body1>
+<CodeSample>
+<A ID="pgfId-1040713"></A>
+10 <CodeEmp>
+to:</CodeEmp>
+ 65 <CodeEmp>
+by:</CodeEmp>
+ 5 <CodeEmp>
+do:</CodeEmp>
+ [ :marker |
+			Transcript 
+				show: marker printString;
+				show: &#39;---&#39; ].</CodeSample>
+<Heading3>
+<A ID="pgfId-1040717"></A>
+Loop until a block exits (repeat)</Heading3>
+<Body1>
+<A ID="pgfId-1040718"></A>
+Send the <Code>
+repeat</Code>
+ message to the block to be repeated until the block returns true.</Body1>
+<CodeSample>
+<A ID="pgfId-1040719"></A>
+| counter |
+counter := 0.
+
+[counter := counter + 1.
+counter &gt; 10 ifTrue: [^true] ] <CodeEmp>
+repeat</CodeEmp>
+.</CodeSample>
+<Heading3>
+<A ID="pgfId-1040724"></A>
+Loop on a true or false condition (whileTrue: and whileFalse:)</Heading3>
+<Body1>
+<A ID="pgfId-1040725"></A>
+Send either a <Code>
+whileTrue:</Code>
+ or <Code>
+whileFalse:</Code>
+ message to a block that returns a boolean value, with a 0-argument block describing the action to perform on each loop.</Body1>
+<CodeSample>
+<A ID="pgfId-1040726"></A>
+| endTime |
+endTime := Time now addTime: (Time fromSeconds: 3).
+
+[Time now &lt;= endTime] <CodeEmp>
+whileTrue:</CodeEmp>
+ [
+			Transcript show: Time now printString; cr].</CodeSample>
+<Heading2>
+<A ID="pgfId-1040778"></A>
+Boolean Conditionals</Heading2>
+<Heading3>
+<A ID="pgfId-1040779"></A>
+Boolean operators</Heading3>
+<Body1>
+<A ID="pgfId-1040780"></A>
+When two or more conditions need to be tested, use the logical <I>
+and</I>
+ and <I>
+or</I>
+ messages to combine the tests in a series. These messages come in two forms:</Body1>
+<Bullet1>
+<A ID="pgfId-1040781"></A>
+<Code>
+&amp;</Code>
+ and <Code>
+|</Code>
+ (vertical bar)</Bullet1>
+<Bullet1>
+<A ID="pgfId-1040782"></A>
+<Code>
+and:</Code>
+ and <Code>
+or:</Code>
+ (the argument is a block containing the second test)</Bullet1>
+<Body1>
+<A ID="pgfId-1040783"></A>
+Use the second pair of messages when the second test depends on the result of the first test. In a common situation involving such a dependency, the first test checks the data type of a variable and the second test sends a message that is appropriate only for the desired data type.</Body1>
+<Body1>
+<A ID="pgfId-1040784"></A>
+Using the second form, involving block arguments, is also appropriate when the second test is costly, because the second test is executed only when needed.</Body1>
+<Heading3>
+<A ID="pgfId-1040785"></A>
+Answer true when both tests are met (logical &#34;and&#34;)</Heading3>
+<Body1>
+<A ID="pgfId-1040786"></A>
+Send an<Code>
+ &amp;</Code>
+ or <Code>
+and:</Code>
+ message to an expression that returns a boolean value. </Body1>
+<Body1>
+<A ID="pgfId-1040787"></A>
+The <Code>
+&amp;</Code>
+ message takes any expression that also evaluates to a boolean value. Both expressions are always evaluated.</Body1>
+<CodeSample>
+<A ID="pgfId-1040788"></A>
+| response message |
+response := Dialog request: &#39;What is your password&#39;.
+
+(response size &gt; 0) <CodeEmp>
+&amp;</CodeEmp>
+ (response size &lt;= 8)
+	ifTrue: [message := &#39;Thank you. Have a safe journey&#39;]
+	ifFalse: [message := &#39;Sorry, I cannot let you pass&#39;].
+
+Transcript show: message; cr.</CodeSample>
+<Body1>
+<A ID="pgfId-1040796"></A>
+The <Code>
+and:</Code>
+ message takes a block that evaluates to a boolean value. The block is evaluated only if the first expression evaluates as true.</Body1>
+<CodeSample>
+<A ID="pgfId-1040797"></A>
+| response message |
+response := Dialog request: &#39;What is your password&#39;.
+
+((response size &gt; 0) <CodeEmp>
+and:</CodeEmp>
+ [response size &lt;= 8])
+	ifTrue: [message := &#39;Thank you. Have a safe journey&#39;]
+	ifFalse: [message := &#39;Sorry, I cannot let you pass&#39;].
+
+Transcript show: message; cr.</CodeSample>
+<Heading2>
+<A ID="pgfId-1041187"></A>
+Enumerating a Collection</Heading2>
+<Heading3>
+<A ID="pgfId-1041188"></A>
+Enumerate each element of a collection (do:)</Heading3>
+<Body1>
+<A ID="pgfId-1041189"></A>
+Send a <Code>
+do:</Code>
+ message to a collection, with a block describing the action to perform on each element.</Body1>
+<CodeSample>
+<A ID="pgfId-1041190"></A>
+| colors |
+colors := ColorValue constantNames.
+
+colors <CodeEmp>
+do:</CodeEmp>
+ [ :colorName |
+			Transcript show: colorName printString; cr]</CodeSample>
+<Heading3>
+<A ID="pgfId-1041195"></A>
+Detect the first element that meets a test (detect:)</Heading3>
+<Body1>
+<A ID="pgfId-1041196"></A>
+Send a <Code>
+detect:</Code>
+ message to a collection with a block describing the detection criterion.</Body1>
+<CodeSample>
+<A ID="pgfId-1041197"></A>
+| colors mColor |
+colors := ColorValue constantNames.
+
+mColor := colors <CodeEmp>
+detect:</CodeEmp>
+ [ :colorName |
+			colorName first = $m].
+Transcript show: mColor printString; cr.</CodeSample>
+<Heading3>
+<A ID="pgfId-1041203"></A>
+Select all elements that meet a test (select:)</Heading3>
+<Body1>
+<A ID="pgfId-1041204"></A>
+Send a <Code>
+select:</Code>
+ message to a collection with a block describing the selection criterion.</Body1>
+<CodeSample>
+<A ID="pgfId-1041205"></A>
+| colors dColors |
+colors := ColorValue constantNames.
+
+dColors := colors <CodeEmp>
+select:</CodeEmp>
+ [ :colorName |
+			colorName first = $d].
+
+dColors do: [ :dColor |
+		Transcript show: dColor printString; cr].</CodeSample>
+<Heading3>
+<A ID="pgfId-1041213"></A>
+Select all elements that fail a test (reject:)</Heading3>
+<Body1>
+<A ID="pgfId-1041214"></A>
+Send a <Code>
+reject:</Code>
+ message to a collection with a block describing the rejection criterion.</Body1>
+<CodeSample>
+<A ID="pgfId-1041215"></A>
+| colors nonDColors |
+colors := ColorValue constantNames.
+
+nonDColors := colors <CodeEmp>
+reject:</CodeEmp>
+ [ :colorName |
+			colorName first = $d].
+
+nonDColors do: [ :nonDColor |
+			Transcript show: nonDColor printString; cr].</CodeSample>
+<Heading3>
+<A ID="pgfId-1041223"></A>
+Operate on a collection and collect the results (collect:)</Heading3>
+<Body1>
+<A ID="pgfId-1041224"></A>
+Send a <Code>
+collect:</Code>
+ message to a collection with a block describing the operation to perform on each element. The result is a collection, which generally should be assigned to a variable for future use.</Body1>
+<CodeSample>
+<A ID="pgfId-1041225"></A>
+| colors colorsAsStrings string |
+colors := ColorValue constantNames.
+
+colorsAsStrings := colors <CodeEmp>
+collect:</CodeEmp>
+ [ :colorName |
+			string := colorName asString.
+			string at: 1 put: (string first asUppercase).
+			string].
+
+colorsAsStrings do: [ :color |
+			Transcript show: color; cr].</CodeSample>
+<Heading2>
+<A ID="pgfId-1040805"></A>
+Errors During Compilation</Heading2>
+<Heading3>
+<A ID="pgfId-1040806"></A>
+Undeclared temporary variables</Heading3>
+<Body1>
+<A ID="pgfId-1040807"></A>
+If you neglect to declare a temporary variable in a method definition, the system prompts you with a menu of variable types. If you select temp, the system adds the variable to the temporaries declaration.</Body1>
+<Heading3>
+<A ID="pgfId-1040808"></A>
+Undeclared class and instance variables</Heading3>
+<Body1>
+<A ID="pgfId-1040809"></A>
+If you neglect to declare a class or instance variable, the system prompts you with a menu of variable types. Select <UI-Label>
+abort</UI-Label>
+ in the menu and declare the variables in the class definition before continuing. </Body1>
+<Body1>
+<A ID="pgfId-1040810"></A>
+To save your uncompiled method while you redefine the class, select <UI-Label>
+Spawn</UI-Label>
+ in the code view. This opens a new browser on the uncompiled code.</Body1>
+<Heading3>
+<A ID="pgfId-1040811"></A>
+Nothing more expected</Heading3>
+<Body1>
+<A ID="pgfId-1040812"></A>
+This error usually occurs if you have omitted a period. </Body1>
+<Body1>
+<A ID="pgfId-1055809"></A>
+</Body1>
+</XML>

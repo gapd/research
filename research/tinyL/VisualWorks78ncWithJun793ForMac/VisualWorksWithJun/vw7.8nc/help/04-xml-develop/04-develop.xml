@@ -1,0 +1,2298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="04-develop.css" type="text/css" title="Development with VisualWorks" charset="UTF-8"?>
+<XML>
+<TITLE> </TITLE><Heading1>
+<A ID="pgfId-1113242"></A>
+<A ID="Development with VisualWorks"></A>
+Development with VisualWorks</Heading1>
+<Heading2>
+<A ID="pgfId-1082461"></A>
+<A ID="VisualWorks Image"></A>
+VisualWorks Image</Heading2>
+<Body1>
+<A ID="pgfId-1022139"></A>
+<B>
+Topics on VisualWorks image files:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1155813"></A>
+<A href="04-develop.xml#id(Save the image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Save the image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1155826"></A>
+<A href="04-develop.xml#id(Exit VisualWorks)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Exit VisualWorks</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1155830"></A>
+<A href="04-develop.xml#id(Reclaim space in an image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Reclaim space in an image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1155834"></A>
+<A href="04-develop.xml#id(Set the home directory for an image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the home directory for an image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1155838"></A>
+<A href="04-develop.xml#id(Change global settings for an image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change global settings for an image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1155842"></A>
+<A href="04-develop.xml#id(Prepare an image for application delivery)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Prepare an image for application delivery</A></Bullet1>
+<Body1>
+<A ID="pgfId-1160104"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1160108"></A>
+<A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A></Bullet1>
+<Body1>
+<A ID="pgfId-1155846"></A>
+</Body1>
+<Heading3>
+<A ID="pgfId-1155812"></A>
+<A ID="Save the image"></A>
+Save the image</Heading3>
+<Body1>
+<A ID="pgfId-1022143"></A>
+To save the currently running image, select <UI-Label>
+File-&gt;Save As... </UI-Label>
+in the <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window. A dialog prompts you for the name of the image, with the current image name as the default. To save the image to a different file, keeping the previously saved image safe, enter a new name, <I>
+without</I>
+ the &#34;<Platform>
+.im</Platform>
+&#34; extension. If you choose a new name, VisualWorks will create a new <A href="10-glossary.xml#id(changes file)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">changes file</A>.</Body1>
+<Body1>
+<A ID="pgfId-1113185"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1113189"></A>
+<A href="04-develop.xml#id(Recovering Changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Recover changes</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1022144"></A>
+<A ID="Exit VisualWorks"></A>
+Exit VisualWorks</Heading3>
+<Body1>
+<A ID="pgfId-1172903"></A>
+To end a VisualWorks development session, select<UI-Label>
+ File-&gt;Exit VisualWorks... </UI-Label>
+in the <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window. A dialog prompts you to save the image before exiting. If you choose to save the image, you may provide a new filename.</Body1>
+<Body1>
+<A ID="pgfId-1022151"></A>
+Selecting <UI-Label>
+Cancel</UI-Label>
+ continues your session.</Body1>
+<Body1>
+<A ID="pgfId-1172919"></A>
+Note that closing the Launcher window, for example by clicking the window&#39;s close icon, allows you to either exit VisualWorks, or simply close the Launcher window itself.</Body1>
+<Heading3>
+<A ID="pgfId-1022163"></A>
+<A ID="Reclaim space in an image"></A>
+Reclaim space in an image</Heading3>
+<Body1>
+<A ID="pgfId-1022167"></A>
+To invoke the <Glossary>
+compacting garbage collector</Glossary>
+, select <UI-Label>
+System-&gt;Collect Garbage</UI-Label>
+ in the <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window. This will reclaim any unused data, sweeping all of the object memory except the zone called <Code>
+Perm Space</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1022171"></A>
+To invoke the <Glossary>
+global garbage collector</Glossary>
+, select <UI-Label>
+System-&gt;Collect All Garbage</UI-Label>
+ in the Launcher window. This will reclaim any unused data, sweeping all of the object memory including the zone called <Code>
+Perm Space</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1022172"></A>
+<A ID="Set the home directory for an image"></A>
+Set the home directory for an image</Heading3>
+<Body1>
+<A ID="pgfId-1022173"></A>
+To set the default &#34;home&#34; directory for the current image, select <UI-Label>
+File-&gt;Set VisualWorks Home...</UI-Label>
+ in the <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window. A dialog box appears, in which you should enter the path to the directory that contains the current image.</Body1>
+<Body1>
+<A ID="pgfId-1022177"></A>
+The VisualWorks home directory path may be referenced using the parameter <Code>
+$(VISUALWORKS)</Code>
+. This parameter is used to locate the system sources and changes file, as well as parcels that can be loaded. Make sure you supply the name of the main directory, of which <Platform>
+image</Platform>
+, <Platform>
+parcels</Platform>
+, and <Platform>
+bin</Platform>
+ are sub-directories.</Body1>
+<Heading3>
+<A ID="pgfId-1022178"></A>
+<A ID="Change global settings for an image"></A>
+Change global settings for an image</Heading3>
+<Body1>
+<A ID="pgfId-1022179"></A>
+To open a <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> for the current image, select <UI-Label>
+System-&gt;Settings</UI-Label>
+ in the <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window.</Body1>
+<Body1>
+<A ID="pgfId-1081722"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1143047"></A>
+<A href="04-develop.xml#id(Environment Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Environment Settings</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1022183"></A>
+<A ID="Prepare an image for application delivery"></A>
+Prepare an image for application delivery</Heading3>
+<Body1>
+<A ID="pgfId-1012013"></A>
+By selecting <UI-Label>
+File-&gt;Perm Save As...</UI-Label>
+ in the <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window, you can create an image file with all <Code>
+Old Space</Code>
+ objects moved into the zone called <Code>
+Perm Space</Code>
+. The newly created image will execute subsequent garbage collections more efficiently.</Body1>
+<Body1>
+<A ID="pgfId-1177277"></A>
+You may use the Runtime Packager to strip an image for deployment or delivery. For details, see the <Emphasis>
+VisualWorks Application Developer&#39;s Guide</Emphasis>
+.</Body1>
+<Body1>
+<A ID="pgfId-1010193"></A>
+</Body1>
+<Body1>
+<A ID="pgfId-1082353"></A>
+</Body1>
+<Body1>
+<A ID="pgfId-1082354"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1029001"></A>
+<A ID="Files"></A>
+Files</Heading2>
+<Body1>
+<A ID="pgfId-1082681"></A>
+<B>
+Topics on working with files:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1082682"></A>
+<A href="04-develop.xml#id(Get the home directory)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Get the home directory</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1082699"></A>
+<A href="04-develop.xml#id(Navigate through a directory hierarchy)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Navigate through a directory hierarchy</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1082703"></A>
+<A href="04-develop.xml#id(Create a new directory)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a new directory</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1082707"></A>
+<A href="04-develop.xml#id(Editing files)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Editing files</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1082711"></A>
+<A href="04-develop.xml#id(Load source code from a file)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Load source code from a file</A></Bullet1>
+<Body1>
+<A ID="pgfId-1082734"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1082738"></A>
+<A href="03-tools.xml#id(File Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">File Browser</A></Bullet1>
+<Body1>
+<A ID="pgfId-1010363"></A>
+</Body1>
+<Heading3>
+<A ID="pgfId-1082732"></A>
+<A ID="Get the home directory"></A>
+Get the home directory</Heading3>
+<Body1>
+<A ID="pgfId-1024294"></A>
+To display the VisualWorks home directory in a <A href="03-tools.xml#id(File Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">File Browser</A>, click on <UI-Label>
+Go to Default</UI-Label>
+ on the <UI-Label>
+Directory</UI-Label>
+ menu.</Body1>
+<Body1>
+<A ID="pgfId-1082607"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1082623"></A>
+<A href="04-develop.xml#id(Set the home directory for an image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the home directory for an image</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1010369"></A>
+<A ID="Navigate through a directory hierarchy"></A>
+Navigate through a directory hierarchy</Heading3>
+<Body1>
+<A ID="pgfId-1014586"></A>
+To descend into a subdirectory shown in a <A href="03-tools.xml#id(File Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">File Browser</A>, simply double-click on a directory name. Alternately, you can select a directory, and choose <UI-Label>
+new pattern</UI-Label>
+ on the &lt;Operate&gt; menu. To move to a higher level in a directory hierarchy, edit the text in the pattern field (upper-right) and press &lt;Return&gt;.</Body1>
+<Heading3>
+<A ID="pgfId-1082434"></A>
+<A ID="Create a new directory"></A>
+Create a new directory</Heading3>
+<Body1>
+<A ID="pgfId-1082435"></A>
+To create a new directory using a <A href="03-tools.xml#id(File Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">File Browser</A>, click on <UI-Label>
+Create...</UI-Label>
+ on the <UI-Label>
+Directory</UI-Label>
+ menu.</Body1>
+<Heading3>
+<A ID="pgfId-1013994"></A>
+<A ID="Editing files"></A>
+Editing files</Heading3>
+<Body1>
+<A ID="pgfId-1014794"></A>
+To open a Workspace for editing the contents of a text file, select the file name in the names (upper-right) view of a <A href="03-tools.xml#id(File Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">File Browser</A>, and select <UI-Label>
+Edit</UI-Label>
+ from the <UI-Label>
+File</UI-Label>
+ menu.</Body1>
+<Heading3>
+<A ID="pgfId-1014795"></A>
+<A ID="Load source code from a file"></A>
+Load source code from a file</Heading3>
+<Body1>
+<A ID="pgfId-1014793"></A>
+To load and compile the contents of a source code (extension &#34;<Platform>
+.st</Platform>
+&#34;) file or a parcel (extension &#34;<Platform>
+.pcl</Platform>
+&#34;), choose the file in the <A href="03-tools.xml#id(File Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">File Browser</A>&#39;s list view and select <UI-Label>
+File in...</UI-Label>
+ or <UI-Label>
+Load... </UI-Label>
+on the &lt;Operate&gt; menu. The contents of the file will be loaded into the current image.</Body1>
+<Body1>
+<A ID="pgfId-1082344"></A>
+</Body1>
+<Heading3>
+<A ID="pgfId-1012570"></A>
+<A ID="Environment Settings Tool"></A>
+Environment Settings</Heading3>
+<Body1>
+<A ID="pgfId-1103793"></A>
+<B>
+Topics on Environment Settings:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1103803"></A>
+<A href="04-develop.xml#id(Open the Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Open the Settings Tool</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103861"></A>
+<A href="04-develop.xml#id(Set the look of the user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the look of the user interface</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103863"></A>
+<A href="04-develop.xml#id(Enable tools for globalization)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Enable tools for globalization</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103865"></A>
+<A href="04-develop.xml#id(Set the feel of the user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the feel of the user interface</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103867"></A>
+<A href="04-develop.xml#id(Set the placement of windows)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the placement of windows</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103869"></A>
+<A href="04-develop.xml#id(Set a limit on the length of icon labels)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set a limit on the length of icon labels</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104177"></A>
+<A href="04-develop.xml#id(Set the default text attributes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the default text attributes</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104174"></A>
+<A href="04-develop.xml#id(Platform-specific printing options)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Platform-specific printing options</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103871"></A>
+<A href="04-develop.xml#id(Set options for browsing)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set options for browsing</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103873"></A>
+<A href="04-develop.xml#id(Set source and changes files)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set source and changes files</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103875"></A>
+<A href="04-develop.xml#id(Set source directories)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set source directories</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104181"></A>
+<A href="04-develop.xml#id(Set options for parcel loading)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set options for parcel loading</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104193"></A>
+<A href="04-develop.xml#id(Set the local time zone)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the local time zone</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103877"></A>
+<A href="04-develop.xml#id(Set message catalogs for internationalization)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set message catalogs for internationalization</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104189"></A>
+<A href="04-develop.xml#id(Set XML source code option for file-out)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set XML source code option for file-out</A></Bullet1>
+<Body1>
+<A ID="pgfId-1103881"></A>
+</Body1>
+<Heading4>
+<A ID="pgfId-1012586"></A>
+<A ID="Open the Settings Tool"></A>
+Open the Settings Tool</Heading4>
+<Body1>
+<A ID="pgfId-1103516"></A>
+The <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> allows you to control a variety of global parameters, including the appearance of windows, source file name, and the default font for text. To open the Settings Tool, choose<UI-Label>
+ System-&gt;Settings</UI-Label>
+ in the VisualWorks <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window.</Body1>
+<Body1>
+<A ID="pgfId-1012014"></A>
+Use the scroll buttons and tabs on the right-hand side of the Settings window to navigate among the pages.</Body1>
+<Heading4>
+<A ID="pgfId-1012613"></A>
+<A ID="Set the look of the user interface"></A>
+Set the look of the user interface</Heading4>
+<Body1>
+<A ID="pgfId-1103681"></A>
+On the <UI-Label>
+UI Look</UI-Label>
+ page of the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A>, use the <UI-Label>
+Look Selection</UI-Label>
+ menu to change the default appearance and behavior of buttons, scroll bars, and other widgets. The new look will apply to any window that you open subsequently. Select <UI-Label>
+Basic Tools Adopt Look</UI-Label>
+ to make programming tools such as code browsers also adopt the new look.<UI-Label>
+ </UI-Label>
+To let VisualWorks adopt the look that is most appropriate for your operating environment, use <UI-Label>
+Auto Select</UI-Label>
+ in the <UI-Label>
+Look Selection</UI-Label>
+ menu.</Body1>
+<Body1>
+<A ID="pgfId-1103974"></A>
+To affect the look of a single canvas while you&#39;re editing it, use the <A href="03-tools.xml#id(Canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Canvas</A> tool.</Body1>
+<Body1>
+<A ID="pgfId-1013310"></A>
+Use the <UI-Label>
+Host Window System</UI-Label>
+ setting to tell VisualWorks which window manager you are using. This setting insures that windows can be placed correctly when they are opened automatically.</Body1>
+<Body1>
+<A ID="pgfId-1104209"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1104213"></A>
+<A href="04-develop.xml#id(Set the feel of the user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the feel of the user interface</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104217"></A>
+<A href="04-develop.xml#id(Set user interface options)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set user interface options</A></Bullet1>
+<Heading4>
+<A ID="pgfId-1013431"></A>
+<A ID="Set user interface options"></A>
+Set user interface options</Heading4>
+<Body1>
+<A ID="pgfId-1022293"></A>
+On the <UI-Label>
+UI Options</UI-Label>
+ page of the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A>, use the <UI-Label>
+Page Style</UI-Label>
+ setting to control multi-page Settings and Property Tool displays.</Body1>
+<Body1>
+<A ID="pgfId-1103706"></A>
+To immediately see the choices in Property Tools by swapping pages using notebook tabs, select <UI-Label>
+Use Notebook Paging</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1103707"></A>
+To obtain a more compact representation, select <UI-Label>
+Use Menu Paging</UI-Label>
+; the latter allows page selection through a menu and is recommended when screen real estate is at premium. The <UI-Label>
+Page Style</UI-Label>
+ setting affects Settings and Property Tools the next time they are restarted.</Body1>
+<Heading4>
+<A ID="pgfId-1012718"></A>
+<A ID="Enable tools for globalization"></A>
+Enable tools for globalization</Heading4>
+<Body1>
+<A ID="pgfId-1022302"></A>
+On the <UI-Label>
+UI Options</UI-Label>
+ page of the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A>, use the <UI-Label>
+Show UI for Globalization</UI-Label>
+ setting to enable fields for support of globalization. When this option is enabled, the <A href="03-tools.xml#id(GUI Painter Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">GUI Painter Tool</A> will show special fields such as keys for message catalogs.</Body1>
+<Heading4>
+<A ID="pgfId-1013526"></A>
+<A ID="Set the feel of the user interface"></A>
+Set the feel of the user interface</Heading4>
+<Body1>
+<A ID="pgfId-1013570"></A>
+To select the platform feel that you want text editors (including browsers) to have, select the <UI-Label>
+UI Feel</UI-Label>
+ page in the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> and choose an option from the <UI-Label>
+Feel Selection</UI-Label>
+ menu.</Body1>
+<Body1>
+<A ID="pgfId-1014385"></A>
+You may add your own feels by subclassing from <Code>
+UIFeelPolicy</Code>
+ and providing your own keyboard bindings in the class. Subclasses of <Code>
+UIFeelPolicy</Code>
+ must provide a class method called <Code>
+menuName</Code>
+ that returns a string of what you want the new feel to be named.</Body1>
+<Body1>
+<A ID="pgfId-1104199"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1104200"></A>
+<A href="04-develop.xml#id(Set the look of the user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the look of the user interface</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104204"></A>
+<A href="04-develop.xml#id(Set user interface options)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set user interface options</A></Bullet1>
+<Heading4>
+<A ID="pgfId-1013564"></A>
+<A ID="Set the placement of windows"></A>
+Set the placement of windows</Heading4>
+<Body1>
+<A ID="pgfId-1013565"></A>
+On the <UI-Label>
+Window</UI-Label>
+ page of the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A>, select <UI-Label>
+User placement</UI-Label>
+ to allow the user to position newly created windows.</Body1>
+<Body1>
+<A ID="pgfId-1013535"></A>
+To open newly created windows at a default size, and position them under the current mouse position, select <UI-Label>
+Automatic placement</UI-Label>
+.</Body1>
+<Heading4>
+<A ID="pgfId-1012627"></A>
+<A ID="Set a limit on the length of icon labels"></A>
+Set a limit on the length of icon labels</Heading4>
+<Body1>
+<A ID="pgfId-1103982"></A>
+On the <UI-Label>
+Icon</UI-Label>
+ page of the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A>, adjust the <UI-Label>
+Icon Label Length</UI-Label>
+ setting to constrain the length of icon label text.</Body1>
+<Heading4>
+<A ID="pgfId-1103978"></A>
+<A ID="Set the default text attributes"></A>
+Set the default text attributes</Heading4>
+<Body1>
+<A ID="pgfId-1012764"></A>
+VisualWorks keeps a set of global text attributes which you may adjust on the <UI-Label>
+Text</UI-Label>
+ page of the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A>. To change the attributes used to render text in the various environment tools, select one of the following:</Body1>
+<DefItem>
+<A ID="pgfId-1012771"></A>
+<Glossary>
+small</Glossary>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1012766"></A>
+This will select text that is slightly smaller than &#34;default&#34;, useful for small displays on the order of 640x480 pixels</DefDscrp>
+<DefItem>
+<A ID="pgfId-1012739"></A>
+<Glossary>
+default</Glossary>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1012740"></A>
+The usual style, suitable for 1024x768 displays</DefDscrp>
+<DefItem>
+<A ID="pgfId-1012742"></A>
+<Glossary>
+large</Glossary>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1012743"></A>
+A slightly larger style, for 1600x1280 hi-res displays</DefDscrp>
+<DefItem>
+<A ID="pgfId-1012806"></A>
+<Glossary>
+fixed</Glossary>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1012746"></A>
+Similar to &#34;default&#34;, but all characters are the same size--this is useful for presenting table-oriented data or in a terminal emulator</DefDscrp>
+<Body1>
+<A ID="pgfId-1012731"></A>
+To redefine the default text attributes press the corresponding radio button, and select <UI-Label>
+Accept</UI-Label>
+.</Body1>
+<Heading4>
+<A ID="pgfId-1104007"></A>
+<A ID="Platform-specific printing options"></A>
+Platform-specific printing options</Heading4>
+<Body1>
+<A ID="pgfId-1104011"></A>
+Select the <UI-Label>
+Printing</UI-Label>
+ page in the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A>.</Body1>
+<Body1>
+<A ID="pgfId-1104012"></A>
+Use the <UI-Label>
+Document Printing</UI-Label>
+ options to choose between PostScript and Host printer drivers (the latter are supported only on MS-Windows platforms). If <UI-Label>
+Host Printing</UI-Label>
+ is selected on a non-Windows platform, the system will default back to PostScript at print time.</Body1>
+<Body1>
+<A ID="pgfId-1104013"></A>
+Use the <UI-Label>
+Text Printing</UI-Label>
+ options to choose how hardcopy commands (i.e., in browser code views) are handled. To make hardcopies via the Document system, select <UI-Label>
+Document Printing</UI-Label>
+; to save hardcopy as a disk file (named <Platform>
+temp.prt</Platform>
+ by default), select <UI-Label>
+Plain Text Printing</UI-Label>
+.</Body1>
+<Heading4>
+<A ID="pgfId-1012633"></A>
+<A ID="Set options for browsing"></A>
+Set options for browsing</Heading4>
+<Body1>
+<A ID="pgfId-1013595"></A>
+Select the <UI-Label>
+Browsing</UI-Label>
+ option in the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> to set options.</Body1>
+<Body1>
+<A ID="pgfId-1103758"></A>
+To control the default action of the <UI-Label>
+Browse</UI-Label>
+-&gt;<UI-Label>
+Class Named...</UI-Label>
+ command in the <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window, use the <UI-Label>
+Class Browsing</UI-Label>
+ setting. To open a hierarchy browser on the specified class, all of its subclasses and superclasses, select <UI-Entry>
+Use Hierarchy Browsers</UI-Entry>
+; to open a class browser on the specified class, select <UI-Label>
+Use Class Browsers</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1022341"></A>
+To change display options for the <A href="03-tools.xml#id(System Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">System Browser</A>, change the <UI-Label>
+Show Namespaces</UI-Label>
+, <UI-Label>
+Show Parcels</UI-Label>
+, and <UI-Label>
+Show Packages</UI-Label>
+ switches. Enabling these options will add multi-fuction tabs and additional menu options to the System Browser. These options also affect the evaluation of the <Code>
+browse</Code>
+ message (e.g., <Code>
+Collection browse</Code>
+.)</Body1>
+<Body1>
+<A ID="pgfId-1103752"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1103753"></A>
+<A href="03-tools.xml#id(System Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">System Browser</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104024"></A>
+<A href="04-develop.xml#id(Open the Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Open the Settings Tool</A></Bullet1>
+<Heading4>
+<A ID="pgfId-1012038"></A>
+<A ID="Set source and changes files"></A>
+Set source and changes files</Heading4>
+<Body1>
+<A ID="pgfId-1012699"></A>
+Select the <UI-Label>
+Source Files</UI-Label>
+ option in the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> to change the name of the system sources or changes files.</Body1>
+<Body1>
+<A ID="pgfId-1012863"></A>
+By default, both the sources &#34;<Platform>
+.sou</Platform>
+&#34; and changes &#34;<Platform>
+.cha</Platform>
+&#34; files reside in the <Platform>
+image</Platform>
+ directory. In a networked environment, users normally share the same sources file and have a private changes file. To establish such a configuration, either add a new sources file path and click on <UI-Label>
+Accept</UI-Label>
+; or else select an option from the scrollable list, edit the field to contain the absolute path name of the shared sources file, and click on <UI-Label>
+Change</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1103744"></A>
+To keep the changes file in a location other than the startup directory, select changes file &#34;<Platform>
+.cha</Platform>
+&#34;, and insert the appropriate path and file name.</Body1>
+<Body1>
+<A ID="pgfId-1103745"></A>
+When you make a backup copy of a VisualWorks image, three files must be archived together: the image file, the sources file, and the changes file.</Body1>
+<Body1>
+<A ID="pgfId-1103776"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1103780"></A>
+<A href="04-develop.xml#id(Open the Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Open the Settings Tool</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104046"></A>
+<A href="04-develop.xml#id(Set source directories)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set source directories</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104074"></A>
+<A href="04-develop.xml#id(VisualWorks Image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks Image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1103560"></A>
+<A href="04-develop.xml#id(Set the home directory for an image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the home directory for an image</A></Bullet1>
+<Heading4>
+<A ID="pgfId-1104051"></A>
+<A ID="Set source directories"></A>
+Set source directories</Heading4>
+<Body1>
+<A ID="pgfId-1104055"></A>
+Select the <UI-Label>
+Source Dirs</UI-Label>
+ option in the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> to change the directories where system and parcel source files are located.</Body1>
+<Body1>
+<A ID="pgfId-1104056"></A>
+To add a new sources path, enter the path in the field below the scrollable list and click on <UI-Label>
+Accept</UI-Label>
+. To modify an existing path, select it in the scrollable list, edit the field, and click on <UI-Label>
+Change</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1104093"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1104101"></A>
+<A href="04-develop.xml#id(Set source and changes files)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set source and changes files</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1104109"></A>
+<A href="04-develop.xml#id(Set the home directory for an image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the home directory for an image</A></Bullet1>
+<Heading4>
+<A ID="pgfId-1104116"></A>
+<A ID="Set options for parcel loading"></A>
+Set options for parcel loading</Heading4>
+<Body1>
+<A ID="pgfId-1028838"></A>
+Select the <UI-Label>
+Parcel Path</UI-Label>
+ page in the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> to set parcel loading options.</Body1>
+<Body1>
+<A ID="pgfId-1012663"></A>
+To reference the VisualWorks home directory, use the parameter <Code>
+$(VISUALWORKS)</Code>
+. If a parcel has prerequisite parcels, they will be searched for in the directories and in the order specified in this list. The period character &#34;<Platform>
+.</Platform>
+&#34; is used to indicate the directory in which the current parcel is being loaded from, not the directory in which VisualWorks is running. Use &#34;<Platform>
+.</Platform>
+&#34; to search for a parcel&#39;s prerequisites in the same directory as the parcel.</Body1>
+<Body1>
+<A ID="pgfId-1103581"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1103599"></A>
+<A href="04-develop.xml#id(Managing Parcels)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Managing Parcels</A></Bullet1>
+<Heading4>
+<A ID="pgfId-1104139"></A>
+<A ID="Set the local time zone"></A>
+Set the local time zone</Heading4>
+<Body1>
+<A ID="pgfId-1104143"></A>
+Select the <UI-Label>
+Time Zones</UI-Label>
+ page in the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> to display options for setting your local time zone.</Body1>
+<Body1>
+<A ID="pgfId-1104144"></A>
+Select an expression that corresponds to your local time zone and evaluate it using <UI-Label>
+Do It</UI-Label>
+ on the &lt;Operate&gt; menu. Note: you must select inside the single-quote marks to evaluate the expression properly.</Body1>
+<Heading4>
+<A ID="pgfId-1103527"></A>
+<A ID="Set message catalogs for internationalization"></A>
+Set message catalogs for internationalization</Heading4>
+<Body1>
+<A ID="pgfId-1103528"></A>
+Use the <UI-Label>
+Messages</UI-Label>
+ page of the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> to specify directories containing message catalogs for internationalization.</Body1>
+<Body1>
+<A ID="pgfId-1103529"></A>
+The list view specifies which directories contain message catalog files. These directories contain a collection of subdirectories, where each subdirectory is given a name that identifies the language group for which it is intended. Message catalog files for specific languages are located in these subdirectories.</Body1>
+<Body1>
+<A ID="pgfId-1103530"></A>
+To add a directory, type the directory&#39;s name into the input field, and press the <UI-Label>
+Add</UI-Label>
+ button. To delete a directory, select it in the list and press <UI-Label>
+Delete</UI-Label>
+. To change a directory, select it in the list, change the name which appears in the input field, and then press <UI-Label>
+Change</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1103531"></A>
+Use <UI-Label>
+Accept</UI-Label>
+ to finalize, and <UI-Label>
+Reset</UI-Label>
+ to revert your changes.</Body1>
+<Heading4>
+<A ID="pgfId-1104149"></A>
+<A ID="Set XML source code option for file-out"></A>
+Set XML source code option for file-out</Heading4>
+<Body1>
+<A ID="pgfId-1104153"></A>
+Use the <UI-Label>
+File-out Type</UI-Label>
+ page of the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A> to specify use of XML formatting for source code files saved with <UI-Label>
+File Out</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1104162"></A>
+In VisualWorks 5i, sources are stored using XML. For compatibility with previous versions of the system, or to share code with developers not using VisualWorks 5i, you should set this option to <UI-Label>
+Smalltalk chunk source code</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1082364"></A>
+</Body1>
+<Heading3>
+<A ID="pgfId-1022543"></A>
+<A ID="System Transcript"></A>
+System Transcript</Heading3>
+<Body1>
+<A ID="pgfId-1082415"></A>
+<B>
+Topics on the System Transcript:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1082418"></A>
+<A href="04-develop.xml#id(Display text in the Transcript view)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Display text in the Transcript view</A></Bullet1>
+<Body1>
+<A ID="pgfId-1082426"></A>
+</Body1>
+<Heading4>
+<A ID="pgfId-1022130"></A>
+<A ID="Display text in the Transcript view"></A>
+Display text in the Transcript view</Heading4>
+<Body1>
+<A ID="pgfId-1022131"></A>
+To display some text in the Transcript, evaluate the following Smalltalk expressions:</Body1>
+<CodeSample>
+<A ID="pgfId-1022132"></A>
+Transcript show: &#39;Hello World&#39; printString; cr.</CodeSample>
+<Body1>
+<A ID="pgfId-1022133"></A>
+To perform these steps, open a <A href="03-tools.xml#id(Workspace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Workspace</A> window (select <UI-Label>
+Tools-&gt;Workspace</UI-Label>
+ in the <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window), and type these expressions in it; next, select the entire text (using the &lt;Select&gt; button), and click and hold the &lt;Operate&gt; button with the cursor in the Workspace. Move the cursor to select <UI-Label>
+Do It</UI-Label>
+, and release the mouse button. The text will display in the Transcript.</Body1>
+<Body1>
+<A ID="pgfId-1022137"></A>
+<Code>
+Transcript</Code>
+ is a global variable, and refers to an instance of the class <Code>
+TextCollector</Code>
+, where you will find other useful Transcript behavior.</Body1>
+<Body1>
+<A ID="pgfId-1082366"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1026250"></A>
+<A ID="Changes and Change Sets"></A>
+Changes and Change Sets</Heading2>
+<Body1>
+<A ID="pgfId-1083484"></A>
+<B>
+Topics on the ChangeList Tool:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083485"></A>
+<A href="04-develop.xml#id(Open a change list tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Open a change list tool</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083491"></A>
+<A href="04-develop.xml#id(View groups of changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">View groups of changes</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083495"></A>
+<A href="04-develop.xml#id(View specific changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">View specific changes</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083499"></A>
+<A href="04-develop.xml#id(Filter the list of changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Filter the list of changes</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083503"></A>
+<A href="04-develop.xml#id(Examine the evolution of a change)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Examine the evolution of a change</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083507"></A>
+<A href="04-develop.xml#id(Manage the list of changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Manage the list of changes</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083511"></A>
+<A href="04-develop.xml#id(Cull the list of changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Cull the list of changes</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083515"></A>
+<A href="04-develop.xml#id(Recovering Changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Recover changes</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083519"></A>
+<A href="04-develop.xml#id(Condense the system changes file)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Condense the system changes file</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083523"></A>
+<A href="04-develop.xml#id(Examine the evolution of a change)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Examine the evolution of a change</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083527"></A>
+<A href="04-develop.xml#id(Revert to a prior version of a change)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Revert to a prior version of a change</A></Bullet1>
+<Body1>
+<A ID="pgfId-1083486"></A>
+<B>
+Topics on Change Sets:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083541"></A>
+<A href="04-develop.xml#id(Open a Change Set Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Open a Change Set Browser</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083548"></A>
+<A href="04-develop.xml#id(Create a new change set)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a new change set</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083552"></A>
+<A href="04-develop.xml#id(Browse specific change sets)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Browse specific change sets</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083556"></A>
+<A href="04-develop.xml#id(Save the contents of a single change set)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Save the contents of a single change set</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083560"></A>
+<A href="04-develop.xml#id(Empty a change set)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Empty a change set</A></Bullet1>
+<Body1>
+<A ID="pgfId-1083487"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083663"></A>
+<A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083667"></A>
+<A href="03-tools.xml#id(Change Set Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change Set Browser</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1024238"></A>
+<A ID="Open a change list tool"></A>
+Open a change list tool</Heading3>
+<Body1>
+<A ID="pgfId-1083011"></A>
+To open a new <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A>, select <UI-Label>
+Tools-&gt;Change List</UI-Label>
+ in the VisualWorks Launcher window.</Body1>
+<Heading3>
+<A ID="pgfId-1083015"></A>
+<A ID="View groups of changes"></A>
+View groups of changes</Heading3>
+<Body1>
+<A ID="pgfId-1083016"></A>
+To load and display the changes that have occurred since the last snapshot was taken, select <UI-Label>
+file in/out-&gt;recover last changes</UI-Label>
+ in the &lt;Operate&gt; menu of the list view at the top.</Body1>
+<Body1>
+<A ID="pgfId-1011490"></A>
+To load and display changes that are in the current Change Set, select <UI-Label>
+file in/out-&gt;display system changes</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1011494"></A>
+To view the contents of a file-in (or a group of file-ins) as a collection of changes, select <UI-Label>
+file in/out-&gt;read file/directory... </UI-Label>
+and supply the name of the file at the prompt.</Body1>
+<Body1>
+<A ID="pgfId-1011498"></A>
+To view the contents of a loaded parcel as a collection of changes, select <UI-Label>
+Display Parcel...</UI-Label>
+ on the <UI-Label>
+File</UI-Label>
+ menu, and choose the name of a parcel in the dialog box.</Body1>
+<Body1>
+<A ID="pgfId-1011499"></A>
+To display all changes saved, ignoring snapshot boundaries, select <UI-Label>
+file in/out-&gt;read file/directory...</UI-Label>
+ from the &lt;Operate&gt; menu, and supply the name of the changes file (<VariableElement>
+image</VariableElement>
+<Platform>
+.cha</Platform>
+).</Body1>
+<Body1>
+<A ID="pgfId-1011484"></A>
+Changes from different sources can be loaded and viewed simultaneously in a single Change List. </Body1>
+<Heading3>
+<A ID="pgfId-1008764"></A>
+<A ID="View specific changes"></A>
+View specific changes</Heading3>
+<Body1>
+<A ID="pgfId-1011510"></A>
+Entries in the <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A> generally identify both the affected object and the nature of the change. For example, the list entry <Code>
+NotifierController menu (add)</Code>
+ indicates that the method named <Code>
+menu</Code>
+ was added to class <Code>
+NotifierController</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1011511"></A>
+When you select an entry, the code for the affected class or method appears in the lower text view as it existed after the change.</Body1>
+<Heading3>
+<A ID="pgfId-1011241"></A>
+<A ID="Filter the list of changes"></A>
+Filter the list of changes</Heading3>
+<Body1>
+<A ID="pgfId-1011517"></A>
+Use the switches in the upper right region of the <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A> to filter the displayed list of changes.</Body1>
+<Body1>
+<A ID="pgfId-1011520"></A>
+Change List filter switches:</Body1>
+<DefItem>
+<A ID="pgfId-1011528"></A>
+<UILabel-Table>
+file</UILabel-Table>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1011530"></A>
+Display only entries that are recorded in the same disk file as the selected entry.</DefDscrp>
+<DefItem>
+<A ID="pgfId-1011532"></A>
+<UILabel-Table>
+type</UILabel-Table>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1011534"></A>
+Display only entries of the same type as the selected entry (for example, all doIts, which represent executed expressions).</DefDscrp>
+<DefItem>
+<A ID="pgfId-1011536"></A>
+<UILabel-Table>
+class</UILabel-Table>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1011538"></A>
+Display only entries that affect the same class as the selected entry.</DefDscrp>
+<DefItem>
+<A ID="pgfId-1011540"></A>
+<UILabel-Table>
+protocol</UILabel-Table>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1011542"></A>
+Display only entries that affect a class or message in the same protocol as the selected entry.</DefDscrp>
+<DefItem>
+<A ID="pgfId-1011544"></A>
+<UILabel-Table>
+selector</UILabel-Table>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1011546"></A>
+Display only entries that involve the same message selector as the selected entry.</DefDscrp>
+<DefItem>
+<A ID="pgfId-1011548"></A>
+<UILabel-Table>
+same</UILabel-Table>
+</DefItem>
+<DefDscrp>
+<A ID="pgfId-1011550"></A>
+Display only entries that have the same type as the selected entry and affect the same class or method. Although the entries in the change list appear identical, the underlying code may be different for each entry. Use this switch to examine the evolution of a change.</DefDscrp>
+<TableAnch>
+<A ID="pgfId-1011551"></A>
+</TableAnch>
+<Heading3>
+<A ID="pgfId-1011242"></A>
+<A ID="Examine the evolution of a change"></A>
+Examine the evolution of a change</Heading3>
+<Body1>
+<A ID="pgfId-1011557"></A>
+With the <UI-Label>
+same</UI-Label>
+ filter turned on, you can examine the evolution of a class, method, or protocol. Typically, this filter is used to examine the evolution of a single class or a method, but it can be used to filter any type of change.</Body1>
+<Body1>
+<A ID="pgfId-1083020"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083024"></A>
+<A href="04-develop.xml#id(Filter the list of changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Filter the list of changes</A> </Bullet1>
+<Bullet1>
+<A ID="pgfId-1083038"></A>
+<A href="04-develop.xml#id(Revert to a prior version of a change)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Revert to a prior version of a change</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1008779"></A>
+<A ID="Manage the list of changes"></A>
+Manage the list of changes</Heading3>
+<Body1>
+<A ID="pgfId-1011595"></A>
+By default, the Change List automatically compares the displayed changes against the corresponding methods in the image, emphasizing the list elements to indicate differences. Elements marked with italics are the same as the current definition in the image; this is indicated with the text <UI-Label>
+(same)</UI-Label>
+. Elements marked in bold do not match their corresponding definitions in the image; this is indicated with the text <UI-Label>
+(changed)</UI-Label>
+. This emphasis can be enabled or disabled by selecting the <UI-Label>
+Conflicts-&gt;Emphasize in list</UI-Label>
+ command on the <UI-Label>
+Show</UI-Label>
+ menu.</Body1>
+<Body1>
+<A ID="pgfId-1011563"></A>
+Once you have loaded a particular set of changes into the Change List, you can shorten the list either by filtering or by culling the list. Use the filter switches to show only changes made to a specific class, method, or protocol.</Body1>
+<Body1>
+<A ID="pgfId-1083054"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083058"></A>
+<A href="04-develop.xml#id(Filter the list of changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Filter the list of changes</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1008783"></A>
+<A ID="Cull the list of changes"></A>
+Cull the list of changes</Heading3>
+<Body1>
+<A ID="pgfId-1011618"></A>
+To pair down the list of displayed changes, mark those item(s) to be deleted by choosing <UI-Label>
+remove selection</UI-Label>
+ or <UI-Label>
+remove all</UI-Label>
+ from the &lt;Operate&gt; menu, and then <UI-Label>
+forget</UI-Label>
+. To un-mark item(s), choose either <UI-Label>
+restore selection</UI-Label>
+ or <UI-Label>
+restore all</UI-Label>
+. Note that the <UI-Label>
+forget</UI-Label>
+ operation does not permanently affect the system Change Set.</Body1>
+<Body1>
+<A ID="pgfId-1011619"></A>
+As a short-cut, you can also mark an item for removal by double-clicking on the list entry; items marked for removal are display is struck text. Double-clicking on the item a second time will restore it to the list.</Body1>
+<Body1>
+<A ID="pgfId-1083086"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083090"></A>
+<A href="04-develop.xml#id(Open a Change Set Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Open a Change Set Browser</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1083247"></A>
+<A ID="Recovering Changes"></A>
+Recover changes</Heading3>
+<Body1>
+<A ID="pgfId-1083248"></A>
+To display the changes that have occurred since the last snapshot was taken, select <UI-Label>
+file in/out-&gt;recover last changes</UI-Label>
+ on the &lt;Operate&gt; menu of the list view in the top-left region of the window.</Body1>
+<Body1>
+<A ID="pgfId-1083292"></A>
+When recovering from a system failure, you must eliminate any changes that may have contributed to the crash.</Body1>
+<StepStart>
+<A ID="pgfId-1083280"></A>
+To cull unnecessary entries such as doIts, edit the displayed list.</StepStart>
+<StepCont>
+<A ID="pgfId-1083285"></A>
+To delete all doIts, which are usually unnecessary for recovery purposes, select any doIt in the list view and select the <UI-Label>
+type</UI-Label>
+ switch.</StepCont>
+<StepCont>
+<A ID="pgfId-1083286"></A>
+Choose <UI-Label>
+remove all</UI-Label>
+ in the &lt;Operate&gt; menu to mark all the doIts for deletion, then select <UI-Label>
+forget</UI-Label>
+ to clear them from the list.</StepCont>
+<StepCont>
+<A ID="pgfId-1083291"></A>
+Deselect the type switch to display the remaining changes.</StepCont>
+<StepCont>
+<A ID="pgfId-1011296"></A>
+When the displayed list contains only the desired changes, select <UI-Label>
+replay all-&gt;from top</UI-Label>
+ in the &lt;Operate&gt; menu.</StepCont>
+<Heading3>
+<A ID="pgfId-1083271"></A>
+<A ID="Condense the system changes file"></A>
+Condense the system changes file</Heading3>
+<Body1>
+<A ID="pgfId-1011427"></A>
+In a large development effort spanning months or years of programming, the changes file can become very large. To condense it so that it contains only the most recent change for each method, select <UI-Label>
+Changes-&gt;Condense Changes </UI-Label>
+from the Launcher&#39;s <UI-Label>
+System</UI-Label>
+ menu. Changes involving anything other than a method -- such as a class addition or redefinition -- will also be purged from the file permanently. It&#39;s a good idea to make a backup copy of the changes file before condensing it.</Body1>
+<Heading3>
+<A ID="pgfId-1083446"></A>
+<A ID="Examine the evolution of a change"></A>
+Examine the evolution of a change</Heading3>
+<Body1>
+<A ID="pgfId-1083447"></A>
+With the <UI-Label>
+same</UI-Label>
+ filter turned on in a Change List, you can examine the evolution of a class, method, or protocol. Typically, this filter is used to examine the evolution of a single class or a method, but it can be used to filter any type of change.</Body1>
+<Body1>
+<A ID="pgfId-1083448"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083452"></A>
+<A href="04-develop.xml#id(Filter the list of changes)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Filter the list of changes</A> </Bullet1>
+<Bullet1>
+<A ID="pgfId-1083456"></A>
+<A href="04-develop.xml#id(Revert to a prior version of a change)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Revert to a prior version of a change</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1083458"></A>
+<A ID="Revert to a prior version of a change"></A>
+Revert to a prior version of a change</Heading3>
+<Body1>
+<A ID="pgfId-1083459"></A>
+Use the <UI-Label>
+same</UI-Label>
+ filter to see the evolution of the particular change you want to revert. To revert the code to a prior version, select the entry representing that version and then select <UI-Label>
+replay selection</UI-Label>
+ in the &lt;Operate&gt; menu. You can also use the options under <UI-Label>
+replay all</UI-Label>
+, when you want to incorporate all of the listed changes. The menu item <UI-Label>
+replay all-&gt;from here</UI-Label>
+ will revert every change listed from the current selection to the end of this list, while <UI-Label>
+replay all-&gt;from top </UI-Label>
+will revert every change in the list. Note that any change entries marked for removal will not be reverted. If an exception occurs during the replay, the selection is left at the item which caused it.</Body1>
+<Heading3>
+<A ID="pgfId-1082893"></A>
+<A ID="Open a Change Set Browser"></A>
+Open a Change Set Browser</Heading3>
+<Body1>
+<A ID="pgfId-1082894"></A>
+Change sets are listed in the Project Browser window. To open the browser, select <UI-Label>
+Changes-&gt;Change Sets</UI-Label>
+ from the Launcher&#39;s <UI-Label>
+System</UI-Label>
+ menu. To browse the changes in a particular change set, select the change set then select <UI-Label>
+Browse</UI-Label>
+ in the &lt;Operate&gt; menu. This will open a separate Change Set Browser.</Body1>
+<Heading3>
+<A ID="pgfId-1082907"></A>
+<A ID="Create a new change set"></A>
+Create a new change set</Heading3>
+<Body1>
+<A ID="pgfId-1082908"></A>
+To create a new change set, open the Project Browser in the Launcher window (select <UI-Label>
+Changes-&gt;Change Sets</UI-Label>
+ from the <UI-Label>
+System</UI-Label>
+ menu), and in the new Browser, select <UI-Label>
+Add...</UI-Label>
+ from the <UI-Label>
+ChangeSet</UI-Label>
+ or the &lt;Operate&gt; menu. Enter a name for the new change set in the prompter dialog, and click <UI-Label>
+OK</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1082909"></A>
+To make this the current change set, select it so it is highlighted. All subsequent changes will be recorded to this change set.</Body1>
+<Heading3>
+<A ID="pgfId-1082919"></A>
+<A ID="Browse specific change sets"></A>
+Browse specific change sets</Heading3>
+<Body1>
+<A ID="pgfId-1082920"></A>
+To browse the changes in a change set, select the change set in the Project Browser, then select <UI-Label>
+Browse</UI-Label>
+ in the <UI-Label>
+ChangeSet</UI-Label>
+ or &lt;Operate&gt; menu.</Body1>
+<Body1>
+<A ID="pgfId-1082921"></A>
+Unlike the Change List, the change set browser does not show the evolution of changes. Instead, change sets are used to organize groups of changes. The Change Set Browser lists the affected parts of the system so you can use the <UI-Label>
+File out as... </UI-Label>
+command to store your work in a set of disk files.</Body1>
+<Heading3>
+<A ID="pgfId-1082931"></A>
+<A ID="Save the contents of a single change set"></A>
+Save the contents of a single change set</Heading3>
+<Body1>
+<A ID="pgfId-1083417"></A>
+Use <UI-Label>
+File out as...</UI-Label>
+ in the left view&#39;s &lt;Operate&gt; menu. To file out all projects into a directory, use <UI-Label>
+File out all...</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1083424"></A>
+Change sets only keep track of the parts of the system that have been modified. Unlike Change Lists, change sets do not keep track of the evolution of changes.</Body1>
+<Heading3>
+<A ID="pgfId-1083419"></A>
+<A ID="Empty a change set"></A>
+Empty a change set</Heading3>
+<Body1>
+<A ID="pgfId-1083420"></A>
+To empty the active change set, in readiness for a new batch of work, select <UI-Label>
+Empty...</UI-Label>
+ in the &lt;Operate&gt; menu.</Body1>
+<Heading2>
+<A ID="pgfId-1011308"></A>
+<A ID="Team Development"></A>
+Team Development</Heading2>
+<Body1>
+<A ID="pgfId-1083568"></A>
+<B>
+Topics on Team Development:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083572"></A>
+<A href="04-develop.xml#id(Strategies for sharing code)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Strategies for sharing code</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083634"></A>
+<A href="04-develop.xml#id(Integrate code)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Integrate code</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083638"></A>
+<A href="04-develop.xml#id(Remove multiple versions of a change)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Remove multiple versions of a change</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083642"></A>
+<A href="04-develop.xml#id(Identify conflicts)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Identify conflicts</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083646"></A>
+<A href="04-develop.xml#id(Identify conflicts using source or code analysis)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Identify conflicts using source or code analysis</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083650"></A>
+<A href="04-develop.xml#id(View conflicts)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">View conflicts</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083654"></A>
+<A href="04-develop.xml#id(Identify conflicts in file-Ins)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Identify conflicts in file-Ins</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1083658"></A>
+<A href="04-develop.xml#id(Create a conflicts file)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a conflicts file</A></Bullet1>
+<Body1>
+<A ID="pgfId-1083662"></A>
+</Body1>
+<Heading3>
+<A ID="pgfId-1008787"></A>
+<A ID="Strategies for sharing code"></A>
+Strategies for sharing code</Heading3>
+<Body1>
+<A ID="pgfId-1011675"></A>
+When the code you want to share consists of fragments from many different classes and categories, use the <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A> to create a single new file with the desired code.</Body1>
+<StepStart>
+<A ID="pgfId-1083135"></A>
+Load all changes you want to export, using <UI-Label>
+file in/out-&gt;display system changes</UI-Label>
+.</StepStart>
+<StepCont>
+<A ID="pgfId-1011679"></A>
+Remove all irrelevant changes. For example, <Code>
+doIts</Code>
+ are likely candidates for removal because they rarely affect the image in a lasting way.</StepCont>
+<StepCont>
+<A ID="pgfId-1083148"></A>
+Remove duplicate entries, e.g., when a method has undergone several changes -- leave only the last entry in each case. Use <UI-Label>
+remove selection</UI-Label>
+ and <UI-Label>
+remove all</UI-Label>
+ in the &lt;Operate&gt; menu to mark one or more changes for deletion, then use <UI-Label>
+forget</UI-Label>
+ to erase them from the list. Use the filter switches to control the affected range of entries.</StepCont>
+<StepCont>
+<A ID="pgfId-1011680"></A>
+To remove all <Code>
+doIts</Code>
+, begin by selecting any <Code>
+doIt</Code>
+. Then turn on the <UI-Label>
+type</UI-Label>
+ switch so all of the <Code>
+doIts</Code>
+ are listed. Select <UI-Label>
+remove all</UI-Label>
+ in the &lt;Operate&gt; menu to mark them for deletion, then <UI-Label>
+forget</UI-Label>
+ to erase them. Then turn off the <UI-Label>
+type</UI-Label>
+ switch to see the remaining entries.</StepCont>
+<StepCont>
+<A ID="pgfId-1011681"></A>
+When the displayed list of changes is the desired set you want to save, select <UI-Label>
+file in/out-&gt;write file... </UI-Label>
+in the &lt;Operate&gt; menu and supply the name of a file in which to store the code.</StepCont>
+<StepCont>
+<A ID="pgfId-1011685"></A>
+Only the displayed changes are included in a <UI-Label>
+write file... </UI-Label>
+operation, so if it is possible to define the minimum set of changes by using the filter switches alone, it is not necessary to <UI-Label>
+remove</UI-Label>
+ and <UI-Label>
+forget</UI-Label>
+ the nondisplayed entries.</StepCont>
+<Body1>
+<A ID="pgfId-1011686"></A>
+<B>
+NOTE:</B>
+ When you write selections to a file, be sure to choose a file name that is different from any file that has been read into the change list. The change list maintains pointers to the code in the files that are read in, and these pointers become invalid when you overwrite a file.</Body1>
+<Heading3>
+<A ID="pgfId-1011334"></A>
+<A ID="Integrate code"></A>
+Integrate code</Heading3>
+<Body1>
+<A ID="pgfId-1011796"></A>
+Integrating code into the system typically involves cross-checking between several source files, or between source files and the current image.</Body1>
+<Body1>
+<A ID="pgfId-1011797"></A>
+To integrate code that you believe to be compatible with the current image, load all the different sources into a <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A>, and then select <UI-Label>
+Remove-&gt;Conflicts</UI-Label>
+, followed by <UI-Label>
+Remove-&gt;Exchange removed</UI-Label>
+. This produces a list of any definitions that may conflict between different source files.</Body1>
+<Body1>
+<A ID="pgfId-1011798"></A>
+To check code that you are not sure is compatible with the current image, use <UI-Label>
+Read different source from file/directory...</UI-Label>
+ on the <UI-Label>
+File</UI-Label>
+ menu.</Body1>
+<Body1>
+<A ID="pgfId-1022485"></A>
+To create a list of changes necessary to co-ordinate a file-in with the current system, use <UI-Label>
+Build script to system</UI-Label>
+ on the <UI-Label>
+Conflicts</UI-Label>
+ menu. A new Change List window will be opened with the changes necessary to make the changes correspond to the current system. The resulting changes can be used as a script to co-ordinate the current system with a foreign (deficient) system.</Body1>
+<Body1>
+<A ID="pgfId-1083154"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083158"></A>
+<A href="04-develop.xml#id(Identify conflicts)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Identify conflicts</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1011328"></A>
+<A ID="Remove multiple versions of a change"></A>
+Remove multiple versions of a change</Heading3>
+<Body1>
+<A ID="pgfId-1011808"></A>
+To remove all older, conflicting changes in the <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A>, use <UI-Label>
+Old Versions</UI-Label>
+ on the <UI-Label>
+Remove</UI-Label>
+ menu. Only the latest version of each change will not be marked for removal. Conflicts are determined by comparing only the successive items in the list--not the actual source code.</Body1>
+<Body1>
+<A ID="pgfId-1011809"></A>
+To remove any duplicate changes from the list of changes, select <UI-Label>
+Exact Duplicates</UI-Label>
+ on the <UI-Label>
+Remove</UI-Label>
+ menu. Only the latest version of each change will not be marked for removal. The duplicates are identified using a full source comparison.</Body1>
+<Body1>
+<A ID="pgfId-1011810"></A>
+With both <UI-Label>
+Old Versions</UI-Label>
+ and <UI-Label>
+Exact Duplicates</UI-Label>
+, if there is a selection in the list, only conflicting changes that occur before the selected item will be removed. If the left-shift key is pressed while selecting the menu action, then only items later in the list will be removed. With the left-shift key down, the direction of scanning for duplicates will be reversed, so that the first item is the &#34;latest.&#34;)</Body1>
+<Heading3>
+<A ID="pgfId-1009154"></A>
+<A ID="Identify conflicts"></A>
+Identify conflicts</Heading3>
+<Body1>
+<A ID="pgfId-1011702"></A>
+To remove all items in the list of changes that conflict with other changes in the <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A> (even if they're duplicates), use <UI-Label>
+Conflicts</UI-Label>
+ on the <UI-Label>
+Remove</UI-Label>
+ menu. Only the elements in the list will be checked for conflicts--not the corresponding source code.</Body1>
+<Body1>
+<A ID="pgfId-1011703"></A>
+To view the specific conflicts in a new window, use <UI-Label>
+Conflicts</UI-Label>
+ on the <UI-Label>
+Remove</UI-Label>
+ menu, followed by <UI-Label>
+Exchange removed</UI-Label>
+, followed by <UI-Label>
+Find-&gt;Spawn all</UI-Label>
+. This will open a new window, in which you can use <UI-Label>
+forget</UI-Label>
+ to reduce the list to show only the conflicting definitions.</Body1>
+<Body1>
+<A ID="pgfId-1083177"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083181"></A>
+<A href="04-develop.xml#id(Remove multiple versions of a change)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Remove multiple versions of a change</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1009155"></A>
+<A ID="Identify conflicts using source or code analysis"></A>
+Identify conflicts using source or code analysis</Heading3>
+<Body1>
+<A ID="pgfId-1011710"></A>
+To remove all items in the <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A> that conflict with the definitions in the current image, use the <UI-Entry>
+Different source to system</UI-Entry>
+ or <UI-Entry>
+Different code to system</UI-Entry>
+ commands on the <UI-Label>
+Remove</UI-Label>
+ menu. These two commands scan all the items in the list of changes as follows:</Body1>
+<Body1>
+<A ID="pgfId-1011711"></A>
+To perform a <I>
+full source comparison</I>
+ against definitions in the system, use <UI-Entry>
+Different source to system</UI-Entry>
+. Using full source text comparison, any definitions with changes to formatting or comments will be marked for removal.</Body1>
+<Body1>
+<A ID="pgfId-1011712"></A>
+To perform a <I>
+code analysis comparison</I>
+ against definitions in the system, use <UI-Entry>
+Different code to system</UI-Entry>
+. With the code analyzer, changes to formatting or comments will be ignored, and only methods with code changes will be marked for removal. Note that although names of temporary variables are often considered part of the source, they are treated as code changes by this analysis.</Body1>
+<Body1>
+<A ID="pgfId-1011713"></A>
+To remove all methods in the list of changes that <I>
+do not</I>
+ conflict with the system, use the <UI-Entry>
+Same code as system</UI-Entry>
+ or <UI-Entry>
+Same source as system</UI-Entry>
+ commands on the <UI-Label>
+Remove</UI-Label>
+ menu.</Body1>
+<Body1>
+<A ID="pgfId-1011714"></A>
+Note that <UI-Label>
+Different...</UI-Label>
+ and <UI-Label>
+Same...</UI-Label>
+ commands only compare items that correspond to definitions in the system.</Body1>
+<Body1>
+<A ID="pgfId-1083194"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083198"></A>
+<A href="04-develop.xml#id(Integrate code)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Integrate code</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1009880"></A>
+<A ID="View conflicts"></A>
+View conflicts</Heading3>
+<Body1>
+<A ID="pgfId-1011745"></A>
+To view differences between the code for a method in the <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A> and the definition in the current image, select <UI-Label>
+Show conflicts</UI-Label>
+ on the <UI-Label>
+Show</UI-Label>
+ menu. This command splits the lower view of the Change List window to display two parallel panes. When this option is enabled, it is possible to see a source-level or code analysis of conflicts between methods. To toggle between the different types of analysis, select <UI-Label>
+Conflicts-&gt;Source differences</UI-Label>
+ and <UI-Label>
+Conflicts-&gt;Code differences</UI-Label>
+ on the <UI-Label>
+Show</UI-Label>
+ menu.</Body1>
+<Heading3>
+<A ID="pgfId-1011668"></A>
+<A ID="Identify conflicts in file-Ins"></A>
+Identify conflicts in file-Ins</Heading3>
+<Body1>
+<A ID="pgfId-1011774"></A>
+To identify conflicting methods in a source file (or group of source files) displayed in the <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A>, select <UI-Label>
+Read different source from file/directory...</UI-Label>
+ on the <UI-Label>
+File</UI-Label>
+ menu. This command will build a list of changes using only those definitions in the source file which differ from the system. A full source text comparison is performed, so any changes to formatting or comments will be flagged, and the corresponding methods or classes will be added to the list of changes.</Body1>
+<Body1>
+<A ID="pgfId-1011775"></A>
+If you want to perform this operation using code analysis instead of raw source comparison, select <UI-Label>
+Read different code from file/directory...</UI-Label>
+ on the <UI-Label>
+File</UI-Label>
+ menu. Changes to formatting or comments will be ignored, and only methods or classes with code changes will be added to the list of changes. Note that although names of temporary variables are often considered part of the source, they are treated as code changes by this analysis.</Body1>
+<Body1>
+<A ID="pgfId-1011779"></A>
+These commands are equivalent to <UI-Label>
+file in/out-&gt;read file/directory...</UI-Label>
+, followed by <UI-Label>
+Same...</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1083211"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083215"></A>
+<A href="04-develop.xml#id(Integrate code)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Integrate code</A> </Bullet1>
+<Heading3>
+<A ID="pgfId-1009870"></A>
+<A ID="Create a conflicts file"></A>
+Create a conflicts file</Heading3>
+<Body1>
+<A ID="pgfId-1011763"></A>
+To locate places where the same method or class is affected in the <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A>, use the <UI-Label>
+conflicts-&gt;check conflicts, save as...</UI-Label>
+ command on the &lt;Operate&gt; menu in the upper-left view. Every duplicate entry in the change list will be checked, and all versions of the conflicting code are then saved in the designated file. This command can be used to identify conflicts when you are integrating code from multiple files.</Body1>
+<Body1>
+<A ID="pgfId-1011767"></A>
+To perform a similar conflict-check between the list of changes and the corresponding definitions in the current image, use the <UI-Label>
+conflicts-&gt;check with system, save as...</UI-Label>
+ command.</Body1>
+<Body1>
+<A ID="pgfId-1083219"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1083223"></A>
+<A href="04-develop.xml#id(Integrate code)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Integrate code</A> </Bullet1>
+<Body1>
+<A ID="pgfId-1010193"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1039878"></A>
+<A ID="Inspecting Objects"></A>
+Inspecting Objects</Heading2>
+<Body1>
+<A ID="pgfId-1059339"></A>
+<B>
+Topics on the Inspector:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1059340"></A>
+<A href="04-develop.xml#id(Inspect a composite object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Inspect a composite object</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1059350"></A>
+<A href="04-develop.xml#id(Modify an object using the inspector)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Modify an object using the inspector</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1059354"></A>
+<A href="04-develop.xml#id(Using specialized inspectors)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Using specialized inspectors</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1059358"></A>
+<A href="04-develop.xml#id(Trace references to an object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Trace references to an object</A></Bullet1>
+<Body1>
+<A ID="pgfId-1059364"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1059368"></A>
+<A href="03-tools.xml#id(Inspector)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Inspector</A></Bullet1>
+<Body1>
+<A ID="pgfId-1059362"></A>
+</Body1>
+<Heading3>
+<A ID="pgfId-1028843"></A>
+<A ID="Inspect a composite object"></A>
+Inspect a composite object</Heading3>
+<Body1>
+<A ID="pgfId-1028844"></A>
+To inspect objects composed of many elements, select the element in the left-hand view and use either <UI-Label>
+inspect</UI-Label>
+ or <UI-Label>
+dive</UI-Label>
+ in the inspector&#39;s &lt;Operate&gt; menu. <UI-Label>
+Inspect</UI-Label>
+ opens a new inspector. <UI-Label>
+Dive</UI-Label>
+ shows the selected object in the current inspector, reducing the number of windows cluttering your screen. <UI-Label>
+Dive</UI-Label>
+ can also be invoked by double-clicking on an element in the left-hand view of the inspector. To back out of a diving inspector, select <UI-Label>
+pop</UI-Label>
+ in its &lt;Operate&gt; menu; to back out to a specific layer in the object&#39;s graph, select <UI-Label>
+utils-&gt;history</UI-Label>
+ and choose from the list of layers you have previously inspected.</Body1>
+<Heading3>
+<A ID="pgfId-1029812"></A>
+<A ID="Modify an object using the inspector"></A>
+Modify an object using the inspector</Heading3>
+<Body1>
+<A ID="pgfId-1029813"></A>
+To change the value of a variable, enter a new value in the code view and select <UI-Label>
+accept</UI-Label>
+ in the view&#39;s &lt;Operate&gt; menu.</Body1>
+<Heading3>
+<A ID="pgfId-1028853"></A>
+<A ID="Using specialized inspectors"></A>
+Using specialized inspectors</Heading3>
+<Body1>
+<A ID="pgfId-1028854"></A>
+Use specialized inspectors for dictionaries, and other collections. To override this behavior and inspect objects with a simple inspector, use the message <Code>
+basicInspect</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1029876"></A>
+<A ID="Trace references to an object"></A>
+Trace references to an object</Heading3>
+<Body1>
+<A ID="pgfId-1029877"></A>
+To identify the path of references from any object to a global in the <Code>
+Smalltalk</Code>
+ dictionary, select a field in the left-hand view and choose <UI-Label>
+utils-&gt;reference path</UI-Label>
+ in the inspector&#39;s &lt;Operate&gt; menu. This will open a new inspector showing an ordered list of all the objects in the reference path to the object in the selected field, with the global object at the top of the list.</Body1>
+<Body1>
+<A ID="pgfId-1039877"></A>
+<B>
+Note:</B>
+ this command is available only when the Advanced Tools parcel (<Platform>
+AllAdvancedTools.pcl</Platform>
+) is loaded. </Body1>
+<Body1>
+<A ID="pgfId-1029452"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1030338"></A>
+<A ID="Debugging Techniques"></A>
+Debugging Techniques</Heading2>
+<Body1>
+<A ID="pgfId-1040497"></A>
+<B>
+Topics on Debugging:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040517"></A>
+<A href="04-develop.xml#id(Opening a Debugger window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Opening a Debugger window</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040571"></A>
+<A href="04-develop.xml#id(Reading the execution stack)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Reading the execution stack</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040573"></A>
+<A href="04-develop.xml#id(Inspect and change a variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Inspect and change a variable</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040575"></A>
+<A href="04-develop.xml#id(Insert a status message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Insert a status message</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040577"></A>
+<A href="04-develop.xml#id(Capture the Stack for a Bug Report)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Capture the stack for a bug report</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040579"></A>
+<A href="04-develop.xml#id(Interrupt a program from the keyboard)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Interrupt a program from the keyboard</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040581"></A>
+<A href="04-develop.xml#id(Halt execution programmatically)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Halt execution programmatically</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040583"></A>
+<A href="04-develop.xml#id(Set the starting point)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the starting point</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040585"></A>
+<A href="04-develop.xml#id(Set the stopping point)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set the stopping point</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040587"></A>
+<A href="04-develop.xml#id(Single-step execution)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Single-step execution</A></Bullet1>
+<Body1>
+<A ID="pgfId-1040506"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040600"></A>
+<A href="03-tools.xml#id(Debugger)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Debugger</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040610"></A>
+<A href="03-tools.xml#id(Notifier)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Notifier</A></Bullet1>
+<Body1>
+<A ID="pgfId-1040498"></A>
+</Body1>
+<Heading3>
+<A ID="pgfId-1040348"></A>
+<A ID="Opening a Debugger window"></A>
+Opening a Debugger window</Heading3>
+<Body1>
+<A ID="pgfId-1040349"></A>
+An error notifier window opens on error conditions or when <Code>
+self halt</Code>
+ is encountered in the code.</Body1>
+<Body1>
+<A ID="pgfId-1040350"></A>
+Select <UI-Label>
+Debug</UI-Label>
+ to open a full Debugger window.</Body1>
+<Body1>
+<A ID="pgfId-1040351"></A>
+Select <UI-Label>
+Proceed</UI-Label>
+ to attempt to continue execution.</Body1>
+<Body1>
+<A ID="pgfId-1040352"></A>
+Select <UI-Label>
+Terminate</UI-Label>
+ to terminate execution.</Body1>
+<Body1>
+<A ID="pgfId-1040473"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040481"></A>
+<A href="04-develop.xml#id(Capture the Stack for a Bug Report)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Capture the stack for a bug report</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040484"></A>
+<A href="04-develop.xml#id(Reading the execution stack)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Reading the execution stack</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1029056"></A>
+<A ID="Reading the execution stack"></A>
+Reading the execution stack</Heading3>
+<Body1>
+<A ID="pgfId-1029057"></A>
+The Debugger displays the execution stack with the most recent message send at the top. The first line of the execution stack is often only of marginal interest, because it usually represents the method that handles the error --you must read around it to identify the cause of the error. </Body1>
+<Body1>
+<A ID="pgfId-1040363"></A>
+To double the amount of execution stack displayed, select <UI-Label>
+more stack</UI-Label>
+ on the &lt;Operate&gt; menu in the stack (uppermost) view. This will allow you to trace the problem backward (down the list of contexts.) You may change variables, edit the method, restart, or else single-step execution.</Body1>
+<Body1>
+<A ID="pgfId-1040413"></A>
+<B>
+Examples:</B>
+</Body1>
+<StepStart>
+<A ID="pgfId-1040424"></A>
+In the following line from the execution stack:</StepStart>
+<CodeSample>
+<A ID="pgfId-1040364"></A>
+theNameSpace.theClass&gt;&gt;theMethodName</CodeSample>
+<Bullet1>
+<A ID="pgfId-1040461"></A>
+<Code>
+theNameSpace</Code>
+ is the <A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A> in which <Code>
+theClass</Code>
+ belongs</Bullet1>
+<Bullet1>
+<A ID="pgfId-1040367"></A>
+<Code>
+theMethodName</Code>
+ is the name of the instance side method of  <Code>
+theClass</Code>
+</Bullet1>
+<StepCont>
+<A ID="pgfId-1040426"></A>
+In the following line from the execution stack:</StepCont>
+<CodeSample>
+<A ID="pgfId-1040370"></A>
+theNameSpace.theClass(theParentClass)&gt;&gt;theMethodName</CodeSample>
+<Bullet1>
+<A ID="pgfId-1040372"></A>
+the method <Code>
+theMethodName</Code>
+ is the name of the method defined in the parent class (<Code>
+theParentClass</Code>
+) of <Code>
+theClass</Code>
+.</Bullet1>
+<StepCont>
+<A ID="pgfId-1040444"></A>
+In the following line from the execution stack:</StepCont>
+<CodeSample>
+<A ID="pgfId-1040378"></A>
+theNameSpace.theClass class&gt;&gt;theMethodName</CodeSample>
+<Bullet1>
+<A ID="pgfId-1040448"></A>
+<Code>
+theMethodName</Code>
+ is the name of the class side method of  <Code>
+theClass</Code>
+.</Bullet1>
+<Body1>
+<A ID="pgfId-1040168"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040179"></A>
+<A href="03-tools.xml#id(Notifier)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Notifier</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040191"></A>
+<A href="04-develop.xml#id(Inspect and change a variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Inspect and change a variable</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040173"></A>
+<A ID="Inspect and change a variable"></A>
+Inspect and change a variable</Heading3>
+<Body1>
+<A ID="pgfId-1040174"></A>
+The bottom of the Debugger window is devoted to two inspectors that allow you to see the values of variables as they exist at the chosen point in the execution stack.</Body1>
+<Body1>
+<A ID="pgfId-1029061"></A>
+To inspect instance variables, use the inspector on the bottom left. To inspect temporary variables in the selected context, use the bottom right inspector.</Body1>
+<Body1>
+<A ID="pgfId-1029062"></A>
+To change the value of a variable and then restart the program, select the variable from the appropriate list, and edit its value in the right-hand part of the inspector. Then select <UI-Label>
+Accept</UI-Label>
+ in the &lt;Operate&gt; menu. To begin execution from the beginning of the method, select <UI-Label>
+Restart</UI-Label>
+ in the stack view menu.</Body1>
+<Heading3>
+<A ID="pgfId-1029063"></A>
+<A ID="Insert a status message"></A>
+Insert a status message</Heading3>
+<Body1>
+<A ID="pgfId-1029064"></A>
+To have your program display status messages during the debugging phase, edit your code to use the System Transcript as a status log.</Body1>
+<Body1>
+<A ID="pgfId-1029065"></A>
+To send output to the System Transcript, insert expressions such as the following in your code, substituting a pertinent object name for the italicized word:</Body1>
+<CodeSample>
+<A ID="pgfId-1029066"></A>
+Transcript show: <Emphasis>
+anObject</Emphasis>
+ printString.
+Transcript cr.
+Transcript tab.
+Transcript show: 'Checkpoint 1'; cr.</CodeSample>
+<Body1>
+<A ID="pgfId-1029070"></A>
+To avoid an update of the display with each part of a larger message, use <Code>
+nextPutAll:</Code>
+ or <Code>
+print:</Code>
+, then use <Code>
+endEntry</Code>
+ to output the message, as in:</Body1>
+<CodeSample>
+<A ID="pgfId-1029071"></A>
+Transcript nextPutAll: 'The account is: '; print: account; endEntry.</CodeSample>
+<Body1>
+<A ID="pgfId-1029076"></A>
+To clear the Transcript for a new batch of messages, select <UI-Label>
+Cancel</UI-Label>
+ in the Transcript &lt;Operate&gt; menu. Alternatively, execute the expression <Code>
+Transcript clear</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1029077"></A>
+The System Transcript is a distinguished instance of the <Code>
+TextCollector</Code>
+ class. For more transcript output messages, browse the instance methods of that class.</Body1>
+<Heading3>
+<A ID="pgfId-1040073"></A>
+<A ID="Capture the Stack for a Bug Report"></A>
+Capture the stack for a bug report</Heading3>
+<Body1>
+<A ID="pgfId-1040074"></A>
+Use the <UI-Label>
+copy stack</UI-Label>
+ command on the &lt;Operate&gt; menu in the stack view. The contents of the stack view will be copied into the paste buffer as a block of text. You can then paste the stack text into a file.</Body1>
+<Heading3>
+<A ID="pgfId-1029079"></A>
+<A ID="Interrupt a program from the keyboard"></A>
+Interrupt a program from the keyboard</Heading3>
+<Body1>
+<A ID="pgfId-1029080"></A>
+Type the <Glossary>
+user interrupt</Glossary>
+ key sequence: &lt;Control&gt;-y. Enter this key sequence when you want to freeze a program that is looping endlessly, or to capture its state at a specific observable stage.</Body1>
+<Body1>
+<A ID="pgfId-1029081"></A>
+User interrupts generate the usual error notifier, which can be used to open a Debugger.</Body1>
+<Body1>
+<A ID="pgfId-1040204"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040208"></A>
+<A href="03-tools.xml#id(Notifier)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Notifier</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040219"></A>
+<A href="04-develop.xml#id(Capture the Stack for a Bug Report)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Capture the stack for a bug report</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1029082"></A>
+<A ID="Halt execution programmatically"></A>
+Halt execution programmatically</Heading3>
+<Body1>
+<A ID="pgfId-1029083"></A>
+Insert the Smalltalk expression <Code>
+self halt</Code>
+ in a method at the location where you want execution to be interrupted, then <UI-Label>
+accept</UI-Label>
+ the revised method. This can be done inside the Debugger while execution is suspended, but the stack will be rolled back to the method you change. The next time that method is called, an error notifier will be displayed at the specified juncture.</Body1>
+<Body1>
+<A ID="pgfId-1040007"></A>
+A <Code>
+halt</Code>
+ message will generate the usual error notifier, which can be used to open a Debugger.</Body1>
+<Body1>
+<A ID="pgfId-1040244"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040248"></A>
+<A href="03-tools.xml#id(Notifier)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Notifier</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040252"></A>
+<A href="04-develop.xml#id(Single-step execution)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Single-step execution</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040256"></A>
+<A href="04-develop.xml#id(Capture the Stack for a Bug Report)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Capture the stack for a bug report</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1029086"></A>
+<A ID="Set the starting point"></A>
+Set the starting point</Heading3>
+<Body1>
+<A ID="pgfId-1029087"></A>
+To close the Debugger window and restart at the beginning of the currently selected method, select <UI-Label>
+Restart</UI-Label>
+ in the stack view&#39;s &lt;Operate&gt; menu. Use this command after you have altered the method&#39;s code. To restart at a prior position in the program, select the context in which you want execution to begin, then select <UI-Label>
+Restart</UI-Label>
+ in the &lt;Operate&gt; menu.</Body1>
+<Body1>
+<A ID="pgfId-1029088"></A>
+To close the Debugger and continue from the point of interruption in the currently selected method, select <UI-Label>
+Proceed</UI-Label>
+ in the &lt;Operate&gt; menu. Execution continues as follows:</Body1>
+<Bullet1>
+<A ID="pgfId-1029089"></A>
+If a user interrupt caused the break, execution proceeds from the point of interruption.</Bullet1>
+<Bullet1>
+<A ID="pgfId-1029090"></A>
+If anything other than a user interrupt caused the break, execution proceeds with an assumed value as the return of the interrupted message-send. That value is <Code>
+nil</Code>
+ unless you execute a <UI-Label>
+Do it</UI-Label>
+ or <UI-Label>
+Print it</UI-Label>
+ command inside the Debugger, in which case the value returned from that action is used.</Bullet1>
+<Heading3>
+<A ID="pgfId-1029091"></A>
+<A ID="Set the stopping point"></A>
+Set the stopping point</Heading3>
+<Body1>
+<A ID="pgfId-1029092"></A>
+To continue to a specific place in a method, click on that location to put the insertion point (caret) there, then select <UI-Label>
+skip to caret</UI-Label>
+ in the &lt;Operate&gt; menu.</Body1>
+<Heading3>
+<A ID="pgfId-1029093"></A>
+<A ID="Single-step execution"></A>
+Single-step execution</Heading3>
+<Body1>
+<A ID="pgfId-1029094"></A>
+Single-stepping is performed with  the Debugger window open so you can inspect the conditions at the new position in the stack.</Body1>
+<Body1>
+<A ID="pgfId-1029095"></A>
+To execute the next message-send, select the <UI-Label>
+step</UI-Label>
+ button in the Debugger or select <UI-Label>
+step</UI-Label>
+ in the &lt;Operate&gt; menu. Execution stops after the value is returned from the called method. </Body1>
+<Body1>
+<A ID="pgfId-1029096"></A>
+To send the next message, and &#34;follow&#34; it by displaying the called method, select the <UI-Label>
+send</UI-Label>
+ button or select <UI-Label>
+send</UI-Label>
+ in the &lt;Operate&gt; menu. This command provides the finest granularity of message-flow inspection.</Body1>
+<Body1>
+<A ID="pgfId-1029452"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-1030685"></A>
+<A ID="Managing Parcels"></A>
+Managing Parcels</Heading2>
+<Body1>
+<A ID="pgfId-1040598"></A>
+<B>
+Topics on working with parcels:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040599"></A>
+<A href="04-develop.xml#id(Open a Browser for viewing parcels)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Open a Browser for viewing parcels</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040621"></A>
+<A href="04-develop.xml#id(Create a new parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Create a new parcel</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040625"></A>
+<A href="04-develop.xml#id(Add a definition to a parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Add a definition to a parcel</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040629"></A>
+<A href="04-develop.xml#id(Remove a definition from a parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Remove a definition from a parcel</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040633"></A>
+<A href="04-develop.xml#id(Save a parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Save a parcel</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040637"></A>
+<A href="04-develop.xml#id(Load a parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Load a parcel</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040641"></A>
+<A href="04-develop.xml#id(Unload a parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Unload a parcel</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040645"></A>
+<A href="04-develop.xml#id(Browse dangling references)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Browse dangling references</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040649"></A>
+<A href="04-develop.xml#id(Browse unparcelled methods)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Browse unparcelled methods</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040653"></A>
+<A href="04-develop.xml#id(Browse a parcel’s prerequisites)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Browse a parcel&#39;s prerequisites</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040657"></A>
+<A href="04-develop.xml#id(Browse overridden extensions)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Browse overridden extensions</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040661"></A>
+<A href="04-develop.xml#id(Define a pre-load action)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Define a pre-load action</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040665"></A>
+<A href="04-develop.xml#id(Define a pre-save action)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Define a pre-save action</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040669"></A>
+<A href="04-develop.xml#id(Define a post-load action)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Define a post-load action</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1040673"></A>
+<A href="04-develop.xml#id(Define a pre-unload action)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Define a pre-unload action</A></Bullet1>
+<Body1>
+<A ID="pgfId-1040677"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040687"></A>
+<A href="03-tools.xml#id(System Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">System Browser</A></Bullet1>
+<Body1>
+<A ID="pgfId-1040678"></A>
+</Body1>
+<Heading3>
+<A ID="pgfId-1039680"></A>
+<A ID="Open a Browser for viewing parcels"></A>
+Open a Browser for viewing parcels</Heading3>
+<Body1>
+<A ID="pgfId-1039684"></A>
+Open a new <A href="03-tools.xml#id(System Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">System Browser</A> (<UI-Label>
+Browse-&gt;System</UI-Label>
+ in the <A href="03-tools.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A> window) and set the browser to view parcels loaded into the current image by choosing <UI-Label>
+Browser-&gt;Parcel</UI-Label>
+ from the browser&#39;s menu bar.</Body1>
+<Heading3>
+<A ID="pgfId-1030686"></A>
+<A ID="Create a new parcel"></A>
+Create a new parcel</Heading3>
+<Body1>
+<A ID="pgfId-1039424"></A>
+To create a new <A href="10-glossary.xml#id(parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">parcel</A>, select <UI-Label>
+Parcel-&gt;New...</UI-Label>
+ from the Browser&#39;s menu bar.</Body1>
+<Heading3>
+<A ID="pgfId-1039849"></A>
+<A ID="Add a definition to a parcel"></A>
+Add a definition to a parcel</Heading3>
+<Body1>
+<A ID="pgfId-1039850"></A>
+To add an existing category, class, protocol, or method to a <A href="10-glossary.xml#id(parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">parcel</A>, select the item to be added using the browser&#39;s navigator. Then choose <UI-Label>
+Parcel-&gt;Add to</UI-Label>
+ and specify the target parcel.</Body1>
+<Heading3>
+<A ID="pgfId-1039851"></A>
+<A ID="Remove a definition from a parcel"></A>
+Remove a definition from a parcel</Heading3>
+<Body1>
+<A ID="pgfId-1039426"></A>
+To remove any category, class. protocol, or method definitions, select the item in the Browser and then choose <UI-Label>
+Remove from</UI-Label>
+ from the <UI-Label>
+Parcel</UI-Label>
+ menu.</Body1>
+<Heading3>
+<A ID="pgfId-1039427"></A>
+<A ID="Save a parcel"></A>
+Save a parcel</Heading3>
+<Body1>
+<A ID="pgfId-1039428"></A>
+To save a <A href="10-glossary.xml#id(parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">parcel</A> from the Browser:</Body1>
+<StepStart>
+<A ID="pgfId-1043857"></A>
+Select <UI-Label>
+Parcel-&gt;Save .</UI-Label>
+</StepStart>
+<StepCont>
+<A ID="pgfId-1043882"></A>
+In the parcel save dialog, enter the name of the parcel file. Do not add the &#34;<Platform>
+.pcl</Platform>
+&#34; extension--VisualWorks will append it to the name.</StepCont>
+<StepCont>
+<A ID="pgfId-1043883"></A>
+To save sources in a &#34;<Platform>
+.pst</Platform>
+&#34; file, check the <UI-Label>
+save source file</UI-Label>
+ box.</StepCont>
+<StepCont>
+<A ID="pgfId-1040073"></A>
+To cause the sources to be hidden when the parcel is subsequently loaded into an image, check the <UI-Label>
+hide source on load</UI-Label>
+ box.</StepCont>
+<StepCont>
+<A ID="pgfId-1040074"></A>
+Select republishing options, and click <UI-Label>
+OK</UI-Label>
+.</StepCont>
+<Heading3>
+<A ID="pgfId-1039435"></A>
+<A ID="Load a parcel"></A>
+Load a parcel</Heading3>
+<Body1>
+<A ID="pgfId-1040413"></A>
+Use the Browser&#39;s <UI-Label>
+Parcel-&gt;Load</UI-Label>
+ command to load a <A href="10-glossary.xml#id(parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">parcel</A> from the search path, and select a parcel from the pop-up list.</Body1>
+<Body1>
+<A ID="pgfId-1040414"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1040418"></A>
+<A href="04-develop.xml#id(Set options for parcel loading)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Set options for parcel loading</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1040427"></A>
+<A ID="Unload a parcel"></A>
+Unload a parcel</Heading3>
+<Body1>
+<A ID="pgfId-1040428"></A>
+To unload a <A href="10-glossary.xml#id(parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">parcel</A>, select it in the Browser&#39;s parcels view and choose <UI-Label>
+Parcel-&gt;Unload</UI-Label>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1039439"></A>
+<A ID="Browse dangling references"></A>
+Browse dangling references</Heading3>
+<Body1>
+<A ID="pgfId-1039440"></A>
+To generate a report of dangling references, select a parcel in the Browser&#39;s parcels view, and choose <UI-Label>
+Parcel-&gt;Browse...-&gt;Dangling references</UI-Label>
+. The generated list shows methods that are not in the parcel but reference a class that is defined in the parcel.</Body1>
+<Heading3>
+<A ID="pgfId-1039441"></A>
+<A ID="Browse unparcelled methods"></A>
+Browse unparcelled methods</Heading3>
+<Body1>
+<A ID="pgfId-1039442"></A>
+To browse the set of messages sent from within the selected parcel and nowhere else in the image, select the Browser&#39;s <UI-Label>
+Parcel-&gt;Browse...-&gt;Unparcelled methods used exclusively</UI-Label>
+ command.</Body1>
+<Body1>
+<A ID="pgfId-1040137"></A>
+To browse methods in classes defined by the selected parcel but not called from within the parcel, select <UI-Label>
+Parcel-&gt;Browse...-&gt;Unparcelled methods defined in classes</UI-Label>
+.</Body1>
+<Body1>
+<A ID="pgfId-1040134"></A>
+<B>
+Note:</B>
+ these operations take some time to execute.</Body1>
+<Heading3>
+<A ID="pgfId-1039443"></A>
+<A ID="Browse a parcel’s prerequisites"></A>
+Browse a parcel&#39;s prerequisites</Heading3>
+<Body1>
+<A ID="pgfId-1039444"></A>
+Use the Browser&#39;s <UI-Label>
+Properties</UI-Label>
+ code tool to display the prerequisites of the selected parcel.</Body1>
+<Body1>
+<A ID="pgfId-1040161"></A>
+To compute the parcel&#39;s prerequisites, click on the <UI-Label>
+Compute prereqs</UI-Label>
+ button.</Body1>
+<Heading3>
+<A ID="pgfId-1039460"></A>
+<A ID="Browse overridden extensions"></A>
+Browse overridden extensions</Heading3>
+<Body1>
+<A ID="pgfId-1039461"></A>
+To browse a parcel&#39;s overridden extensions, use the Browser&#39;s <UI-Label>
+Parcel-&gt;Browse-&gt;Overridden extensions</UI-Label>
+ command. This opens a <A href="03-tools.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A> in conflicts mode, displaying previous versions, and a Method List Browser displaying the current versions.</Body1>
+<Heading3>
+<A ID="pgfId-1039445"></A>
+<A ID="Define a pre-load action"></A>
+Define a pre-load action</Heading3>
+<StepStart>
+<A ID="pgfId-1039448"></A>
+Select the parcel in the Browser&#39;s parcels view.</StepStart>
+<StepCont>
+<A ID="pgfId-1040167"></A>
+Select the <UI-Label>
+Properties</UI-Label>
+ code tool.</StepCont>
+<StepCont>
+<A ID="pgfId-1040471"></A>
+Choose the <UI-Label>
+Pre-load Action</UI-Label>
+ page in the properties tool, and edit the block.</StepCont>
+<StepCont>
+<A ID="pgfId-1040169"></A>
+Click <UI-Label>
+Apply</UI-Label>
+ to finalize the action.</StepCont>
+<Heading3>
+<A ID="pgfId-1039449"></A>
+<A ID="Define a pre-save action"></A>
+Define a pre-save action</Heading3>
+<StepStart>
+<A ID="pgfId-1040188"></A>
+Using the Browser, select the parcel and the class in which to define the method.</StepStart>
+<StepCont>
+<A ID="pgfId-1043917"></A>
+Select the <UI-Label>
+Properties</UI-Label>
+ code tool.</StepCont>
+<StepCont>
+<A ID="pgfId-1040488"></A>
+Choose the <UI-Label>
+Pre-save Action</UI-Label>
+ page in the properties tool, and edit the block.</StepCont>
+<StepCont>
+<A ID="pgfId-1043933"></A>
+Click <UI-Label>
+Apply</UI-Label>
+ to finalize the action.</StepCont>
+<Heading3>
+<A ID="pgfId-1039455"></A>
+<A ID="Define a post-load action"></A>
+Define a post-load action</Heading3>
+<StepStart>
+<A ID="pgfId-1040552"></A>
+Select the parcel in the Browser&#39;s parcels view.</StepStart>
+<StepCont>
+<A ID="pgfId-1043921"></A>
+Select the <UI-Label>
+Properties</UI-Label>
+ code tool.</StepCont>
+<StepCont>
+<A ID="pgfId-1040499"></A>
+Choose the <UI-Label>
+Post-load Action</UI-Label>
+ page in the properties tool, and edit the block.</StepCont>
+<StepCont>
+<A ID="pgfId-1043937"></A>
+Click <UI-Label>
+Apply</UI-Label>
+ to finalize the action.</StepCont>
+<StepCont>
+<A ID="pgfId-1040234"></A>
+Save the parcel to store this as its post-load action.</StepCont>
+<Heading3>
+<A ID="pgfId-1039457"></A>
+<A ID="Define a pre-unload action"></A>
+Define a pre-unload action</Heading3>
+<StepStart>
+<A ID="pgfId-1040560"></A>
+Select the parcel in the Browser&#39;s parcels view.</StepStart>
+<StepCont>
+<A ID="pgfId-1043925"></A>
+Select the <UI-Label>
+Properties</UI-Label>
+ code tool.</StepCont>
+<StepCont>
+<A ID="pgfId-1040518"></A>
+Choose the <UI-Label>
+Pre-unload Action</UI-Label>
+ page in the properties view, and edit the block.</StepCont>
+<StepCont>
+<A ID="pgfId-1043941"></A>
+Click <UI-Label>
+Apply</UI-Label>
+ to finalize the action.</StepCont>
+<StepCont>
+<A ID="pgfId-1040235"></A>
+Save the parcel to store this as its pre-unload action.</StepCont>
+<Body1>
+<A ID="pgfId-1029452"></A>
+</Body1>
+<Body1>
+<A ID="pgfId-1040056"></A>
+</Body1>
+<Body1>
+<A ID="pgfId-1040057"></A>
+</Body1>
+</XML>

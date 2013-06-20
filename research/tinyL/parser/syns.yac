@@ -1,0 +1,53 @@
+%{
+#include "defs.h"
+%}
+%token	ID INTEGER REAL INT FLOAT PRINT SEMICOLON COMMA 
+	EQUAL ADD SUBTRACT MULTIPLY DIVIDE LPAR RPAR UNKNOWN;
+%%
+Program
+	:Statements					{ }
+Statements
+	:Statement				{ }
+	|Statements Statement				{ }
+Statement
+	:Declare SEMICOLON				{ }
+	|Assign SEMICOLON				{ }
+	|Print SEMICOLON				{ }
+Declare
+	:Type Variables 				{ }
+Type	
+	:INT					{ }
+	|FLOAT					{ }
+Variables
+	:Variable					{ }
+	|Variables COMMA Variable					{ }
+Assign
+	:Variable EQUAL Expression 					{ }
+Print
+	:PRINT Expressions 					{ }
+Expressions
+	:Expression					{ }
+	|Expressions COMMA Expression				{ }
+Expression
+	:Expression ADD Term  					{ }
+	|Expression SUBTRACT Term					{ }
+	|Term					{ }
+Term
+	:Term MULTIPLY Factor					{ }
+	|Term DIVIDE Factor 					{ }
+	|Factor					{ }
+Factor
+	:Variable					{ }
+	|Constant					{ }
+	|LPAR Expression RPAR					{ }
+Variable
+	:ID					{ }
+Constant
+	:INTEGER					{ }
+	|REAL					{ }
+%%
+#include "lex.yy.c"
+void yyerror(char *s) {
+	fprintf(stderr, "\n%s at %d: nearby \"%s\"\n\n", s, linecounter, yytext);
+	exit(EXIT_FAILURE);
+}

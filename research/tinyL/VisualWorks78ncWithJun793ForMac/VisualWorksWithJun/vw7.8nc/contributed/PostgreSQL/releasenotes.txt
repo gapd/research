@@ -1,0 +1,14 @@
+Copyright (C) 2000 - 2010  Bruce Badger (bbadger@openskills.com)
+
+This is release 1.5 003 of the PostgreSQL driver library.  
+
+The changes:
+
+* Using the latest versions of Sport, in particular fixing image start initialisation
+
+Bugs:
+* Fixing a bug as suggested by Tom Robinson and Sam Schuster
+* A problem in the Cincom EXDI library (not this PostgreSQL library) as highlighted and demonstrated by Jay O'Connor.  c.f. PostgreSQLEXDITest>>test17.
+
+
+

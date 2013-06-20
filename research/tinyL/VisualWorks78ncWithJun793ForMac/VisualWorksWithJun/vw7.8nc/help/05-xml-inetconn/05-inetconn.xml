@@ -1,0 +1,3054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="05-inetconn.css" type="text/css" title="Internet Clients" charset="UTF-8"?>
+<XML>
+<Heading1>
+<A ID="pgfId-744949"></A>
+<A ID="Internet Clients"></A>
+Internet Clients</Heading1>
+<Heading2>
+<A ID="pgfId-769441"></A>
+Introduction</Heading2>
+<Body1>
+<A ID="pgfId-744959"></A>
+The NetClients parcels contain frameworks and class libraries for VisualWorks that provide general access to common internet communications facilities. Specifically, it provides the following:</Body1>
+<Bullet1>
+<A ID="pgfId-744965"></A>
+<B>
+Uniform Resource Identification (URI) framework</B>
+, to represent and access resources.</Bullet1>
+<Bullet1>
+<A ID="pgfId-744971"></A>
+<B>
+FTP framework</B>
+, to access remote files and directories.</Bullet1>
+<Bullet1>
+<A ID="pgfId-744977"></A>
+<B>
+RFC822 and MIME framework</B>
+, to work with e-mail/HTTP messages.</Bullet1>
+<Bullet1>
+<A ID="pgfId-744983"></A>
+<B>
+POP3 client engine framework</B>
+, to receive e-mail messages and maintain mail folders.</Bullet1>
+<Bullet1>
+<A ID="pgfId-744989"></A>
+<B>
+IMAP4rev1 client engine framework</B>
+, to receive e-mail messages and maintain mail folders.</Bullet1>
+<Bullet1>
+<A ID="pgfId-744995"></A>
+<B>
+SMTP client engine framework</B>
+, to send e-mail messages.</Bullet1>
+<Bullet1>
+<A ID="pgfId-745001"></A>
+<B>
+HTTP client engine framework</B>
+, to send and receive HTTP messages.</Bullet1>
+<Heading3>
+<A ID="pgfId-745007"></A>
+<A ID="Loading internet connectivity"></A>
+Loading Internet Connectivity</Heading3>
+<Body1>
+<A ID="pgfId-745011"></A>
+NetClients support is contained in a set of parcels in the net/ subdirectory. Support for specific protocols can be loaded, or support for all protocols in one action. </Body1>
+<Body1>
+<A ID="pgfId-888679"></A>
+Using the Parcel Manager, select the <UI-Label>
+Networking</UI-Label>
+ suggestion group. For individual protocols, load the parcel named for that protocol. To load the whole collection of NetClients supported protocols, load the <UI-Entry>
+NetClients</UI-Entry>
+ parcel. In either case, all necessary prerequisites are also loaded.</Body1>
+<Body1>
+<A ID="pgfId-750622"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-750608"></A>
+<A ID="FTP"></A>
+FTP</Heading2>
+<Body1>
+<A ID="pgfId-745061"></A>
+File Transfer Protocol (FTP) is a popular protocol for transferring (copying) files from any host implementing TCP/IP to any other host implementing TCP/IP.</Body1>
+<Body1>
+<A ID="pgfId-745063"></A>
+An FTP session requires a client and server: the FTP client initiates a file transfer and the FTP server serves the FTP client requests. Most hosts that have a TCP/IP protocol suite have FTP.</Body1>
+<Body1>
+<A ID="pgfId-745085"></A>
+In VisualWorks, there are three &quot;levels&quot; of FTP that you can use. They are listed here, from easiest to most complicated to use. Each is explained further in the associated section of this chapter.</Body1>
+<Bullet1>
+<A ID="pgfId-745095"></A>
+FtpURL. See <A href="05-inetconn.xml#id(FtpURL)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Using FtpURL</Hyperlink-reference>
+</A>.</Bullet1>
+<Bullet1>
+<A ID="pgfId-750644"></A>
+FTPClient. See <A href="05-inetconn.xml#id(Using FTPClient (FTP Protocol Level))" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Using FTPClient (FTP Protocol Level)</Hyperlink-reference>
+</A>.</Bullet1>
+<Bullet1>
+<A ID="pgfId-750649"></A>
+FTP Commands. See <A href="05-inetconn.xml#id(Using FTP commands and responses)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Using FTP commands and responses</Hyperlink-reference>
+</A>.</Bullet1>
+<Body1>
+<A ID="pgfId-761872"></A>
+To use FTP, you need an account (user name) and password on the remote server. Some sites have a set of files available for public access. To use these files, you do not need to have an account or password. You can, instead, access them using the <Platform>
+anonymous</Platform>
+ user name.</Body1>
+<Heading3>
+<A ID="pgfId-761874"></A>
+<A ID="FtpURL"></A>
+Using FtpURL</Heading3>
+<Body1>
+<A ID="pgfId-761875"></A>
+An URL is a Uniform Resource Locator, a standard for specifying the location of a resource that is available electronically. URLs are defined by RFC 1738 and RFC 2396, to which you can look for more definitive technical information.</Body1>
+<Body1>
+<A ID="pgfId-745145"></A>
+<Code>
+FtpURL</Code>
+ within VisualWorks mimics <Code>
+Filename</Code>
+. You can access remote files just like local files. Although this makes accessing remote files easy, you will need the following:</Body1>
+<Bullet1>
+<A ID="pgfId-745147"></A>
+You must know exact names of directories and files on the remote server.</Bullet1>
+<Bullet1>
+<A ID="pgfId-745149"></A>
+You must know the user name and password for access to a secured FTP server.</Bullet1>
+<Heading4>
+<A ID="pgfId-745155"></A>
+<A ID="Identify a remote FTP server"></A>
+Identify a remote FTP server</Heading4>
+<Body1>
+<A ID="pgfId-745159"></A>
+Following is the standard syntax for accessing a remote FTP server:</Body1>
+<CodeSample>
+<A ID="pgfId-745161"></A>
+ftp://&lt;username&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;path&gt;</CodeSample>
+<Body1>
+<A ID="pgfId-745163"></A>
+<B>
+Defaults</B>
+</Body1>
+<Body1>
+<A ID="pgfId-745167"></A>
+The <Platform>
+&lt;port&gt;</Platform>
+, <Platform>
+&lt;username&gt;</Platform>
+, and <Platform>
+&lt;password&gt;</Platform>
+ parameters are all optional; specifically:</Body1>
+<Bullet1>
+<A ID="pgfId-745171"></A>
+If you do not specify a port, the default (21) will be used.</Bullet1>
+<Bullet1>
+<A ID="pgfId-745175"></A>
+If you do not specify a user, the default (anonymous) will be used.</Bullet1>
+<Bullet1>
+<A ID="pgfId-745179"></A>
+If you do not specify a password, the default (your e-mail address) will be used.</Bullet1>
+<Body1>
+<A ID="pgfId-745181"></A>
+<B>
+Caution: </B>
+It can be dangerous to use the <Platform>
+&lt;username&gt;:&lt;password&gt;</Platform>
+ combination in the URL, because the password is not encrypted. If you are sending a password, it will be visible to anyone monitoring your network traffic. Therefore, it is preferable to use &#34;anonymous&#34; access (the default) whenever possible.</Body1>
+<Body1>
+<A ID="pgfId-745183"></A>
+The &quot;minimum&quot; URL will look like this:</Body1>
+<CodeSample>
+<A ID="pgfId-745185"></A>
+ftp://&lt;host&gt;/&lt;path&gt;</CodeSample>
+<Body1>
+<A ID="pgfId-745187"></A>
+The <Platform>
+host</Platform>
+ is the fully qualified domain name of the system, and the <Platform>
+path</Platform>
+ is the hierarchical directory path of the form <Platform>
+directory/directory/filename</Platform>
+. The host can be left as an empty string or &quot;localhost&quot; to refer to local files on the client on which the URL is being interpreted.</Body1>
+<Body1>
+<A ID="pgfId-745189"></A>
+<B>
+Using special symbols</B>
+</Body1>
+<Body1>
+<A ID="pgfId-745195"></A>
+If your password includes certain symbols (for example, an &#34;@&#34; in an e-mail address), you must replace the symbol with a string representing its hex value (for example, replace &quot;@&quot; with &quot;%40&quot;). Other characters (especially in the password) should also be encoded so they are not confused with the URL syntax.</Body1>
+<Body1>
+<A ID="pgfId-745197"></A>
+Some of the more common symbols are:</Body1>
+<CodeSample>
+<A ID="pgfId-740660"></A>
+<B>
+Symbol									Replacement String</B>
+</CodeSample>
+<CodeSample>
+<A ID="pgfId-759961"></A>
+% (percent)										 %25</CodeSample>
+<CodeSample>
+<A ID="pgfId-740668"></A>
+, (comma)										 %2C</CodeSample>
+<CodeSample>
+<A ID="pgfId-740676"></A>
+ / (forward slash)									%2F</CodeSample>
+<CodeSample>
+<A ID="pgfId-740684"></A>
+: (colon)											%3A</CodeSample>
+<CodeSample>
+<A ID="pgfId-740692"></A>
+; (semi-colon)									%3A</CodeSample>
+<CodeSample>
+<A ID="pgfId-740700"></A>
+@ (at sign)										%40</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-740708"></A>
+ (space)											%20</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745202"></A>
+<A ID="Download a file from a remote server (Binary mode)"></A>
+Download a file from a remote server (Binary mode)</Heading4>
+<Body1>
+<A ID="pgfId-745204"></A>
+The following code copies the file <Platform>
+hello.txt</Platform>
+ from the <Platform>
+visualworks</Platform>
+ directory into the &#34;home&#34; directory of VisualWorks on the local machine. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. The file will be transferred in Binary (image) mode, the default transfer mode for URI.</Body1>
+<CodeSample>
+<A ID="pgfId-745206"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/hello.txt' asURI </CodeSample>
+<CodeSample>
+<A ID="pgfId-751548"></A>
+	copyTo: 'helloworld.txt' asFilename asURI.</CodeSample>
+<Heading4>
+<A ID="pgfId-745210"></A>
+<A ID="Download a file from a remote server (Text mode)"></A>
+Download a file from a remote server (Text mode)</Heading4>
+<Body1>
+<A ID="pgfId-745212"></A>
+The following code copies the file <Platform>
+hello.txt</Platform>
+ from the <Platform>
+visualworks</Platform>
+ directory into the &#34;home&#34; directory of VisualWorks on the local machine. However, on the local system, the file will be called <Platform>
+helloworld.txt</Platform>
+. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. Because the default transfer mode is Binary, you must use streams in order to transfer in text (ASCII) mode.</Body1>
+<CodeSample>
+<A ID="pgfId-745214"></A>
+| output |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745216"></A>
+output := 'helloworld.txt' asFilename writeStream.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745218"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/hello.txt' asURI</CodeSample>
+<CodeSample>
+<A ID="pgfId-751549"></A>
+	readStreamDo: [ :stream :params | stream text.</CodeSample>
+<CodeSample>
+<A ID="pgfId-751551"></A>
+	[stream atEnd] whileFalse: [output nextPut: stream next] ].</CodeSample>
+<CodeSample>
+<A ID="pgfId-745220"></A>
+output close.</CodeSample>
+<Body1>
+<A ID="pgfId-750791"></A>
+<B>
+Note: </B>
+For uploading/downloading files in Text (ASCII) mode, it is best to use either the Stream methods for FtpURL (see <A href="05-inetconn.xml#id(Stream operations)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Stream operations</Hyperlink-reference>
+</A>) or, better yet, FTPClient commands (see <A href="05-inetconn.xml#id(Using FTPClient (FTP Protocol Level))" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Using FTPClient (FTP Protocol Level)</Hyperlink-reference>
+</A>).</Body1>
+<Heading4>
+<A ID="pgfId-750802"></A>
+<A ID="Upload a file to a remote server (Binary mode)"></A>
+Upload a file to a remote server (Binary mode)</Heading4>
+<Body1>
+<A ID="pgfId-745244"></A>
+The following code copies the file <Platform>
+vwlogo.jpg</Platform>
+ (found in the &#34;home&#34; directory of VisualWorks on the local machine) to the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. </Body1>
+<Code1-Last-Only>
+<A ID="pgfId-745246"></A>
+'vwlogo.jpg' asFilename asURI copyTo:</Code1-Last-Only>
+<Code1-Last-Only>
+<A ID="pgfId-751543"></A>
+	'ftp://zzuser:zzpassword@yourftpserver/visualworks/vwlogo.jpg' asURI.</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745250"></A>
+<A ID="Upload a file to a remote server (Text mode)"></A>
+Upload a file to a remote server (Text mode)										</Heading4>
+<Body1>
+<A ID="pgfId-745252"></A>
+The following code copies the file <Platform>
+hello.txt</Platform>
+ (found in the &#34;home&#34; directory of VisualWorks on the local machine) to the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. It is assumed that <Platform>
+hello.txt</Platform>
+ is a simple text file, since streams are being used.</Body1>
+<CodeSample>
+<A ID="pgfId-745254"></A>
+| input |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745256"></A>
+input := 'hello.txt' asFilename readStream.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745258"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/hello.txt' asURI </CodeSample>
+<CodeSample>
+<A ID="pgfId-751542"></A>
+	writeStreamDo: [ :stream | stream nextPutAll: input text; cr].</CodeSample>
+<CodeSample>
+<A ID="pgfId-745260"></A>
+input close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745264"></A>
+<A ID="Create a new directory"></A>
+Create a new directory</Heading4>
+<Body1>
+<A ID="pgfId-745266"></A>
+The following code creates the directory <Platform>
+testDir2</Platform>
+ under the existing <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745268"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/testDir2' asURI makeDirectory.</CodeSample>
+<Heading4>
+<A ID="pgfId-745272"></A>
+<A ID="FtpURL Delete a directory"></A>
+Delete a directory</Heading4>
+<Body1>
+<A ID="pgfId-745274"></A>
+The following code deletes the directory <Platform>
+testDir2</Platform>
+ under the existing <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. If the directory is not empty, an error will result:  &#34;550 : The directory is not empty&#34;. An error will also result if the directory cannot be found:  &#34;550 : The system cannot find the file specified&#34;.</Body1>
+<CodeSample>
+<A ID="pgfId-745276"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/testDir2' asURI removeDirectory.</CodeSample>
+<Heading4>
+<A ID="pgfId-745280"></A>
+<A ID="List files in a directory"></A>
+List files in a directory</Heading4>
+<Body1>
+<A ID="pgfId-745282"></A>
+The following code collects the contents of the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. This will return an Ordered Collection of file details.</Body1>
+<Code1-Last-Only>
+<A ID="pgfId-745284"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks' asURI directoryContents.</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745288"></A>
+<A ID="FtpURL Delete a file"></A>
+Delete a file</Heading4>
+<Body1>
+<A ID="pgfId-745290"></A>
+The following code deletes the file <Platform>
+file1.txt</Platform>
+ from the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. An error will result if the file cannot be found:  &#34;550 : The system cannot find the file specified&#34;.</Body1>
+<CodeSample>
+<A ID="pgfId-745292"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/file1.txt' asURI delete.</CodeSample>
+<Heading4>
+<A ID="pgfId-745296"></A>
+<A ID="Determine the size of a file"></A>
+Determine the size of a file</Heading4>
+<Body1>
+<A ID="pgfId-745298"></A>
+The following code returns the size (in bytes) of the file <Platform>
+file1.txt</Platform>
+ found in the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745300"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/file1.txt' asURI fileSize.</CodeSample>
+<Heading4>
+<A ID="pgfId-745304"></A>
+<A ID="Determine if a file or directory exists"></A>
+Determine if a file or directory exists</Heading4>
+<Body1>
+<A ID="pgfId-745306"></A>
+The following code returns either true or false, depending on the existence of the file <Platform>
+file1.txt</Platform>
+ in the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745308"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/file1.txt' asURI exists.</CodeSample>
+<Heading4>
+<A ID="pgfId-745312"></A>
+<A ID="Determine if the URI is a directory"></A>
+Determine if the URI is a directory</Heading4>
+<Body1>
+<A ID="pgfId-745314"></A>
+The following code returns either true or false depending on whether or not the file <Platform>
+file1.txt</Platform>
+ in the <Platform>
+visualworks</Platform>
+ directory is a directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745316"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/file1.txt' asURI isDirectory.</CodeSample>
+<Heading4>
+<A ID="pgfId-745322"></A>
+<A ID="Stream operations"></A>
+Stream operations</Heading4>
+<Body1>
+<A ID="pgfId-745326"></A>
+There are two stream operations. Both of these methods use guarded transfer, which ensures that streams are closed after use:</Body1>
+<DefItem>
+<A ID="pgfId-745332"></A>
+readStreamDo:</DefItem>
+<DefDscrp>
+<A ID="pgfId-751586"></A>
+Read the resource that the URI represents. The argument to the message is a block that takes a stream as its first argument and a Dictionary of properties as its second argument. If the URI allows you to know or guess the MIME type of the data, that will appear in the dictionary under the key <Code>
+#MIME</Code>
+. The dictionary may have other keys, depending on the type of URI and the server which has the resource. The stream must be used within the block only. It will be closed when the block finishes executing. The return value of <Code>
+#readStreamDo:</Code>
+ will be the value returned by the block.</DefDscrp>
+<DefItem>
+<A ID="pgfId-745338"></A>
+writeStreamDo:</DefItem>
+<DefDscrp>
+<A ID="pgfId-751568"></A>
+Write a new resource at its address. The argument to the message is a block that takes a stream as its only argument. The stream must be used within the block only. It will be closed when the block finishes executing. The return value of <Code>
+#writeStreamDo:</Code>
+ will be the value returned by the block.</DefDscrp>
+<Body1>
+<A ID="pgfId-745340"></A>
+For more information about stream operations, refer to the <BookTitle>
+VisualWorks Application Developer&#39;s Guide</BookTitle>
+.</Body1>
+<Heading4>
+<A ID="pgfId-745346"></A>
+<A ID="Create a file on a remote server"></A>
+Create a file on a remote server</Heading4>
+<Body1>
+<A ID="pgfId-745348"></A>
+The following code creates a file called <Platform>
+file1.txt</Platform>
+ in the <Platform>
+visualworks</Platform>
+ directory. The contents of the file are created &#34;on the fly&#34; using a stream method. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745350"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/file1.txt' asURI</CodeSample>
+<CodeSample>
+<A ID="pgfId-751540"></A>
+	writeStreamDo: [ :ftpStream | ftpStream text; </CodeSample>
+<CodeSample>
+<A ID="pgfId-751539"></A>
+	nextPutAll: 'blah blah'; cr].</CodeSample>
+<Heading4>
+<A ID="pgfId-745356"></A>
+<A ID="Upload a file to a remote server"></A>
+Upload a file to a remote server</Heading4>
+<Body1>
+<A ID="pgfId-745358"></A>
+The following code copies a file called <Platform>
+test.text</Platform>
+ (found in the &#34;home&#34; directory of VisualWorks on the local machine) to the <Platform>
+visualworks</Platform>
+ directory. The file in the <Platform>
+visualworks</Platform>
+ directory will be called <Platform>
+hello4.txt</Platform>
+. It is assumed that <Platform>
+test.text</Platform>
+ is a simple text file since streams are being used. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745360"></A>
+| input output |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745362"></A>
+input := 'test.text' asFilename readStream.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745364"></A>
+output := 'ftp://zzuser:zzpassword@yourftpserver/visualworks/hello4.txt' asURI.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745366"></A>
+[input atEnd] whileFalse: [output writeStreamDo: </CodeSample>
+<CodeSample>
+<A ID="pgfId-751538"></A>
+	[ :ftpStream | ftpStream text; nextPutAll: input text.]].</CodeSample>
+<CodeSample>
+<A ID="pgfId-745368"></A>
+input close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745372"></A>
+<A ID="Read a file from a remote server"></A>
+Read a file from a remote server</Heading4>
+<Body1>
+<A ID="pgfId-745374"></A>
+The following code returns a stream containing the contents of a file called <Platform>
+test.text</Platform>
+ found in the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.   </Body1>
+<Code1-Last-Only>
+<A ID="pgfId-745376"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/file1.txt' asURI</Code1-Last-Only>
+<Code1-Last-Only>
+<A ID="pgfId-751533"></A>
+	readStreamDo: [:stream :params | stream contents inspect].</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745380"></A>
+<A ID="Download a file from a remote server (Text mode)"></A>
+Download a file from a remote server (Text mode)											</Heading4>
+<Body1>
+<A ID="pgfId-745382"></A>
+The following code copies a file called <Platform>
+hello.txt</Platform>
+ from the <Platform>
+visualworks</Platform>
+ directory to a file called <Platform>
+helloworld.txt</Platform>
+, which will be found in the &#34;home&#34; directory of VisualWorks on the local machine. It is assumed that <Platform>
+hello.txt</Platform>
+ is a simple text file since streams are being used. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745384"></A>
+| output |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745386"></A>
+output := 'helloworld.txt' asFilename writeStream.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745388"></A>
+'ftp://zzuser:zzpassword@yourftpserver/visualworks/hello.txt' asURI</CodeSample>
+<CodeSample>
+<A ID="pgfId-760001"></A>
+	readStreamDo: [ :stream :params | stream text.[stream atEnd] </CodeSample>
+<CodeSample>
+<A ID="pgfId-760004"></A>
+		whileFalse: [output nextPut: stream next] ].</CodeSample>
+<CodeSample>
+<A ID="pgfId-745390"></A>
+output close.</CodeSample>
+<Body1>
+<A ID="pgfId-761868"></A>
+</Body1>
+<Heading3>
+<A ID="pgfId-745406"></A>
+<A ID="Using FTPClient (FTP Protocol Level)"></A>
+Using FTPClient (FTP Protocol Level)</Heading3>
+<Body1>
+<A ID="pgfId-745414"></A>
+<Code>
+FtpURL</Code>
+ uses methods of the <Code>
+FTPClient</Code>
+ class. As such, you have much more FTP functionality within your application using <Code>
+FTPClient</Code>
+ than with <Code>
+FtpURL</Code>
+. For example, when using <Code>
+FtpURL</Code>
+, it is not possible to directly transfer a file from remote server A to remote server B, nor is it possible to rename a file on a remote server.</Body1>
+<Body1>
+<A ID="pgfId-745418"></A>
+Although you have more control than <Code>
+FtpURL</Code>
+, there are still some restrictions:</Body1>
+<Bullet1>
+<A ID="pgfId-745420"></A>
+You cannot access subdirectories directly, as you can with <Code>
+FtpURL</Code>
+.</Bullet1>
+<Bullet1>
+<A ID="pgfId-745422"></A>
+You still must know the name and password for access to a secured FTP server.</Bullet1>
+<Body1>
+<A ID="pgfId-745424"></A>
+The same rules apply for user and password under <Code>
+FTPClient</Code>
+ as under <Code>
+FtpURL</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-745426"></A>
+<B>
+Note: </B>
+It is good practice to explicitly close the connection with the server, using <Code>
+FTPClient</Code>
+, once you have successfully logged into the server.</Body1>
+<Body1>
+<A ID="pgfId-745428"></A>
+Using <Code>
+FTPClient</Code>
+ is very similar to using FTP from a command-line interface. The sequence of methods used for <Code>
+FTPClient</Code>
+ nearly mimics the typical sequence of commands used during an FTP session with a command-line interface.</Body1>
+<Heading4>
+<A ID="pgfId-745432"></A>
+<A ID="Download a file from a remote server"></A>
+Download a file from a remote server</Heading4>
+<Body1>
+<A ID="pgfId-745434"></A>
+The following code copies the file <Platform>
+hello.txt</Platform>
+ from the <Platform>
+visualworks</Platform>
+ directory into the &#34;home&#34; directory of VisualWorks on the local machine. On the local system, however, the file will be called <Platform>
+helloworld.txt</Platform>
+. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. The file will be transferred in text (ASCII) mode, since the default transfer of Binary (Image) is being overridden with the <Code>
+textTransfer</Code>
+ method. </Body1>
+<CodeSample>
+<A ID="pgfId-745436"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745438"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751532"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745440"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745442"></A>
+ftpClient textTransfer.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745444"></A>
+ftpClient retrieveFileNamed: 'hello.txt' as: 'helloworld.txt'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745446"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745450"></A>
+<A ID="Upload a file to a remote server (Text mode)"></A>
+Upload a file to a remote server (Text mode)</Heading4>
+<Body1>
+<A ID="pgfId-745452"></A>
+The following code copies the file <Platform>
+helloworld.txt</Platform>
+ from the &#34;home&#34; directory of VisualWorks on the local machine to the <Platform>
+visualworks</Platform>
+ directory on the server. On the remote server, however, the file will be called <Platform>
+hello.txt</Platform>
+. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. The file will be transferred in text (ASCII) mode, since the default transfer of Binary (Image) is being overridden with the <Code>
+textTransfer</Code>
+ method.</Body1>
+<CodeSample>
+<A ID="pgfId-745454"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745456"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751531"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745458"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745460"></A>
+ftpClient textTransfer.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745462"></A>
+ftpClient storeFileNamed: 'helloworld.txt' to: 'hello.txt'.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-745464"></A>
+ftpClient close.</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745468"></A>
+<A ID="Upload a file to a remote server (Binary mode)"></A>
+Upload a file to a remote server (Binary mode)</Heading4>
+<Body1>
+<A ID="pgfId-745470"></A>
+The following code copies the file <Platform>
+vwlogo.jpg</Platform>
+ from the &#34;home&#34; directory of VisualWorks on the local machine to the <Platform>
+visualworks</Platform>
+ directory on the server. On the remote server, however, the file will be called <Platform>
+vwlogo2.jpg</Platform>
+. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. Although not necessary, the <Code>
+binaryTransfer</Code>
+ method is being used here to ensure that the file will be transferred in Binary (Image) mode. </Body1>
+<CodeSample>
+<A ID="pgfId-745472"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745474"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751483"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745476"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745478"></A>
+ftpClient binaryTransfer.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745480"></A>
+ftpClient storeFileNamed: 'vwlogo.jpg' to: 'vwlogo2.jpg'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745482"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745486"></A>
+<A ID="Create a new directory"></A>
+Create a new directory</Heading4>
+<Body1>
+<A ID="pgfId-745488"></A>
+The following code creates the directory <Platform>
+visualworks</Platform>
+ under the existing &#34;root&#34; directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745490"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745492"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751530"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745494"></A>
+ftpClient makeDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745496"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745500"></A>
+<A ID="FtpClient Delete a directory"></A>
+Delete a directory</Heading4>
+<Body1>
+<A ID="pgfId-745502"></A>
+The following code deletes the directory <Platform>
+testDir2</Platform>
+ under the existing <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. If the directory is not empty, an error will result:  &#34;550 : The directory is not empty&#34;. An error will also result if the directory cannot be found:  &#34;550 : The system cannot find the file specified&#34;.</Body1>
+<CodeSample>
+<A ID="pgfId-745504"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745506"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751529"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745508"></A>
+ftpClient removeDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745510"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745514"></A>
+<A ID="List all files in a directory (with details)"></A>
+List all files in a directory (with details)</Heading4>
+<Body1>
+<A ID="pgfId-745516"></A>
+The following code collects the contents of the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. This code will return an <Code>
+OrderedCollection</Code>
+ of file details.</Body1>
+<CodeSample>
+<A ID="pgfId-745518"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745520"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751519"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745522"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745524"></A>
+ftpClient directoryContents: #() do:</CodeSample>
+<CodeSample>
+<A ID="pgfId-751527"></A>
+	[ :entry | Transcript show: entry; cr ].</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-745526"></A>
+ftpClient close.</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745530"></A>
+<A ID="List files by wildcard (with details)"></A>
+List files by wildcard (with details)</Heading4>
+<Body1>
+<A ID="pgfId-745532"></A>
+The following code collects the contents of the <Platform>
+visualworks</Platform>
+ directory but only those files and directories that begin with the letter &#34;T&#34;. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. This code will return an <Code>
+OrderedCollection</Code>
+ of file details.</Body1>
+<CodeSample>
+<A ID="pgfId-745534"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745536"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751490"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745538"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745540"></A>
+ftpClient directoryContents: #('t*') do: </CodeSample>
+<CodeSample>
+<A ID="pgfId-751491"></A>
+	[ :entry | Transcript show: entry; cr ].</CodeSample>
+<CodeSample>
+<A ID="pgfId-745542"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745546"></A>
+<A ID="List all files in a directory (file names only)"></A>
+List all files in a directory (file names only)</Heading4>
+<Body1>
+<A ID="pgfId-745548"></A>
+The following code will display only the names of the files in the <Platform>
+visualworks</Platform>
+ directory in the Transcript. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. This code will return an <Code>
+OrderedCollection</Code>
+ of file names only.</Body1>
+<CodeSample>
+<A ID="pgfId-745550"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745552"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751518"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745554"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745556"></A>
+ftpClient filesInDirectory: #() do: </CodeSample>
+<CodeSample>
+<A ID="pgfId-751517"></A>
+	[ :entry | Transcript show: entry; cr ].</CodeSample>
+<CodeSample>
+<A ID="pgfId-745558"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745562"></A>
+<A ID="List files by wildcard (file names only)"></A>
+List files by wildcard (file names only) </Heading4>
+<Body1>
+<A ID="pgfId-745564"></A>
+The following code will display, in the Transcript, only the names of the files in the <Platform>
+visualworks</Platform>
+ directory that begin with the letter &#34;T&#34;. If a directory begins with the letter &#34;T&#34;, however, then all files contained in that directory will also be listed. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. This code will return an <Code>
+OrderedCollection</Code>
+ of file names only.</Body1>
+<CodeSample>
+<A ID="pgfId-745566"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745568"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751516"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745570"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745572"></A>
+ftpClient filesInDirectory: #('t*') do: [ :entry | Transcript show: entry; cr ].</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-745574"></A>
+ftpClient close.</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745578"></A>
+<A ID="FtpClient Delete a file"></A>
+Delete a file </Heading4>
+<Body1>
+<A ID="pgfId-745580"></A>
+The following code deletes the file <Platform>
+hello.txt</Platform>
+ from the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. An error will result if the file cannot be found:  &#34;550 : The system cannot find the file specified&#34;.</Body1>
+<CodeSample>
+<A ID="pgfId-745582"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745584"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751493"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745586"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745588"></A>
+ftpClient deleteFile: 'hello.txt'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745590"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745594"></A>
+<A ID="Determine the size of a file"></A>
+Determine the size of a file</Heading4>
+<Body1>
+<A ID="pgfId-745596"></A>
+The following code returns the size (in bytes) of the file <Platform>
+hello.txt</Platform>
+ found in the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745598"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745600"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751492"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745602"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745604"></A>
+ftpClient fileSize: 'hello.txt'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745606"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745610"></A>
+<A ID="Direct transfer between two FTP servers"></A>
+Direct transfer between two FTP servers</Heading4>
+<Body1>
+<A ID="pgfId-745612"></A>
+The following code copies the file <Platform>
+rfc-index</Platform>
+ found in the <Platform>
+inet/rfc</Platform>
+ directory of the UUNet FTP server (<Platform>
+ftp.uu.net</Platform>
+) into the root directory of the XXX_ZZZ FTP server (<Platform>
+xxx_zzz.site.com</Platform>
+). The user <Platform>
+username</Platform>
+ with password <VariableElement>
+password</VariableElement>
+ is used to logon to the <Platform>
+xxx_zzz.site.com </Platform>
+FTP server, and the user <Platform>
+anonymous</Platform>
+ with password <VariableElement>
+user@zzz.com</VariableElement>
+ is used to logon to the <Platform>
+ftp.uu.net</Platform>
+ FTP server. The file will be called <Platform>
+rfc-index</Platform>
+ on the <Platform>
+xxx_zzz.site.com </Platform>
+server.</Body1>
+<CodeSample>
+<A ID="pgfId-745614"></A>
+| ftpClient uunetClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745616"></A>
+[ftpClient := FTPClient loginToHost: 'xxx_zzz.site.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751494"></A>
+	asUser: 'username' withPassword: 'password.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745618"></A>
+		uunetClient := FTPClient loginToHost: 'ftp.uu.net' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751495"></A>
+			asUser: 'anonymous' withPassword: 'user@zzz.com' withAcct: nil.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745620"></A>
+		ftpClient copyFromFTP: uunetClient file: 'inet/rfc/rfc-index'</CodeSample>
+<CodeSample>
+<A ID="pgfId-751496"></A>
+	toFile: 'rfc-index' passive: false.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-745622"></A>
+] ensure: [uunetClient disconnect.ftpClient disconnect.].</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745626"></A>
+<A ID="Display the current directory"></A>
+Display the current directory</Heading4>
+<Body1>
+<A ID="pgfId-745628"></A>
+The following code will inspect the current working directory of the <Platform>
+yourftpserver</Platform>
+ FTP server after having just logged on with user <Platform>
+zzuser</Platform>
+ and password <Platform>
+zzpassword</Platform>
+.</Body1>
+<CodeSample>
+<A ID="pgfId-745630"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745632"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751515"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745634"></A>
+(ftpClient help: 'PWD') inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745636"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745640"></A>
+<A ID="Change mode to stream"></A>
+Change mode to stream</Heading4>
+<Body1>
+<A ID="pgfId-745642"></A>
+The following code will change the mode to stream. Although there are codes for block mode and compressed mode, only stream mode is supported at this time. </Body1>
+<CodeSample>
+<A ID="pgfId-745644"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745646"></A>
+&quot;S=Stream  B=Block  C=Compressed&quot;</CodeSample>
+<CodeSample>
+<A ID="pgfId-745648"></A>
+&quot; Only Stream is supported at this time &quot;</CodeSample>
+<CodeSample>
+<A ID="pgfId-745650"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751514"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745652"></A>
+ftpClient mode: $S.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745654"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745658"></A>
+<A ID="Display the remote server type"></A>
+Display the remote server type</Heading4>
+<Body1>
+<A ID="pgfId-745660"></A>
+The following code will inspect the details of the remote server. For Windows-based servers, the response will be &#34;215 Windows_NT version 4.0...&#34;. It is especially useful for determining the version of Windows (4.0, 5.0, etc.) on the FTP server. For UNIX-based servers, an error will result:  &#34;500 'SYST ': command not understood&#34;. </Body1>
+<CodeSample>
+<A ID="pgfId-745662"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745664"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751513"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745666"></A>
+(ftpClient remoteSystemType) inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745668"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745672"></A>
+<A ID="Display the remote server status"></A>
+Display the remote server status</Heading4>
+<Body1>
+<A ID="pgfId-745674"></A>
+The following code will inspect the details of the remote server. All FTP servers will recognize this command, although the returned response is not very descriptive. </Body1>
+<CodeSample>
+<A ID="pgfId-745676"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745678"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751507"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745680"></A>
+(ftpClient stat) inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745682"></A>
+ftpClient close.</CodeSample>
+<Heading4>
+<A ID="pgfId-745686"></A>
+<A ID="Change structure to file"></A>
+Change structure to file</Heading4>
+<Body1>
+<A ID="pgfId-745688"></A>
+The following code will change the structure to file. Although there are codes for record structure and page structure, only file structure is supported at this time.</Body1>
+<CodeSample>
+<A ID="pgfId-745690"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745692"></A>
+&quot;F=File  R=Record  P=Page &quot;</CodeSample>
+<CodeSample>
+<A ID="pgfId-745694"></A>
+&quot; Only File is supported at this time &quot;</CodeSample>
+<CodeSample>
+<A ID="pgfId-745696"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751508"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745698"></A>
+ftpClient structure: $F.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-745700"></A>
+ftpClient close.</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745704"></A>
+<A ID="Rename a file on the remote server"></A>
+Rename a file on the remote server</Heading4>
+<Body1>
+<A ID="pgfId-745706"></A>
+The following code will rename the file <Platform>
+hello4.txt</Platform>
+ found in the <Platform>
+visualworks</Platform>
+ directory to <Platform>
+hellofour.txt</Platform>
+. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745708"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745710"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751509"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745712"></A>
+ftpClient beCurrentDirectory: 'visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745714"></A>
+ftpClient rename: 'hello4.txt' to: 'hellofour.txt'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745716"></A>
+ftpClient close.</CodeSample>
+<Heading3>
+<A ID="pgfId-745728"></A>
+<A ID="Using FTP commands and responses"></A>
+Using FTP commands and responses</Heading3>
+<Body1>
+<A ID="pgfId-751420"></A>
+At this level, <Code>
+FTPClient</Code>
+ commands can be issued almost as if you were at an FTP client command prompt. Most of the commands that can be issued against the <Code>
+FTPClient</Code>
+ are fairly intuitive, and the list itself is typical of FTP commands that could be obtained from most FTP client prompts.</Body1>
+<Body1>
+<A ID="pgfId-745738"></A>
+In some cases, the programming is simple. The following sections contain some simple examples. However, programming at this level is much more complex when the transfer or renaming of files is involved. In most cases an intimate knowledge of streams and the FTP handshaking protocol is required. This information is beyond the scope of this document. We recommend using the <Code>
+FtpURL</Code>
+ and <Code>
+FTPClient</Code>
+ classes.</Body1>
+<Heading4>
+<A ID="pgfId-745742"></A>
+<A ID="FtpComm Delete a file"></A>
+Delete a file</Heading4>
+<Body1>
+<A ID="pgfId-745744"></A>
+The following code deletes the file <Platform>
+helloX.txt</Platform>
+ from the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server. An error will result if the file cannot be found:  &#34;550 : The system cannot find the file specified&#34;.</Body1>
+<CodeSample>
+<A ID="pgfId-745746"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745748"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751510"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745750"></A>
+ftpClient executeCommand: 'CWD visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745752"></A>
+ftpClient executeCommand: 'DELE helloX.txt'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745754"></A>
+ftpClient executeCommand: 'QUIT'.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-745756"></A>
+ftpClient disconnect.</Code1-Last-Only>
+<Heading4>
+<A ID="pgfId-745760"></A>
+<A ID="Create a new directory"></A>
+Create a new directory</Heading4>
+<Body1>
+<A ID="pgfId-745762"></A>
+The following code creates the directory misc under the <Platform>
+visualworks</Platform>
+ directory. The user <Platform>
+zzuser</Platform>
+ with password <Platform>
+zzpassword</Platform>
+ is used to logon to the <Platform>
+yourftpserver</Platform>
+ FTP server.</Body1>
+<CodeSample>
+<A ID="pgfId-745764"></A>
+| ftpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745766"></A>
+ftpClient:=FTPClient loginToHost: 'yourftpserver' </CodeSample>
+<CodeSample>
+<A ID="pgfId-751511"></A>
+	asUser: 'zzuser' withPassword: 'zzpassword'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745768"></A>
+ftpClient executeCommand: 'CWD visualworks'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745770"></A>
+ftpClient executeCommand: 'MKD misc'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745772"></A>
+ftpClient executeCommand: 'QUIT'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745774"></A>
+ftpClient disconnect.</CodeSample>
+<Body1>
+<A ID="pgfId-745776"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-745884"></A>
+<A ID="SMTP"></A>
+SMTP</Heading2>
+<Body1>
+<A ID="pgfId-745894"></A>
+Simple Mail Transfer Protocol (SMTP) is perhaps the simplest of all Internet protocols. It is designed to send an e-mail message to another SMTP server by simply writing a stream of data to port 25.</Body1>
+<Heading3>
+<A ID="pgfId-745908"></A>
+<A ID="Send a text message to a single recipient"></A>
+Send a text message to a single recipient</Heading3>
+<Body1>
+<A ID="pgfId-745910"></A>
+This example sends a simple text message from <Platform>
+santa@northpole.net</Platform>
+ to <Platform>
+jdoe@abc.com</Platform>
+. The subject of the message is &quot;Start making your list now&quot;, and the text of the message, which will be sent as plain text, is &quot;What would you like for Christmas?&quot;.</Body1>
+<Body1>
+<A ID="pgfId-745914"></A>
+The SMTP server is called <VariableElement>
+r</VariableElement>
+<Platform>
+udolph.northpole.net</Platform>
+. The SMTP server name could also be replaced with just the machine name (for example, RUDOLPH, where your network will resolve its full name) or an IP address.</Body1>
+<CodeSample>
+<A ID="pgfId-745916"></A>
+| message smtpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745918"></A>
+message := MailMessage newTextPlain.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745920"></A>
+message from: 'santa@northpole.net';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750874"></A>
+	to: 'jdoe@abc.com';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750875"></A>
+		subject: 'Start making your list now';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750876"></A>
+		text: 'What would you like for Christmas?';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750877"></A>
+		yourself.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745922"></A>
+smtpClient := SimpleSMTPClient host: 'rudolph.northpole.net'.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-771799"></A>
+smtpClient sendMessage: message.</Code1-Last-Only>
+<Body1>
+<A ID="pgfId-771819"></A>
+An SMTP server requires a mail address for the submitter, which the client supplies from the message from: line. You can leave the sender incomplete, or omit it entirely, and specify a NetUser instance before sending the mail message:</Body1>
+<CodeSample>
+<A ID="pgfId-771823"></A>
+smtpClient := SimpleSMTPClient host: 'smtp.northpole.net'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-771824"></A>
+smtpClient user: (NetUser new username: 'nicki' ).</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-745926"></A>
+smtpClient sendMessage: message</Code1-Last-Only>
+<Heading3>
+<A ID="pgfId-745930"></A>
+<A ID="Copy recipients on a simple text message"></A>
+Copy recipients on a simple text message</Heading3>
+<Body1>
+<A ID="pgfId-745936"></A>
+The following code expands on the example in &#34;<A href="05-inetconn.xml#id(Send a text message to a single recipient)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Send a text message to a single recipient</Hyperlink-reference>
+</A>&#34;, by specifying that <Platform>
+mrsclaus@northpole.net</Platform>
+<VariableElement>
+ </VariableElement>
+is to be carbon-copied and <Platform>
+parentsofjdoe@aoltimewarner.com</Platform>
+ is to be blind carbon-copied on the message.</Body1>
+<CodeSample>
+<A ID="pgfId-745938"></A>
+| message smtpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745940"></A>
+message := MailMessage newTextPlain.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745942"></A>
+message from: 'santa@northpole.net';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750878"></A>
+	to: 'jdoe@abc.com';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750879"></A>
+	subject: 'Start making your list now';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750880"></A>
+	text: 'What would you like for Christmas?';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750881"></A>
+	cc: 'mrsclaus@northpole.net';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750882"></A>
+	bcc: 'parentsofjdoe@aoltimewarner.com';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750883"></A>
+	yourself.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745944"></A>
+smtpClient := SimpleSMTPClient host: 'rudolph.northpole.net'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745946"></A>
+smtpClient sendMessage: message.</CodeSample>
+<Heading3>
+<A ID="pgfId-745952"></A>
+<A ID="Send the contents of a file as a message"></A>
+Send the contents of a file as a message</Heading3>
+<Body1>
+<A ID="pgfId-745962"></A>
+The following code sends the contents of an entire file (<Platform>
+thelist.txt</Platform>
+) as the text of the message. Note that this example does not send the file as an attachment (see <A href="05-inetconn.xml#id(Send a message with one attachment)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Send a message with one attachment</Hyperlink-reference>
+</A> for this option) but places the contents of the file in the text of the message.</Body1>
+<CodeSample>
+<A ID="pgfId-745964"></A>
+| message smtpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745966"></A>
+message := MailMessage newTextPlain.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745968"></A>
+message from: 'santa@northpole.net';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750884"></A>
+	to: 'jdoe@abc.com';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750885"></A>
+	subject: 'The List';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750886"></A>
+	text: ('thelist.txt' asFilename) contentsOfEntireFile;</CodeSample>
+<CodeSample>
+<A ID="pgfId-750887"></A>
+	yourself.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745970"></A>
+smtpClient := SimpleSMTPClient host: 'rudolph.northpole.net'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745972"></A>
+smtpClient sendMessage: message.</CodeSample>
+<Heading3>
+<A ID="pgfId-745976"></A>
+<A ID="Send the contents of a file as an HTML message"></A>
+Send the contents of a file as an HTML message</Heading3>
+<Body1>
+<A ID="pgfId-745982"></A>
+The following code sends the contents of an entire file (<Platform>
+thelist.htm</Platform>
+) as the text of a message, similar to the previous example, &#34;<A href="05-inetconn.xml#id(Send the contents of a file as a message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Send the contents of a file as a message</Hyperlink-reference>
+</A>.&#34; But since the contents of this file are assumed to be that of a typical Web page (with embedded HTML tags in it), and the sender wishes the recipient to see the contents of the file as a Web page, the <Code>
+newTextHTML</Code>
+ method is used instead of <Code>
+newTextPlain</Code>
+.</Body1>
+<CodeSample>
+<A ID="pgfId-745984"></A>
+| message smtpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-745986"></A>
+message := MailMessage newTextHTML.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745988"></A>
+message from: 'Santa Claus';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750888"></A>
+	to: 'jdoe@abc.com';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750889"></A>
+	subject: 'The List';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750890"></A>
+	text: ('thelist.htm' asFilename) contentsOfEntireFile;</CodeSample>
+<CodeSample>
+<A ID="pgfId-750891"></A>
+	yourself.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745990"></A>
+smtpClient := SimpleSMTPClient host: 'rudolph.northpole.net'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-745992"></A>
+smtpClient sendMessage: message.</CodeSample>
+<Heading3>
+<A ID="pgfId-745998"></A>
+<A ID="Send a message to multiple recipients"></A>
+Send a message to multiple recipients</Heading3>
+<Body1>
+<A ID="pgfId-746000"></A>
+The following code will send a message to more than one recipient. Note that the email addresses for multiple recipients must be delimited with angle brackets and separated by commas.</Body1>
+<CodeSample>
+<A ID="pgfId-746002"></A>
+| message smtpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746004"></A>
+message := MailMessage newTextPlain.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746006"></A>
+message from: 'Santa Claus';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750892"></A>
+	to: '&lt;jdoe@abc.com&gt;,&lt;mdoe@abc.com&gt;';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750893"></A>
+	subject: 'The List';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750894"></A>
+	text: ('thelist.htm' asFilename) contentsOfEntireFile;</CodeSample>
+<CodeSample>
+<A ID="pgfId-750895"></A>
+	yourself.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746008"></A>
+smtpClient := SimpleSMTPClient host: 'rudolph.northpole.net'.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-746010"></A>
+smtpClient sendMessage: message.</Code1-Last-Only>
+<Heading3>
+<A ID="pgfId-746016"></A>
+<A ID="Send a message with one attachment"></A>
+Send a message with one attachment</Heading3>
+<Body1>
+<A ID="pgfId-746022"></A>
+The following code is similar to that in the previous example, &#34;<A href="05-inetconn.xml#id(Send a message to multiple recipients)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Send a message to multiple recipients</Hyperlink-reference>
+</A>,&#34; except the message file (<Platform>
+thelist.htm</Platform>
+) is sent as an attachment, rather than having the contents of the file sent as the text of the message.</Body1>
+<CodeSample>
+<A ID="pgfId-746024"></A>
+| message smtpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746026"></A>
+message := MailMessage newTextPlain.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746028"></A>
+message from: 'Santa Claus';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750896"></A>
+	to: '&lt;jdoe@abc.com&gt;,&lt;mdoe@abc.com&gt;';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750897"></A>
+		addFileAttachment: 'thelist.htm';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750898"></A>
+	subject: 'The List';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750899"></A>
+	text: 'Here is the List';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750900"></A>
+	yourself.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746030"></A>
+smtpClient := SimpleSMTPClient host: 'rudolph.northpole.net'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746032"></A>
+smtpClient sendMessage: message.</CodeSample>
+<Heading3>
+<A ID="pgfId-746036"></A>
+<A ID="Send a message with multiple attachments"></A>
+Send a message with multiple attachments</Heading3>
+<Body1>
+<A ID="pgfId-746042"></A>
+The following code will send a message containing multiple file attachments:  <Platform>
+thelist.htm</Platform>
+ and <Platform>
+thelist.txt</Platform>
+. This example differs from &#34;<A href="05-inetconn.xml#id(Send a message with one attachment)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Send a message with one attachment</Hyperlink-reference>
+</A>&#34; in that you simply need to add multiple <Code>
+addFileAttachment:</Code>
+ methods to the original message object.</Body1>
+<CodeSample>
+<A ID="pgfId-746044"></A>
+| message smtpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746046"></A>
+message := MailMessage newTextPlain.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746048"></A>
+message from: 'Santa Claus';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750901"></A>
+	to: '&lt;jdoe@abc.com&gt;,&lt;mdoe@abc.com&gt;';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750902"></A>
+		addFileAttachment: 'thelist.htm';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750903"></A>
+		addFileAttachment: 'thelist.txt';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750904"></A>
+	subject: 'The List';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750905"></A>
+	text: 'Here is the List';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750906"></A>
+	yourself.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746050"></A>
+smtpClient := SimpleSMTPClient host: 'rudolph.northpole.net'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746052"></A>
+smtpClient sendMessage: message.</CodeSample>
+<Heading3>
+<A ID="pgfId-746056"></A>
+<A ID="Send a message to a list of recipients"></A>
+Send a message to a list of recipients</Heading3>
+<Body1>
+<A ID="pgfId-746058"></A>
+The following code will send a message to more than one recipient. In this case, the list of multiple recipients is contained in a List object called <Code>
+listOfStrings</Code>
+. The list can be populated from any source, such as a database or text file. In this example, it was simply created on the fly. </Body1>
+<CodeSample>
+<A ID="pgfId-746060"></A>
+| message smtpClient listOfStrings |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746062"></A>
+message := MailMessage newTextPlain.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746064"></A>
+message from: 'Santa Claus';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750914"></A>
+	to: 'You know who you are';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750915"></A>
+	subject: 'Naughty or Nice?';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750916"></A>
+	text: ('thelist.htm' asFilename) contentsOfEntireFile;</CodeSample>
+<CodeSample>
+<A ID="pgfId-750917"></A>
+	yourself.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746066"></A>
+listOfStrings := List new.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746068"></A>
+listOfStrings add: '&lt;jdoe@abc.com&gt;'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746070"></A>
+listOfStrings add: '&lt;mdoe@abc.com&gt;'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746072"></A>
+smtpClient := SimpleSMTPClient host: 'rudolph.northpole.net'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746074"></A>
+smtpClient sendMessage: message toAll: listOfStrings.</CodeSample>
+<Heading3>
+<A ID="pgfId-746080"></A>
+<A ID="Send a message using an alias"></A>
+Send a message using an alias</Heading3>
+<Body1>
+<A ID="pgfId-746082"></A>
+The following code will send a message to <Platform>
+jdoe@abc.com</Platform>
+ but will use an alias name instead of an e-mail address. When the recipient reads the message, the to field will read <B>
+John Doe</B>
+ instead of <Platform>
+jdoe@abc.com</Platform>
+.</Body1>
+<CodeSample>
+<A ID="pgfId-746084"></A>
+| message smtpClient |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746086"></A>
+message := MailMessage newTextPlain.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746088"></A>
+message from: 'Santa Claus';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750918"></A>
+	to: '&quot;John Doe&quot;&lt;jdoe@abc.com&gt;';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750919"></A>
+	subject: 'Naughty or Nice?';</CodeSample>
+<CodeSample>
+<A ID="pgfId-750920"></A>
+	text: ('thelist.htm' asFilename) contentsOfEntireFile;</CodeSample>
+<CodeSample>
+<A ID="pgfId-750921"></A>
+	yourself.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746090"></A>
+smtpClient := SimpleSMTPClient host: 'rudolph.northpole.net'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746092"></A>
+smtpClient sendMessage: message toAll: #('jdoe@abc.com')</CodeSample>
+<Body1>
+<A ID="pgfId-746096"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-746104"></A>
+<A ID="POP3"></A>
+POP3</Heading2>
+<Body1>
+<A ID="pgfId-746124"></A>
+Post Office Protocol 3 (POP3) is a simple mail-reading protocol that can run over TCP/IP. POP3 enables reading and deleting of messages in a mailbox. (Sending mail is done using <A href="05-inetconn.xml#id(SMTP)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+SMTP</Hyperlink-reference>
+</A>.)</Body1>
+<Body1>
+<A ID="pgfId-746134"></A>
+All of the following code examples, which receive a message via POP3, are variations on a common base set of instructions. These instructions are fully documented in the first example. Subsequent examples will introduce variations on this first example, but only the differences will be explained.</Body1>
+<Heading3>
+<A ID="pgfId-746138"></A>
+<A ID="Determine the number of messages in the inbox"></A>
+Determine the number of messages in the inbox</Heading3>
+<Body1>
+<A ID="pgfId-746144"></A>
+The following code determines the number of messages in the <Platform>
+inbox</Platform>
+ mailbox of user <Platform>
+jdoe@abc.com</Platform>
+. The password  for <Platform>
+jdoe@abc.com</Platform>
+ is <Platform>
+passwordforjoe</Platform>
+.</Body1>
+<Body1>
+<A ID="pgfId-746146"></A>
+The (SMTP) server is called <Platform>
+mail.yourserver.com</Platform>
+. The SMTP server name could also be replaced with just the machine name (for example, POSTMAN, where your network will resolve its full name) or an IP address.</Body1>
+<Body1>
+<A ID="pgfId-746148"></A>
+The POP3 protocol does not account for multiple mailboxes. All messages are assumed to be located in a mailbox named <Platform>
+inbox</Platform>
+.</Body1>
+<Body1>
+<A ID="pgfId-746152"></A>
+When all processing on the mailbox is concluded, it is required that you <Code>
+disconnect</Code>
+ from the connection. </Body1>
+<CodeSample>
+<A ID="pgfId-746154"></A>
+| client user |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746156"></A>
+client := Pop3Client host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746158"></A>
+user := ( NetUser username: 'jdoe@abc.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-750855"></A>
+	password: 'passwordforjoe' ).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746160"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746162"></A>
+Dialog warn: 'Your inbox contains ',</CodeSample>
+<CodeSample>
+<A ID="pgfId-750856"></A>
+	client status messages printString , ' message(s)'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746164"></A>
+client disconnect.</CodeSample>
+<Heading3>
+<A ID="pgfId-746168"></A>
+<A ID="Read message #1 from the inbox"></A>
+Read message #1 from the inbox</Heading3>
+<Body1>
+<A ID="pgfId-746170"></A>
+The following code reads message #1 from the <Platform>
+inbox</Platform>
+. The <Code>
+retrieveMessage:</Code>
+ method returns a <Code>
+ByteString</Code>
+ (which is inspected). The <Code>
+ByteString</Code>
+ is then read in as a stream to the <Code>
+MailMessage</Code>
+ object (which is also inspected). This practice will also be used in later examples. </Body1>
+<CodeSample>
+<A ID="pgfId-746172"></A>
+| client user message msg |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746174"></A>
+client := Pop3Connection host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746176"></A>
+user := ( NetUser username: 'jdoe@abc.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-750857"></A>
+	password: 'passwordforjoe' ) .</CodeSample>
+<CodeSample>
+<A ID="pgfId-746178"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746180"></A>
+Dialog warn: 'You have ', conn status messages printString , ' messages'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746182"></A>
+message := client retrieveMessage: 1.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746184"></A>
+message inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746186"></A>
+msg := MailMessage readFrom: message readStream.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746188"></A>
+msg inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746190"></A>
+client disconnect.</CodeSample>
+<Heading3>
+<A ID="pgfId-746194"></A>
+<A ID="Determine if there are any attachments to a message"></A>
+Determine if there are any attachments to a message</Heading3>
+<Body1>
+<A ID="pgfId-746196"></A>
+The following code determines if any attachments were included as part of a message in the inbox:</Body1>
+<CodeSample>
+<A ID="pgfId-746198"></A>
+| client user message msg list |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746200"></A>
+client := Pop3Connection host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746202"></A>
+user := ( NetUser username: 'jdoe@abc.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-750859"></A>
+	password: 'passwordforjoe' ) .</CodeSample>
+<CodeSample>
+<A ID="pgfId-746204"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746206"></A>
+msg := client retrieveMessage: 29.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746208"></A>
+message := MailMessage readFrom: msg readStream. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746210"></A>
+list := message attachmentNames.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746212"></A>
+list inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746214"></A>
+client disconnect.</CodeSample>
+<Heading3>
+<A ID="pgfId-746218"></A>
+<A ID="Save an attachment"></A>
+Save an attachment</Heading3>
+<Body1>
+<A ID="pgfId-746222"></A>
+The following code assumes that at least one attachment was included as part of message #29. The first attachment (in case there is more than one) is then saved to an external file.</Body1>
+<CodeSample>
+<A ID="pgfId-746224"></A>
+| client user message msg attachment |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746226"></A>
+client := Pop3Connection host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746228"></A>
+user := ( NetUser username: 'jdoe@abc.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-750863"></A>
+	password: 'passwordforjoe' ) .</CodeSample>
+<CodeSample>
+<A ID="pgfId-746230"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746232"></A>
+msg := client retrieveMessage: 29.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746234"></A>
+message := MailMessage readFrom: msg readStream. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746236"></A>
+attachment := message attachmentAt: 1.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746238"></A>
+attachment removeContentTransferEncoding.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746240"></A>
+attachment writeContentsOn: ('filename.whatever' asFilename writeStream).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746242"></A>
+client disconnect.</CodeSample>
+<Heading3>
+<A ID="pgfId-746246"></A>
+<A ID="Extract the best text representation"></A>
+Extract the best text representation</Heading3>
+<Body1>
+<A ID="pgfId-746248"></A>
+Some SMTP servers, such as Microsoft's Exchange server, will take an existing (simple) message and send it out in multiple parts: plain text and HTML. The following code assumes that message #42 is in multi-part format and demonstrates how the message can be extracted in those two formats:</Body1>
+<CodeSample>
+<A ID="pgfId-746250"></A>
+| client user message msg text1 text2 |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746252"></A>
+client := Pop3Connection host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746254"></A>
+user := ( NetUser username: 'jdoe@abc.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-750864"></A>
+	password: 'passwordforjoe' ) .</CodeSample>
+<CodeSample>
+<A ID="pgfId-746256"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746258"></A>
+msg := client retrieveMessage: 42.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746260"></A>
+message := MailMessage readFrom: msg readStream. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746262"></A>
+text1 := message textInPreferenceOrder: #('html' 'plain' '*').</CodeSample>
+<CodeSample>
+<A ID="pgfId-746264"></A>
+text1 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746266"></A>
+text2 := message textInPreferenceOrder: #('plain' 'html' '*').</CodeSample>
+<CodeSample>
+<A ID="pgfId-746268"></A>
+text2 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746270"></A>
+client disconnect.</CodeSample>
+<Heading3>
+<A ID="pgfId-746274"></A>
+<A ID="Extract other message information"></A>
+Extract other message information</Heading3>
+<Body1>
+<A ID="pgfId-746276"></A>
+The following code displays parts of the message header in the System Transcript:</Body1>
+<CodeSample>
+<A ID="pgfId-746278"></A>
+| client user message msg text1 text2 |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746280"></A>
+client := Pop3Connection host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746282"></A>
+user := ( NetUser username: 'jdoe@abc.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-750865"></A>
+	password: 'passwordforjoe' ) .</CodeSample>
+<CodeSample>
+<A ID="pgfId-746284"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746286"></A>
+msg := client retrieveMessage: 29.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746288"></A>
+message := MailMessage readFrom: msg readStream. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746290"></A>
+Transcript clear;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746292"></A>
+ show: 'Charset: ', message charset; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746294"></A>
+ show: 'Date of message: ', message date printString; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746296"></A>
+ show: 'From: ', message from printString; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746298"></A>
+ show: 'Content type: ', message contentType; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746300"></A>
+ show: 'Type: ', message type; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746302"></A>
+ show: 'Subtype: ', message subtype; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746304"></A>
+ show: 'Contents: ', message contents printString; cr.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746306"></A>
+client disconnect.</CodeSample>
+<Heading3>
+<A ID="pgfId-746310"></A>
+<A ID="Parse a multi-part message"></A>
+Parse a multi-part message</Heading3>
+<Body1>
+<A ID="pgfId-746312"></A>
+The following code assumes that message #42 is in multi-part format and inspects the various &quot;parts&quot; of the message:</Body1>
+<CodeSample>
+<A ID="pgfId-746314"></A>
+| client user message msg |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746316"></A>
+client := Pop3Connection host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746318"></A>
+user := ( NetUser username: 'jdoe@abc.com' 
+password: 'passwordforjoe' ) .</CodeSample>
+<CodeSample>
+<A ID="pgfId-746320"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746322"></A>
+msg := client retrieveMessage: 42.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746324"></A>
+message := RFC822Message readFrom: msg readStream.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746326"></A>
+message parts inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746328"></A>
+(message parts size) inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746330"></A>
+((message partAt: 1) contentType) inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746332"></A>
+((message parts first contents)) inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746334"></A>
+client disconnect.</CodeSample>
+<Heading3>
+<A ID="pgfId-746338"></A>
+<A ID="Fetch header information into an Ordered Collection"></A>
+Fetch header information into an Ordered Collection</Heading3>
+<Body1>
+<A ID="pgfId-746340"></A>
+The following code retrieves header information from message #42 into an <Code>
+OrderedCollection</Code>
+:</Body1>
+<CodeSample>
+<A ID="pgfId-746342"></A>
+| client user message msg headerInfo |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746344"></A>
+client := Pop3Connection host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746346"></A>
+user := ( NetUser username: 'jdoe@abc.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-750869"></A>
+	password: 'passwordforjoe' ) .</CodeSample>
+<CodeSample>
+<A ID="pgfId-746348"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746350"></A>
+headerInfo := client retrieveMessageLines: 42.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746352"></A>
+headerInfo inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746354"></A>
+client disconnect.</CodeSample>
+<Heading3>
+<A ID="pgfId-746358"></A>
+<A ID="Fetch header information into a ByteString"></A>
+Fetch header information into a ByteString</Heading3>
+<Body1>
+<A ID="pgfId-746360"></A>
+The following code retrieves header information from message #42 into a <Code>
+ByteString</Code>
+:</Body1>
+<CodeSample>
+<A ID="pgfId-746362"></A>
+| client user message msg headerInfo |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746364"></A>
+client := Pop3Connection host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746366"></A>
+user := ( NetUser username: 'jdoe@abc.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-759483"></A>
+	password: 'passwordforjoe' ) .</CodeSample>
+<CodeSample>
+<A ID="pgfId-746368"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746370"></A>
+headerInfo := client top: 1 of: 42.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746372"></A>
+headerInfo inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746374"></A>
+client disconnect.</CodeSample>
+<Heading3>
+<A ID="pgfId-746378"></A>
+<A ID="POP3 Delete a message"></A>
+Delete a message</Heading3>
+<Body1>
+<A ID="pgfId-746380"></A>
+The following code deletes message #5 from the <Platform>
+inbox</Platform>
+:</Body1>
+<CodeSample>
+<A ID="pgfId-746382"></A>
+| client user |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746384"></A>
+client := Pop3Connection host: 'mail.yourserver.com'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746386"></A>
+user := ( NetUser username: 'jdoe@abc.com' </CodeSample>
+<CodeSample>
+<A ID="pgfId-759506"></A>
+	password: 'passwordforjoe' ) .</CodeSample>
+<CodeSample>
+<A ID="pgfId-746388"></A>
+client user: user; connect; login.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746390"></A>
+client delete: 5.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746392"></A>
+client disconnect.</CodeSample>
+<Body1>
+<A ID="pgfId-746394"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-746400"></A>
+<A ID="IMAP"></A>
+IMAP</Heading2>
+<Body1>
+<A ID="pgfId-746410"></A>
+Internet Message Access Protocol (IMAP) is a protocol that enables mail clients to access electronic mail or bulletin board messages that are kept on a mail server. As a result of this, e-mail stored on an IMAP server can be manipulated from a desktop computer at home, a workstation at the office, and a notebook computer while traveling, <Strong>
+without</Strong>
+ the need to transfer messages or files back and forth between these computers.</Body1>
+<Body1>
+<A ID="pgfId-746418"></A>
+All of the following code examples, which receive a message via IMAP, are variations on a common base set of instructions. These instructions are fully documented in the first example. Subsequent examples will introduce variations on this first example, but only the differences will be explained.</Body1>
+<Heading3>
+<A ID="pgfId-746422"></A>
+<A ID="Determine the number of messages in the inbox"></A>
+Determine the number of messages in the inbox</Heading3>
+<Body1>
+<A ID="pgfId-746424"></A>
+The following code determines the number of messages in the inbox mailbox of user <Platform>
+jdoe@abc.com</Platform>
+. The password for <Platform>
+jdoe@abc.com</Platform>
+ is <Platform>
+passwordforjoe</Platform>
+. </Body1>
+<Body1>
+<A ID="pgfId-746426"></A>
+The IMAP host name is <Platform>
+mail.yourserver.com</Platform>
+. The name could also be just machine name (for example, POSTMAN) if the network resolves its full name, or its IP address.</Body1>
+<Body1>
+<A ID="pgfId-746428"></A>
+Even though the <Code>
+IMAPClient</Code>
+ object uses inbox as the default mailbox location, you are required to select one.</Body1>
+<Body1>
+<A ID="pgfId-746430"></A>
+When all processing on the mailbox is concluded, you are required to <Code>
+logout</Code>
+ from the connection. </Body1>
+<CodeSample>
+<A ID="pgfId-746432"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746434"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750941"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746436"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746438"></A>
+Dialog warn: 'Your inbox contains ', client messageCount printString , </CodeSample>
+<CodeSample>
+<A ID="pgfId-759261"></A>
+	' message(s)'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746440"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746444"></A>
+<A ID="Examine the inbox folder"></A>
+Examine the inbox folder</Heading3>
+<Body1>
+<A ID="pgfId-746446"></A>
+The following inspects what the <Code>
+examineMailbox</Code>
+ method of the <Code>
+IMAPClient</Code>
+ object returns:</Body1>
+<CodeSample>
+<A ID="pgfId-746448"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746450"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750942"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746452"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746454"></A>
+client examineMailbox inspect. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746456"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746460"></A>
+<A ID="Determine the number of messages in the &quot;xxxxxx&quot; folder (1)"></A>
+Determine the number of messages in the &quot;xxxxxx&quot; folder (1)</Heading3>
+<Body1>
+<A ID="pgfId-746462"></A>
+The following code determines the number of messages in the <Platform>
+xxxxxx</Platform>
+ mailbox. The name of the mailbox may contain spaces.</Body1>
+<CodeSample>
+<A ID="pgfId-746464"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746466"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750943"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746468"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746470"></A>
+Dialog warn: 'You have ',</CodeSample>
+<CodeSample>
+<A ID="pgfId-750944"></A>
+	(client messageCount: 'xxxxxx') printString , ' messages'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746472"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746476"></A>
+<A ID="Determine the number of messages in the &quot;xxxxxx&quot; folder (2)"></A>
+Determine the number of messages in the &quot;xxxxxx&quot; folder (2)</Heading3>
+<Body1>
+<A ID="pgfId-746478"></A>
+The following code determines the number of messages in the <Platform>
+xxxxxx</Platform>
+ mailbox:</Body1>
+<CodeSample>
+<A ID="pgfId-746480"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746482"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750945"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746484"></A>
+client select: 'xxxxxx'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746486"></A>
+Dialog warn: 'Your inbox contains ',
+client messageCount printString , ' messages'.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-746488"></A>
+client logout. </Code1-Last-Only>
+<Heading3>
+<A ID="pgfId-746492"></A>
+<A ID="Determine the number of messages in the &quot;xxxxxx&quot; folder (3)"></A>
+Determine the number of messages in the &quot;xxxxxx&quot; folder (3)</Heading3>
+<Body1>
+<A ID="pgfId-746494"></A>
+The following code determines the number of messages in the <Platform>
+xxxxxx</Platform>
+ mailbox:</Body1>
+<CodeSample>
+<A ID="pgfId-746496"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746498"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750946"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746500"></A>
+(client status: 'xxxxxx' criteria: 'messages') inspect. </CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-746502"></A>
+client logout.</Code1-Last-Only>
+<Heading3>
+<A ID="pgfId-746506"></A>
+<A ID="Determine the number of unseen messages in the &quot;xxxxxx&quot; folder"></A>
+Determine the number of unseen messages in the &quot;xxxxxx&quot; folder</Heading3>
+<Body1>
+<A ID="pgfId-746508"></A>
+The following code determines the number of unseen messages in the <Platform>
+xxxxxx</Platform>
+ mailbox:</Body1>
+<CodeSample>
+<A ID="pgfId-746510"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746512"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750947"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746514"></A>
+client status: 'xxxxxx' criteria: #('messages' 'unseen'). </CodeSample>
+<CodeSample>
+<A ID="pgfId-746516"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746520"></A>
+<A ID="Create a new mailbox"></A>
+Create a new mailbox</Heading3>
+<Body1>
+<A ID="pgfId-746522"></A>
+The following code creates a new mailbox called <B>
+WOW</B>
+:</Body1>
+<CodeSample>
+<A ID="pgfId-746524"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746526"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750948"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746528"></A>
+client create: 'WOW'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746530"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746534"></A>
+<A ID="Rename a mailbox"></A>
+Rename a mailbox</Heading3>
+<Body1>
+<A ID="pgfId-746536"></A>
+The following code renames the <Platform>
+WOW</Platform>
+ mailbox as <Platform>
+WOW2</Platform>
+:</Body1>
+<CodeSample>
+<A ID="pgfId-746538"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746540"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750949"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746542"></A>
+client rename: 'WOW' newName: 'WOW2'. </CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-746544"></A>
+client logout.</Code1-Last-Only>
+<Heading3>
+<A ID="pgfId-746548"></A>
+<A ID="Copy message #1 from one mailbox to another"></A>
+Copy message #1 from one mailbox to another</Heading3>
+<Body1>
+<A ID="pgfId-746558"></A>
+The following code copies message #1 from inbox to the <B>
+WOW2</B>
+ mailbox. The message will remain in the <B>
+inbox</B>
+ (this is not a &quot;move&quot; command). To implement a &quot;move&quot;, copy the message, then delete it from its original mailbox (see <A href="05-inetconn.xml#id(IMAP Delete a message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Delete a message</Hyperlink-reference>
+</A> for an example of how to do this.).</Body1>
+<CodeSample>
+<A ID="pgfId-746560"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746562"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750953"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746564"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746566"></A>
+client copy: #(1) to: 'WOW2'. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746568"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746574"></A>
+<A ID="IMAP Delete a mailbox"></A>
+Delete a mailbox</Heading3>
+<Body1>
+<A ID="pgfId-746576"></A>
+The following code deletes the mailbox called <B>
+WOW2</B>
+. The folder need not be empty. Any messages in the folder will be deleted as well.</Body1>
+<CodeSample>
+<A ID="pgfId-746578"></A>
+| client |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746580"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750954"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746582"></A>
+client delete: 'WOW2'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746584"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746588"></A>
+<A ID="Read message #1 from the &quot;inbox&quot;"></A>
+Read message #1 from the &quot;inbox&quot;</Heading3>
+<Body1>
+<A ID="pgfId-746590"></A>
+The following code reads message #1 from the inbox. The <Code>
+fetchMessage:</Code>
+ method returns a <Code>
+Dictionary</Code>
+ containing a key and a ByteString (which is inspected). The <Code>
+ByteString</Code>
+ is then read in as a stream to the <B>
+MailMessage</B>
+ object (which is also inspected). This practice will also be used in later examples. The text of the message is then inspected.</Body1>
+<CodeSample>
+<A ID="pgfId-746592"></A>
+| client message messageString |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746594"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750955"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746596"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746598"></A>
+(client fetchMessage: 1) inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746600"></A>
+messageString := ((client fetchMessage: 1) value first).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746602"></A>
+message := MailMessage readFrom: messageString readStream. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746604"></A>
+message inspect. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746606"></A>
+&quot; just the text &quot;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746608"></A>
+message text inspect. </CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-746610"></A>
+client logout.</Code1-Last-Only>
+<Heading3>
+<A ID="pgfId-746616"></A>
+<A ID="Determine if there are any attachments to a message"></A>
+Determine if there are any attachments to a message</Heading3>
+<Body1>
+<A ID="pgfId-746622"></A>
+The following code determines if any attachments were included as part of message #1:</Body1>
+<CodeSample>
+<A ID="pgfId-746624"></A>
+| client message messageString list |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746626"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750966"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746628"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746630"></A>
+messageString := ((client fetchMessage: 1) value first).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746632"></A>
+message := MailMessage readFrom: messageString readStream. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746634"></A>
+list := message attachmentNames.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746636"></A>
+list inspect.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-746638"></A>
+client logout.</Code1-Last-Only>
+<Heading3>
+<A ID="pgfId-746642"></A>
+<A ID="Save an attachment"></A>
+Save an attachment</Heading3>
+<Body1>
+<A ID="pgfId-746646"></A>
+The following code assumes that at least one attachment was included as part of the entire message. The first attachment (in case there is more than one) is then saved to an external file.</Body1>
+<CodeSample>
+<A ID="pgfId-746648"></A>
+| client message messageString attachment |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746650"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750967"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746652"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746654"></A>
+messageString := ((client fetchMessage: 1) value first).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746656"></A>
+message := MailMessage readFrom: messageString readStream. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746658"></A>
+attachment := message attachmentAt: 1.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746660"></A>
+attachment removeContentTransferEncoding.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746662"></A>
+attachment writeContentsOn: ('filename.whatever' asFilename writeStream).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746664"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746668"></A>
+<A ID="Extract best text representation"></A>
+Extract best text representation</Heading3>
+<Body1>
+<A ID="pgfId-746670"></A>
+Some SMTP servers, such as Microsoft's Exchange server, will take an existing (simple) message and send it out in multiple parts:  plain text and HTML. The following code assumes that message #42 is in multi-part format and demonstrates how the message can be extracted in those two formats.</Body1>
+<CodeSample>
+<A ID="pgfId-746672"></A>
+| client message messageString text1 text2 |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746674"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750968"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746676"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746678"></A>
+messageString := ((client fetchMessage: 42) value first).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746680"></A>
+message := MailMessage readFrom: messageString readStream. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746682"></A>
+text1 := message textInPreferenceOrder: #('html' 'plain' '*').</CodeSample>
+<CodeSample>
+<A ID="pgfId-746684"></A>
+text1 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746686"></A>
+text2 := message textInPreferenceOrder: #('plain' 'html' '*').</CodeSample>
+<CodeSample>
+<A ID="pgfId-746688"></A>
+text2 inspect.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-746690"></A>
+client logout.</Code1-Last-Only>
+<Heading3>
+<A ID="pgfId-746694"></A>
+<A ID="Extract other message information"></A>
+Extract other message information</Heading3>
+<Body1>
+<A ID="pgfId-746696"></A>
+The following code displays parts of the message header in the System Transcript:</Body1>
+<CodeSample>
+<A ID="pgfId-746698"></A>
+| client message messageString |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746700"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750972"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746702"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746704"></A>
+messageString := ((client fetchMessage: 42) value first).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746706"></A>
+message := MailMessage readFrom: messageString readStream. </CodeSample>
+<CodeSample>
+<A ID="pgfId-746708"></A>
+Transcript clear;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746710"></A>
+ show: 'Charset: ', message charset; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746712"></A>
+ show: 'Date of message: ', message date printString; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746714"></A>
+ show: 'From: ', message from printString; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746716"></A>
+ show: 'Content type: ', message contentType; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746718"></A>
+ show: 'Type: ', message type; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746720"></A>
+ show: 'Subtype: ', message subtype; cr;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746722"></A>
+ show: 'Contents: ', message contents printString; cr.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746724"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746728"></A>
+<A ID="Parse a multi-part message"></A>
+Parse a multi-part message</Heading3>
+<Body1>
+<A ID="pgfId-746730"></A>
+The following code assumes that message #42 is in multi-part format and inspects the various &quot;parts&quot; of the message:</Body1>
+<CodeSample>
+<A ID="pgfId-746732"></A>
+| client message messageString |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746734"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750973"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746736"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746738"></A>
+messageString := ((client fetchMessage: 42) value first).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746740"></A>
+message := RFC822Message readFrom: messageString readStream.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746742"></A>
+message parts inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746744"></A>
+(message parts size) inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746746"></A>
+((message partAt: 1) contentType) inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746748"></A>
+((message parts first contents)) inspect.</CodeSample>
+<Code1-Last-Only>
+<A ID="pgfId-746750"></A>
+client logout.</Code1-Last-Only>
+<Heading3>
+<A ID="pgfId-746754"></A>
+<A ID="Fetch messages and their headers"></A>
+Fetch messages and their headers</Heading3>
+<Body1>
+<A ID="pgfId-746756"></A>
+The following code shows the various ways in which multiple messages can be fetched:</Body1>
+<CodeSample>
+<A ID="pgfId-746758"></A>
+| client oc1 oc2 oc3 oc4 oc5 |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746760"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750977"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746762"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746764"></A>
+oc1 := client fetch: #( 3 8 ) with: #('RFC822'). </CodeSample>
+<CodeSample>
+<A ID="pgfId-746766"></A>
+oc2 := client fetchMessages: #( 1 3 ). </CodeSample>
+<CodeSample>
+<A ID="pgfId-746768"></A>
+oc3 := client fetchMessageHeaders: #( 1 3 ). </CodeSample>
+<CodeSample>
+<A ID="pgfId-746770"></A>
+oc4 := client fetch: #(1 4 5 6 ) with: #(RFC822.SIZE).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746772"></A>
+oc5 := client fetchMessage: 1.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746774"></A>
+oc1 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746776"></A>
+oc2 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746778"></A>
+oc3 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746780"></A>
+oc4 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746782"></A>
+oc5 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746784"></A>
+client logout.</CodeSample>
+<Body1>
+<A ID="pgfId-746788"></A>
+A summary of the ways to fetch multiple messages is given here:</Body1>
+<DefItem>
+<A ID="pgfId-746790"></A>
+fetchMessage: messageNumber</DefItem>
+<DefDscrp>
+<A ID="pgfId-751011"></A>
+Returns an association in which &quot;key&quot; is the message number and &quot;value&quot; is the message</DefDscrp>
+<DefItem>
+<A ID="pgfId-746792"></A>
+fetchMessageHeaders: anArrayOfNumbers</DefItem>
+<DefDscrp>
+<A ID="pgfId-751013"></A>
+Returns an OrderedCollection of associations in which &quot;key&quot; is the message number and &quot;value&quot; is the message header.</DefDscrp>
+<DefItem>
+<A ID="pgfId-746794"></A>
+fetchMessages: anArrayOfNumbers</DefItem>
+<DefDscrp>
+<A ID="pgfId-751015"></A>
+Returns an OrderedCollection of associations in which &quot;key&quot; is the message number and &quot;value&quot; is the message.</DefDscrp>
+<DefItem>
+<A ID="pgfId-746796"></A>
+fetchRFC822MessageHeaders: anArrayOfNumbers</DefItem>
+<DefDscrp>
+<A ID="pgfId-751017"></A>
+Returns an OrderedCollection of associations in which &quot;key&quot; is the message number and &quot;value&quot; is the message header.</DefDscrp>
+<DefItem>
+<A ID="pgfId-746798"></A>
+fetchRFC822Messages: anArrayOfNumbers</DefItem>
+<DefDscrp>
+<A ID="pgfId-751019"></A>
+Returns an OrderedCollection of associations in which &quot;key&quot; is the message number and &quot;value&quot; is the message.</DefDscrp>
+<DefItem>
+<A ID="pgfId-746800"></A>
+fetch: anArrayOfNumbers with: qualifierOrListOfQualifiers</DefItem>
+<DefDscrp>
+<A ID="pgfId-751021"></A>
+Returns an OrderedCollection of associations in which &quot;key&quot; is the message number and &quot;value&quot; is the message.</DefDscrp>
+<Heading3>
+<A ID="pgfId-746806"></A>
+<A ID="IMAP Delete a message"></A>
+Delete a message</Heading3>
+<Body1>
+<A ID="pgfId-746808"></A>
+The following code shows how to mark a message for deletion as well as how to actually delete a message:</Body1>
+<CodeSample>
+<A ID="pgfId-746810"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750981"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746812"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746814"></A>
+client markForDelete: #( 2 ).</CodeSample>
+<CodeSample>
+<A ID="pgfId-746816"></A>
+(client searchMessages: 'deleted') inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746818"></A>
+client expunge.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746820"></A>
+(client searchMessages: 'deleted') inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746822"></A>
+client logout.</CodeSample>
+<Heading3>
+<A ID="pgfId-746826"></A>
+<A ID="Search for messages"></A>
+Search for messages</Heading3>
+<Body1>
+<A ID="pgfId-746828"></A>
+The following code shows the various ways in which messages can be searched based upon certain criteria:</Body1>
+<CodeSample>
+<A ID="pgfId-746830"></A>
+| client oc1 oc2 oc3 mNumbers |</CodeSample>
+<CodeSample>
+<A ID="pgfId-746832"></A>
+client := IMAPClient loginToHost: 'mail.yourserver.com'</CodeSample>
+<CodeSample>
+<A ID="pgfId-750982"></A>
+	asUser: 'jdoe@abc.com' withPassword: 'passwordforjoe'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746834"></A>
+client select: 'inbox'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746836"></A>
+mNumbers := client searchMessages: 'UNSEEN FROM &quot;Fred&quot;'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746838"></A>
+oc1 := client fetchMessages: mNumbers.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746840"></A>
+oc1 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746842"></A>
+mNumbers := client searchMessages: 'BEFORE 1-Feb-1999'.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746844"></A>
+oc2 := client fetchMessages: mNumbers.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746846"></A>
+oc2 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746848"></A>
+mNumbers := client searchMessages:
+'FLAGGED SINCE 1-Feb-1999 NOT FROM &quot;Smith&quot;&#39;</CodeSample>
+<CodeSample>
+<A ID="pgfId-746850"></A>
+oc3 := client fetchMessages: mNumbers.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746852"></A>
+oc3 inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-746854"></A>
+client logout.</CodeSample>
+<Note1List>
+<Note1>
+<A ID="pgfId-746868"></A>
+</Note1>
+<DIV>
+<IMAGE xml:link="simple" href="05-inetconn-1.gif" show="embed" actuate="auto"/>
+</DIV>
+The complete list of criteria is given in RFC 2060 (IMAP4rev1 December 1996), which is available at <URL-Link>
+ftp://ftp.uu.net/.vol/2/inet/rfc</URL-Link>
+.<DIV>
+<IMAGE xml:link="simple" href="05-inetconn-2.gif" show="embed" actuate="auto"/>
+</DIV>
+</Note1List>
+<Body1>
+<A ID="pgfId-746870"></A>
+</Body1>
+<Heading2>
+<A ID="pgfId-949482"></A>
+<A ID="HTTP"></A>
+HTTP</Heading2>
+<Body1>
+<A ID="pgfId-949492"></A>
+HTTP (Hypertext Transfer Protocol) in it's most simple and basic sense, is a  protocol for raw data transfer across the Internet. The HTTP protocol is a request/response protocol in that a client sends a request to the server in the form of a request method, URI, and the server responds with a status line followed by a MIME-like message. </Body1>
+<Body1>
+<A ID="pgfId-949494"></A>
+HTTP within VisualWorks mimics <Code>
+Filename</Code>
+. You can access web pages (URLs) just like local files. This provides a level of transparency in accessing HTTP-based documents. For example, you could access a financial web site and retrieve the latest stock quote for a particular ticker by parsing the stream of HTML that is returned. </Body1>
+<Heading3>
+<A ID="pgfId-949502"></A>
+<A ID="Retrieve the contents of a web page"></A>
+Retrieve the contents of a web page</Heading3>
+<Body1>
+<A ID="pgfId-949506"></A>
+The following code will retrieve the contents of Yahoo's home page and return it into a <Code>
+ByteString</Code>
+:</Body1>
+<CodeSample>
+<A ID="pgfId-949508"></A>
+| url str |</CodeSample>
+<CodeSample>HttpClient enableProxy.</CodeSample>
+<CodeSample>
+<A ID="pgfId-949510"></A>
+	url := 'http://www.yahoo.com' asURI.</CodeSample>
+<CodeSample>
+<A ID="pgfId-949512"></A>
+	url readStreamDo: [:rs :meta | str := rs contents].</CodeSample>
+<CodeSample>
+<A ID="pgfId-949514"></A>
+	str inspect.</CodeSample>
+<Body1>
+<A ID="pgfId-949520"></A>
+If, in your environment, all Internet (HTTP) traffic is routed through a proxy server, this code will not work and you should see topic <A href="05-inetconn.xml#id(Retrieve the contents of a web page behind a Proxy)" xml:link="simple" show="replace" actuate="user" CLASS="XRef"><Hyperlink-reference>
+Retrieve the contents of a web page behind a Proxy</Hyperlink-reference>
+</A>. </Body1>
+<Heading3>
+<A ID="pgfId-949528"></A>
+<A ID="Retrieve the contents of a web page behind a Proxy"></A>
+Retrieve the contents of a web page behind a Proxy</Heading3>
+<Body1>
+<A ID="pgfId-949534"></A>
+The following code will return the contents of Yahoo's home page and return it into a <Code>
+ByteString</Code>
+. This code is necessary if, in your environment, all Internet (HTTP) traffic is routed through a proxy server. A dialog box will appear asking you to authenticate yourself with a username and password.</Body1>
+<CodeSample>
+<A ID="pgfId-949536"></A>
+| url str |</CodeSample>
+<CodeSample>HttpClient enableProxy.</CodeSample>
+<CodeSample>
+<A ID="pgfId-949538"></A>
+[ HttpClient proxyHost: 'PROXYSERVER' port: 80.</CodeSample>
+<CodeSample>
+<A ID="pgfId-949540"></A>
+	url := 'http://finance.yahoo.com' asURI.</CodeSample>
+<CodeSample>
+<A ID="pgfId-949542"></A>
+	url readStreamDo: [:rs :meta | str := rs contents].</CodeSample>
+<CodeSample>
+<A ID="pgfId-950958"></A>
+] ensure: [HttpClient disableProxy].</CodeSample>
+<CodeSample>
+<A ID="pgfId-949544"></A>
+str inspect.</CodeSample>
+<CodeSample>
+<A ID="pgfId-950956"></A>
+</CodeSample>
+</XML>

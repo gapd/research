@@ -1,0 +1,2305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="10-glossary.css" type="text/css" title="Glossary" charset="UTF-8"?>
+<XML>
+<Heading1>
+<A ID="pgfId-1040890"></A>
+<A ID="Glossary"></A>
+Glossary</Heading1>
+<Heading2>
+<A ID="pgfId-1148922"></A>
+Glossary of Terms</Heading2>
+<Heading3>
+<A ID="pgfId-1056930"></A>
+<Glossary>
+accessing method</Glossary>
+<A ID="accessing method"></A>
+<A ID="marker-1181868"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056931"></A>
+A <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> that is either an <A href="10-glossary.xml#id(accessor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">accessor</A> or a <A href="10-glossary.xml#id(mutator)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">mutator</A>; a way of referring to operations whose purpose is to either get or set the <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> of a <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1056933"></A>
+<Glossary>
+accessor</Glossary>
+<A ID="marker-1056932"></A>
+<A ID="accessor"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1106859"></A>
+An <A href="10-glossary.xml#id(accessing method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">accessing method</A> that gets, or <A href="10-glossary.xml#id(return)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">returns</A>, the <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> of a <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A>.</Body1>
+<Body1>
+<A ID="pgfId-1106860"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156027"></A>
+<A href="10-glossary.xml#id(mutator)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">mutator</A>.</Bullet1>
+<Heading3>
+<A ID="pgfId-1056936"></A>
+<Glossary>
+action widget</Glossary>
+<A ID="action widget"></A>
+<A ID="marker-1056935"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1067356"></A>
+A <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widget</A> that enables a user to invoke an application&#39;s action. <I>
+Action widgets</I>
+ include action buttons and menu items. Action widgets are designed to ask an <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A> to carry out their actions.</Body1>
+<Heading3>
+<A ID="pgfId-1056941"></A>
+<Glossary>
+application</Glossary>
+<A ID="application"></A>
+<A ID="marker-1056940"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056942"></A>
+A complete program that enables users to define, process, store, and/or retrieve data in various ways. Applications help to automate various aspects of operation in some <A href="10-glossary.xml#id(domain)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">domain</A>. Typical applications include word-processing systems, spreadsheets, calculators, and payroll systems. </Body1>
+<Body1>
+<A ID="pgfId-1056943"></A>
+VisualWorks applications are composite, in that they can be composed of other applications. Consequently, the term &#34;application&#34; may refer to a single <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A> (plus its associated <A href="10-glossary.xml#id(user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user interface</A> and <A href="10-glossary.xml#id(domain model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">domain models</A>) or to a combination of multiple interacting application models.</Body1>
+<Heading3>
+<A ID="pgfId-1056944"></A>
+<Glossary>
+application class</Glossary>
+<A ID="application class"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056945"></A>
+Canvases, menus, and graphical images are stored in VisualWorks as <A href="10-glossary.xml#id(resource)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">resources</A>, and saved as <A href="10-glossary.xml#id(specification)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">specifications</A> in <A href="10-glossary.xml#id(class method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class methods</A> of the <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A>. In effect, these resource methods are a VisualWorks convention for representing user interface framework.</Body1>
+<Body1>
+<A ID="pgfId-1056946"></A>
+An application class can support multiple interfaces, each of which may involve multiple canvases for the VisualWorks main window, secondary windows and dialogs.</Body1>
+<Heading3>
+<A ID="pgfId-1056948"></A>
+<Glossary>
+application framework</Glossary>
+<A ID="application framework"></A>
+<A ID="marker-1056947"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056949"></A>
+A set of <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A> that provide a core structure from which to build a complete <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>. </Body1>
+<Body1>
+<A ID="pgfId-1056950"></A>
+The VisualWorks <I>
+application framework</I>
+ includes the <Code>
+ApplicationModel</Code>
+ class and its <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclasses</A>, the <Code>
+UIBuilder</Code>
+ class, policy classes for various platform &#34;look-and-feels,&#34; and classes for the various <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A> and <A href="10-glossary.xml#id(value model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value models</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1056952"></A>
+<Glossary>
+application model</Glossary>
+<A ID="application model"></A>
+<A ID="marker-1056951"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056953"></A>
+A <A href="10-glossary.xml#id(model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">model</A> in a Smalltalk program that provides <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>-specific information and services. At a minimum, an <I>
+application model</I>
+ provides the code required to support the mechanics of the <A href="10-glossary.xml#id(graphical user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical user interface</A>. For example, an application model establishes the connections between <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A> and <A href="10-glossary.xml#id(domain model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">domain models</A>, and it defines the interactions between widgets.</Body1>
+<Body1>
+<A ID="pgfId-1056954"></A>
+Application models are usually created from the VisualWorks <A href="10-glossary.xml#id(application framework)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application framework</A>. An application model refers to a <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclass</A> of the <Code>
+ApplicationModel</Code>
+ <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> or to an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of such a subclass.</Body1>
+<Heading3>
+<A ID="pgfId-1056956"></A>
+<Glossary>
+argument</Glossary>
+<A ID="argument"></A>
+<A ID="marker-1056955"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056957"></A>
+An <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> that specifies additional information for an operation. <I>
+Arguments</I>
+ are specified as <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variables</A>, literals, or <A href="10-glossary.xml#id(expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">expressions</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1056959"></A>
+<Glossary>
+aspect adaptor</Glossary>
+<A ID="aspect adaptor"></A>
+<A ID="marker-1056958"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056960"></A>
+A kind of <A href="10-glossary.xml#id(value model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value model</A> that accesses a <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> held in another <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>, called its <A href="10-glossary.xml#id(subject)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subject</A>. An <I>
+aspect adaptor</I>
+ responds to <Code>
+value</Code>
+ and <Code>
+value:</Code>
+ <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">messages</A> by sending appropriate <A href="10-glossary.xml#id(accessor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">accessor</A> and <A href="10-glossary.xml#id(mutator)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">mutator</A> messages to its subject. An aspect adaptor is an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of the <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> <Code>
+AspectAdaptor</Code>
+, which is a <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclass</A> of <Code>
+ValueModel</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1056962"></A>
+<Glossary>
+aspect path</Glossary>
+<A ID="aspect path"></A>
+<A ID="marker-1181879"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1108509"></A>
+A sequence of accessor <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> names used with an <Code>
+AspectAdaptor</Code>
+ that together comprise the chain of messages passed to a <A href="10-glossary.xml#id(subject)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subject</A> to access a particular attribute. An <I>
+aspect path</I>
+ contains multiple elements, in which the first element (the head) refers to a <A href="10-glossary.xml#id(subject channel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subject channel</A> for the aspect adaptor, and one or more subsequent elements that specify <A href="10-glossary.xml#id(accessor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">accessor</A> names. Aspect paths provide a way to fill in a <A href="10-glossary.xml#id(data widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">data widget</A>&#39;s aspect property to cause the <A href="10-glossary.xml#id(builder)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">builder</A> to create an <A href="10-glossary.xml#id(aspect adaptor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">aspect adaptor</A> for the widget.</Body1>
+<Heading3>
+<A ID="pgfId-1056965"></A>
+<Glossary>
+assignment</Glossary>
+<A ID="assignment"></A>
+<A ID="marker-1056964"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056966"></A>
+An <A href="10-glossary.xml#id(expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">expression</A> that makes a change to a <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A>&#39;s <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A>--for example <Code>
+quantity := 19</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1056967"></A>
+<Glossary>
+binary message</Glossary>
+<A ID="binary message"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056968"></A>
+A <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> that has one <A href="10-glossary.xml#id(argument)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">argument</A> and whose <A href="10-glossary.xml#id(selector)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">selector</A> is made up of one or two non-alphanumeric characters (the second character may not be a minus sign.) For example, in the <A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A> <Code>
+3+4</Code>
+, the <I>
+binary message</I>
+ is <Code>
++4</Code>
+, where <Code>
++</Code>
+ is the selector and <Code>
+4</Code>
+ is the argument.</Body1>
+<Heading3>
+<A ID="pgfId-1097689"></A>
+<Glossary>
+binding</Glossary>
+<A ID="binding"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1097693"></A>
+A <I>
+binding</I>
+ is an association between a name and a value. Bindings are similar to <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variables</A> in this regard, but are supported by special <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A> and provide additional operations, such as privacy and import/export provisions. </Body1>
+<Body1>
+<A ID="pgfId-1097698"></A>
+Bindings are currently used in the system in the implementation of <A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variables</A>, classes, and <A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespaces</A>.</Body1>
+<Body1>
+<A ID="pgfId-1138213"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156028"></A>
+<A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156031"></A>
+<A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variable</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1108552"></A>
+<Glossary>
+block expression</Glossary>
+<A ID="block expression"></A>
+<A ID="marker-1181886"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1108553"></A>
+A description of a deferred sequence of actions. A <I>
+block expression</I>
+ consists of one or more <A href="10-glossary.xml#id(expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">expressions</A> that are found within a block closure.</Body1>
+<Heading3>
+<A ID="pgfId-1056972"></A>
+<Glossary>
+block closure</Glossary>
+<A ID="block closure"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056973"></A>
+One or more <A href="10-glossary.xml#id(block expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">block expressions</A> that are enclosed in square brackets. </Body1>
+<Heading3>
+<A ID="pgfId-1056975"></A>
+<Glossary>
+Boolean objects</Glossary>
+<A ID="Boolean objects"></A>
+<A ID="marker-1056974"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056976"></A>
+The Smalltalk <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A> <Code>
+true</Code>
+ and <Code>
+false</Code>
+, which serve as the answers to yes-no questions and which respond to <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">messages</A> that request logical operations and conditional control structures (if-then-else operations).</Body1>
+<Heading3>
+<A ID="pgfId-1056978"></A>
+<Glossary>
+browser</Glossary>
+<A ID="browser"></A>
+<A ID="marker-1181893"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056979"></A>
+A <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> that displays portions of the Smalltalk class library for viewing or editing. A browser displays its information in multiple <A href="10-glossary.xml#id(view)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">views</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1056981"></A>
+<Glossary>
+builder</Glossary>
+<A ID="builder"></A>
+<A ID="marker-1056980"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056982"></A>
+An <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> that builds an operating <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> from an <A href="10-glossary.xml#id(interface specification)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">interface specification</A>. A <I>
+builder</I>
+ is created by an <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A> when the <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> needs to open a window. The builder, in turn, creates and assembles appropriate <A href="10-glossary.xml#id(user-interface object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user-interface objects</A> according to the contents of the interface specification and a specified <A href="10-glossary.xml#id(look policy)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">look policy</A>.</Body1>
+<Body1>
+<A ID="pgfId-1056983"></A>
+A builder holds onto the <A href="10-glossary.xml#id(user-interface object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user-interface objects</A> it creates. Consequently, an application can send <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">messages</A> to a builder to obtain programmatic access to a given <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widget</A> or to the window itself.</Body1>
+<Body1>
+<A ID="pgfId-1056984"></A>
+Builders are <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instances</A> of the <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> <Code>
+UIBuilder</Code>
+, which is part of the VisualWorks <A href="10-glossary.xml#id(application framework)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application framework</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1156116"></A>
+<Glossary>
+bundle</Glossary>
+<A ID="bundle"></A>
+<A ID="marker-1156115"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056986"></A>
+A code component which may contain packages or other bundles. Bundles are used by StORE to represent higher levels of project functionality by organizing and grouping smaller components.</Body1>
+<Body1>
+<A ID="pgfId-1156155"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156159"></A>
+<A href="10-glossary.xml#id(component)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">component</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156164"></A>
+<A href="10-glossary.xml#id(parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">parcel</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1156145"></A>
+<Glossary>
+canvas</Glossary>
+<A ID="canvas"></A>
+<A ID="canvas"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056987"></A>
+A special work area in which you <A href="10-glossary.xml#id(paint)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">paint</A> the contents and layout of a <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> (or part of a window) for an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>. You also affect the appearance of a canvas by setting <A href="10-glossary.xml#id(properties)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">properties</A>. A canvas is the graphical form of an <A href="10-glossary.xml#id(interface specification)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">interface specification</A>.</Body1>
+<Body1>
+<A ID="pgfId-1097969"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156032"></A>
+<A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widget</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1056989"></A>
+<Glossary>
+Canvas Tool</Glossary>
+<A ID="Canvas Tool"></A>
+<A ID="marker-1181900"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056990"></A>
+The VisualWorks tool for fine-tuning a <A href="10-glossary.xml#id(canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">canvas</A>&#39;s appearance and for invoking additional canvas-preparation tools. A Canvas Tool is automatically opened when you open a canvas. </Body1>
+<Heading3>
+<A ID="pgfId-1056992"></A>
+<Glossary>
+cascaded messages</Glossary>
+<A ID="cascaded messages"></A>
+<A ID="marker-1181907"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056993"></A>
+Multiple <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">messages</A> sent to one <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> in a single <A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A>. A <I>
+cascaded</I>
+ message expression consists of one description of the <A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A> followed by several messages separated by semicolons. For example:</Body1>
+<CodeSample>
+<A ID="pgfId-1056994"></A>
+OrderedCollection new add: 1; add: 2; add: 3; yourself.</CodeSample>
+<Body1>
+<A ID="pgfId-1056995"></A>
+results in three <Code>
+add:</Code>
+ messages being sent to the result of <Code>
+OrderedCollection new</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1056997"></A>
+<Glossary>
+category</Glossary>
+<A ID="category"></A>
+<A ID="marker-1181914"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1056998"></A>
+A group of <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A>. Every class in the system belongs to exactly one <I>
+category</I>
+. Classes are grouped into categories purely for organizational purposes; all classes in all categories are globally available.</Body1>
+<Body1>
+<A ID="pgfId-1076340"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156033"></A>
+<A href="10-glossary.xml#id(protocol)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">protocol</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057000"></A>
+<Glossary>
+Change List</Glossary>
+<A ID="Change List"></A>
+<A ID="marker-1181921"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057001"></A>
+The VisualWorks tool that displays the changes stored in a <A href="10-glossary.xml#id(changes file)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">changes file</A>. To open a Change List, choose <UI-Label>
+Changes-&gt;Open Change List</UI-Label>
+ from the <A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A>. </Body1>
+<Heading3>
+<A ID="pgfId-1057006"></A>
+<Glossary>
+changes file</Glossary>
+<A ID="changes file"></A>
+<A ID="marker-1057005"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057007"></A>
+A file that lists all the changes made to the <A href="10-glossary.xml#id(Cincom Smalltalk system)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Cincom Smalltalk system</A> in your <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A>. The changes file is located in the same directory as the corresponding image file and has the file extension &quot;<Platform>
+.cha</Platform>
+.&quot; You view your changes file using the <A href="10-glossary.xml#id(Change List)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Change List</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1138275"></A>
+<Glossary>
+Cincom Smalltalk language</Glossary>
+<A ID="Cincom Smalltalk language"></A>
+<A ID="marker-1138274"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1138279"></A>
+The general-purpose, <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>-oriented computer programming language that is provided by VisualWorks. The <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">applications</A> you build with VisualWorks are implemented in the <I>
+Cincom Smalltalk language</I>
+, as is VisualWorks itself. </Body1>
+<Body1>
+<A ID="pgfId-1138286"></A>
+In the Cincom Smalltalk language, every entity is an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>, and all processing is carried out as <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">messages</A> sent among the objects. Because the VisualWorks implementation of the language also provides a large set of predefined objects, the language is considered part of the <A href="10-glossary.xml#id(Cincom Smalltalk system)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Cincom Smalltalk system</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1138295"></A>
+<Glossary>
+Cincom Smalltalk system</Glossary>
+<A ID="Cincom Smalltalk system"></A>
+<A ID="marker-1138294"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1138299"></A>
+The collection of interacting <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A> implemented in the <A href="10-glossary.xml#id(Cincom Smalltalk language)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Cincom Smalltalk language</A>. Some of these objects provide functions that make up the VisualWorks software development system: the compiler, debugger, <A href="10-glossary.xml#id(browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">browsers</A>, and so on. Other objects in the system exist so that you can incorporate them into your own <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">applications</A>, as, for example, when you use <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A> in the VisualWorks <A href="10-glossary.xml#id(application framework)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application framework</A>. You extend this system whenever you create new objects.</Body1>
+<Heading3>
+<A ID="pgfId-1057009"></A>
+<Glossary>
+class</Glossary>
+<A ID="class"></A>
+<A ID="marker-1057008"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057010"></A>
+A description of a group of similar <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A>. A class serves as a &#34;template&#34; for defining the data and operations for these objects, which are its <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instances</A>.</Body1>
+<Body1>
+<A ID="pgfId-1097886"></A>
+A class defines the <A href="10-glossary.xml#id(instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance variables</A> in which the instances store their data, and the <A href="10-glossary.xml#id(instance method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance methods</A> that describe how instances carry out their operations,</Body1>
+<Body1>
+<A ID="pgfId-1057013"></A>
+Every class is itself a kind of object and therefore has its own data (<A href="10-glossary.xml#id(class variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class variables</A>) and operations (<A href="10-glossary.xml#id(class method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class methods</A>). One of the primary operations of a class is to create the objects that are its instances.</Body1>
+<Heading3>
+<A ID="pgfId-1057015"></A>
+<Glossary>
+class hierarchy</Glossary>
+<A ID="class hierarchy"></A>
+<A ID="marker-1057014"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057016"></A>
+The structure formed by the <A href="10-glossary.xml#id(inheritance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">inheritance</A> relationships among <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A>. The hierarchy of classes is rooted in the class <Code>
+Object</Code>
+, which defines the state and behavior common to all <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A> in the system. <Code>
+Object</Code>
+ does not inherit from any other class.</Body1>
+<Heading3>
+<A ID="pgfId-1111825"></A>
+<Glossary>
+class instance variable</Glossary>
+<A ID="class instance variable"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1111829"></A>
+A <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A> whose scope is an individual <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A>. <I>
+Class instance variables</I>
+ are declared in the class definition, and are used to hold data about the class itself that might differ for <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclasses</A>. Class instance variables are private to the class and accessible only to its <A href="10-glossary.xml#id(class method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class methods</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1112289"></A>
+<Glossary>
+class message</Glossary>
+<A ID="class message"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1112293"></A>
+A <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> that is sent to a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> object, which invokes a <A href="10-glossary.xml#id(class method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class method</A> (e.g., <Code>
+new</Code>
+).</Body1>
+<Heading3>
+<A ID="pgfId-1057018"></A>
+<Glossary>
+class method</Glossary>
+<A ID="class method"></A>
+<A ID="marker-1057017"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057019"></A>
+A <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> that defines a particular operation that is carried out by a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A>, such as creating an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of itself. <I>
+Class methods</I>
+ are invoked by sending <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">messages</A> to a class rather than to one of its instances. </Body1>
+<Heading3>
+<A ID="pgfId-1057021"></A>
+<Glossary>
+class variable</Glossary>
+<A ID="class variable"></A>
+<A ID="marker-1057020"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057022"></A>
+A <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A> that is shared by a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> and all its <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instances</A>. <I>
+Class variables</I>
+ maintain information that is the same for all instances.</Body1>
+<Heading3>
+<A ID="pgfId-1057024"></A>
+<Glossary>
+component</Glossary>
+<A ID="component"></A>
+<A ID="marker-1057023"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1097729"></A>
+A distinct part or module of a framework, a <I>
+component</I>
+ is made up of single or multiple objects that provide a set of behaviors for the framework.</Body1>
+<Body1>
+<A ID="pgfId-1138252"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156034"></A>
+<A href="10-glossary.xml#id(parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">parcel</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057026"></A>
+<Glossary>
+context</Glossary>
+<A ID="context"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1097740"></A>
+An <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> containing information regarding the state of a method or block of executing code.</Body1>
+<Heading3>
+<A ID="pgfId-1057029"></A>
+<Glossary>
+controller</Glossary>
+<A ID="controller"></A>
+<A ID="marker-1057028"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1110864"></A>
+An <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> in a Smalltalk program that enables the user to interact with information displayed by a <A href="10-glossary.xml#id(view)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">view</A>. Together, view-controller pairs form <A href="10-glossary.xml#id(user-interface object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user-interface objects</A> such as <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A>. A <I>
+controller</I>
+ manages a <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widget</A>&#39;s response to mouse or keyboard input.</Body1>
+<Body1>
+<A ID="pgfId-1076341"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156035"></A>
+<A href="10-glossary.xml#id(MVC architecture)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">MVC architecture</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057032"></A>
+<Glossary>
+cursor</Glossary>
+<A ID="cursor"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1097899"></A>
+A graphic, usually in the shape of an arrow, that you move on the screen using a pointing device, such as a mouse, trackball, or joystick. You use a pointer to interact with <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A> in VisualWorks <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">windows</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1097895"></A>
+<Glossary>
+data widget</Glossary>
+<A ID="data widget"></A>
+<A ID="marker-1057031"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057033"></A>
+A <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widget</A> that displays some aspect of an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>&#39;s data and/or collects it from the user. <I>
+Data widgets</I>
+ include input fields, lists, datasets, and so on. Data widgets are designed to use <A href="10-glossary.xml#id(value model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value models</A> to manage their access to the data they present.</Body1>
+<Heading3>
+<A ID="pgfId-1057035"></A>
+<Glossary>
+Definer</Glossary>
+<A ID="Definer"></A>
+<A ID="marker-1057034"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1108107"></A>
+The VisualWorks tool for generating Smalltalk code that supports <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A>. The code is generated in an <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A>. You invoke the <I>
+Definer</I>
+ from a <A href="10-glossary.xml#id(Canvas Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Canvas Tool</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057038"></A>
+<Glossary>
+dependency mechanism</Glossary>
+<A ID="dependency mechanism"></A>
+<A ID="marker-1057037"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057039"></A>
+A widely used technique for coordinating the activities of different <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A> in an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>, whereby one object, usually an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of a <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclass</A> of <Code>
+Model</Code>
+, maintains a list of objects that depend on it for information and notifies these objects whenever the relevant information changes.</Body1>
+<Body1>
+<A ID="pgfId-1097971"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156036"></A>
+<A href="10-glossary.xml#id(model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">model</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057041"></A>
+<Glossary>
+distinguished instance</Glossary>
+<A ID="distinguished instance"></A>
+<A ID="marker-1097756"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1097754"></A>
+The sole <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of a class in the system.  Examples include: nil (<Code>
+UndefinedObject</Code>
+), true (<Code>
+True</Code>
+) and false (<Code>
+False</Code>
+).  Typically these objects have override <Code>
+new</Code>
+ to prevent <Code>
+new</Code>
+ instances being created.</Body1>
+<Heading3>
+<A ID="pgfId-1097755"></A>
+<Glossary>
+domain</Glossary>
+<A ID="domain"></A>
+<A ID="marker-1057040"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057042"></A>
+The area of endeavor that an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> helps to automate--for example, employee payroll, billing, inventory control, accounting, and so on.</Body1>
+<Heading3>
+<A ID="pgfId-1057044"></A>
+<Glossary>
+domain model</Glossary>
+<A ID="domain model"></A>
+<A ID="marker-1057043"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1111779"></A>
+A <A href="10-glossary.xml#id(model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">model</A> in a Smalltalk program that defines data and operations that are relevant to the <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>&#39;s <A href="10-glossary.xml#id(domain)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">domain</A>. For example, an accounting application might include domain models such as <Code>
+Customer</Code>
+, <Code>
+Account</Code>
+, and so on. Domain models are generally kept free of user-interface code, so that they can be reused with other interfaces.</Body1>
+<Heading3>
+<A ID="pgfId-1111793"></A>
+<Glossary>
+environment</Glossary>
+<A ID="environment"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1111794"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156037"></A>
+<A href="10-glossary.xml#id(primary reference)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">primary reference</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1111787"></A>
+<Glossary>
+exception</Glossary>
+<A ID="exception"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1111788"></A>
+An error condition resulting in the creation of a notifier window.</Body1>
+<Heading3>
+<A ID="pgfId-1057049"></A>
+<Glossary>
+expression</Glossary>
+<A ID="expression"></A>
+<A ID="marker-1057048"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057050"></A>
+A sequence of characters that describes an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>, which is the <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> of the expression. Expression types include literals, variable names, message expressions, and block expressions.</Body1>
+<Body1>
+<A ID="pgfId-1097975"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156039"></A>
+<A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156038"></A>
+<A href="10-glossary.xml#id(block expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">block expression</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057052"></A>
+<Glossary>
+file in</Glossary>
+<A ID="file in"></A>
+<A ID="marker-1057051"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057053"></A>
+To load one or more files from a disk into the current VisualWorks <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A>. When Smalltalk files are filed in, any <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> and <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> definitions they contain are compiled into the <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A>. Note that parcelling is now the preferred method of bringing code into the image.</Body1>
+<Heading3>
+<A ID="pgfId-1057055"></A>
+<Glossary>
+File List</Glossary>
+<A ID="File List"></A>
+<A ID="marker-1057054"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057056"></A>
+The VisualWorks tool for interacting with your operating system&#39;s file-management facilities. You use a File List to locate and select files in your file system and then read them into your <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A>. To open a File List, choose <UI-Label>
+Tools-&gt;File List</UI-Label>
+ in the <A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057061"></A>
+<Glossary>
+file out</Glossary>
+<A ID="file out"></A>
+<A ID="marker-1057060"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057062"></A>
+To store the source code for one or more <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A>, <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">methods</A>, or categories in a disk file that is separate from the VisualWorks <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A> file. Smalltalk code in file out format normally has the file extension &quot;<Platform>
+.st</Platform>
+&quot;. Filing out is a common means of backing up your work, preserving intermediate versions, or transferring code to another image (by <I>
+filing in</I>
+). Note that parcelling is now the preferred method of saving code from an image.</Body1>
+<Heading3>
+<A ID="pgfId-1057063"></A>
+<Glossary>
+garbage collection</Glossary>
+<A ID="garbage collection"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1097777"></A>
+A mechanism used by the <A href="10-glossary.xml#id(object engine)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object engine</A> for reclaiming memory that was occupied by objects that are no longer valid or used in the system.</Body1>
+<Heading3>
+<A ID="pgfId-1057066"></A>
+<Glossary>
+global variable</Glossary>
+<A ID="global variable"></A>
+<A ID="marker-1057065"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057067"></A>
+A <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A> whose <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> can be accessed by all <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A> within a <A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A>, and potentially within the entire system.</Body1>
+<Body1>
+<A ID="pgfId-1138380"></A>
+Strictly speaking, globals do not exist in VisualWorks versions 5i and later. Globals, pools, and class variables have been superseded by <A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variables</A>.</Body1>
+<Body1>
+<A ID="pgfId-1138395"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156040"></A>
+<A href="10-glossary.xml#id(binding)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">binding</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156041"></A>
+<A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057069"></A>
+<Glossary>
+graphical image</Glossary>
+<A ID="graphical image"></A>
+<A ID="marker-1057068"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057070"></A>
+A bitmapped illustration. You create graphical images using the <A href="10-glossary.xml#id(Image Editor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Image Editor</A>, import them from other tools, or use screen capture. You can use graphical images in a variety of ways--for example, as labels for action buttons.</Body1>
+<Body1>
+<A ID="pgfId-1097793"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156042"></A>
+<A href="10-glossary.xml#id(mask)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">mask</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057072"></A>
+<Glossary>
+graphical user interface</Glossary>
+<A ID="graphical user interface"></A>
+<A ID="marker-1057071"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057073"></A>
+A <A href="10-glossary.xml#id(user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user interface</A> that consists of a collection of <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">windows</A> containing visual controls, or <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A>.</Body1>
+<Body1>
+<A ID="pgfId-1057074"></A>
+In VisualWorks, a <I>
+graphical user interface</I>
+ includes not only the windows and widgets themselves, but also various supporting <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A> that are supplied by the <A href="10-glossary.xml#id(application framework)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application framework</A>. In addition, a graphical user interface includes the code that implements the widgets&#39; application-specific behavior--the functionality that enables them to interact with <A href="10-glossary.xml#id(domain model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">domain models</A>. A VisualWorks graphical user interface is normally implemented using one or more <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application models</A> and <A href="10-glossary.xml#id(interface specification)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">interface specifications</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057076"></A>
+<Glossary>
+Hierarchy Browser</Glossary>
+<A ID="Hierarchy Browser"></A>
+<A ID="marker-1057075"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057077"></A>
+A kind of <A href="10-glossary.xml#id(browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">browser</A> that displays the <A href="10-glossary.xml#id(superclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">superclasses</A> and <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclasses</A> of a particular <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A>. To open a Hierarchy Browser, you choose <UI-Label>
+Browse-&gt;Class Named...</UI-Label>
+ in the <A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A> and then specify the class.</Body1>
+<Heading3>
+<A ID="pgfId-1057082"></A>
+<Glossary>
+image(1)</Glossary>
+<A ID="image(1)"></A>
+<A ID="marker-1057081"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057083"></A>
+A file that stores the entire state of an individual <A href="10-glossary.xml#id(Cincom Smalltalk system)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Cincom Smalltalk system</A>, including all the current <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A>, all the information on the screen, and any pending instructions to the system. A VisualWorks image preserves objects between VisualWorks sessions. When you start VisualWorks, the <A href="10-glossary.xml#id(object engine)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object engine</A> reads the image file and restores the system to its previous state. You share information between images by filing source code out of one image and filing it into another.</Body1>
+<Body1>
+<A ID="pgfId-1097985"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156056"></A>
+<A href="10-glossary.xml#id(standard image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">standard image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156061"></A>
+<A href="10-glossary.xml#id(working image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">working image</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156062"></A>
+<A href="10-glossary.xml#id(file in)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">file in</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156063"></A>
+<A href="10-glossary.xml#id(file out)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">file out</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156064"></A>
+<A href="10-glossary.xml#id(parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">parcel</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057084"></A>
+<Glossary>
+image(2)</Glossary>
+<A ID="image(2)"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1156046"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156050"></A>
+<A href="10-glossary.xml#id(graphical image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical image</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1156053"></A>
+<Glossary>
+Image Editor</Glossary>
+<A ID="Image Editor"></A>
+<A ID="marker-1156052"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057088"></A>
+The VisualWorks tool for creating and modifying <A href="10-glossary.xml#id(graphical image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical images</A>, with pixel-level control. You open the Image Editor from a <A href="10-glossary.xml#id(Canvas Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Canvas Tool</A>, or using the VisualWorks Launcher.</Body1>
+<Heading3>
+<A ID="pgfId-1138188"></A>
+<Glossary>
+import</Glossary>
+<A ID="import"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1138191"></A>
+A <A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A> may express interest in other namespaces or their enclosed <A href="10-glossary.xml#id(binding)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">bindings</A> by <I>
+importing</I>
+ them. Namespace definitions contain an &quot;imports list&quot; which specify the variables or other namespaces which may be referenced within the scope of the namespace declaring the import.</Body1>
+<Body1>
+<A ID="pgfId-1138246"></A>
+Only public bindings may be imported into a namespace.</Body1>
+<Body1>
+<A ID="pgfId-1138206"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156065"></A>
+<A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156066"></A>
+<A href="10-glossary.xml#id(binding)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">binding</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057090"></A>
+<Glossary>
+inheritance</Glossary>
+<A ID="inheritance"></A>
+<A ID="marker-1057089"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1138228"></A>
+A mechanism whereby <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A> can make use of the <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">methods</A> and <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variables</A> defined in all classes above them on their branch of the <A href="10-glossary.xml#id(class hierarchy)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class hierarchy</A>. </Body1>
+<Heading3>
+<A ID="pgfId-1138237"></A>
+<Glossary>
+inheritance hierarchy</Glossary>
+<A ID="inheritance hierarchy"></A>
+<A ID="marker-1138236"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1138241"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156067"></A>
+<A href="10-glossary.xml#id(class hierarchy)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class hierarchy</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057096"></A>
+<Glossary>
+Inspector</Glossary>
+<A ID="Inspector"></A>
+<A ID="marker-1057095"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057097"></A>
+The VisualWorks tool for examining the <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">values</A> of the <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variables</A> in an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>. To open an Inspector, you choose <UI-Label>
+inspect</UI-Label>
+ from an &lt;Operate&gt; menu.</Body1>
+<Heading3>
+<A ID="pgfId-1057099"></A>
+<Glossary>
+install</Glossary>
+<A ID="install"></A>
+<A ID="marker-1057098"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057100"></A>
+To save a <A href="10-glossary.xml#id(resource)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">resource</A> (such as a painted <A href="10-glossary.xml#id(canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">canvas</A>) in an <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A>. <I>
+Installing</I>
+ a resource creates a <A href="10-glossary.xml#id(resource method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">resource method</A>, which makes the resource available to the running <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057102"></A>
+<Glossary>
+instance</Glossary>
+<A ID="instance"></A>
+<A ID="marker-1057101"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057103"></A>
+An individual <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> described by a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A>. An <I>
+instance</I>
+ has private memory consisting of <A href="10-glossary.xml#id(instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance variables</A>, and it responds to <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">messages</A> by invoking <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">methods</A> defined or inherited by its class.</Body1>
+<Body1>
+<A ID="pgfId-1057106"></A>
+Every object in the Smalltalk system is an instance of a class. All instances of a given class are identical in form and behavior, although they generally hold different data in their instance variables. </Body1>
+<Heading3>
+<A ID="pgfId-1057108"></A>
+<Glossary>
+instance method</Glossary>
+<A ID="instance method"></A>
+<A ID="marker-1057107"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057109"></A>
+A <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> that describes how a particular operation is carried out by every <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A>.</Body1>
+<Body1>
+<A ID="pgfId-1097987"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156068"></A>
+<A href="10-glossary.xml#id(class method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class method</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057111"></A>
+<Glossary>
+instance variable</Glossary>
+<A ID="instance variable"></A>
+<A ID="marker-1057110"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057112"></A>
+A <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A> that stores data for an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A>. Collectively, an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>&#39;s <I>
+instance variables</I>
+ describe the object&#39;s data structure. Instances of the same <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> have the same number of instance variables with the same names; these instance variables generally store different <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">values</A> for different instances of the class.</Body1>
+<Body1>
+<A ID="pgfId-1097990"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156069"></A>
+<A href="10-glossary.xml#id(class variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class variable</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057114"></A>
+<Glossary>
+interface</Glossary>
+<A ID="interface"></A>
+<A ID="marker-1057113"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057115"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156070"></A>
+<A href="10-glossary.xml#id(graphical user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical user interface</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057117"></A>
+<Glossary>
+interface specification</Glossary>
+<A ID="interface specification"></A>
+<A ID="marker-1057116"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057118"></A>
+A symbolic description of a <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> (or part of a window) that is created when you <A href="10-glossary.xml#id(install)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">install</A> a painted <A href="10-glossary.xml#id(canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">canvas</A> in an <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A>. An <I>
+interface specification</I>
+ contains a description of the <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A> you painted in the canvas, plus the <A href="10-glossary.xml#id(properties)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">properties</A> you set for them. When the <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> runs, the interface specification serves as the <A href="10-glossary.xml#id(builder)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">builder</A>&#39;s blueprint for constructing an operational window. </Body1>
+<Heading3>
+<A ID="pgfId-1057119"></A>
+<Glossary>
+interpreter</Glossary>
+<A ID="interpreter"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057120"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156071"></A>
+<A href="10-glossary.xml#id(object engine)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object engine</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057122"></A>
+<Glossary>
+keyboard focus</Glossary>
+<A ID="keyboard focus"></A>
+<A ID="marker-1057121"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057123"></A>
+The state of a <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widget</A> that enables it to receive input from the keyboard. You can move the keyboard focus among widgets by clicking them or by pressing the &lt;Tab&gt; key.</Body1>
+<Heading3>
+<A ID="pgfId-1057125"></A>
+<Glossary>
+keyword</Glossary>
+<A ID="keyword"></A>
+<A ID="marker-1057124"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057126"></A>
+An identifier with a trailing colon, such as <Code>
+ifTrue:</Code>
+. Keywords are used in <A href="10-glossary.xml#id(keyword message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">keyword messages</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057128"></A>
+<Glossary>
+keyword message</Glossary>
+<A ID="keyword message"></A>
+<A ID="marker-1057127"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057129"></A>
+A <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> with one or more <A href="10-glossary.xml#id(argument)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">arguments</A> whose <A href="10-glossary.xml#id(selector)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">selector</A> is made up of one or more <A href="10-glossary.xml#id(keyword)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">keywords</A>. For example, in the following <A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A>:</Body1>
+<CodeSample>
+<A ID="pgfId-1057130"></A>
+aRunArray copyFrom: startIndex to: stopIndex</CodeSample>
+<Body1>
+<A ID="pgfId-1057131"></A>
+the selector is <Code>
+copyFrom:to:</Code>
+ (consisting of keywords <Code>
+copyFrom:</Code>
+ and <Code>
+to:</Code>
+) and the arguments are <Code>
+startIndex</Code>
+ and <Code>
+stopIndex</Code>
+. </Body1>
+<Heading3>
+<A ID="pgfId-1057133"></A>
+<Glossary>
+Launcher</Glossary>
+<A ID="Launcher"></A>
+<A ID="marker-1057132"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057134"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156072"></A>
+<A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057136"></A>
+<Glossary>
+lazy initialization</Glossary>
+<A ID="lazy initialization"></A>
+<A ID="marker-1057135"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057137"></A>
+A technique for initializing an <A href="10-glossary.xml#id(instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance variable</A>. Initialization code is put in an <A href="10-glossary.xml#id(accessor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">accessor</A> so that the <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A> is initialized the first time it is accessed. This technique is used in code generated by the <A href="10-glossary.xml#id(Definer)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Definer</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057139"></A>
+<Glossary>
+look policy</Glossary>
+<A ID="look policy"></A>
+<A ID="marker-1057138"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057140"></A>
+The platform-specific &#34;look-and-feel&#34; of an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>&#39;s <A href="10-glossary.xml#id(interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">interface</A>, which determines the appearance and behavior of buttons, scroll bars, and so on. You set the look policy by selecting it in the <A href="10-glossary.xml#id(Settings Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Settings Tool</A>. A separate <Code>
+FeelPolicy</Code>
+ class hierarchy introduces custom key definitions to a UI.  </Body1>
+<Heading3>
+<A ID="pgfId-1057142"></A>
+<Glossary>
+mask</Glossary>
+<A ID="mask"></A>
+<A ID="marker-1057141"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057143"></A>
+A monochrome <A href="10-glossary.xml#id(graphical image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical image</A> that is used to &#34;mask off&#34; certain areas of another image.</Body1>
+<Heading3>
+<A ID="pgfId-1057145"></A>
+<Glossary>
+Menu Editor</Glossary>
+<A ID="Menu Editor"></A>
+<A ID="marker-1057144"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057146"></A>
+VisualWorks tool for creating and editing menus. You open the Menu Editor from a <A href="10-glossary.xml#id(Canvas Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Canvas Tool</A>, or from the <UI-Label>
+Tools</UI-Label>
+ menu of the Launcher.</Body1>
+<Heading3>
+<A ID="pgfId-1057148"></A>
+<Glossary>
+message</Glossary>
+<A ID="message"></A>
+<A ID="marker-1057147"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057149"></A>
+A request for an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> to carry out one of its operations. A message consists of a <A href="10-glossary.xml#id(selector)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">selector</A> and possibly one or more <A href="10-glossary.xml#id(argument)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">arguments</A>.</Body1>
+<Body1>
+<A ID="pgfId-1097992"></A>
+<B>
+See also:</B>
+ <A href="10-glossary.xml#id(binary message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">binary message</A>; <A href="10-glossary.xml#id(keyword message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">keyword message</A>; <A href="10-glossary.xml#id(unary message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">unary message</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057151"></A>
+<Glossary>
+message category</Glossary>
+<A ID="message category"></A>
+<A ID="marker-1057150"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057152"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156073"></A>
+<A href="10-glossary.xml#id(protocol)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">protocol</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057154"></A>
+<Glossary>
+message expression</Glossary>
+<A ID="message expression"></A>
+<A ID="marker-1057153"></A>
+<A ID="message expression"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057155"></A>
+A description of a <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> to a <A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A>. When a <I>
+message expression</I>
+ is evaluated, the receiver carries out the operation requested by the message and <A href="10-glossary.xml#id(return)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">returns</A> an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> to the sender; this object is the <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> of the message expression. The value is determined by the <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> that the message invokes. That method is found in the <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> of the receiver. </Body1>
+<Heading3>
+<A ID="pgfId-1057157"></A>
+<Glossary>
+message protocol</Glossary>
+<A ID="message protocol"></A>
+<A ID="marker-1057156"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057158"></A>
+The list of <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">messages</A> to which an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> can respond. The behavior of a class may organized into several <A href="10-glossary.xml#id(protocol)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">protocols</A>, some public, some private.</Body1>
+<Heading3>
+<A ID="pgfId-1076344"></A>
+<Glossary>
+message receiver</Glossary>
+<A ID="message receiver"></A>
+<A ID="marker-1076343"></A>
+<A ID="message receiver"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1076345"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156074"></A>
+<A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057160"></A>
+<Glossary>
+message selector</Glossary>
+<A ID="message selector"></A>
+<A ID="marker-1057159"></A>
+<A ID="message selector"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057161"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156075"></A>
+<A href="10-glossary.xml#id(selector)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">selector</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057162"></A>
+<Glossary>
+metaclass</Glossary>
+<A ID="metaclass"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057163"></A>
+A <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> whose <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instances</A> are classes. There is exactly one metaclass for each class in the image. The metaclass instance may be obtained by sending the message <Code>
+class</Code>
+ to the class.</Body1>
+<Heading3>
+<A ID="pgfId-1057165"></A>
+<Glossary>
+method</Glossary>
+<A ID="method"></A>
+<A ID="marker-1057164"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057166"></A>
+A description of how to perform one of an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>&#39;s operations. This description contains a sequence of one or more <A href="10-glossary.xml#id(expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">expressions</A>, which are evaluated when the method is executed. <I>
+Methods</I>
+ are analogous to procedures or functions in other programming languages.</Body1>
+<Body1>
+<A ID="pgfId-1057167"></A>
+A method is executed when a <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> matching its message pattern is sent to an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of the <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> in which the method is found. A method determines the <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> of a <A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A>, either by explicitly specifying the object to be <A href="10-glossary.xml#id(return)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">returned</A> or by allowing the receiver itself to be returned.</Body1>
+<Body1>
+<A ID="pgfId-1097994"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156076"></A>
+<A href="10-glossary.xml#id(instance method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance method</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156077"></A>
+<A href="10-glossary.xml#id(class method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class method</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057169"></A>
+<Glossary>
+method lookup</Glossary>
+<A ID="method lookup"></A>
+<A ID="marker-1057168"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057170"></A>
+The mechanism used to determine which <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> to execute when a <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> is sent to an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>.</Body1>
+<Body1>
+<A ID="pgfId-1098035"></A>
+The receiver object can be referenced as a variable, a <A href="10-glossary.xml#id(pseudo variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">pseudo variable</A>, or the value of some expression. The class definition of the receiver&#39;s class is searched for a method matching the message selector. If none is found, the <A href="10-glossary.xml#id(superclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">superclass</A> is searched. If still none is found, that class&#39;s superclass is searched, and so on, until either a match is found, or there are no more superclasses to search. In the former case, that method is invoked, and in the latter case a <Code>
+&#34;Message not understood&#34;</Code>
+ exception is raised. If the receiver was referenced by the special pseudo variable <Code>
+super</Code>
+, then the mechanism varies slightly: instead of beginning the search for a matching method in the receiver&#39;s class, the search begins in the superclass of the class of the method in which <Code>
+super</Code>
+ was referenced.</Body1>
+<Body1>
+<A ID="pgfId-1098036"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156078"></A>
+<A href="10-glossary.xml#id(pseudo variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">pseudo variable</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156079"></A>
+<A href="10-glossary.xml#id(super)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">super</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1098038"></A>
+<Glossary>
+modal dialog box</Glossary>
+<A ID="modal dialog box"></A>
+<A ID="marker-1098037"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057174"></A>
+A dialog box that must be accepted, canceled, or closed before the user can invoke any other <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> actions. </Body1>
+<Heading3>
+<A ID="pgfId-1057176"></A>
+<Glossary>
+model</Glossary>
+<A ID="model"></A>
+<A ID="marker-1057175"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057177"></A>
+An <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> in a Smalltalk program that is concerned with defining and processing data. The data in a model is usually presented to users via <BookTitle>
+user-interface objects</BookTitle>
+. A typical VisualWorks <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> contains a number of different kinds of models, including <A href="10-glossary.xml#id(domain model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">domain models</A>, <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application models</A>, and <A href="10-glossary.xml#id(value model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value models</A>.</Body1>
+<Body1>
+<A ID="pgfId-1057178"></A>
+Models are composite, in that they can be composed of other models. In particular, the term &#34;model&#34; may refer to a single piece of information presented by an individual <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widget</A> or to the entire portion of the application that stores and processes information, independent of the presentation services provided by the <A href="10-glossary.xml#id(user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user interface</A>. </Body1>
+<Body1>
+<A ID="pgfId-1057179"></A>
+Models are generally created from <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A> in the VisualWorks <A href="10-glossary.xml#id(application framework)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application framework</A>. Consequently, the term &#34;model&#34; also refers to any <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclass</A> of the Model class, or to an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of such a subclass. As such, models inherit an implementation of the <A href="10-glossary.xml#id(dependency mechanism)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">dependency mechanism</A>. </Body1>
+<Body1>
+<A ID="pgfId-1098072"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156080"></A>
+<A href="10-glossary.xml#id(MVC architecture)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">MVC architecture</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057181"></A>
+<Glossary>
+mouse pointer</Glossary>
+<A ID="mouse pointer"></A>
+<A ID="marker-1057180"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057182"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156081"></A>
+<A href="10-glossary.xml#id(cursor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">cursor</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057184"></A>
+<Glossary>
+mutator</Glossary>
+<A ID="mutator"></A>
+<A ID="marker-1057183"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057185"></A>
+An <A href="10-glossary.xml#id(accessing method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">accessing method</A> that sets a new <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> for a <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A>.</Body1>
+<Body1>
+<A ID="pgfId-1098000"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156082"></A>
+<A href="10-glossary.xml#id(accessor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">accessor</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1109586"></A>
+<Glossary>
+MVC architecture</Glossary>
+<A ID="MVC architecture"></A>
+<A ID="marker-1109585"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1109587"></A>
+The classic Smalltalk programming method of decomposing an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> (or a portion of an application) into <A href="10-glossary.xml#id(model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">models</A> (M), <A href="10-glossary.xml#id(view)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">views</A> (V), and <A href="10-glossary.xml#id(controller)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">controllers</A> (C).</Body1>
+<Heading3>
+<A ID="pgfId-1057189"></A>
+<Glossary>
+namespace</Glossary>
+<A ID="namespace"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1089168"></A>
+A <I>
+namespace</I>
+ is a named <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> which represents a name scope for a set of enclosed <A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variables</A>. All shared variables within a name space are required to have unique names, but shared variables in distinct name spaces are permitted to have the same name. A name space has a reference to its <A href="10-glossary.xml#id(environment)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">environment</A>, which is the name space which contains the name space&#39;s <A href="10-glossary.xml#id(primary reference)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">primary reference</A> -- this is used to allow the programming tools to manipulate the name space efficiently. Like a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A>, a name space also has a name.</Body1>
+<Body1>
+<A ID="pgfId-1063012"></A>
+Name spaces are organized hierarchically, which is to say, some of the shared variables in a name space may have other name spaces as their values. However, the shared variables in the containing name space are not automatically visible within the contained name spaces.</Body1>
+<Body1>
+<A ID="pgfId-1138207"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156083"></A>
+<A href="10-glossary.xml#id(import)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">import</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057192"></A>
+<Glossary>
+object</Glossary>
+<A ID="object"></A>
+<A ID="marker-1057191"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057193"></A>
+A software unit that contains storage for a collection of related data plus operations for manipulating that data. Fundamental kinds of objects are <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A> and <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instances</A> of classes.</Body1>
+<Heading3>
+<A ID="pgfId-1109502"></A>
+<Glossary>
+object engine</Glossary>
+<A ID="object engine"></A>
+<A ID="marker-1109501"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1109503"></A>
+The executable program that runs the <A href="10-glossary.xml#id(Cincom Smalltalk system)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Cincom Smalltalk system</A> on your platform; it essentially &#34;sets in motion&#34; the system <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A> in an <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057197"></A>
+<Glossary>
+object memory</Glossary>
+<A ID="object memory"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057198"></A>
+The zone of memory available to the <A href="10-glossary.xml#id(object engine)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object engine</A>. The object memory is coextensive with a running <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057207"></A>
+<Glossary>
+open</Glossary>
+<A ID="open"></A>
+<A ID="marker-1057206"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1110309"></A>
+To start an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> by sending an <Code>
+open</Code>
+ <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> to create an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of an <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A>. The term &#34;open&#34; also means causing a <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> to display.</Body1>
+<Heading3>
+<A ID="pgfId-1156175"></A>
+<Glossary>
+package</Glossary>
+<A ID="package"></A>
+<A ID="marker-1156174"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1110318"></A>
+The fundamental component used by StORE for structuring applications. <I>
+Packages</I>
+ may be organized into larger units by grouping them inside bundles.</Body1>
+<Bullet1>
+<A ID="pgfId-1156227"></A>
+<A href="10-glossary.xml#id(component)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">component</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156231"></A>
+<A href="10-glossary.xml#id(parcel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">parcel</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156235"></A>
+<A href="10-glossary.xml#id(bundle)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">bundle</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1156194"></A>
+<Glossary>
+paint</Glossary>
+<A ID="paint"></A>
+<A ID="marker-1110317"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057213"></A>
+To specify the layout and contents of a <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> (or part of a window) by selecting <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A> from a <A href="10-glossary.xml#id(Palette)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Palette</A> and positioning them appropriately on a <A href="10-glossary.xml#id(canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">canvas</A>. You can also affect the appearance of a canvas by setting <A href="10-glossary.xml#id(properties)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">properties</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057215"></A>
+<Glossary>
+Palette</Glossary>
+<A ID="Palette"></A>
+<A ID="marker-1057214"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057216"></A>
+The VisualWorks tool that supplies the <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A> you can <A href="10-glossary.xml#id(paint)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">paint</A> on a <A href="10-glossary.xml#id(canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">canvas</A>. By default, a Palette is opened automatically when you open a canvas. Should not be confused with a &quot;color palette.&quot;</Body1>
+<Heading3>
+<A ID="pgfId-1111710"></A>
+<Glossary>
+parcel</Glossary>
+<A ID="parcel"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1111714"></A>
+Parcels are packages of Smallatlk <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">objects</A> that work together as functional units and can be stored as external files. Parcels are a fast object loading mechanism especially suited for both code storage and <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> delivery.</Body1>
+<Body1>
+<A ID="pgfId-1138319"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156084"></A>
+<A href="10-glossary.xml#id(component)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">component</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156202"></A>
+<A href="10-glossary.xml#id(package)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">package</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156214"></A>
+<A href="10-glossary.xml#id(bundle)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">bundle</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057217"></A>
+<Glossary>
+pool</Glossary>
+<A ID="pool"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057218"></A>
+A group of <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variables</A> that can be shared between several <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A>. In VisualWorks 5i, pools are superseded by <A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespaces</A>.</Body1>
+<Body1>
+<A ID="pgfId-1138256"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156085"></A>
+<A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespace</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057231"></A>
+<Glossary>
+primary reference</Glossary>
+<A ID="primary reference"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1062989"></A>
+The <I>
+primary reference</I>
+ of a named object (such as a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A>) is the <A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variable</A> whose value is the object, whose key is the same as the object&#39;s name, and which, when the class is created, renamed, or removed, is automatically created, given a new key, or removed at the same time. For example, in previous versions of VisualWorks, the primary reference of the class <Code>
+Array</Code>
+ would be the object returned by the expression:</Body1>
+<CodeSample>
+<A ID="pgfId-1063001"></A>
+Smalltalk associationAt: #Array</CodeSample>
+<Body1>
+<A ID="pgfId-1138260"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156086"></A>
+<A href="10-glossary.xml#id(shared variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">shared variable</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1111760"></A>
+<Glossary>
+primitive</Glossary>
+<A ID="primitive"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1111767"></A>
+A <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> which is executed directly by the <A href="10-glossary.xml#id(object engine)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object engine</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1111749"></A>
+<Glossary>
+process</Glossary>
+<A ID="process"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1111750"></A>
+A single thread of execution running within the Smalltalk system. The <A href="10-glossary.xml#id(object engine)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object engine</A> appears as a single heavyweight process on the host platform, and it manages a multithreading scheme for running Smalltalk processes.</Body1>
+<Heading3>
+<A ID="pgfId-1062986"></A>
+<Glossary>
+properties</Glossary>
+<A ID="properties"></A>
+<A ID="marker-1057230"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057232"></A>
+Attributes of <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A> and <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">windows</A> that define a variety of visual characteristics, such as font, color, borders, and so on. For widgets that display data, properties also indicate the nature of the data to be displayed and how that data is to be referenced by the <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>. Should not be confused with the term &#34;property&#34; associated with ActiveX and COM components, which refers to an attribute of the component.</Body1>
+<Heading3>
+<A ID="pgfId-1057234"></A>
+<Glossary>
+Properties Tool</Glossary>
+<A ID="Properties Tool"></A>
+<A ID="marker-1057233"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057235"></A>
+The VisualWorks tool for setting the various <A href="10-glossary.xml#id(properties)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">properties</A> for individual <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A>. Properties are displayed in a notebook containing pages of related properties. You open a Properties Tool from a <A href="10-glossary.xml#id(Canvas Tool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Canvas Tool</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057237"></A>
+<Glossary>
+protocol</Glossary>
+<A ID="protocol"></A>
+<A ID="marker-1057236"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057238"></A>
+A group of <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">methods</A> in a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> definition. Every method in a class belongs to exactly one <I>
+protocol</I>
+. Methods are grouped into protocols for organizational purposes only. Also called a <A href="10-glossary.xml#id(message category)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message category</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1111725"></A>
+<Glossary>
+pseudo variable</Glossary>
+<A ID="pseudo variable"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1111729"></A>
+A <I>
+pseudo variable</I>
+ may be distinguished from other <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variables</A> in that its value cannot be reassigned. Pseudo variables include references to objects passed into a method as arguments, the special unique objects <Code>
+nil</Code>
+, <Code>
+true</Code>
+, and <Code>
+false</Code>
+, and special reserved words <Code>
+self</Code>
+, <Code>
+thisContext</Code>
+, and <Code>
+super</Code>
+. The object referenced by <Code>
+self</Code>
+ or <Code>
+super</Code>
+ varies depending on where they are used.</Body1>
+<Body1>
+<A ID="pgfId-1111742"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156087"></A>
+<A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156088"></A>
+<A href="10-glossary.xml#id(Boolean objects)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Boolean objects</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156093"></A>
+<A href="10-glossary.xml#id(self)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">self</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156094"></A>
+<A href="10-glossary.xml#id(super)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">super</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057240"></A>
+<Glossary>
+receiver</Glossary>
+<A ID="receiver"></A>
+<A ID="marker-1057239"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057241"></A>
+The <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> to which a <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> is sent in a <A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A>. The <I>
+receiver</I>
+ is described by an <A href="10-glossary.xml#id(expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">expression</A>. It is up to the receiver to decide how to respond to the message. </Body1>
+<Heading3>
+<A ID="pgfId-1057243"></A>
+<Glossary>
+resource</Glossary>
+<A ID="resource"></A>
+<A ID="marker-1057242"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057244"></A>
+An <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> or description needed by the <A href="10-glossary.xml#id(builder)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">builder</A> to assemble a particular <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> for a running <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>. Resources include <A href="10-glossary.xml#id(interface specification)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">interface specifications</A> (<A href="10-glossary.xml#id(canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">canvases</A>), menu bars, <A href="10-glossary.xml#id(graphical image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical images</A>, and database queries. An application&#39;s resources are normally stored in separate <A href="10-glossary.xml#id(resource method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">resource methods</A> in an <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057246"></A>
+<Glossary>
+Resource Finder</Glossary>
+<A ID="Resource Finder"></A>
+<A ID="marker-1057245"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057247"></A>
+The VisualWorks tool for locating <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A> that contain <A href="10-glossary.xml#id(resource)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">resources</A>. You can use a <I>
+Resource Finder</I>
+ to start <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">applications</A> or to open individual resources for editing. To open a Resource Finder, choose <UI-Label>
+Browse-&gt;Resources</UI-Label>
+ in the <A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057252"></A>
+<Glossary>
+resource method</Glossary>
+<A ID="resource method"></A>
+<A ID="marker-1057251"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057253"></A>
+A <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> (usually a <A href="10-glossary.xml#id(class method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class method</A>) in an <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A> that <A href="10-glossary.xml#id(return)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">returns</A> a <A href="10-glossary.xml#id(resource)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">resource</A>. Resource methods are normally invoked by the <A href="10-glossary.xml#id(builder)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">builder</A> when an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> <A href="10-glossary.xml#id(open)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">opens</A> a <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057255"></A>
+<Glossary>
+return</Glossary>
+<A ID="return"></A>
+<A ID="marker-1057254"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057256"></A>
+To communicate information back to the sender of a <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A>. Whenever a <A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A> is evaluated, the <A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A> of the message always responds by returning an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>, which becomes the <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> of the message expression. Returning a value indicates that the receiver&#39;s response to the message is complete.</Body1>
+<Body1>
+<A ID="pgfId-1109131"></A>
+The object that is returned by a receiver is determined by the <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> that is invoked by a message. The method may specify the returned object explicitly through an expression containing the return operator (<Code>
+^</Code>
+); otherwise, the default value returned is usually the receiver itself.</Body1>
+<Heading3>
+<A ID="pgfId-1057259"></A>
+<Glossary>
+selector</Glossary>
+<A ID="selector"></A>
+<A ID="marker-1057258"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057260"></A>
+The name of a <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A>; the portion of a <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> that determines which of the <A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A>&#39;s methods will be invoked. </Body1>
+<Heading3>
+<A ID="pgfId-1057261"></A>
+<Glossary>
+self</Glossary>
+<A ID="self"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057262"></A>
+A <A href="10-glossary.xml#id(pseudo variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">pseudo variable</A> available within the execution context of any <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> defined in a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A>. This pseudo variable always refers to the <A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A> of the <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> that invoked the method in which <Code>
+self</Code>
+ is referenced. If <Code>
+self</Code>
+ is referenced outside the context of a method body, like in the following workspace code:</Body1>
+<CodeSample>
+<A ID="pgfId-1057263"></A>
+self halt.</CodeSample>
+<Body1>
+<A ID="pgfId-1057264"></A>
+then <Code>
+self</Code>
+, like any other uninitialized variable, refers to <Code>
+nil</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1098002"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156095"></A>
+<A href="10-glossary.xml#id(pseudo variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">pseudo variable</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156096"></A>
+<A href="10-glossary.xml#id(super)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">super</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156097"></A>
+<A href="10-glossary.xml#id(method lookup)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method lookup</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057266"></A>
+<Glossary>
+Settings Tool</Glossary>
+<A ID="Settings Tool"></A>
+<A ID="marker-1057265"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057267"></A>
+The VisualWorks tool for customizing various global parameters of an <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A>, such as the default size, look, and behavior for VisualWorks tools. To open the Settings Tool, choose <UI-Label>
+File-&gt;Settings</UI-Label>
+ in the <A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1160529"></A>
+<Glossary>
+shared variable</Glossary>
+<A ID="shared variable"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1160533"></A>
+A <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A> whose value is logically independent of any single <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A>. Unlike <A href="10-glossary.xml#id(instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance variables</A>, in which each instance holds separate state for the variable, or <A href="10-glossary.xml#id(class instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class instance variables</A>, in which each class holds separate state for the variable, shared variables can be shared among multiple classes.</Body1>
+<Body1>
+<A ID="pgfId-1160545"></A>
+In previous releases of VisualWorks, shared variables included <A href="10-glossary.xml#id(class variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class variables</A>, <A href="10-glossary.xml#id(pool)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">pool</A> variables, and <A href="10-glossary.xml#id(global variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">global variables</A>. Until version 5i.3, they were referred to as <I>
+static</I>
+ variables.</Body1>
+<Heading3>
+<A ID="pgfId-1057269"></A>
+<Glossary>
+Smalltalk</Glossary>
+<A ID="Smalltalk"></A>
+<A ID="marker-1057268"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057270"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156098"></A>
+<A href="10-glossary.xml#id(Cincom Smalltalk language)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Cincom Smalltalk language</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057272"></A>
+<Glossary>
+snapshot</Glossary>
+<A ID="snapshot"></A>
+<A ID="marker-1057271"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057273"></A>
+A saved <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A> file. &#34;Taking a snapshot&#34; of an image refers to saving that image periodically.</Body1>
+<Body1>
+<A ID="pgfId-1097911"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156099"></A>
+<A href="10-glossary.xml#id(object memory)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object memory</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057275"></A>
+<Glossary>
+sources file</Glossary>
+<A ID="sources file"></A>
+<A ID="marker-1057274"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057276"></A>
+A file that contains the source text of the compiled Smalltalk classes and <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">methods</A> in an <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A>. Every image consults a <I>
+sources file</I>
+ to display <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> and <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> definitions.</Body1>
+<Heading3>
+<A ID="pgfId-1057277"></A>
+<Glossary>
+specification</Glossary>
+<A ID="specification"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057278"></A>
+A description of a <A href="10-glossary.xml#id(user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user interface</A>. <I>
+Specifications</I>
+ are usually stored as <A href="10-glossary.xml#id(class method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class methods</A> in UI <A href="10-glossary.xml#id(model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">model</A> classes.</Body1>
+<Heading3>
+<A ID="pgfId-1057280"></A>
+<Glossary>
+standard image</Glossary>
+<A ID="standard image"></A>
+<A ID="marker-1057279"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057281"></A>
+The <A href="10-glossary.xml#id(image(1))" xml:link="simple" show="replace" actuate="user" CLASS="XRef">image(1)</A> that is delivered with the VisualWorks product (also sometimes referred to as a &quot;vanilla image.&quot;) The first time you start VisualWorks, you use the <I>
+standard image;</I>
+ thereafter, you normally do your work in your own <A href="10-glossary.xml#id(working image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">working image</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1062965"></A>
+<Glossary>
+subclass</Glossary>
+<A ID="subclass"></A>
+<A ID="marker-1057282"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1110046"></A>
+A <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> that inherits <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variables</A> and <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">methods</A> from some other class (its <A href="10-glossary.xml#id(superclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">superclass</A>). A <I>
+subclass</I>
+ is lower in the <A href="10-glossary.xml#id(class hierarchy)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class hierarchy</A> than its superclass. A subclass is generally a specialization of its superclass--its <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instances</A> have the same kind of data and behavior as instances of the superclass, plus some of their own. A subclass may also override any of its inherited behavior by redefining inherited methods.</Body1>
+<Heading3>
+<A ID="pgfId-1057286"></A>
+<Glossary>
+subject</Glossary>
+<A ID="subject"></A>
+<A ID="marker-1057285"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057287"></A>
+An <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> that holds onto information to be accessed by an <A href="10-glossary.xml#id(aspect adaptor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">aspect adaptor</A>. Every aspect adaptor is created either with a subject or a <A href="10-glossary.xml#id(subject channel)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subject channel</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057289"></A>
+<Glossary>
+subject channel</Glossary>
+<A ID="subject channel"></A>
+<A ID="marker-1057288"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057290"></A>
+A <A href="10-glossary.xml#id(value model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value model</A> that holds onto a <A href="10-glossary.xml#id(subject)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subject</A> for an <A href="10-glossary.xml#id(aspect adaptor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">aspect adaptor</A>. <I>
+Subject channels</I>
+ provide a convenient mechanism for changing a subject that is shared by multiple aspect adaptors.</Body1>
+<Heading3>
+<A ID="pgfId-1057291"></A>
+<Glossary>
+super</Glossary>
+<A ID="super"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057292"></A>
+A <A href="10-glossary.xml#id(pseudo variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">pseudo variable</A> that refers to the <A href="10-glossary.xml#id(receiver)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">receiver</A> of the message that invoked the <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> in which <Code>
+super</Code>
+ is referenced. <Code>
+Super</Code>
+ behaves exactly like <Code>
+self</Code>
+ in regards to the object it references. However, <Code>
+super</Code>
+ behaves differently when looking up a method to match a message.</Body1>
+<Body1>
+<A ID="pgfId-1098004"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156100"></A>
+<A href="10-glossary.xml#id(pseudo variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">pseudo variable</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156101"></A>
+<A href="10-glossary.xml#id(self)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">self</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156102"></A>
+<A href="10-glossary.xml#id(method lookup)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method lookup</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057294"></A>
+<Glossary>
+superclass</Glossary>
+<A ID="superclass"></A>
+<A ID="marker-1057293"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057295"></A>
+The <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> from which <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variables</A> and <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">methods</A> are inherited. A <I>
+superclass</I>
+ is higher in the <A href="10-glossary.xml#id(class hierarchy)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class hierarchy</A> than its <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclasses</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057297"></A>
+<Glossary>
+symbol</Glossary>
+<A ID="symbol"></A>
+<A ID="marker-1057296"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057298"></A>
+A string that is guaranteed to be unique in the system; <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> and <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> names are symbols. A <I>
+symbol</I>
+ is expressed literally by prefixing it with the character <Code>
+#</Code>
+ (for example, <Code>
+#balance</Code>
+).</Body1>
+<Heading3>
+<A ID="pgfId-1057300"></A>
+<Glossary>
+System Browser</Glossary>
+<A ID="System Browser"></A>
+<A ID="marker-1057299"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057301"></A>
+A VisualWorks tool for creating and viewing <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> and <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> definitions. To open a System Browser, choose <UI-Label>
+Browse-&gt;System</UI-Label>
+ in the <A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A>. There are many types of <A href="10-glossary.xml#id(browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">browsers</A> in VisualWorks.</Body1>
+<Heading3>
+<A ID="pgfId-1138342"></A>
+<Glossary>
+system classes</Glossary>
+<A ID="system classes"></A>
+<A ID="marker-1138341"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1138348"></A>
+The set of <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">classes</A> that come with the <A href="10-glossary.xml#id(Cincom Smalltalk system)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Cincom Smalltalk system</A>. The <I>
+system classes</I>
+ provide the standard functionality of a programming language (arithmetic, data structures, control structures, and input/output facilities) and development environment (editor, compiler, debugger, window system, and so on).</Body1>
+<Body1>
+<A ID="pgfId-1097916"></A>
+With the advent of <A href="10-glossary.xml#id(namespace)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">namespaces</A>, the  system classes are found in the namespace named <Code>
+Smalltalk</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1057309"></A>
+<Glossary>
+System Transcript</Glossary>
+<A ID="System Transcript"></A>
+<A ID="marker-1057308"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057310"></A>
+The display area for informational messages generated by VisualWorks or your code. By default, the System Transcript is in the area below the tool bar of the <A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A>. To close or reopen a System Transcript, choose <UI-Label>
+Tools-&gt;System Transcript</UI-Label>
+ from the <A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057315"></A>
+<Glossary>
+tab chain</Glossary>
+<A ID="tab chain"></A>
+<A ID="marker-1057314"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057316"></A>
+A sequence of <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A> (in a single window) whose properties are set so that the <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A> user can move <A href="10-glossary.xml#id(keyboard focus)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">keyboard focus</A> among them using the &lt;Tab&gt; key.</Body1>
+<Heading3>
+<A ID="pgfId-1057318"></A>
+<Glossary>
+temporary variable</Glossary>
+<A ID="temporary variable"></A>
+<A ID="marker-1057317"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057319"></A>
+A <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A> that provides temporary storage for a <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> referenced in one or more <A href="10-glossary.xml#id(expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">expressions</A>, usually in a <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A> definition.</Body1>
+<Body1>
+<A ID="pgfId-1138358"></A>
+A temporary variable is declared between vertical bars--for example <Code>
+| aCheck |</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1057321"></A>
+<Glossary>
+text cursor</Glossary>
+<A ID="text cursor"></A>
+<A ID="marker-1057320"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057322"></A>
+A small vertical bar or triangular graphic that indicates where typed input will be inserted. A triangular text cursor appears at the base of a line of text.</Body1>
+<Heading3>
+<A ID="pgfId-1057323"></A>
+<Glossary>
+UI object</Glossary>
+<A ID="UI object"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057324"></A>
+<B>
+See:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156103"></A>
+<A href="10-glossary.xml#id(user-interface object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user-interface object</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057326"></A>
+<Glossary>
+unary message</Glossary>
+<A ID="unary message"></A>
+<A ID="marker-1057325"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057327"></A>
+A <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> without <A href="10-glossary.xml#id(argument)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">arguments</A>. In a <A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A> such as <Code>
+0 asValue</Code>
+, the unary message is <Code>
+asValue</Code>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1057329"></A>
+<Glossary>
+user interface</Glossary>
+<A ID="user interface"></A>
+<A ID="marker-1057328"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057330"></A>
+The means by which a user can control the behavior of an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>; the software that handles input and output.</Body1>
+<Body1>
+<A ID="pgfId-1098006"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156104"></A>
+<A href="10-glossary.xml#id(graphical user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical user interface</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057332"></A>
+<Glossary>
+user-interface object</Glossary>
+<A ID="user-interface object"></A>
+<A ID="marker-1057331"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057333"></A>
+An <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> in a Smalltalk program that is concerned with presenting information and enabling users to interact with it. <I>
+User-interface objects</I>
+ include <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">windows</A> and <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A>. Each user-interface object is a complex object containing a <A href="10-glossary.xml#id(view)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">view</A> coupled with a <A href="10-glossary.xml#id(controller)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">controller</A> and associated supporting objects.</Body1>
+<Heading3>
+<A ID="pgfId-1057335"></A>
+<Glossary>
+value</Glossary>
+<A ID="value"></A>
+<A ID="marker-1057334"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057336"></A>
+The <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> that is described by an <A href="10-glossary.xml#id(expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">expression</A>. The <I>
+value</I>
+ of a <A href="10-glossary.xml#id(variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">variable</A> name is the object that is referenced by the variable. The value of a <A href="10-glossary.xml#id(message expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message expression</A> is the object <A href="10-glossary.xml#id(return)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">returned</A> by the invoked <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">method</A>. </Body1>
+<Body1>
+<A ID="pgfId-1057337"></A>
+In discussions concerning <A href="10-glossary.xml#id(value model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value models</A>, &#34;value&#34; usually refers to the object that is returned by sending the <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">message</A> <Code>
+value</Code>
+ to a value model.</Body1>
+<Heading3>
+<A ID="pgfId-1057339"></A>
+<Glossary>
+value holder</Glossary>
+<A ID="value holder"></A>
+<A ID="marker-1057338"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057340"></A>
+A kind of <A href="10-glossary.xml#id(value model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value model</A> that holds onto its <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A> through an <A href="10-glossary.xml#id(instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance variable</A>. A <I>
+value holder</I>
+ is an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of the <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> <Code>
+ValueHolder</Code>
+, which is a <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclass</A> of <Code>
+ValueModel</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1098008"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156105"></A>
+<A href="10-glossary.xml#id(aspect adaptor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">aspect adaptor</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057342"></A>
+<Glossary>
+value model</Glossary>
+<A ID="value model"></A>
+<A ID="marker-1057341"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057343"></A>
+An <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> that contains or refers to some other object (its <A href="10-glossary.xml#id(value)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value</A>). A <I>
+value model</I>
+ responds to a standard <A href="10-glossary.xml#id(protocol)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">protocol</A> (the <A href="10-glossary.xml#id(message)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">messages</A> <Code>
+value</Code>
+ and <Code>
+value:</Code>
+) for accessing the value, and also otifies other interested objects when the value changes.</Body1>
+<Body1>
+<A ID="pgfId-1057346"></A>
+Typically, <A href="10-glossary.xml#id(data widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">data widgets</A> depend on value models to store or retrieve the data they collect or display.</Body1>
+<Body1>
+<A ID="pgfId-1057347"></A>
+Value models are created from the VisualWorks <A href="10-glossary.xml#id(application framework)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application framework</A>. The term refers to a <A href="10-glossary.xml#id(subclass)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">subclass</A> of the <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> <Code>
+ValueModel</Code>
+, or to an <A href="10-glossary.xml#id(instance)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance</A> of such a subclass.</Body1>
+<Body1>
+<A ID="pgfId-1097930"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156106"></A>
+<A href="10-glossary.xml#id(aspect adaptor)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">aspect adaptor</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156107"></A>
+<A href="10-glossary.xml#id(data widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">data widget</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156108"></A>
+<A href="10-glossary.xml#id(value holder)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">value holder</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057349"></A>
+<Glossary>
+variable</Glossary>
+<A ID="variable"></A>
+<A ID="marker-1057348"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057350"></A>
+A storage place within an <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> for a reference to another object. A variable&#39;s name is a simple identifier composed of letters and digits, beginning with a letter. A variable name is used as an <A href="10-glossary.xml#id(expression)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">expression</A> that describes the referenced object. </Body1>
+<Body1>
+<A ID="pgfId-1057351"></A>
+The <A href="10-glossary.xml#id(method)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">methods</A> in a <A href="10-glossary.xml#id(class)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class</A> have access to different kinds of variables (<B>
+see:</B>
+ <A href="10-glossary.xml#id(class variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">class variable</A>, <A href="10-glossary.xml#id(global variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">global variable</A>, <A href="10-glossary.xml#id(instance variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">instance variable</A>, and <A href="10-glossary.xml#id(temporary variable)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">temporary variable</A>). These kinds of variables differ in terms of how widely they are available (their scope), how long they persist, and their capitalization conventions.</Body1>
+<Heading3>
+<A ID="pgfId-1057353"></A>
+<Glossary>
+view</Glossary>
+<A ID="view"></A>
+<A ID="marker-1057352"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057354"></A>
+A <A href="10-glossary.xml#id(visual component)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">visual component</A> that displays text or graphics representing information in a <A href="10-glossary.xml#id(model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">model</A>. A <I>
+view</I>
+ is tightly coupled with a <A href="10-glossary.xml#id(controller)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">controller</A>; together, view-controller pairs form <A href="10-glossary.xml#id(user-interface object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user-interface objects</A> such as <A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widgets</A>.</Body1>
+<Body1>
+<A ID="pgfId-1057355"></A>
+Views are composite, in that they can be composed of other views. Consequently, the term may refer to the display of a single widget or to the portion of an entire <A href="10-glossary.xml#id(graphical user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical user interface</A> that is devoted to displaying.</Body1>
+<Body1>
+<A ID="pgfId-1057356"></A>
+A view also refers to any of the display regions of a Smalltalk <A href="10-glossary.xml#id(browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">browser</A>. For example, in a <A href="10-glossary.xml#id(System Browser)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">System Browser</A>, the <A href="10-glossary.xml#id(category)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">category</A> view displays a list of categories in the system, whereas the code view displays textual lines of code.</Body1>
+<Body1>
+<A ID="pgfId-1097941"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156109"></A>
+<A href="10-glossary.xml#id(MVC architecture)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">MVC architecture</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057357"></A>
+<Glossary>
+visual component</Glossary>
+<A ID="visual component"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057358"></A>
+Any <A href="10-glossary.xml#id(object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">object</A> that can display itself in a <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A>.</Body1>
+<Body1>
+<A ID="pgfId-1098010"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156110"></A>
+<A href="10-glossary.xml#id(widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">widget</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057359"></A>
+<Glossary>
+visual part</Glossary>
+<A ID="visual part"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057360"></A>
+A kind of <A href="10-glossary.xml#id(visual component)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">visual component</A> that identifies two other visual components: one outside and wholly containing the visual part, the other inside as a component of the visual part. The containing visual component is known as the <I>
+container</I>
+ and the other, the <I>
+component</I>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1057361"></A>
+<Glossary>
+visual structure</Glossary>
+<A ID="visual structure"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057362"></A>
+A linked container/component tree of <A href="10-glossary.xml#id(visual part)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">visual parts</A>. The <I>
+visual structure</I>
+ of a <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> is a tree whose root node is the window itself and its subnodes are visual parts. Messages for control or window repair (damage) pass down the visual structure to the components that need control or updating. Similar messages as requests pass up the visual structure from a component to its container. Also known as a <I>
+visual component tree</I>
+.</Body1>
+<Heading3>
+<A ID="pgfId-1057364"></A>
+<Glossary>
+VisualWorks main window</Glossary>
+<A ID="VisualWorks main window"></A>
+<A ID="marker-1057363"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057365"></A>
+The <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> that serves as the starting point for your work. The <I>
+VisualWorks main window</I>
+ is identified by the title &#34;<UI-Label>
+VisualWorks</UI-Label>
+&#34; and the name under which the image was last saved. It contains a menu bar and a tool bar for invoking VisualWorks&#39; main tools. Formerly known as the <A href="10-glossary.xml#id(Launcher)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">Launcher</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1111634"></A>
+<Glossary>
+widget</Glossary>
+<A ID="widget"></A>
+<A ID="marker-1111632"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1111640"></A>
+A <A href="10-glossary.xml#id(visual part)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">visual part</A> that appears in an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>&#39;s <A href="10-glossary.xml#id(graphical user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical user interface</A>--for example, an action button, an input field, or a scrollable list. Widgets are controls that enable the application user to view information, enter information, or invoke operations.</Body1>
+<Body1>
+<A ID="pgfId-1057369"></A>
+Each widget is a <A href="10-glossary.xml#id(user-interface object)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">user-interface object</A> that provides a characteristic display and visual response to keyboard and mouse input. Each widget consists of a <A href="10-glossary.xml#id(view)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">view</A> coupled with a <A href="10-glossary.xml#id(controller)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">controller</A> and associated supporting objects.</Body1>
+<Body1>
+<A ID="pgfId-1057370"></A>
+Widgets have an attribute of class <Code>
+WidgetState</Code>
+ which maintains their boolean conditions. A visual part which is not a widget may be made to respond to most of the widget protocol by placing it in a <Code>
+WidgetWrapper</Code>
+.</Body1>
+<Body1>
+<A ID="pgfId-1097953"></A>
+<B>
+See also:</B>
+</Body1>
+<Bullet1>
+<A ID="pgfId-1156111"></A>
+<A href="10-glossary.xml#id(action widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">action widget</A></Bullet1>
+<Bullet1>
+<A ID="pgfId-1156112"></A>
+<A href="10-glossary.xml#id(data widget)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">data widget</A></Bullet1>
+<Heading3>
+<A ID="pgfId-1057372"></A>
+<Glossary>
+window</Glossary>
+<A ID="window"></A>
+<A ID="marker-1057371"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057373"></A>
+A display area on the screen that is part of an <A href="10-glossary.xml#id(application)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application</A>&#39;s <A href="10-glossary.xml#id(graphical user interface)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">graphical user interface</A>. A <I>
+window</I>
+ presents the user with information and controls for invoking operations. You create a window for an application by painting a <A href="10-glossary.xml#id(canvas)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">canvas</A> and <A href="10-glossary.xml#id(install)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">installing</A> it in an <A href="10-glossary.xml#id(application model)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">application model</A>.</Body1>
+<Heading3>
+<A ID="pgfId-1057375"></A>
+<Glossary>
+working image</Glossary>
+<A ID="working image"></A>
+<A ID="marker-1057374"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057376"></A>
+An changed copy of the <A href="10-glossary.xml#id(standard image)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">standard image</A> in which a user does his or her own work.</Body1>
+<Heading3>
+<A ID="pgfId-1057377"></A>
+<Glossary>
+wrapper</Glossary>
+<A ID="wrapper"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057378"></A>
+A container with a single component that modifies or provides certain services to the component such as translation of coordinates, a bounding box, a border, or scroll bar facilities.</Body1>
+<Heading3>
+<A ID="pgfId-1057380"></A>
+<Glossary>
+Workspace</Glossary>
+<A ID="Workspace"></A>
+<A ID="marker-1057379"></A>
+</Heading3>
+<Body1>
+<A ID="pgfId-1057381"></A>
+A <A href="10-glossary.xml#id(window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">window</A> in which you can enter text and/or evaluate fragments of Smalltalk code. To open a Workspace, choose <UI-Label>
+Tools-&gt;Workspace</UI-Label>
+ in the <A href="10-glossary.xml#id(VisualWorks main window)" xml:link="simple" show="replace" actuate="user" CLASS="XRef">VisualWorks main window</A>.<A ID="marker-1057385"></A>
+</Body1>
+<Body1>
+<A ID="pgfId-1029452"></A>
+</Body1>
+</XML>

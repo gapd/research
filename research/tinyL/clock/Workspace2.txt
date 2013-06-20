@@ -1,0 +1,10 @@
+| aClass aSelector aString aNode aText |
+aClass := FooAnalogClockView.
+aSelector := #displayTickHandOn:.
+aString := (aClass sourceCodeAt: aSelector) asString.
+aNode := #{Refactory.Browser.RBParser} value parseMethod: aString.
+aText := aNode formattedCode asText makeSelectorBoldIn: aClass.
+TextEditorView
+	edit: (ValueHolder with: aText)
+	label: 'Source Code'
+	extent: 600 @ 450

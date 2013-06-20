@@ -1,0 +1,21 @@
+########################################################################
+# File: makefile.linux86
+# 
+# DLL and C Connect Vector Arithmetic Example Makefile for Linux
+#
+#	Copyright (C) 1999-2006 Cincom Systems, Inc.
+#	Santa Clara, California.  All Rights Reserved.
+########################################################################
+
+# use -g rather than -g -O for full debugging
+COPTION=-mieee-fp -fsigned-char -g -O2 -Wall -Wno-unused -Wno-parentheses -Wno-format -Wno-uninitialized -Wno-switch -D_REENTRANT -D_LIBC_REENTRANT
+#COPTION=-mieee-fp -fsigned-char -g -Wall -Wno-unused -Wno-parentheses -Wno-format -Wno-uninitialized -Wno-switch -D_REENTRANT -D_LIBC_REENTRANT
+
+# Uncomment SAFETY to build the fast version of the dll.
+#SAFETY= -DOEUNSAFE -DUNSAFE
+
+CFLAGS= $(COPTION) $(SAFETY)
+
+vector.so: vector.c
+	$(CC) -c $(CFLAGS) -fpic vector.c
+	ld -o vector.so -shared vector.o

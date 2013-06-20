@@ -1,0 +1,76 @@
+package primeministers;
+
+import  java.io.File;
+import java.util.ArrayList;
+/**
+ * リーダ：総理大臣の情報を記したCSVファイルを読み込んでテーブルに仕立て上げる。
+ */
+public class Reader extends IO
+{
+	/**
+	 * 総理大臣の情報を記したCSVファイルを記憶するフィールド。
+	 */
+	private File filename;
+	
+	/**
+	 * リーダのコンストラクタ。
+	 */
+	public Reader()
+	{
+		super();
+		this.filename = Reader.filenameOfCSV();
+		return;
+	}
+	
+	/**
+	 * ダウンロードしたCSVファイルを応答する。
+	 */
+	public File filename()
+	{
+		return this.filename;
+	}
+	
+	/**
+	 *  ダウンロードしたCSVファイルのローカルなファイルを応答するクラスメソッド。
+	 */
+	static File filenameOfCSV()
+	{
+		String aString = Reader.directoryOfPages().getPath();
+		File aFile = new File(aString + File.separator + "PrimeMinisters.csv");
+		return aFile;
+	}
+	
+	/**
+	 * ダウンロードしたCSVファイルを読み込んでテーブルを応答する。
+	 */
+	public Table table()
+	{
+		if(table != null)
+		{
+			return table;
+		}
+		table = new Table();
+		table.attributes(new Attributes("input"));
+		ArrayList<String> anArrayList = Reader.readTextFromFile(this.filename());
+		boolean firstLine = true;
+/*
+		for(String aString : anArrayList)
+		{
+			ArrayList<String> tokens = Reader.splitString(aString,",");
+			if(firstLine)
+			{
+				firstLine = false;
+				table.attributes().names(tokens);
+			}
+			else
+			{
+				Tuple aTuple = new Tuple(table.attributes(),tokens); 
+				table.add(aTuple);
+			}
+				
+		}
+		*/
+		System.out.println(anArrayList);
+		return table;
+	}
+}

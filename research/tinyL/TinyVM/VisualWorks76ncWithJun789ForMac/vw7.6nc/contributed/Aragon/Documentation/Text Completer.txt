@@ -1,0 +1,32 @@
+
+     Text Completer enhances built-in text editors by a facility that allows 
+     you to start typing in the first few characters of a name known to 
+     VisualWorks - i.e. a class name, a method selector, or something alike - 
+     and then let an appropriate completer make a guess about what you started 
+     to type in and fill in the rest. 
+
+        You invoke this facility by pressing Ctrl+Space. This pastes and 
+     selects the completion considered most suitable. Succeeding invocations 
+     through Ctrl+Space cyclically browse through all the completions found 
+     in a "most-suitable-one-first" order. Alternatively, you may want to cycle 
+     through the completions in reverse order, pressing Alt-Space. Finally, 
+     Shift-Space will not cycle through the same set of completions, but rather 
+     add the current completion to the typed in fragment and start another 
+     completion run. 
+
+        E.g. if you start typing in Sm, the first invocation would complete 
+     this fragment to Smalltalk, the second to SmallInteger, the third to 
+     SmalltalkCompiler, and so on. How many completions are found in a new 
+     invocation is displayed in the System Transcript. Completions are 
+     considered most suitable according to the following priorities: 
+
+        1.  If suitable completions can be found in the currently edited 
+            text, those are considered most suitable. They are called "local 
+            completions". 
+
+        2.  Afterwards, all the names known to your system will be searched. 
+            The matching names are called "global completions". 
+
+        3.  The entries in the two categories of completions mentioned, are 
+            both sorted by length separately: Shorter completions are considered 
+            more suitable than longer ones. 

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/repositories/PL/!svn/ver/113/lexer
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/repositories/PL/!svn/ver/110/lexer/main.c
+END
+rexp.lex
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repositories/PL/!svn/ver/110/lexer/rexp.lex
+END
+src.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/repositories/PL/!svn/ver/57/lexer/src.txt
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/repositories/PL/!svn/ver/113/lexer/defs.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repositories/PL/!svn/ver/57/lexer/Makefile
+END

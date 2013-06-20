@@ -1,0 +1,123 @@
+
+	
+	How to use ODBC Connect
+
+
+
+This file contains brief instructions on how to use ODBC Connect. 
+It does not provide a comprehensive documentation. For a real
+description on how to use DB Connect products please refer
+to the database manuals shipped with VisualWorks. These 
+manuals contain detailed documentation of the database tools
+and programming interfaces including a tutorial. Since ODBC 
+Connect is compliant to the VisualWorks DB Connect interfaces 
+(EXDI and ObjectLens) the explanations given there apply to 
+ODBC Connect too. The remainder concentrates on topics
+specific to ODBC Connect. 
+
+
+
+________________________________________
+Three Steps to access an ODBC data source
+
+
+Step 1:  Install ODBC Connect in your image. 
+
+    Refer to 'Readme.txt' for instructions on installation.
+
+
+Step 2:  Register an ODBC data source.
+
+    You can register an ODBC data source with the "ODBC Data 
+    Source Administrator" accessible from the Windows control panel.
+    The  data source name  you enter here will be used by 
+    ODBC Connect to connect to the database.
+
+
+Step 3:  Access the data source from VisualWorks
+
+    Now you can use the VisualWorks database tools (Ad Hoc SQL 
+    and Data Modeler) for accessing the databases. On login select 
+    'ODBC' from the 'Database Connect' menu button and enter the 
+    data source name into the  environment  field. 
+
+        If your data source requires a user login, enter a correct 
+    username and password in the appropriate input fields, otherwise 
+    you can just leave the input fields empty (e.g. MS Access, 
+    Excel, etc.). 
+
+
+
+________________________________________
+Fetching Tables in Data Modeler
+
+
+With the VisualWorks Data Modeler you can create a new Data Model, by
+connecting to the data source (in the Data Model Properties dialog that
+shows up after you select Model->New from the menu), and generating
+entity classes based on the tables in your data source. To do so, select
+View->Database Tables from the menu bar and fetch the tables. The syntax
+for the fetch pattern is:
+
+        [([+]|<table owner>).]<table name>
+
+SQL wildcards ('%' and '_') can be used for table names. A table owner
+is only necessary if your data source supports/requires this, e.g.
+ORACLE. Entering a '+' in place of a table owner fetches all system
+tables. 
+
+Some examples:
+
+        %  (or .%)      lists all user tables in the data source
+        A% (or .A%)     lists all tables starting with 'A'
+        scott.%         lists all tables owned by 'scott'
+        +.%             lists all system tables in the data source
+
+
+Fetching Tables inf Excel:
+
+    There is a problem with MS Excel (5) data sources that display the 
+separate sheets in an .xls file as system tables only. Thus, in order to
+list the tables in an Excel 5 data source within Data Modeler, put a '+'
+in front of the search pattern.
+
+
+
+________________________________________
+Differences in support for SQL
+
+
+  The databases behind ODBC data sources can cover a wide range, 
+from simple text files up to grown-up database managements systems.
+Evevn though ODBC is fairly standardized, there usually remain a few 
+differences in SQL support. In order to try out how to write down certain 
+SQL queries, it is a good idea to use a tool like MS Query or MS Access
+to build an SQL query and see what the resulting SQL string looks like.
+
+
+
+________________________________________
+Known issues:
+
+   *  Automatic creation and modification of database tables from 
+      ObjectLens is currently not supported (==> You should first
+      create all the tables in your database and then use Data Modeler
+      to map these tables to VisualWorks).
+
+   *  Automatic altering of tables from ObjectLens is currently not 
+      supported.
+
+   *  Some Data Sources (such as Excel) don't have Integer data types
+      but only 'NUMBER'. In this case the default mapping will select
+      class Float.
+
+   *  UPDATE and DELETE aren't supported on certain data sources
+      (e.g. Text Files).
+
+   *  Inference of foreign key references is not supported.
+
+   *  Long data columns (long varchar, long var binary) are not handled 
+      properly. There is a limit defined in class ODBCColumnDescription 
+      for the maximum length of columns of these types. These limits can
+      be adjusted with class methods #maxLengthForLongVarchar: and 
+      #maxLengthForLongVarbinary:.

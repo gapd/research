@@ -1,0 +1,24 @@
+########################################################################
+# File: makefile.macX
+# 
+# DLL and C Connect Vector Arithmetic Example Makefile for HPUX
+#
+#	Copyright (C) 2001-2006 Cincom Systems, Inc., Santa Clara, California,
+#	Georg Heeg, Dortmund Germany.  All Rights Reserved.
+########################################################################
+
+# use -g rather than -O for debugging
+COPTION=  -dynamic -O0 -fno-common
+#COPTION= -g  -dynamic -O0 -fno-common
+
+# Uncomment SAFETY to build the fast version of the dll.
+#SAFETY=-DOEUNSAFE -DUNSAFE
+LINKOPTS= -dynamic -bundle -flat_namespace -undefined suppress
+# The following is only needed if vm calls are done.
+IMPORTOPTS= /usr/lib/bundle1.o  
+
+CFLAGS = $(COPTION) $(SAFETY)
+
+vector.dylib: vector.c
+	$(CC) $(CFLAGS) -c vector.c
+	ld -lm -o vector.dylib  vector.o $(LINKOPTS) $(IMPORTOPTS)

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Example" default="all" basedir=".">
+
+  <property name="program" value="ActionButton" />
+
+  <target name="all" depends="jar" description="build all" />
+
+  <target name="compile" depends="" description="compile all sources">
+    <javac
+      fork="true"
+      srcdir="${basedir}"
+      destdir="${basedir}"
+      includeAntRuntime="true" 
+      encoding="UTF-8"
+      deprecation="on"
+      verbose="false">
+      <compilerarg value="-J-Dfile.encoding=UTF8" />
+      <compilerarg value="-Xlint:unchecked" />
+      <classpath>
+      <pathelement location="." />
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="jar" depends="compile" description="make jar file">
+    <jar
+      jarfile="${program}.jar"
+      manifest="${program}.mf">
+      <fileset dir="${basedir}" includes="**/*.class" />
+    </jar>
+  </target>
+
+  <target name="clean" description="cleaning">
+    <delete file="${program}.jar" />
+    <delete>
+      <fileset dir="${basedir}" includes="**/*.class" />
+    </delete>
+  </target>
+
+  <target name="test" depends="all" description="test">
+    <exec executable="java" spawn="false">
+      <arg line="-Dfile.encoding=UTF-8 -Xmx512m -Xss256k -jar ${program}.jar" />
+    </exec>
+  </target>
+
+</project>

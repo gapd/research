@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/repositories/PL/!svn/ver/122/tiny
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/repositories/PL/!svn/ver/57/tiny/main.c
+END
+rexp.lex
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repositories/PL/!svn/ver/117/tiny/rexp.lex
+END
+src.txt
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repositories/PL/!svn/ver/63/tiny/src.txt
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/repositories/PL/!svn/ver/57/tiny/defs.h
+END
+syns.yac
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repositories/PL/!svn/ver/117/tiny/syns.yac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repositories/PL/!svn/ver/122/tiny/Makefile
+END

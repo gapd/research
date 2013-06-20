@@ -1,0 +1,7 @@
+| aDirectory aFilename |
+aDirectory := Filename defaultDirectory directory directory construct: 'clock'.
+aFilename := aDirectory construct: 'Foo-Clock.st'.
+aFilename exists ifFalse: [^nil].
+aFilename fileIn.
+#{FooClockModel} value example3.
+#{FooAnalogClockView} value browse

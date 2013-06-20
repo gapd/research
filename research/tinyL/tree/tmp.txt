@@ -1,0 +1,49 @@
+
+    node(TYPE 
+        cons(
+            leaf(INT int)
+            leaf(ID abc)))
+
+    node(TYPE 
+        cons(
+            leaf(FLOAT float)
+            node(, 
+                cons(
+                    leaf(ID def)
+                    leaf(ID ghi)))))
+
+    node(= 
+        cons(
+            leaf(ID abc)
+            node(+ 
+                cons(
+                    leaf(INTEGER 3)
+                    node(* 
+                        cons(
+                            leaf(INTEGER 4)
+                            leaf(INTEGER 5)))))))
+
+    node(= 
+        cons(
+            leaf(ID def)
+            leaf(REAL 3.1415926)))
+
+    node(= 
+        cons(
+            leaf(ID ghi)
+            node(* 
+                cons(
+                    node(+ 
+                        cons(
+                            leaf(ID def)
+                            leaf(ID def)))
+                    leaf(ID abc)))))
+
+    node(PRINT 
+        leaf(ID abc))
+
+    node(PRINT 
+        node(, 
+            cons(
+                leaf(ID def)
+                leaf(ID ghi))))

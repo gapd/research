@@ -1,0 +1,91 @@
+package primeministers;
+
+import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.File;
+/**
+ * ライタ：総理大臣の情報のテーブルをHTMLページとして書き出す。
+ */
+public class Writer extends IO
+{
+	/**
+	 * ライタのコンストラクタ。 
+	 */
+	public Writer()
+	{
+		
+	}
+	
+	/**
+	 * 属性リストを応答する。
+	 */
+	public Attributes attributes()
+	{
+		return null;
+	}
+	
+	/**
+	 * ローカルなHTMLのインデックスファイル(index.html)を応答するクラスメソッド。
+	 */
+	static File filenameOfHTML()
+	{
+		return null;
+	}
+	
+	/**
+	 * HTMLページを基にするテーブルを受け取って、インデックスファイル(index.html)に書き出す。
+	 */
+	public Table table(Table aTable)
+	{
+		return null;
+	}
+	
+	/**
+	 * タプル群を応答する。
+	 */
+	public ArrayList<Tuple> tuples()
+	{
+		return null;
+	}
+	
+	/**
+	 * 属性リストを書き出す。
+	 */
+	public void writeAttributesOn(BufferedWriter outputWriter)
+	{
+		return;
+	}
+	
+	/**
+	 * フッタを書き出す。
+	 */
+	public void writeFooterOn(BufferedWriter outputWriter)
+	{
+		return;
+	}
+	
+	/**
+	 * ヘッダを書き出す。
+	 */
+	public void writeHeaderOn(BufferedWriter outputWriter)
+	{
+		return;
+	}
+	
+	/**
+	 * ボディを書き出す。
+	 */
+	public void writeTableBodyOn(BufferedWriter outputWriter)
+	{
+		return;
+	}
+	
+	/**
+	 * タプル群を書き出す。
+	 */
+	public void writeTuplesOn(BufferedWriter outputWriter)
+	{
+		return;
+	}
+		
+}

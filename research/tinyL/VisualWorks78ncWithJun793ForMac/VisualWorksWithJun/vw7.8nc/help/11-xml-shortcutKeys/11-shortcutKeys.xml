@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet title="VisualWorks Shortcut Keys" type="text/css" charset="UTF-8"?>
+<!DOCTYPE KeyHelp [
+  <!--
+    Description :
+    Author :
+-->
+]>
+<KeyHelp>
+  <Heading1>VisualWorks Shortcut Keys</Heading1>
+  <Heading2>Text Editing</Heading2>
+  <Body1>Ctrl+A			Select all text 
+Ctrl+C			Copy 
+Ctrl+Shift+D		Insert date (all views)
+Ctrl+K			Compose characters
+Ctrl+S			Save/Accept
+Ctrl+W			delete word back
+Ctrl+V			Paste 
+Ctrl+Shift+V	Paste from list 
+Ctrl+W			Delete word back
+Ctrl+X			Cut 
+Ctrl+Z			Undo  </Body1>
+  <Heading2>Find/Replace</Heading2>
+  <Body1>Ctrl+F			Find
+Ctrl+G			Find again
+Ctrl+Shift+G		Find previous again
+Ctrl+R			Replace
+Ctrl+Shift+R		Replace again</Body1>
+  <Heading2>Code shortcuts and commands</Heading2>
+  <Body1>Ctrl+Shift+F			ifFalse: 
+Alt+G			:= (Windows and X11)
+Ctrl+;			:= (OSX and X11)
+Ctrl+Shift+T			ifTrue:
+
+Ctrl+D			Do It
+Ctrl+E			Explain
+Ctrl+P			Print It  
+Ctrl+Q			Inspect It
+Ctrl+B			Debug It
+
+Ctrl+S			Save/Accept
+Ctrl+Y			User interrupt
+Ctrl+\			Process interrupt</Body1>
+</KeyHelp>

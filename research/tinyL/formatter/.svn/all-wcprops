@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/repositories/PL/!svn/ver/70/formatter
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repositories/PL/!svn/ver/69/formatter/main.c
+END
+rexp.lex
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repositories/PL/!svn/ver/69/formatter/rexp.lex
+END
+src.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repositories/PL/!svn/ver/70/formatter/src.txt
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repositories/PL/!svn/ver/69/formatter/defs.h
+END
+syns.yac
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repositories/PL/!svn/ver/69/formatter/syns.yac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repositories/PL/!svn/ver/69/formatter/Makefile
+END

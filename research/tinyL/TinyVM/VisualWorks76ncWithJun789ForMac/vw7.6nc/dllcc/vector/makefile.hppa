@@ -1,0 +1,21 @@
+########################################################################
+# File: makefile.hppa
+# 
+# DLL and C Connect Vector Arithmetic Example Makefile for HPUX
+#
+#	Copyright (C) 1999-2006 Cincom Systems, Inc.
+#	Santa Clara, California.  All Rights Reserved.
+########################################################################
+
+# use -g rather than -O for debugging
+COPTION= -O -Aa
+#COPTION= -g -Aa
+
+# Uncomment SAFETY to build the fast version of the dll.
+#SAFETY=-DOEUNSAFE -DUNSAFE
+
+CFLAGS = $(COPTION) $(SAFETY)
+
+vector.sl: vector.c
+	$(CC) $(CFLAGS) +z -c vector.c
+	ld -o vector.sl -b vector.o

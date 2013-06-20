@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="VisualWorks Plugin Help" type="text/css" charset="UTF-8"?>
+<xml>
+<Heading1>VisualWorks Plugin Help</Heading1>
+<Heading2>Developing a Plugin Applet</Heading2>
+<Body1>The process of developing an applet is the same as for building any other application in VisualWorks.  The application model is typically defined by installing a UI Painter canvas, and then additional methods and classes are defined using the system browsers.</Body1>
+	<Body1>There is a new <UI-Label>ApplicationModel</UI-Label> subclass for applets, <A href="06-plugin.xml#id(Applet Model)">AppletModel</A>, and a new <A href="06-plugin.xml#id(Debugging)">debugging tool</A> for interactive development and debugging, both of which are described in subsequent section.</Body1>
+		
+<Heading3>
+<A ID="Applet Model"></A>
+Building a New Plugin Application</Heading3>
+			<Body1>You build an applet, a small application that runs in a web browser, by subclassing <B>AppletModel</B>.  <B>AppletModel</B> is a subclass of <B>ApplicationModel</B> that provides the essential API for communicating with a browser and accessing browser services.</Body1>
+			<Body1>When you install a new application class in the UI Painter, select <UI-Label>AppletModel</UI-Label> as the superclass, to ensure that is works properly as an applet.</Body1>
+		<Heading3>Adapting an Existing Application to AppletModel</Heading3>
+			<Body1>To use an existing application as an applet, you can either:</Body1>
+				<Bullet1>Move the application model class to be a subset of <B>AppletModel</B>, or</Bullet1>
+				<Bullet1>File-in <Platform>applet-api.st</Platform> into your application model class.</Bullet1>
+			<Body1>If you choose the file-in approach, your applet will behave properly, but will not have access to HTTP GET and POST operations.  Refer to the <BookTitle>Plugin Application Developer's Guide</BookTitle> for details about what the file-in adds.</Body1>
+	<Heading2><A ID="Debugging"></A>Debugging an Applet</Heading2>
+		<Body1>The Plugin Debugger enables the same interactive debugging capabilities for a applet running in a browser that you have for debugging a normal VisualWorks application running in the development environment.   For example, you can:</Body1>
+			<Bullet1>Press <UI-Entry>Ctrl-Y</UI-Entry> to interrupt processing</Bullet1>
+			<Bullet1>Set self halt to invoke a debugger</Bullet1>
+			<Bullet1>Inspect and change variable values and source code</Bullet1>
+		<Heading3>Starting a Pluggin Debug Session</Heading3>
+			<Body1>The Plugin Debug tools allows you to interactively debug a VisualWorks applet while it is running in a web browser.  To start a session:</Body1>
+				<StepStart>Prepare an HTML document with an EMBED tag to launch the applet.  <I>Do not</I> open the page yet.</StepStart>
+				<StepCont>In your VisualWorks Plugin Development environment, load the applet parcel(s).</StepCont>
+				<StepCont>In the VisualWorks launcher, select <UI-Label>Tools->Plugin Debug Tool</UI-Label>.</StepCont>
+				<StepCont>Check <UI-Label>Suppress Loading Plug-in Parcels</UI-Label>, and click <UI-Label>Enable Debug</UI-Label>.  See <A href="06-plugin.xml#id(DebugDeployed)">Debugging a Deployed Applet</A> for an alternative procedure. </StepCont>
+				<StepCont>Open the HTML document in a Web Browser.</StepCont>
+				<StepCont>In the Debug Tool, click <UI-Label>Connect</UI-Label>.</StepCont>
+			<Body1>The applet is now running in the browser but under the control of the development environment.</Body1>
+		<Heading3>Disabling a Debug Session</Heading3>
+			<Body1>When you are finished debugging an applet:</Body1>
+			<Bullet1>Click <UI-Label>Disable Debug</UI-Label> in the Debug Tool.</Bullet1>
+			<Body1>This resets the Windows registry entry so VisualWorks applets can launch in a normal session.</Body1>
+		<Heading3><A ID="DebugDeployed"></A>Debugging a Deployed Applet</Heading3>
+			<Body1>While still under development, you will be debugging the applet while it is already loaded in the development environment, and so choose to suppress loading parcels while launching the applet.  This approach does not allow you to verify that the parcels load properly when deployed.  To check this, you need to debug the deployed applet.</Body1>
+				<StepStart>Copy the HTML page and applet parcel(s) to the web server.</StepStart>
+				<StepCont>Start the VisualWorks Plug-in Development Environment, and make sure the applet's parcels are unloaded.</StepCont>
+				<StepCont>In the VisualWorks launcher, select <UI-Label>Tools->Plugin Debug Tool</UI-Label>.</StepCont>
+				<StepCont><I>Uncheck</I> <UI-Label>Suppress Loading Plug-in Parcels</UI-Label>, and click <UI-Label>Enable Debug</UI-Label>.</StepCont>
+				<StepCont>Open the HTML document in a Web Browser.</StepCont>
+				<StepCont>In the Debug Tool, click <UI-Label>Connect</UI-Label>.</StepCont>
+			<Body1>The applet should now be running using the deployed parcels.</Body1>
+	<Heading2>Deploying a VisualWorks Applet</Heading2>	
+		<Body1>Deploying an Applet involves adding a reference to a web page that embeds the applet in that page, and making the parcel(s) containing the applet available for downloading when that page is accessed.</Body1>
+		<Body1>In the case of a larger application, you also need to build a custom image and provide some mechanism for installing that image on the client systems.</Body1>
+		<Heading3>Adding an Applet to a Web Page</Heading3>
+			<Body1>You add your application to a web page using the $lt;EMBED> HTML tag. The standard options are supported, and there are a few extension options specifically for the VisualWorks plug-in.</Body1>
+<CodeSample>&lt;OBJECT
+	CLASSID="CLSID:FF48278C-094A-4188-95AA-4B1E03F3163C"
+	TYPE="application/x-visualworks-parcel"
+	CODEBASE= "http://mydomain/plugin-install/vwpluginax.cab#version=2,0,X,YYY"
+		WIDTH="500" HEIGHT="300">
+		&lt;PARAM NAME="PARCEL" VALUE="MyApplet.pcl">
+		&lt;PARAM NAME="VWOPEN" VALUE="MyApplet">
+		&lt;B>The ActiveX PlugIn was not installed!&lt;/B>
+	&lt;/OBJECT>;</CodeSample>
+	
+
+			<Body1>The supported attributes are:</Body1>
+			<Body1>CLASSID</Body1>
+				<DefDscrp>The unique GUID identifier of the ActiveX Control.</DefDscrp>
+			<Body1>CODEBASE</Body1>
+				<DefDscrp>The URL which can be used to download and install the plugin if it is not already installed on the machine.</DefDscrp>
+			<Body1>WIDTH</Body1>
+				<DefDscrp>The width of the plug-in window.</DefDscrp>
+			<Body1>HEIGHT</Body1>
+				<DefDscrp>The height of the plug-in window.</DefDscrp>
+			<Body1>TYPE</Body1>
+				<DefDscrp>The MIM type for the plug-in (currently application/x-visualworks-parcel).</DefDscrp>
+			<Body1>PARCEL</Body1>
+				<DefDscrp>The parcel file containing the applet code. This can be an absolute URL or a file name relative to the location of the page containing the applet.</DefDscrp>
+			<Body1>VWOPEN</Body1>
+				<DefDscrp>Name of the class to be opened, eliminating the need for the post-load action.</DefDscrp>
+			<Body1>VWCODEBASE</Body1>
+				<DefDscrp>URL for location of additional parcels. Unless specified, the location is inferred to be the same as that for the SRC.</DefDscrp>
+			<Body1>VWPRELOAD</Body1>
+				<DefDscrp>A list of parcel file names, separated by commas, to be loaded into the image in the specified order.</DefDscrp>
+			<Body1>VWAPPL</Body1>
+				<DefDscrp>The application name associating this instance of the plug-in with a specific image.</DefDscrp>
+		<Heading3>Creating a Custom Image</Heading3>
+			<Body1>For large, intranet applications, it is often preferrable to install a custom image on the client systems so only a small parcel needs to be downloaded to launch the application.  The following is a short version of the procedure to build a custom image.  Refer to the <BookTitle>Plug-in Application Developer's Guide</BookTitle> for more information.</Body1>
+				<StepStart>Start the visual.im supplied with VisualWorks.</StepStart>
+				<StepCont>Load the RuntimePackager and Plugin parcels into the image.</StepCont>
+				<StepCont>Load the part of your application code that will be permanent in the deployed image.</StepCont>
+				<StepCont>Unload any unneeded parcels.</StepCont>
+				<StepCont>In the Settings Tool on the <UI-Label>Look and Feel</UI-Label> page, set <UI-Label>Window placement</UI-Label> to <UI-Label>Automatic</UI-Label>.</StepCont>
+				<StepCont>Select <UI-Label>Tools -> Runtime Packager</UI-Label>.</StepCont>
+				<StepCont>In Runtime Packager, select <UI-Label>File -> Load Params</UI-Label>, and load <Platform>vwplugin.rtp</Platform>, the plugin image removals data file.</StepCont>
+				<StepCont>In Runtime Packager, select <UI-Label>Actions->Set common options</UI-Label>, and change the <UI-Label>Runtime Image Path Name</UI-Label> to the directory path and file name (without the <Platform>.im</Platform> suffix) for the deployed image, and click OK.  Make sure the name is different than the standard plug-in image name.</StepCont>
+				<StepCont>In Runtime Packager, select <UI-Label>Actions->Strip system</UI-Label>.</StepCont>
+				<StepCont>When the stripping process completes, launch the new image two more times as directed by the text windows.  After the second launch, the text window should indicate that the image is ready for use.</StepCont>
+		<Heading3>Creating the Plug-in Initialization File</Heading3>
+			<Body1>The initialization file, VWPLUGIN.INI, is a plain text file that sets attributes for individual instances of the plug-in as well as general attributes. </Body1>
+			<Body1>The supported attributes are:</Body1>
+			<Body1>DIRECTORY</Body1>
+				<DefDscrp>The directory to be "current"</DefDscrp>
+			<Body1>OBJECTENGINE</Body1>
+				<DefDscrp>The path to the executable virtual machine</DefDscrp>
+			<Body1>BASEIMAGE</Body1>
+				<DefDscrp>The directory path and file name of the base image. This is generally needed for custom images.</DefDscrp>
+			<Body1>APPLICATION</Body1> 
+				<DefDscrp>A value matching the VWAPPL tag attribute for an applet that starts a section of attributes for this application</DefDscrp>
+			<Body1>EXTRA</Body1> 
+				<DefDscrp>Specifies extra information of interest to the application</DefDscrp>
+			<Body1>ALLOW</Body1>
+				<DefDscrp>Specify locations allowed to supply a plug-in parcel</DefDscrp>
+			<Body1>DENY</Body1>
+				<DefDscrp>Specify locations not allowed to supply a plug-in parcel</DefDscrp>
+			<Body1>For example:</Body1>
+			<CodeSample>BaseImage plugin-win-base.im
+Application MyApp
+BaseImage myimage.im
+Deny all
+Allow myhost.com
+Application Debug
+Directory c:\vw7.3\image
+ObjectEngine ..\bin\vwntdbg.exe
+BaseImage mydebug.im
+Deny all
+Allow local</CodeSample>
+	<Heading2>Plug-in Security</Heading2>
+		<Body1>Security concerns require that applet parcels be certified in some way, to ensure that an applet does not compromise the target system.  VisualWorks currently employs a "trusted site" scheme for security.</Body1>
+		<Heading3>The Plug-in Security Scheme</Heading3>
+			<Body1>Security for applets currently employs a "trusted site" strategy.  </Body1>
+			<Body1>You identify trusted sites by defining a filtering scheme in the VWPLUGIN.INI initialization file, using the ALLOW and DENY attributes.</Body1> 
+			<Body1>The attribute formats are:</Body1>
+			<CodeSample>ALLOW &lt; all | local | hostID >
+DENY &lt; all | local | hostID ></CodeSample>
+			<Body1>For example, the following sequence of attributes identifies specific sites to be trusted by alternatively allowing and denying access by sites that match the criteria:</Body1>
+			<CodeSample>Deny all
+Allow local
+Allow cincom.com
+Allow advbool.com
+Deny pop.advbool.com</CodeSample>
+	
+		<Heading3>Specifying Host IDs</Heading3>
+			<Body1>Host IDs can be partial, and can be specified either as IP decimal values or as names.</Body1> 
+			<Body1>IP decimal values specify from the network down, and unspecified levels match all values. For example, 216, 216.1, 216.1.2, and 216.1.2.3 all match 216.1.2.3. </Body1>
+			<Body1>Similarly, when specified by name, unspecified levels match all values. For example, com, cincom.com, and www.cincom.com all match www.cincom.com.</Body1>
+</xml>

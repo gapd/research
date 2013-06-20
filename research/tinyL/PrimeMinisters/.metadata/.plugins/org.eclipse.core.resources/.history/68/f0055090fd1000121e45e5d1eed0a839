@@ -1,0 +1,121 @@
+package primeministers;
+
+import java.io.File;
+import utility.imageUtility;
+import java.util.ArrayList;
+
+/**
+ * ダウンローダ：総理大臣のCSVファイル・画像ファイル・サムネイル画像ファイルをダウンロードする。
+ */
+public class Downloader extends IO
+{
+	/**
+	 * 総理大臣の情報を記したCSVファイルの在処(URL文字列)を記憶するフィールド。
+	 */
+	private String url;
+	
+	/**
+	 * ダウンローダのコンストラクタ。
+	 */
+	public Downloader()
+	{
+		super();
+		url = Downloader.urlStringOfCSV(); 
+		return;
+	}
+	
+	/**
+	 * 総理大臣の情報を記したCSVファイルをダウンロードする。
+	 */
+	public void downloadCSV()
+	{
+	ArrayList<String> anArrayList = Downloader.readTextFromURL(this.url);
+	File aFile = Reader.filenameOfCSV();
+	Downloader.writeText(anArrayList,aFile);
+	
+		return;
+	}
+	
+	/**
+	 * 総理大臣の画像群をダウンロードする。
+	 */
+	public void downloadImage()
+	{
+		int indexOfImage = this.table.attributes().indexOfImage();
+		this.downloadPictures(indexOfImage);
+		return;
+	}
+	
+	/**
+	 * 総理大臣のサムネイル画像群をダウンロードする。
+	 */
+	public void downloadThumbnails()
+	{
+		int indexOfThumbnails = this.table.attributes().indexOfThumbnails();
+		this.downloadPictures(indexOfThumbnails);
+		return;
+	}
+	/**
+	 * 総理大臣の画像群やサムネイル画像群をダウンロードする。
+	 */
+	private void downloadPictures(int indexOfPictures)
+	{
+
+		for(Tuple aTuple : this.table().tuples())
+		{
+			String theString = aTuple.values().get(indexOfPictures);
+			String aString = this.urlString() + aString;
+			BufferedImage anImage = ImageUtility.readImageFromURL(aString);
+			ArrayList<String> aCollection = Downloader.splitString(theString, "/");
+			StringBuffer aBuffer = new StringBuffer();
+			int lastIndex = aCollection.size() - 1;
+			for(int index = 0; index < lastIndex; index++)
+			{
+				aBuffer.add(aCollection.get(index));
+				aBuffer.add(File.separator);
+			}
+			aString = aBuffer.toString() + aCollection.get(lastindex);
+			File aDirectory = Downloader.directoryOfPages();
+			File aFile = new File(aDirectory.getPath() + File.separator + aString );
+			System.out.println("==>" + aFile);
+			aDirectory = new File(aFile.getParent());
+			if(!aDirectory.exists())
+			{
+				aDirectory.mkdir();
+			}
+			ImageUtility.writeImage(anImage,aFile);
+		}
+		return;
+	}
+	/**
+	 * 総理大臣の情報を記したCSVファイルをダウンロードして、画像群やサムネイル画像群をダウロードし、テーブルで応答する。
+	 */
+	public Table table()
+	{
+		return null;
+	}
+	
+	/**
+	 *  総理大臣の情報を記したCSVファイルの在処(URL)を文字列で応答する。
+	 */
+	public String url()
+	{	
+		return this.url;
+	}
+	
+	/**
+	 * 総理大臣の情報の在処(URL)を文字列で応答するクラスメソッド。
+	 */
+	static String urlString()
+	{
+		return  "http://www.cc.kyoto-su.ac.jp/~atsushi/Programs/CSV2HTML/PrimeMinisters/";
+	}
+	
+	/**
+	 * 総理大臣の情報を記したCSVファイルの在処(URL)を文字列で応答するクラスメソッド。
+	 */
+	static String urlStringOfCSV()
+	{
+		return Downloader.urlString() + "PrimeMinisters.csv";
+	}
+}

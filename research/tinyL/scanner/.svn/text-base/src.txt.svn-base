@@ -1,0 +1,25 @@
+/*** Sample Text of C Program ***/
+
+#include "defs.h"
+
+int main(int argc, char **argv)
+{
+	Rectangle box;
+	double area;
+
+	box.origin.x = 200.0;
+	box.origin.y = 100.0;
+	box.corner.x = 600.0;
+	box.corner.y = 400.0;
+
+	area = sub1(box);
+	printf("area = %12.3f\n", area);
+
+	area = sub2(&box);
+	printf("area = %12.3f\n", area);
+
+	area = sub3(&box);
+	printf("area = %12.3f\n", area);
+
+	return(EXIT_SUCCESS);
+}

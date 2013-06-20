@@ -1,0 +1,70 @@
+# This file should serve as a template for compiling SharedLibraries on
+# the PowerMac using MPW 3.5.x. It should be compatible to the
+# standard MPW Build commands, if you follow these rules:
+# 1.	copy this file together with "pmacbckref.lib", "oeAPI.h", and the script 
+#		"trimExport.script" into your projects directory,
+# 2.	edit the "LibTarget" name below, enter the name of the library
+#		to be compiled/linked, 
+# 3.	edit the "CSource" entry below, currently only one name is supported,
+#		if you need more, you have to adapt the makefile manualy,
+# 4.	save the adapted makefile under the name composed of the value you entered
+#		as "LibTarget" and the string ".make",
+# 5.	choose "Build ..." from the MPW Build menu and enter the name you entered
+#		as the value of "LibTarget".
+# 6.	watch the output in the MPW Worksheet
+#
+# CAUTION: If your library is suppose to make many calls into the virtual machine,
+#	like this example here, then the optimization '-D OEUNSAFE' in th elist of 
+#	PPCCOptions will eliminate  many security checks, and thus will give you a 
+#	lot more performance.
+#	BUT if you do so, you are responsible to garantee proper argument types
+#	for all parameters passed to virtual machine functions.
+#
+# Georg Heeg, Objektorientierte Systeme 1998/99
+# Roland Wagener
+
+# Description of this file:
+#   File:       vector.so.make
+#   Target:     vector.so
+#   Sources:    vector.c
+#   Created:    Thursday, October 15, 1998 03:42:21 PM
+#	Changed:	4/26/1999	updated creator for VW5i, introduced hint about OEUNSAFE
+
+LibTarget	 = vector.so
+CSource		 = vector			# name of a C-Source file without any extensions
+MAKEFILE     = {LibTarget}.make
+€MondoBuild€ = {MAKEFILE}		# Make blank to avoid rebuilds when makefile is modified
+Includes     =
+Sym€PPC      = 
+ObjDir€PPC   =
+
+# original PPCCOptions  = {Includes} {Sym€PPC}  -opt speed  -align byte
+# Add these options if you want to live dangerously:  -D OEUNSAFE 
+PPCCOptions  = {Includes} {Sym€PPC}  -D OEUNSAFE
+
+Objects€PPC  = 
+		"{ObjDir€PPC}{CSource}.c.x"
+ 
+
+{LibTarget} ŸŸ {€MondoBuild€} {Objects€PPC}
+	PPCLink 
+		-o {Targ} pmacbckref.lib {Sym€PPC} 
+		{Objects€PPC} 
+		-t 'shlb' 
+		-c 'HPS5' 
+		-xm s 
+		"{SharedLibraries}StdCLib" 
+		"{SharedLibraries}MathLib" 
+		"{PPCLibraries}PPCCRuntime.o" 
+		-@export {CSource}.export 
+		-export oeLoadInitialize,UPLoadInitialize 
+
+
+"{ObjDir€PPC}{CSource}.c.x" Ÿ {€MondoBuild€} {CSource}.c
+	{PPCC} -w 35 {CSource}.c -o {ObjDir€PPC}{CSource}.c.x {PPCCOptions}
+# The following three lines generate a file containing all exported procedure names,
+# one for each line, as needed for linking a shared lib.
+	DumpXCOFF -n Funct {CSource}.c.x > {CSource}.ex
+	StreamEdit -s trimExport.script -o {CSource}.export {CSource}.ex
+	Delete {CSource}.ex
+

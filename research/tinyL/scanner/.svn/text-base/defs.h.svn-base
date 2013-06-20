@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define ID	 1
+#define INTEGER	 2
+#define UNKNOWN	99
+
+extern char *yytext;
+
+int main(void);
+int yylex(void);

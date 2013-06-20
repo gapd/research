@@ -1,0 +1,52 @@
+Copyright (C) 2000 - 2007  Bruce Badger (bbadger@openskills.com)
+
+This is version 1.3-057 of the PostgreSQL Library for VisualWorks Smalltalk.
+
+This file is intended to be viewed from a VisualWorks text editor.  Tabbing may look wierd otherwise.
+
+The library is made up of following:
+
+
+	PostgreSQLDriver -				The dialect independent driver layer.
+
+	PostgreSQLLogging -			Support for logging (tracing) message traffic between
+									the driver running in a client and the PostgreSQL 
+									backend.
+
+	PostgreSQLEXDI - 				Mapping from the VisualWorks EXDI layer to the
+									driver layer.
+
+	StoreForPostgreSQL - 			Enables the use of the Store SCM with PostgreSQL
+									using the EXDI & driver layers.
+
+	PostgreSQLMonitor -				A crude but sometimes useful tool for listing the
+									currently active connections to PostgreSQL
+									databases and a window for monitoring the traffic
+									flowing over a selected connection.
+
+The library depends upon the following:
+	Sport -							A mapping library containing wrappers for
+									base code which has different implementation
+									in different Smalltalk dialects.
+
+	OSkStreams -					Stream utilities.
+
+	OSkLogger -					A logging library which can log from multiple
+									sources to multiple sincs.
+
+	OSkSocketServices -			Stream classes for use with TCP/IP sockets
+
+	Base64Encoding - 				An implementation of the Base64 MIME encoding
+									used to manipulate BLOB type data.
+
+
+To get started, load the parcels and look at the class side test methods of:
+	PostgreSQLTest in the parcel PostgreSQLDriver
+	PostgreSQLEXDITest in the parcel PostgreSQLEXDI
+	PostgreSQLLoggingTesting in the logging parcel
+
+Have a look at the parcel comments for each parcel.
+
+Visit http://wiki.cs.uiuc.edu/VisualWorks/PostgreSQL+Libraries for documentation (including how to obtain and install PostgreSQL itself) and recent news.
+
+NOTE: The PostgreSQL monitor parcel contains an experimental UI for monitoring PostgreSQL connections.  Use with care, and comment freely :-)
